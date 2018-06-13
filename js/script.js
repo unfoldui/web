@@ -92,18 +92,6 @@ $(document).ready(function($) {
 		eventPromoSection.css('height', windowHeight);
 	});
 
-	// /*-------------------------------------------------*/
-	// /* =  preloader function
-	// /*-------------------------------------------------*/
-	
-	// $('body').ready( function(){
-	// 	var mainDiv = $('#container'),
-	// 		preloader = $('.preloader');
-
-	// 	preloader.fadeOut(400, function(){
-	// 		mainDiv.delay(400).addClass('active');
-	// 	});
-	// });
 
 	/* ---------------------------------------------------------------------- */
 	/*	magnific-popup
@@ -179,16 +167,6 @@ $(document).ready(function($) {
 			}
 		}
 
-	} catch(err) {
-
-	}
-	
-	/* ---------------------------------------------------------------------- */
-	/*	Contact Map
-	/* ---------------------------------------------------------------------- */
-
-	try {
-		mapfunction();
 	} catch(err) {
 
 	}
@@ -391,17 +369,3 @@ function Resize() {
 	$(window).trigger('resize');
 }
 
-function mapfunction() {
-	var fenway = [42.345573,-71.098326]; //Change a map coordinate here!
-	var markerPosition = [42.345573,-71.098326]; //Change a map marker here!
-	$('#map').gmap3({
-			center: fenway,
-			zoom: 13,
-			scrollwheel: false,
-			mapTypeId : google.maps.MapTypeId.ROADMAP
-		})
-		.marker({
-			position: markerPosition,
-			icon: 'images/marker.png'
-	});
-}
