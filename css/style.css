@@ -1450,7 +1450,7 @@ section.about-section .video-box {
   padding-top: 70px;
   margin: 0 auto;
   max-width: 770px;
-  margin-bottom: -64px;
+  margin-bottom: 50px;
 }
 
 section.about-section .video-box iframe {
