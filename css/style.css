@@ -802,6 +802,14 @@ section.event-promo-section .event-center h1 {
   margin: 0;
 }
 
+section.event-promo-section .event-center h2 {
+  color: #fff;
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 32px;
+  margin: 0;
+}
+
 section.event-promo-section .event-center .event-date {
   text-align: right;
   border-left: 1px solid #ffffff;
@@ -1213,6 +1221,15 @@ section.reg-sub-section .inner-reg-sub .subscribe-box span {
   display: block;
   font-size: 18px;
   color: #e4e2f4;
+  font-family: "Lora", serif;
+  font-style: italic;
+  line-height: 32px;
+  margin: 0 0 25px;
+}
+section.reg-sub-section .inner-reg-sub .register-box span {
+  display: block;
+  font-size: 18px;
+  color: #fff;
   font-family: "Lora", serif;
   font-style: italic;
   line-height: 32px;
