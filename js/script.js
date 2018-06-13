@@ -5,79 +5,10 @@ $(document).ready(function($) {
 
 	/* global google: false */
 	/*jshint -W018 */
-
-	/*-------------------------------------------------*/
-	/* =  portfolio isotope
-	/*-------------------------------------------------*/
-
 	var winDow = $(window);
 		// Needed variables
 		var $container=$('.iso-call');
 		var $filter=$('.filter');
-
-		try{
-			$container.imagesLoaded( function(){
-				$container.trigger('resize');
-				$container.isotope({
-					filter:'*',
-					layoutMode:'masonry',
-					animationOptions:{
-						duration:750,
-						easing:'linear'
-					}
-				});
-
-				setTimeout(Resize, 1500);
-			});
-		} catch(err) {
-		}
-
-		winDow.on('resize', function(){
-			var selector = $filter.find('a.active').attr('data-filter');
-
-			try {
-				$container.isotope({ 
-					filter	: selector,
-					animationOptions: {
-						duration: 750,
-						easing	: 'linear',
-						queue	: false,
-					}
-				});
-			} catch(err) {
-			}
-			return false;
-		});
-		
-		// Isotope Filter 
-		$filter.find('a').on('click', function(){
-			var selector = $(this).attr('data-filter');
-
-			try {
-				$container.isotope({ 
-					filter	: selector,
-					animationOptions: {
-						duration: 750,
-						easing	: 'linear',
-						queue	: false,
-					}
-				});
-			} catch(err) {
-
-			}
-			return false;
-		});
-
-
-	var filterItemA	= $('.filter li a');
-
-		filterItemA.on('click', function(){
-			var $this = $(this);
-			if ( !$this.hasClass('active')) {
-				filterItemA.removeClass('active');
-				$this.addClass('active');
-			}
-		});
 
 	/*-------------------------------------------------*/
 	/* =  event promo section
@@ -93,100 +24,6 @@ $(document).ready(function($) {
 	});
 
 
-	/* ---------------------------------------------------------------------- */
-	/*	magnific-popup
-	/* ---------------------------------------------------------------------- */
-
-	try {
-		// Example with multiple objects
-		$('.zoom').magnificPopup({
-			type: 'image',
-			gallery: {
-				enabled: true
-			}
-		});
-
-	} catch(err) {
-
-	}
-
-	/*-------------------------------------------------*/
-	/* =  count increment
-	/*-------------------------------------------------*/
-	try {
-		$('.statistic-post').appear(function() {
-			$('.timer').countTo({
-				speed: 4000,
-				refreshInterval: 60,
-				formatter: function (value, options) {
-					return value.toFixed(options.decimals);
-				}
-			});
-		});
-	} catch(err) {
-
-	}
-	
-	/*-------------------------------------------------*/
-	/* =  OWL carousell
-	/*-------------------------------------------------*/
-	try {
-		var owlWrap = $('.owl-wrapper');
-
-		if (owlWrap.length > 0) {
-
-			if (jQuery().owlCarousel) {
-				owlWrap.each(function(){
-
-					var carousel= $(this).find('.owl-carousel'),
-						dataNum = $(this).find('.owl-carousel').attr('data-num'),
-						dataNum2,
-						dataNum3;
-
-					if ( dataNum == 1 ) {
-						dataNum2 = 1;
-						dataNum3 = 1;
-					} else if ( dataNum == 2 ) {
-						dataNum2 = 2;
-						dataNum3 = dataNum - 1;
-					} else {
-						dataNum2 = dataNum - 1;
-						dataNum3 = dataNum - 2;
-					}
-
-					carousel.owlCarousel({
-						autoPlay: 10000,
-						navigation : true,
-						items : dataNum,
-						itemsDesktop : [1199,dataNum2],
-						itemsDesktopSmall : [991,dataNum3],
-						itemsTablet : [768, dataNum3],
-					});
-
-				});
-			}
-		}
-
-	} catch(err) {
-
-	}
-
-
-	/*-------------------------------------------------*/
-	/* =  flexslider
-	/*-------------------------------------------------*/
-
-	try {
-
-		var SliderPost = $('.flexslider');
-
-		SliderPost.flexslider({
-			slideshowSpeed: 10000,
-			easing: "swing"
-		});
-	} catch(err) {
-
-	}
 
 	/* ---------------------------------------------------------------------- */
 	/*	Contact Form
@@ -218,31 +55,6 @@ $(document).ready(function($) {
 		});
 	});
 	
-	/*-------------------------------------------------*/
-	/* =  comming soon
-	/*-------------------------------------------------*/
-	
-	try {
-
-		$('#clock').countdown("2018/07/29", function(event) {
-			var $this = $(this);
-			switch(event.type) {
-				case "seconds":
-				case "minutes":
-				case "hours":
-				case "days":
-				case "daysLeft":
-					$this.find('span#'+event.type).html(event.value);
-					break;
-				case "finished":
-					$this.hide();
-					break;
-			}
-		});
-
-	} catch(err) {
-
-	}
 
 	/*-------------------------------------------------*/
 	/* =   Smooth scroll
