@@ -25,7 +25,6 @@ Stylesheet Table
 
 /* import google fonts */
 
-@import url("https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i|Rubik:300,300i,400,400i,500,500i,700,700i,900,900i");
 .reset-elem,
 .dropdown,
 section.gallery-section ul.gallery-list,
@@ -78,7 +77,7 @@ section.news-section2 .blog-post span.date-comments,
 p {
   font-size: 18px;
   color: #6c7a89;
-  font-family: "Rubik", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 300;
   line-height: 30px;
   margin: 0 0 10px;
@@ -88,7 +87,7 @@ p {
 h1 {
   color: #2d3034;
   font-size: 48px;
-  font-family: "Rubik", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 400;
   line-height: 52px;
   margin: 0 0 20px;
@@ -101,7 +100,7 @@ section.promo-banner-section3 .promo-banner-box span,
 h2 {
   color: #2d3034;
   font-size: 24px;
-  font-family: "Rubik", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 400;
   margin: 0 0 10px;
   line-height: 28px;
@@ -111,7 +110,7 @@ h2 {
 h3 {
   color: #2d3034;
   font-size: 18px;
-  font-family: "Rubik", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 400;
   margin: 0 0 4px;
   line-height: 28px;
@@ -308,7 +307,7 @@ header.second-style.active .navbar {
   color: #fff !important;
   font-size: 17px;
   font-weight: 400 !important;
-  font-family: "Rubik", sans-serif;
+  font-family: "Open Sans", sans-serif;
   transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   -webkit-transition: all 0.2s ease-in-out;
@@ -395,7 +394,7 @@ header.fourth-style .navbar-nav>li>a.active:before {
   color: #6c7a89;
   font-size: 14px;
   font-weight: 400;
-  font-family: "Rubik", sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 .dropdown>li>a:hover {
@@ -543,14 +542,14 @@ section.event-promo-section {
   display: block;
   color: #6c7a89;
   font-size: 24px;
-  font-family: "Rubik", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 300;
   margin: 0 0 10px;
 }
 
 .title-section span.italic-style {
   font-size: 18px;
-  font-family: "Lora", serif;
+  font-family: "Open Sans", serif;
   font-weight: 400;
   font-style: italic;
 }
@@ -596,7 +595,7 @@ section.event-promo-section {
 a.default-button {
   color: #fff;
   font-size: 18px;
-  font-family: "Rubik", sans-serif;
+  font-family: "Open Sans", sans-serif;
   text-transform: uppercase;
   padding: 11px 38px;
   background: #2ecc71;
@@ -622,7 +621,7 @@ a.default-button:hover {
 a.button-one {
   color: #000;
   font-size: 12px;
-  font-family: "Rubik", sans-serif;
+  font-family: "Open Sans", sans-serif;
   text-transform: uppercase;
   padding: 12px 45px;
   background: #2ecc71;
@@ -650,7 +649,7 @@ a.button-one:hover {
 a.button-two {
   color: #3a539b;
   font-size: 13px;
-  font-family: "Rubik", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 500;
   padding: 13px 20px 10px;
   text-transform: uppercase;
@@ -735,7 +734,7 @@ section.page-banner-section h1 {
 section.page-banner-section p {
   color: #bdbdbd;
   font-size: 20px;
-  font-family: "Rubik", sans-serif;
+  font-family: "Open Sans", sans-serif;
   margin-bottom: 0;
 }
 
@@ -827,14 +826,14 @@ section.event-promo-section .event-center .event-date p {
   color: #e4e2f4;
   font-size: 30px;
   line-height: 38px;
-  font-family: "Lora", serif;
+  font-family: "Open Sans", serif;
   font-style: italic;
 }
 
 section.event-promo-section .event-center .event-date p span {
   display: block;
   color: #ffffff;
-  font-family: "Rubik", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 72px;
   font-style: normal;
   font-weight: 300;
@@ -1122,14 +1121,14 @@ section.reg-sub-section .inner-reg-sub .register-box p {
 }
 
 section.reg-sub-section .inner-reg-sub .register-box p span {
-  font-family: "Lora", serif;
+  font-family: "Open Sans", serif;
   font-style: italic;
 }
 
 section.reg-sub-section .inner-reg-sub .register-box a {
   color: #5649c0;
   font-size: 18px;
-  font-family: "Rubik", sans-serif;
+  font-family: "Open Sans", sans-serif;
   text-transform: uppercase;
   padding: 13px 60px 11px;
   background: #fff;
@@ -1228,7 +1227,7 @@ section.reg-sub-section .inner-reg-sub .subscribe-box span {
   display: block;
   font-size: 18px;
   color: #e4e2f4;
-  font-family: "Lora", serif;
+  font-family: "Open Sans", serif;
   font-style: italic;
   line-height: 32px;
   margin: 0 0 25px;
@@ -1237,7 +1236,7 @@ section.reg-sub-section .inner-reg-sub .register-box span {
   display: block;
   font-size: 18px;
   color: #fff;
-  font-family: "Lora", serif;
+  font-family: "Open Sans", serif;
   font-style: italic;
   line-height: 32px;
   margin: 0 0 25px;
@@ -1259,7 +1258,7 @@ section.reg-sub-section .inner-reg-sub .subscribe-box form.subscribe input[type=
   width: 270px;
   color: #959aa1;
   font-size: 18px;
-  font-family: "Rubik", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 300;
   margin: 0;
   margin-right: 3px;
@@ -1268,7 +1267,7 @@ section.reg-sub-section .inner-reg-sub .subscribe-box form.subscribe input[type=
 section.reg-sub-section .inner-reg-sub .subscribe-box form.subscribe input[type="submit"] {
   color: #fff;
   font-size: 18px;
-  font-family: "Rubik", sans-serif;
+  font-family: "Open Sans", sans-serif;
   text-transform: uppercase;
   padding: 13px 30px 12px;
   background: #2ecc71;
@@ -1381,7 +1380,7 @@ section.register-section .register-box #register-form label {
   display: block;
   color: #6c7a89;
   font-size: 18px;
-  font-family: "Rubik", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 300;
   margin: 0 0 15px;
 }
@@ -1393,7 +1392,7 @@ section.register-section .register-box #register-form select {
   background: #f9fafb;
   color: #6c7a89;
   font-size: 18px;
-  font-family: "Rubik", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 300;
   line-height: 24px;
   outline: none;
@@ -1435,7 +1434,7 @@ section.register-section .register-box #register-form .subcribe-bx span {
 section.register-section .register-box #register-form input[type="submit"] {
   color: #fff;
   font-size: 18px;
-  font-family: "Rubik", sans-serif;
+  font-family: "Open Sans", sans-serif;
   text-transform: uppercase;
   padding: 11px 38px;
   background: #2ecc71;
@@ -1538,7 +1537,7 @@ section.subscribe-section .subscribe-box input[type="text"] {
   min-width: 370px;
   color: #959aa1;
   font-size: 18px;
-  font-family: "Rubik", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 300;
   margin: 0 0 20px;
   margin-right: 25px;
@@ -1551,7 +1550,7 @@ section.subscribe-section .subscribe-box input[type="text"] {
 section.subscribe-section .subscribe-box input[type="submit"] {
   color: #fff;
   font-size: 18px;
-  font-family: "Rubik", sans-serif;
+  font-family: "Open Sans", sans-serif;
   text-transform: uppercase;
   padding: 13px 30px 12px;
   background: #2ecc71;
@@ -1621,7 +1620,7 @@ section.about-conference-section .images-box.second-style img:last-child {
 
 .article-box span {
   display: inline-block;
-  font-family: "Lora", serif;
+  font-family: "Open Sans", serif;
   font-style: italic;
   font-weight: 400;
 }
@@ -1857,7 +1856,7 @@ section.services-section .services-box .services-post .services-post-content ul.
 section.services-section .services-box .services-post .services-post-content ul.service-list li {
   color: #5649c0;
   font-size: 18px;
-  font-family: "Lora", serif;
+  font-family: "Open Sans", serif;
   font-style: italic;
   line-height: 30px;
   padding-left: 10px;
@@ -1903,7 +1902,7 @@ section.services-section2 .services-box .services-post p {
 
 section.services-section2 .services-box .center-area a {
   color: #5649c0;
-  font-family: "Rubik", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 20px;
   margin-top: 30px;
 }
@@ -1956,7 +1955,7 @@ section.schedule-section .schedule-box .schedule-block ul.schedule-list li span.
   color: #2ecc71;
   font-size: 18px;
   font-weight: 300;
-  font-family: "Rubik", sans-serif;
+  font-family: "Open Sans", sans-serif;
   margin: 0 0 15px;
 }
 
@@ -1983,7 +1982,7 @@ section.schedule-section .schedule-box .schedule-block ul.schedule-list li .sche
 
 section.schedule-section .schedule-box .schedule-block ul.schedule-list li .schedule-cont p.schedule-auth {
   font-style: italic;
-  font-family: "Lora", serif;
+  font-family: "Open Sans", serif;
 }
 
 section.schedule-section .schedule-box .schedule-block ul.schedule-list li .schedule-cont p.schedule-auth span {
@@ -2013,7 +2012,7 @@ section.schedule-section .schedule-box .schedule-block ul.schedule-list li.time-
   display: block;
   color: #5649c0;
   font-size: 18px;
-  font-family: "Rubik", sans-serif;
+  font-family: "Open Sans", sans-serif;
   margin-left: 70px;
   line-height: 36px;
   margin-top: 17px;
@@ -2060,7 +2059,7 @@ section.schedule-section2 .schedule-box .schedule-tabs .nav-tabs a.nav-item {
   background: #2ecc71;
   color: #fff;
   font-size: 18px;
-  font-family: "Rubik", sans-serif;
+  font-family: "Open Sans", sans-serif;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   -ms-border-radius: 0;
@@ -2143,7 +2142,7 @@ section.schedule-section2 .schedule-box .schedule-tabs .tab-content .schedule-po
   color: #2ecc71;
   font-size: 18px;
   font-weight: 300;
-  font-family: "Rubik", sans-serif;
+  font-family: "Open Sans", sans-serif;
   margin: 0 0 5px;
 }
 
@@ -2160,7 +2159,7 @@ section.schedule-section2 .schedule-box .schedule-tabs .tab-content .schedule-po
 
 section.schedule-section2 .schedule-box .schedule-tabs .tab-content .schedule-post .schedule-cont p.schedule-auth {
   font-style: italic;
-  font-family: "Lora", serif;
+  font-family: "Open Sans", serif;
 }
 
 section.schedule-section2 .schedule-box .schedule-tabs .tab-content .schedule-post .schedule-cont p.schedule-auth span {
@@ -2209,7 +2208,7 @@ section.schedule-section2 .schedule-box .schedule-tabs .tab-content .schedule-po
   display: block;
   color: #5649c0;
   font-size: 18px;
-  font-family: "Rubik", sans-serif;
+  font-family: "Open Sans", sans-serif;
   line-height: 22px;
 }
 
@@ -2300,7 +2299,7 @@ section.schedule-section3 .schedule-box .schedule-block .schedule-image .hover-b
 }
 
 section.schedule-section3 .schedule-box .schedule-block .schedule-image .hover-box .white-box p {
-  font-family: "Lora", serif;
+  font-family: "Open Sans", serif;
   font-style: italic;
   font-weight: 400;
   margin-bottom: 0;
@@ -2313,7 +2312,7 @@ section.schedule-section3 .schedule-box .schedule-block .schedule-content ul.sch
 section.schedule-section3 .schedule-box .schedule-block .schedule-content ul.schedule-list li {
   color: #5649c0;
   font-size: 18px;
-  font-family: "Lora", serif;
+  font-family: "Open Sans", serif;
   font-style: italic;
   line-height: 28px;
   padding-left: 10px;
@@ -2368,7 +2367,7 @@ section.agenda-section .schedule-box ul.schedule-list li span.time {
   color: #2ecc71;
   font-size: 18px;
   font-weight: 300;
-  font-family: "Rubik", sans-serif;
+  font-family: "Open Sans", sans-serif;
   margin: 0;
 }
 
@@ -2394,7 +2393,7 @@ section.agenda-section .schedule-box ul.schedule-list li .schedule-cont p {
 
 section.agenda-section .schedule-box ul.schedule-list li .schedule-cont p.schedule-auth {
   font-style: italic;
-  font-family: "Lora", serif;
+  font-family: "Open Sans", serif;
 }
 
 section.agenda-section .schedule-box ul.schedule-list li .schedule-cont p.schedule-auth span {
@@ -2437,7 +2436,7 @@ section.agenda-section .schedule-box ul.schedule-list li.time-off-item span.time
   display: block;
   color: #2f3032;
   font-size: 18px;
-  font-family: "Rubik", sans-serif;
+  font-family: "Open Sans", sans-serif;
   margin-left: 100px;
   line-height: 28px;
 }
@@ -2483,7 +2482,7 @@ section.agenda-section .schedule-box ul.schedule-list li.time-off-item span.time
   color: #5649c0;
   background: #fff;
   font-size: 24px;
-  font-family: "Rubik", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 400 !important;
   line-height: 24px;
   border-bottom: 1px solid #5649c0;
@@ -2498,7 +2497,7 @@ section.agenda-section .schedule-box ul.schedule-list li.time-off-item span.time
   height: 24px;
   color: #5649c0;
   font-size: 17px;
-  font-family: "Rubik", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 300;
   line-height: 20px;
   text-align: center;
@@ -2603,7 +2602,7 @@ section.event-banner-section .subscribe-banner-box form.subscribe input[type="te
   min-width: 370px;
   color: #959aa1;
   font-size: 18px;
-  font-family: "Rubik", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 300;
   margin: 0 0 20px;
   margin-right: 25px;
@@ -2612,7 +2611,7 @@ section.event-banner-section .subscribe-banner-box form.subscribe input[type="te
 section.event-banner-section .subscribe-banner-box form.subscribe input[type="submit"] {
   color: #fff;
   font-size: 18px;
-  font-family: "Rubik", sans-serif;
+  font-family: "Open Sans", sans-serif;
   text-transform: uppercase;
   padding: 13px 30px 12px;
   background: #2ecc71;
@@ -2763,7 +2762,7 @@ section.event-banner-section3 .subscribe-banner-box form.subscribe input[type="t
   min-width: 370px;
   color: #959aa1;
   font-size: 18px;
-  font-family: "Rubik", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 300;
   margin: 0 0 20px;
   margin-right: 25px;
@@ -2772,7 +2771,7 @@ section.event-banner-section3 .subscribe-banner-box form.subscribe input[type="t
 section.event-banner-section3 .subscribe-banner-box form.subscribe input[type="submit"] {
   color: #fff;
   font-size: 18px;
-  font-family: "Rubik", sans-serif;
+  font-family: "Open Sans", sans-serif;
   text-transform: uppercase;
   padding: 13px 30px 12px;
   background: #2ecc71;
@@ -2867,7 +2866,7 @@ section.speaking-section3 .speakers-box .speaker-post .speaker-content span {
   color: #5649c0;
   font-size: 18px;
   font-style: italic;
-  font-family: "Lora", serif;
+  font-family: "Open Sans", serif;
   margin: 0 0 16px;
 }
 
@@ -3013,7 +3012,7 @@ section.speaking-section2 .speakers-box .speaker-post .speaker-content span {
   color: #2ecc71;
   font-size: 18px;
   font-style: italic;
-  font-family: "Lora", serif;
+  font-family: "Open Sans", serif;
   margin: 0 0 18px;
 }
 
@@ -3165,7 +3164,7 @@ section.speaking-single .single-box .single-content .single-data span {
   color: #5649c0;
   font-size: 24px;
   font-style: italic;
-  font-family: "Lora", serif;
+  font-family: "Open Sans", serif;
   padding-bottom: 20px;
   margin-bottom: 20px;
   position: relative;
@@ -3294,7 +3293,7 @@ section.pricing-section .pricing-box .table-box ul.pricing-list li {
   display: block;
   color: #6c7a89;
   font-size: 18px;
-  font-family: "Lora", serif;
+  font-family: "Open Sans", serif;
   font-style: italic;
   line-height: 30px;
 }
@@ -3552,7 +3551,7 @@ section.pricing-section2 .pricing-box .table-box .list-tab ul.pricing-list li {
   display: block;
   color: #fff;
   font-size: 18px;
-  font-family: "Rubik", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 300;
   line-height: 30px;
 }
@@ -3681,7 +3680,7 @@ section.pricing-section3 .table-box ul.pricing-list li {
   display: block;
   color: #6c7a89;
   font-size: 18px;
-  font-family: "Lora", serif;
+  font-family: "Open Sans", serif;
   font-style: italic;
   line-height: 30px;
 }
@@ -3753,7 +3752,7 @@ section.clients-section3 .client-box ul.client-list li a {
   border: 1px solid transparent;
   color: #5649c0;
   font-size: 24px;
-  font-family: "Rubik", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 400;
   line-height: 26px;
 }
@@ -3801,7 +3800,7 @@ section.clients-section2 .client-box ul.client-list li .client-cont span {
   display: inline-block;
   color: #949ea9;
   font-size: 18px;
-  font-family: "Lora", serif;
+  font-family: "Open Sans", serif;
   font-style: italic;
   margin: 0 0 13px;
 }
@@ -3917,7 +3916,7 @@ section.countdown-section .inner-countdown .comming-part p {
   display: inline-block;
   color: #5649c0;
   font-size: 48px;
-  font-family: "Rubik", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 300;
 }
 
@@ -3967,7 +3966,7 @@ section.blog-section .blog-box .blog-post h2 a:hover {
 section.blog-section .blog-box .blog-post a.continue-read {
   color: #5649c0;
   font-size: 18px;
-  font-family: "Lora", serif;
+  font-family: "Open Sans", serif;
   font-style: italic;
 }
 
@@ -3996,7 +3995,7 @@ section.blog-section .blog-box .blog-post ul.post-tags {
 
 section.blog-section .blog-box .blog-post ul.post-tags li {
   display: inline-block;
-  font-family: "Lora", serif;
+  font-family: "Open Sans", serif;
   font-style: italic;
   font-weight: 400;
   color: #a099dc;
@@ -4096,7 +4095,7 @@ section.blog-section .blog-box.iso-call.with-sidebar .blog-post.quote-post block
 }
 
 section.blog-section .blog-box.iso-call.with-sidebar .blog-post.quote-post blockquote h2 {
-  font-family: "Lora", serif;
+  font-family: "Open Sans", serif;
   font-style: italic;
   font-weight: 400;
   line-height: 36px;
@@ -4243,7 +4242,7 @@ section.blog-section .center-area a {
   text-align: center;
   color: #6c7a89;
   font-size: 18px;
-  font-family: "Rubik", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 300;
   line-height: 34px;
 }
@@ -4291,7 +4290,7 @@ section.blog-section .center-area a {
   padding: 13px 20px;
   color: #6c7a89;
   font-size: 18px;
-  font-family: "Rubik", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 300;
   background: #f9fafb;
   outline: none;
@@ -4337,7 +4336,7 @@ section.blog-section .center-area a {
 .sidebar .category-widget ul li a {
   color: #2d3034;
   font-size: 18px;
-  font-family: "Rubik", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 300;
   position: relative;
 }
@@ -4421,7 +4420,7 @@ section.blog-section .center-area a {
   margin: 0;
   color: #6c7a89;
   font-size: 14px;
-  font-family: "Rubik", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 300;
 }
 
@@ -4484,12 +4483,12 @@ section.news-section .news-box .news-post p {
 
 section.news-section .news-box .news-post p a {
   color: #5649c0;
-  font-family: "Lora", serif;
+  font-family: "Open Sans", serif;
   font-style: italic;
 }
 
 section.news-section .news-box .news-post span {
-  font-family: "Lora", serif;
+  font-family: "Open Sans", serif;
   color: #2d3034;
   font-style: italic;
 }
@@ -4568,7 +4567,7 @@ section.news-section2 .blog-post h2 a:hover {
 section.news-section2 .blog-post a.continue-read {
   color: #5649c0;
   font-size: 18px;
-  font-family: "Lora", serif;
+  font-family: "Open Sans", serif;
   font-style: italic;
 }
 
@@ -4675,7 +4674,7 @@ section.statistic-section .statistic-box p.info-line span {
   color: #fff;
   font-size: 11px;
   font-weight: 600;
-  font-family: "Rubik", sans-serif;
+  font-family: "Open Sans", sans-serif;
   text-transform: uppercase;
   padding: 10px 45px;
   background: transparent;
@@ -4691,7 +4690,7 @@ section.statistic-section .statistic-box p.info-line a {
   color: #fff;
   font-size: 11px;
   font-weight: 600;
-  font-family: "Rubik", sans-serif;
+  font-family: "Open Sans", sans-serif;
   text-transform: uppercase;
   padding: 10px 45px;
   background: #2ecc71;
@@ -4752,14 +4751,14 @@ section.blog-section .blog-box .single-post blockquote {
 
 section.blog-section .blog-box .single-post blockquote span {
   font-size: 18px;
-  font-family: "Rubik", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 300;
   color: #d8d6ed;
   margin-bottom: 0px;
 }
 
 section.blog-section .blog-box .single-post blockquote p {
-  font-family: "Lora", serif;
+  font-family: "Open Sans", serif;
   color: #fff;
   font-style: italic;
   font-weight: 400;
@@ -4786,7 +4785,7 @@ section.blog-section .blog-box .single-post ul.share-project li {
   display: inline-block;
   color: #a099dc;
   font-size: 18px;
-  font-family: "Lora", serif;
+  font-family: "Open Sans", serif;
   font-style: italic;
   margin-right: 7px;
 }
@@ -4854,7 +4853,7 @@ section.blog-section .blog-box .prev-next-post .other-post .post-content {
 section.blog-section .blog-box .prev-next-post .other-post .post-content>a {
   color: #5649c0;
   font-size: 14px;
-  font-family: "Rubik", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 300;
   margin: 0;
 }
@@ -4878,7 +4877,7 @@ section.blog-section .blog-box .prev-next-post .other-post .post-content span {
   display: inline-block;
   color: #6c7a89;
   font-size: 14px;
-  font-family: "Rubik", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 300;
 }
 
@@ -4941,7 +4940,7 @@ section.blog-section .blog-box .prev-next-post .other-post.next-post .post-conte
   float: left;
   color: #6c7a89;
   font-size: 18px;
-  font-family: "Lora", serif;
+  font-family: "Open Sans", serif;
   font-style: italic;
   margin: 0;
 }
@@ -4954,7 +4953,7 @@ section.blog-section .blog-box .prev-next-post .other-post.next-post .post-conte
   float: right;
   color: #5649c0;
   font-size: 18px;
-  font-family: "Lora", serif;
+  font-family: "Open Sans", serif;
   font-style: italic;
   margin: 0;
 }
@@ -4998,7 +4997,7 @@ section.blog-section .blog-box .prev-next-post .other-post.next-post .post-conte
   background: #f9fafb;
   color: #6c7a89;
   font-size: 18px;
-  font-family: "Rubik", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 300;
   line-height: 24px;
   outline: none;
@@ -5022,7 +5021,7 @@ section.blog-section .blog-box .prev-next-post .other-post.next-post .post-conte
 .contact-form-box #comment-form input[type="submit"] {
   color: #fff;
   font-size: 18px;
-  font-family: "Rubik", sans-serif;
+  font-family: "Open Sans", sans-serif;
   text-transform: uppercase;
   padding: 11px 38px;
   background: #2ecc71;
@@ -5084,7 +5083,7 @@ section.contact-section .contact-post .contact-post-content span {
   color: #5649c0;
   font-size: 18px;
   font-style: italic;
-  font-family: "Lora", serif;
+  font-family: "Open Sans", serif;
   margin: 0 0 10px;
 }
 
@@ -5092,7 +5091,7 @@ section.contact-section .contact-post .contact-post-content p {
   font-size: 17px;
   font-weight: 400;
   font-style: italic;
-  font-family: "Lora", serif;
+  font-family: "Open Sans", serif;
   line-height: 24px;
 }
 
@@ -5131,7 +5130,7 @@ section.contact-section ul.info-list li {
   margin-bottom: 16px;
   color: #757575;
   font-size: 13px;
-  font-family: "Lora", serif;
+  font-family: "Open Sans", serif;
 }
 
 section.contact-section ul.info-list li span {
@@ -5139,7 +5138,7 @@ section.contact-section ul.info-list li span {
   margin-bottom: 6px;
   color: #2d3034;
   font-size: 15px;
-  font-family: "Rubik", sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 @media all and (-webkit-min-device-pixel-ratio: 1.5),
@@ -5239,7 +5238,7 @@ section.contact-section4 form.join-newsletter input[type="text"] {
   width: 100%;
   color: #959aa1;
   font-size: 18px;
-  font-family: "Rubik", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 300;
   margin: 0 0 20px;
   margin-right: 25px;
@@ -5248,7 +5247,7 @@ section.contact-section4 form.join-newsletter input[type="text"] {
 section.contact-section4 form.join-newsletter input[type="submit"] {
   color: #fff;
   font-size: 18px;
-  font-family: "Rubik", sans-serif;
+  font-family: "Open Sans", sans-serif;
   text-transform: uppercase;
   padding: 13px 30px 12px;
   background: #2ecc71;
@@ -5359,7 +5358,7 @@ footer .up-footer .footer-widget form.subscribe input[type="text"] {
   width: 100%;
   color: #959aa1;
   font-size: 18px;
-  font-family: "Rubik", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 300;
   margin: 0 0 20px;
 }
@@ -5367,7 +5366,7 @@ footer .up-footer .footer-widget form.subscribe input[type="text"] {
 footer .up-footer .footer-widget form.subscribe input[type="submit"] {
   color: #fff;
   font-size: 18px;
-  font-family: "Rubik", sans-serif;
+  font-family: "Open Sans", sans-serif;
   text-transform: uppercase;
   padding: 13px 30px 12px;
   background: #2ecc71;
@@ -5918,3 +5917,71 @@ footer.third-style .copyright-line {
     width: 100%;
   }
 }
+
+/* nav items */
+
+li.nav-item a {
+	line-height: 2em;
+	-webkit-perspective: 800px;
+	-moz-perspective: 800px;
+	perspective: 800px;
+}
+
+li.nav-item a span {
+	position: relative;
+	display: inline-block;
+  padding: 3px 15px 0;
+	box-shadow: inset 0 2px #232323;
+  
+  -webkit-transition: background 0.6s;
+	-moz-transition: background 0.6s;
+	transition: background 0.6s;
+  
+  -webkit-transform-origin: 50% 0;
+	-moz-transform-origin: 50% 0;
+  transform-origin: 50% 0;
+  
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+  
+  -webkit-transform-origin: 0% 50%;
+	-moz-transform-origin: 0% 50%;
+	transform-origin: 0% 50%;
+}
+
+li.nav-item a span::before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+  height: 100%;
+  text-align: center;
+	background: #fff;
+  color: #232323;
+  line-height: 35px;
+  box-shadow: inset 0 2px #232323;
+	content: attr(data-hover);
+  
+  -webkit-transform: rotateX(270deg);
+	-moz-transform: rotateX(270deg);
+	transform: rotateX(270deg);
+  
+  -webkit-transition: -webkit-transform 0.6s;
+	-moz-transition: -moz-transform 0.6s;
+	transition: transform 0.6s;
+  
+  -webkit-transform-origin: 0 0;
+	-moz-transform-origin: 0 0;
+	transform-origin: 0 0;
+  pointer-events: none;
+}
+
+li.nav-item a:hover span::before,
+li.nav-item a:focus span::before {
+	-webkit-transform: rotateX(10deg);	
+	-moz-transform: rotateX(10deg);
+	transform: rotateX(10deg);
+}
+
+
