@@ -5395,12 +5395,25 @@ footer .up-footer .footer-widget form.subscribe input[type="submit"]:hover {
   background: #fff;
 }
 
-footer p.copyright-line {
+footer .copyright-line {
   text-align: center;
   padding: 30px 0;
   color: #798593;
   border-top: 1px solid #444444;
   margin-bottom: 0;
+}
+
+.text-align-left {
+  text-align: left;
+}
+.text-align-right {
+  text-align: right;
+}
+footer .copyright-line img {
+  width: 180px;
+}
+footer .copyright-line span {
+  width: 180px;
 }
 
 footer.second-style {
@@ -5456,7 +5469,7 @@ footer.second-style ul.social-icons li a:hover {
   opacity: 0.7;
 }
 
-footer.second-style p.copyright-line {
+footer.second-style .copyright-line {
   border-top: none;
 }
 
@@ -5466,7 +5479,7 @@ footer.third-style {
   border-top: 1px solid #ecebf3;
 }
 
-footer.third-style p.copyright-line {
+footer.third-style .copyright-line {
   border-top: none;
 }
 
