@@ -508,7 +508,10 @@ li:hover>.dropdown {
 /* =  General */
 
 /*------------------------------------------------- */
-
+section.event-promo-section {
+  background-attachment: fixed !important;
+  min-height: 100vh;
+}
 .preloader {
   position: fixed;
   width: 100%;
