@@ -1,14 +1,14 @@
 /*jshint jquery:true */
 
-$(document).ready(function($) {
+$(document).ready(function ($) {
 	"use strict";
 
 	/* global google: false */
 	/*jshint -W018 */
 	var winDow = $(window);
-		// Needed variables
-		var $container=$('.iso-call');
-		var $filter=$('.filter');
+	// Needed variables
+	var $container = $('.iso-call');
+	var $filter = $('.filter');
 
 	/*-------------------------------------------------*/
 	/* =  event promo section
@@ -18,7 +18,7 @@ $(document).ready(function($) {
 		eventPromoSection = $('.event-promo-section');
 	eventPromoSection.css('height', windowHeight);
 
-	winDow.on('resize', function(){
+	winDow.on('resize', function () {
 		var windowHeight = winDow.height();
 		eventPromoSection.css('height', windowHeight);
 	});
@@ -32,20 +32,20 @@ $(document).ready(function($) {
 	var submitContact = $('#submit_contact'),
 		message = $('#msg');
 
-	submitContact.on('click', function(e){
+	submitContact.on('click', function (e) {
 		e.preventDefault();
 
 		var $this = $(this);
-		
+
 		$.ajax({
 			type: "POST",
 			url: 'contact.php',
 			dataType: 'json',
 			cache: false,
 			data: $('#contact-form').serialize(),
-			success: function(data) {
+			success: function (data) {
 
-				if(data.info !== 'error'){
+				if (data.info !== 'error') {
 					$this.parents('form').find('input[type=text],textarea,select').filter(':visible').val('');
 					message.hide().removeClass('alert-success').removeClass('alert-danger').addClass('alert-success').html(data.msg).fadeIn('slow').delay(5000).fadeOut('slow');
 				} else {
@@ -54,16 +54,16 @@ $(document).ready(function($) {
 			}
 		});
 	});
-	
+
 
 	/*-------------------------------------------------*/
 	/* =   Smooth scroll
 	/*-------------------------------------------------*/
 
-	$('#container').imagesLoaded(function(){
+	$('#container').imagesLoaded(function () {
 		//Get Sections top position
-		function getTargetTop(elem){
-			
+		function getTargetTop(elem) {
+
 			//gets the id of the section header
 			//from the navigation's href e.g. ("#html")
 			var id = elem.attr("href");
@@ -80,14 +80,16 @@ $(document).ready(function($) {
 
 		var elemHref = $('.navigate-sections a[href^="#"], a.scroll-btn[href^="#"]');
 
-		elemHref.click(function(event) {
-			
+		elemHref.click(function (event) {
+
 			//gets the distance from the top of the 
 			//section refenced in the href.
 			var target = getTargetTop($(this));
 
 			//scrolls to that section.
-			$('html, body').animate({scrollTop:target}, 600);
+			$('html, body').animate({
+				scrollTop: target
+			}, 600);
 
 			//prevent the browser from jumping down to section.
 			event.preventDefault();
@@ -98,21 +100,21 @@ $(document).ready(function($) {
 
 		// Go through each section to see if it's at the top.
 		// if it is add an active class
-		function checkSectionSelected(scrolledTo){
-			
+		function checkSectionSelected(scrolledTo) {
+
 			//How close the top has to be to the section.
 			var threshold = 100;
 
 			var i;
 
 			for (i = 0; i < sections.length; i++) {
-				
+
 				//get next nav item
 				var section = $(sections[i]);
 
 				//get the distance from top
 				var target = getTargetTop(section);
-				
+
 				//Check if section is at the top of the page.
 				if (scrolledTo > target - threshold && scrolledTo < target + threshold) {
 
@@ -129,7 +131,7 @@ $(document).ready(function($) {
 		//Check if page is already scrolled to a section.
 		checkSectionSelected($(window).scrollTop());
 
-		$(window).scroll(function(){
+		$(window).scroll(function () {
 			checkSectionSelected($(window).scrollTop());
 		});
 
@@ -139,45 +141,81 @@ $(document).ready(function($) {
 	/*	Header animate after scroll
 	/* ---------------------------------------------------------------------- */
 
-	(function() {
+	(function () {
 
 		var docElem = document.documentElement,
 			didScroll = false,
 			changeHeaderOn = 40;
-			document.querySelector( 'header, a.go-top' );
+		document.querySelector('header, a.go-top');
+
 		function init() {
-			window.addEventListener( 'scroll', function() {
-				if( !didScroll ) {
+			window.addEventListener('scroll', function () {
+				if (!didScroll) {
 					didScroll = true;
-					setTimeout( scrollPage, 100 );
+					setTimeout(scrollPage, 100);
 				}
-			}, false );
+			}, false);
 		}
-		
+
 		function scrollPage() {
 			var sy = scrollY();
-			if ( sy >= changeHeaderOn ) {
-				$( 'header' ).addClass('active');
-				$( 'a.go-top' ).addClass('active');
-			}
-			else {
-				$( 'header' ).removeClass('active');
-				$( 'a.go-top' ).removeClass('active');
+			if (sy >= changeHeaderOn) {
+				$('header').addClass('active');
+				$('a.go-top').addClass('active');
+			} else {
+				$('header').removeClass('active');
+				$('a.go-top').removeClass('active');
 			}
 			didScroll = false;
 		}
-		
+
 		function scrollY() {
 			return window.pageYOffset || docElem.scrollTop;
 		}
-		
+
 		init();
-		
+
 	})();
+
+
+	$('a[href*="#"]')
+		// Remove links that don't actually link to anything
+		.not('[href="#"]')
+		.not('[href="#0"]')
+		.click(function (event) {
+			event.preventDefault();
+			// On-page links
+			if (
+				location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') &&
+				location.hostname == this.hostname
+			) {
+				// Figure out element to scroll to
+				var target = $(this.hash);
+				target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+				// Does a scroll target exist?
+				if (target.length) {
+					// Only prevent default if animation is actually gonna happen
+					event.preventDefault();
+					$('html, body').animate({
+						scrollTop: target.offset().top
+					}, 1000, function () {
+						// Callback after animation
+						// Must change focus!
+						var $target = $(target);
+						$target.focus();
+						if ($target.is(":focus")) { // Checking if the target was focused
+							return false;
+						} else {
+							$target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
+							$target.focus(); // Set focus again
+						};
+					});
+				}
+			}
+		});
 
 });
 
 function Resize() {
 	$(window).trigger('resize');
 }
-
