@@ -744,6 +744,17 @@ section.page-banner-section p {
 
 /*------------------------------------------------- */
 
+section.event-promo-section:after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 30%;
+  background: white;
+  bottom: -21%;
+  transform: skewY(6deg);
+  z-index: 0;
+}
 section.event-promo-section {
   /*
    * Set a counter and get the length of the image path.
@@ -776,6 +787,8 @@ section.event-promo-section {
    */
   display: flex;
   align-items: center;
+  position: relative;
+  z-index: 1;
 }
 
 @media all and (-webkit-min-device-pixel-ratio: 1.5),
@@ -1045,6 +1058,8 @@ section.promo-banner-section3 .promo-banner-box h1 {
 
 section.reg-sub-section {
   margin-top: -200px;
+  position: relative;
+  z-index: 2
 }
 
 section.reg-sub-section .inner-reg-sub {
