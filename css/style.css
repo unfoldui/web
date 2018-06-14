@@ -5142,8 +5142,6 @@ section.contact-section ul.info-list li span {
   font-family: "Rubik", sans-serif;
 }
 
-
-
 @media all and (-webkit-min-device-pixel-ratio: 1.5),
 all and (-o-min-device-pixel-ratio: 3 / 2),
 all and (min--moz-device-pixel-ratio: 1.5),
@@ -5812,8 +5810,8 @@ footer.third-style .copyright-line {
     height: 300px;
   }
   section.contact-section .contact-info {
-    margin-top: 0px;
-    margin-bottom: -80px;
+    margin-top: 0;
+    margin-bottom: 40px;
   }
   section.about-conference-section .images-box {
     text-align: center;
