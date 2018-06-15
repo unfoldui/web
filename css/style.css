@@ -6002,3 +6002,456 @@ footer.third-style .copyright-line {
   }
 }
 
+/* Logo CSS */
+.main-logo {
+  height: 270px;
+}
+.main-logo .u,.main-logo .i {
+    width: 50px;
+    height: 50px;
+    background: #26BDCF;
+    display: block;
+    position: relative;
+    /* opacity: 0.7; */
+}
+
+.main-logo .u>div,
+.main-logo .i>div {
+    position: absolute;
+    border-style: solid;
+    border-width: 25px;
+    opacity: 0;
+}
+
+.main-logo .u .two,
+.main-logo .i .two {
+    border-color: #26BDCF #26BDCF transparent transparent;
+    animation: open-right 300ms forwards;
+    transform-origin: 100% 0;
+}
+
+.main-logo .u .one,
+.main-logo .i .one {
+    border-color: #26BDCF transparent transparent #26BDCF;
+    animation: open-left 300ms forwards;
+    transform-origin: 0 0;
+}
+
+.main-logo .u {
+    top: 210px;
+    left: 110px;
+}
+
+.main-logo .i {
+    top: 160px;
+    left: 260px;
+}
+
+.main-logo .i>div {
+    left: 0;
+}
+
+.main-logo .l0 {
+    border-color: #26BDCF #26BDCF transparent transparent;
+    left: -100%;
+    animation: fold-up 1s forwards;
+    transform-origin: 0 0;
+    animation-delay: 300ms;
+    top: 0%;
+}
+
+.main-logo .r0 {
+    border-color: #26BDCF transparent transparent #26BDCF;
+    left: 100%;
+    top: 0%;
+    animation: fold-up 1s forwards;
+    animation-delay: 300ms;
+    transform-origin: 0 0;
+}
+
+.main-logo .l1 {
+    border-color: transparent #26BDCF #26BDCF transparent;
+    left: -100%;
+    top: -100%;
+    animation: fold-diagonally-left 1s forwards;
+    animation-delay: 600ms;
+}
+
+.main-logo .r1 {
+    border-color: transparent transparent #26BDCF #26BDCF;
+    left: 100%;
+    top: -100%;
+    animation: fold-diagonally-right 1s forwards;
+    animation-delay: 600ms;
+    transform-origin: 0 0;
+}
+
+.main-logo .l2 {
+    border-color: #26BDCF transparent transparent #26BDCF;
+    left: -100%;
+    top: -100%;
+    animation: fold-up 1s forwards;
+    transform-origin: 0 0;
+    animation-delay: 900ms;
+}
+
+.main-logo .r2 {
+    border-color: #26BDCF #26BDCF transparent transparent;
+    left: 100%;
+    top: -100%;
+    animation: fold-up 1s forwards;
+    animation-delay: 900ms;
+    transform-origin: 0 0;
+}
+
+.main-logo .l3 {
+    border-color: transparent transparent #26BDCF #26BDCF;
+    left: -100%;
+    top: -200%;
+    animation: fold-diagonally-right 1s forwards;
+    animation-delay: 1200ms;
+}
+
+.main-logo .r3 {
+    border-color: transparent #26BDCF #26BDCF transparent;
+    left: 100%;
+    top: -200%;
+    animation: fold-diagonally-left 1s forwards;
+    animation-delay: 1200ms;
+}
+
+.main-logo .l4 {
+    border-color: #26BDCF #26BDCF transparent transparent;
+    left: -100%;
+    animation: fold-up 1s forwards;
+    transform-origin: 0 0;
+    animation-delay: 1500ms;
+    top: -200%;
+}
+
+.main-logo .r4 {
+    border-color: #26BDCF transparent transparent #26BDCF;
+    left: 100%;
+    top: -200%;
+    animation: fold-up 1s forwards;
+    animation-delay: 1500ms;
+    transform-origin: 0 0;
+}
+
+.main-logo .l5 {
+    border-color: transparent #26BDCF #26BDCF transparent;
+    left: -100%;
+    top: -300%;
+    animation: fold-diagonally-left 1s forwards;
+    animation-delay: 1800ms;
+}
+
+.main-logo .r5 {
+    border-color: transparent transparent #26BDCF #26BDCF;
+    left: 100%;
+    top: -300%;
+    animation: fold-diagonally-right 1s forwards;
+    animation-delay: 1800ms;
+    transform-origin: 0 0;
+}
+
+.main-logo .l6 {
+    border-color: #26BDCF transparent transparent #26BDCF;
+    left: -100%;
+    top: -300%;
+    animation: fold-up 1s forwards;
+    transform-origin: 0 0;
+    animation-delay: 2100ms;
+}
+
+.main-logo .r6 {
+    border-color: #26BDCF #26BDCF transparent transparent;
+    left: 100%;
+    top: -300%;
+    animation: fold-up 1s forwards;
+    animation-delay: 2100ms;
+    transform-origin: 0 0;
+}
+
+.main-logo .ll {
+    border-color: #26BDCF transparent transparent #26BDCF;
+    left: -100%;
+    animation: open-left 1s forwards;
+    transform-origin: 0 0;
+    animation-delay: 2400ms;
+    top: -400%;
+}
+
+.main-logo .dot {
+    border-width: 20.8333333333px !important;
+    border-color: transparent #26BDCF #26BDCF transparent;
+    left: 100%;
+    animation: fold-diagonally-left 1s forwards;
+    animation-delay: 2400ms;
+    top: -400%;
+}
+
+.main-logo .l7 {
+    border-color: transparent transparent #26BDCF #26BDCF;
+    left: -100%;
+    top: -400%;
+    animation: fold-diagonally-right 1s forwards;
+    animation-delay: 2400ms;
+}
+
+.main-logo .r7 {
+    border-color: transparent #26BDCF #26BDCF transparent;
+    left: 100%;
+    top: -400%;
+    animation: fold-diagonally-left 1s forwards;
+    animation-delay: 2400ms;
+}
+
+
+@keyframes open-right {
+    to {
+        transform: rotate3d(0, -1, 0, 180deg);
+        opacity: 1;
+    }
+}
+
+@keyframes open-left {
+    to {
+        transform: rotate3d(0, -1, 0, 180deg);
+        opacity: 1;
+    }
+}
+
+@keyframes fold-up {
+    to {
+        transform: rotate3d(1, 0, 0, 180deg);
+        opacity: 0.8;
+    }
+}
+
+@keyframes fold-diagonally-left {
+    to {
+        transform: rotate3d(1, -1, 0, 180deg);
+        opacity: 1;
+    }
+}
+
+@keyframes fold-diagonally-right {
+    to {
+        transform: rotate3d(1, 1, 0, 180deg);
+        opacity: 0.9;
+    }
+}
+
+/* Small Logo */
+.nav-logo-unfold {
+  float: left; 
+  color: #26BDCF; 
+  line-height: 5px;
+  height: 50px;
+  font-size: 35px;
+  margin-right: 10px;
+  font-weight: 900;
+}
+.small-logo {
+  height: 50;
+}
+.small-logo .u {
+  top: 10px;
+  left: 10px;
+}
+
+.small-logo .i {
+  top: 4px;
+  left: 30px;
+}
+.small-logo .u,.small-logo .i {
+    width: 6px;
+    height: 6px;
+    background: #26BDCF;
+    display: block;
+    position: relative;
+    /* opacity: 0.7; */
+}
+
+.small-logo .u>div,
+.small-logo .i>div {
+    position: absolute;
+    border-style: solid;
+    border-width: 3px;
+    opacity: 0;
+}
+
+.small-logo .u .two,
+.small-logo .i .two {
+    border-color: #26BDCF #26BDCF transparent transparent;
+    animation: open-right 300ms forwards;
+    transform-origin: 100% 0;
+}
+
+.small-logo .u .one,
+.small-logo .i .one {
+    border-color: #26BDCF transparent transparent #26BDCF;
+    animation: open-left 300ms forwards;
+    transform-origin: 0 0;
+}
+
+.small-logo .i>div {
+    left: 0;
+}
+
+.small-logo .l0 {
+    border-color: #26BDCF #26BDCF transparent transparent;
+    left: -100%;
+    animation: fold-up 1s forwards;
+    transform-origin: 0 0;
+    animation-delay: 300ms;
+    top: 0%;
+}
+
+.small-logo .r0 {
+    border-color: #26BDCF transparent transparent #26BDCF;
+    left: 100%;
+    top: 0%;
+    animation: fold-up 1s forwards;
+    animation-delay: 300ms;
+    transform-origin: 0 0;
+}
+
+.small-logo .l1 {
+    border-color: transparent #26BDCF #26BDCF transparent;
+    left: -100%;
+    top: -100%;
+    animation: fold-diagonally-left 1s forwards;
+    animation-delay: 600ms;
+}
+
+.small-logo .r1 {
+    border-color: transparent transparent #26BDCF #26BDCF;
+    left: 100%;
+    top: -100%;
+    animation: fold-diagonally-right 1s forwards;
+    animation-delay: 600ms;
+    transform-origin: 0 0;
+}
+
+.small-logo .l2 {
+    border-color: #26BDCF transparent transparent #26BDCF;
+    left: -100%;
+    top: -100%;
+    animation: fold-up 1s forwards;
+    transform-origin: 0 0;
+    animation-delay: 900ms;
+}
+
+.small-logo .r2 {
+    border-color: #26BDCF #26BDCF transparent transparent;
+    left: 100%;
+    top: -100%;
+    animation: fold-up 1s forwards;
+    animation-delay: 900ms;
+    transform-origin: 0 0;
+}
+
+.small-logo .l3 {
+    border-color: transparent transparent #26BDCF #26BDCF;
+    left: -100%;
+    top: -200%;
+    animation: fold-diagonally-right 1s forwards;
+    animation-delay: 1200ms;
+}
+
+.small-logo .r3 {
+    border-color: transparent #26BDCF #26BDCF transparent;
+    left: 100%;
+    top: -200%;
+    animation: fold-diagonally-left 1s forwards;
+    animation-delay: 1200ms;
+}
+
+.small-logo .l4 {
+    border-color: #26BDCF #26BDCF transparent transparent;
+    left: -100%;
+    animation: fold-up 1s forwards;
+    transform-origin: 0 0;
+    animation-delay: 1500ms;
+    top: -200%;
+}
+
+.small-logo .r4 {
+    border-color: #26BDCF transparent transparent #26BDCF;
+    left: 100%;
+    top: -200%;
+    animation: fold-up 1s forwards;
+    animation-delay: 1500ms;
+    transform-origin: 0 0;
+}
+
+.small-logo .l5 {
+    border-color: transparent #26BDCF #26BDCF transparent;
+    left: -100%;
+    top: -300%;
+    animation: fold-diagonally-left 1s forwards;
+    animation-delay: 1800ms;
+}
+
+.small-logo .r5 {
+    border-color: transparent transparent #26BDCF #26BDCF;
+    left: 100%;
+    top: -300%;
+    animation: fold-diagonally-right 1s forwards;
+    animation-delay: 1800ms;
+    transform-origin: 0 0;
+}
+
+.small-logo .l6 {
+    border-color: #26BDCF transparent transparent #26BDCF;
+    left: -100%;
+    top: -300%;
+    animation: fold-up 1s forwards;
+    transform-origin: 0 0;
+    animation-delay: 2100ms;
+}
+
+.small-logo .r6 {
+    border-color: #26BDCF #26BDCF transparent transparent;
+    left: 100%;
+    top: -300%;
+    animation: fold-up 1s forwards;
+    animation-delay: 2100ms;
+    transform-origin: 0 0;
+}
+
+.small-logo .ll {
+    border-color: #26BDCF transparent transparent #26BDCF;
+    left: -100%;
+    animation: open-left 1s forwards;
+    transform-origin: 0 0;
+    animation-delay: 2400ms;
+    top: -400%;
+}
+
+.small-logo .dot {
+    border-width: 2px !important;
+    border-color: transparent #26BDCF #26BDCF transparent;
+    left: 100%;
+    animation: fold-diagonally-left 1s forwards;
+    animation-delay: 2400ms;
+    top: -400%;
+}
+
+.small-logo .l7 {
+    border-color: transparent transparent #26BDCF #26BDCF;
+    left: -100%;
+    top: -400%;
+    animation: fold-diagonally-right 1s forwards;
+    animation-delay: 2400ms;
+}
+
+.small-logo .r7 {
+    border-color: transparent #26BDCF #26BDCF transparent;
+    left: 100%;
+    top: -400%;
+    animation: fold-diagonally-left 1s forwards;
+    animation-delay: 2400ms;
+}

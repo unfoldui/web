@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="en" class="no-js">
+
+<head>
+    <title>Unfold UI LOGO</title>
+
+    <meta charset="utf-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <style>
+        .u,
+        .i {
+            width: 50px;
+            height: 50px;
+            background: #3fa9f5;
+            display: block;
+            position: relative;
+            opacity: 0.7;
+        }
+
+        .u>div,
+        .i>div {
+            position: absolute;
+            border-style: solid;
+            border-width: 25px;
+            opacity: 0;
+        }
+
+        .u .two,
+        .i .two {
+            border-color: #3fa9f5 #3fa9f5 transparent transparent;
+            animation: open-right 300ms forwards;
+            transform-origin: 100% 0;
+        }
+
+        .u .one,
+        .i .one {
+            border-color: #3fa9f5 transparent transparent #3fa9f5;
+            animation: open-left 300ms forwards;
+            transform-origin: 0 0;
+        }
+
+        .u {
+            top: 250px;
+            left: 250px;
+        }
+
+        .i {
+            top: 200px;
+            left: 400px;
+        }
+
+        .i>div {
+            left: 0;
+        }
+
+        .l0 {
+            border-color: #3fa9f5 #3fa9f5 transparent transparent;
+            left: -100%;
+            animation: fold-up 1s forwards;
+            transform-origin: 0 0;
+            animation-delay: 300ms;
+            top: 0%;
+        }
+
+        .r0 {
+            border-color: #3fa9f5 transparent transparent #3fa9f5;
+            left: 100%;
+            top: 0%;
+            animation: fold-up 1s forwards;
+            animation-delay: 300ms;
+            transform-origin: 0 0;
+        }
+
+        .l1 {
+            border-color: transparent #3fa9f5 #3fa9f5 transparent;
+            left: -100%;
+            top: -100%;
+            animation: fold-diagonally-left 1s forwards;
+            animation-delay: 600ms;
+        }
+
+        .r1 {
+            border-color: transparent transparent #3fa9f5 #3fa9f5;
+            left: 100%;
+            top: -100%;
+            animation: fold-diagonally-right 1s forwards;
+            animation-delay: 600ms;
+            transform-origin: 0 0;
+        }
+
+        .l2 {
+            border-color: #3fa9f5 transparent transparent #3fa9f5;
+            left: -100%;
+            top: -100%;
+            animation: fold-up 1s forwards;
+            transform-origin: 0 0;
+            animation-delay: 900ms;
+        }
+
+        .r2 {
+            border-color: #3fa9f5 #3fa9f5 transparent transparent;
+            left: 100%;
+            top: -100%;
+            animation: fold-up 1s forwards;
+            animation-delay: 900ms;
+            transform-origin: 0 0;
+        }
+
+        .l3 {
+            border-color: transparent transparent #3fa9f5 #3fa9f5;
+            left: -100%;
+            top: -200%;
+            animation: fold-diagonally-right 1s forwards;
+            animation-delay: 1200ms;
+        }
+
+        .r3 {
+            border-color: transparent #3fa9f5 #3fa9f5 transparent;
+            left: 100%;
+            top: -200%;
+            animation: fold-diagonally-left 1s forwards;
+            animation-delay: 1200ms;
+        }
+
+        .l4 {
+            border-color: #3fa9f5 #3fa9f5 transparent transparent;
+            left: -100%;
+            animation: fold-up 1s forwards;
+            transform-origin: 0 0;
+            animation-delay: 1500ms;
+            top: -200%;
+        }
+
+        .r4 {
+            border-color: #3fa9f5 transparent transparent #3fa9f5;
+            left: 100%;
+            top: -200%;
+            animation: fold-up 1s forwards;
+            animation-delay: 1500ms;
+            transform-origin: 0 0;
+        }
+
+        .l5 {
+            border-color: transparent #3fa9f5 #3fa9f5 transparent;
+            left: -100%;
+            top: -300%;
+            animation: fold-diagonally-left 1s forwards;
+            animation-delay: 1800ms;
+        }
+
+        .r5 {
+            border-color: transparent transparent #3fa9f5 #3fa9f5;
+            left: 100%;
+            top: -300%;
+            animation: fold-diagonally-right 1s forwards;
+            animation-delay: 1800ms;
+            transform-origin: 0 0;
+        }
+
+        .l6 {
+            border-color: #3fa9f5 transparent transparent #3fa9f5;
+            left: -100%;
+            top: -300%;
+            animation: fold-up 1s forwards;
+            transform-origin: 0 0;
+            animation-delay: 2100ms;
+        }
+
+        .r6 {
+            border-color: #3fa9f5 #3fa9f5 transparent transparent;
+            left: 100%;
+            top: -300%;
+            animation: fold-up 1s forwards;
+            animation-delay: 2100ms;
+            transform-origin: 0 0;
+        }
+
+        .ll {
+            border-color: #3fa9f5 transparent transparent #3fa9f5;
+            left: -100%;
+            animation: open-left 1s forwards;
+            transform-origin: 0 0;
+            animation-delay: 2400ms;
+            top: -400%;
+        }
+
+        .dot {
+            border-width: 20.8333333333px !important;
+            border-color: transparent #3fa9f5 #3fa9f5 transparent;
+            left: 100%;
+            animation: fold-diagonally-left 1s forwards;
+            animation-delay: 2400ms;
+            top: -400%;
+        }
+
+        .l7 {
+            border-color: transparent transparent #3fa9f5 #3fa9f5;
+            left: -100%;
+            top: -400%;
+            animation: fold-diagonally-right 1s forwards;
+            animation-delay: 2400ms;
+        }
+
+        .r7 {
+            border-color: transparent #3fa9f5 #3fa9f5 transparent;
+            left: 100%;
+            top: -400%;
+            animation: fold-diagonally-left 1s forwards;
+            animation-delay: 2400ms;
+        }
+
+        .shadow {
+            left: -100%;
+            top: 0%;
+            border: solid 0 transparent !important;
+            width: 50px;
+            height: 50px;
+            z-index: 2;
+            background: rgba(0, 0, 0, 0.7) !important;
+            -webkit-clip-path: polygon(100% 85%, 100% 100%, 0% 100%);
+        }
+
+        @keyframes open-right {
+            to {
+                transform: rotate3d(0, -1, 0, 180deg);
+                opacity: 1;
+            }
+        }
+
+        @keyframes open-left {
+            to {
+                transform: rotate3d(0, -1, 0, 180deg);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fold-up {
+            to {
+                transform: rotate3d(1, 0, 0, 180deg);
+                opacity: 0.8;
+            }
+        }
+
+        @keyframes fold-diagonally-left {
+            to {
+                transform: rotate3d(1, -1, 0, 180deg);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fold-diagonally-right {
+            to {
+                transform: rotate3d(1, 1, 0, 180deg);
+                opacity: 0.9;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="u">
+        <div class="one"></div>
+        <div class="two"></div>
+        <div class="l0"></div>
+        <div class="shadow"></div>
+        <div class="l1"></div>
+        <div class="l2"></div>
+        <div class="l3"></div>
+        <div class="l4"></div>
+        <div class="l5"></div>
+        <div class="l6"></div>
+
+        <div class="ll"></div>
+        <div class="r0"></div>
+        <div class="r1"></div>
+        <div class="r2"></div>
+        <div class="r3"></div>
+        <div class="r4"></div>
+        <div class="r5"></div>
+        <div class="r6"></div>
+    </div>
+
+    <div class="i">
+        <div class="r0"></div>
+        <div class="r1"></div>
+        <div class="r2"></div>
+        <div class="r3"></div>
+        <div class="r4"></div>
+        <div class="r5"></div>
+        <div class="r6"></div>
+        <div class="dot"></div>
+    </div>
+
+
+</body>
+
+</html>
