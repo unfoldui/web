@@ -10,106 +10,14 @@ html.no-js(lang='en')
     link(href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800,900', rel='stylesheet', type='text/css')
   body
     #home
-      // Container
       #container
-        //
-          Header
-          ==================================================
-        header.clearfix
-          nav.navbar.navbar-expand-lg.navbar-dark.bg-dark
-            .container
-              a.navbar-brand(href='/')
-                h2.nav-logo-unfold Unfold
-                .small-logo(style='float: left;')
-                  .u
-                    .one
-                    .two
-                    .l0
-                    .shadow
-                    .l1
-                    .l2
-                    .l3
-                    .l4
-                    .l5
-                    .l6
-                    .ll
-                    .r0
-                    .r1
-                    .r2
-                    .r3
-                    .r4
-                    .r5
-                    .r6
-                  .i
-                    .r0
-                    .r1
-                    .r2
-                    .r3
-                    .r4
-                    .r5
-                    .r6
-                    .dot
-              button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
-                span.navbar-toggler-icon
-              #navbarSupportedContent.collapse.navbar-collapse
-                ul.navbar-nav.w-100(style='justify-content: flex-end')
-                  li.nav-item
-                    a.nav-link(href='#home')
-                      span(data-hover='Home') Home
-                  li.nav-item
-                    a.nav-link(href='#about')
-                      span(data-hover='About') About
-                  li.nav-item
-                    a.nav-link(href='#faq')
-                      span(data-hover='FAQ') FAQ
-                  li.nav-item
-                    a.nav-link(href='#contact')
-                      span(data-hover='Contact') Contact
-                // <a href="#register" class="default-button">Register</a>
-        // End Header
-        //
-          event-promo-section
-          ==================================================
-        section.event-promo-section
-          .event-center
-            .container
-              .row
-                .col-lg-9.col-md-8
-                  h1 Unfold UI
-                  h2 Redesign possibilities - Redefine Thoughts
-                .col-lg-3.col-md-4
-                  .event-date
-                    p
-                      | Pune
-                      span 28
-                      |  July, 2018
-        // End event-promo section
-        //
-          reg-sub-section
-          ==================================================
-        section#registration.reg-sub-section
-          .inner-reg-sub
-            .register-box(style='text-align: left')
-              p Want to present?
-              span
-                | Got some super cool idea and eager to share with community, here is the right chance for you to share.
-              a.default-button(href='https://docs.google.com/forms/d/e/1FAIpQLScf_WKLegQYTV1uVZsnv0Yr6zA2aEYSS85x0Oq4KRVIT3V0TA/viewform', target='_blank') Register
-            //
-              <div class="subscribe-box">
-              <p>Want to attend?</p>
-              <span>Register, expand your knowledge about current UI development</span>
-              <a href="https://docs.google.com/forms/d/e/1FAIpQLScf_WKLegQYTV1uVZsnv0Yr6zA2aEYSS85x0Oq4KRVIT3V0TA/viewform" target="_blank"
-              class="default-button">Register</a>
-              </div>
-        // End reg-sub section
-        //
-          about-section
-          ==================================================
+        include partials/header
+        include partials/event-promotion-section
+        include partials/registration-section
         include partials/about-section
         include partials/faq-section
         include partials/contact-section
         include partials/footer
-      // End Container
       script(src='js/jquery.3.3.1.js')
       script(src='js/eventium-plugins.min.js')
       script(src='js/popper.js')
