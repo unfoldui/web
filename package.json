@@ -1,0 +1,25 @@
+{
+    "name": "web",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "build": "pug templates/demo.pug -o .",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/unfoldui/web.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/unfoldui/web/issues"
+    },
+    "homepage": "https://github.com/unfoldui/web#readme",
+    "dependencies": {
+        "pug": "^2.0.3",
+        "pug-cli": "^1.0.0-alpha6"
+    }
+}
