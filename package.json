@@ -5,6 +5,7 @@
     "main": "index.js",
     "scripts": {
         "build": "pug templates/demo.pug -o .",
+        "start": "pug templates/demo.pug  -w -o .",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "repository": {
