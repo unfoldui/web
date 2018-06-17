@@ -37,14 +37,14 @@
 
 .nav-stroke li a:after {
     position: absolute;
-    bottom: 0;
+    bottom: 10px;
     left: 0;
     right: 0;
     margin: auto;
     width: 0%;
     content: '.';
     color: transparent;
-    background: #aaa;
+    background: #26bdcf;
     height: 1px;
 }
 

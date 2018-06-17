@@ -1597,7 +1597,8 @@ section.event-promo-section {
       font-weight: 300;
       font-size: 32px;
       line-height: 32px;
-      margin: 0; }
+      margin: 0;
+      text-align: center; }
     section.event-promo-section .event-center .event-date {
       text-align: right;
       border-left: 1px solid #fff;
@@ -3626,7 +3627,6 @@ button.mfp-arrow {
   float: left;
   color: #fff;
   line-height: 5px;
-  height: 50px;
   font-size: 35px;
   margin-right: 10px;
   font-weight: 900; }
@@ -3687,14 +3687,14 @@ li:hover > .dropdown {
 
 .nav-stroke li a:after {
   position: absolute;
-  bottom: 0;
+  bottom: 10px;
   left: 0;
   right: 0;
   margin: auto;
   width: 0%;
   content: '.';
   color: transparent;
-  background: #aaa;
+  background: #26bdcf;
   height: 1px; }
 
 .nav-stroke li a:hover:after {
@@ -3719,3 +3719,221 @@ nav.fill li a:hover:after {
   -webkit-animation: fill 1s forwards;
   -moz-animation: fill 1s forwards;
   opacity: 1; }
+
+.main-logo {
+  width: 300px;
+  height: 340px;
+  overflow: hidden;
+  margin: 0 auto; }
+  .main-logo .u, .main-logo .i {
+    display: block;
+    position: relative;
+    opacity: 0.8; }
+    .main-logo .u > div, .main-logo .i > div {
+      position: absolute;
+      border-style: solid;
+      border-width: 25px;
+      opacity: 0; }
+    .main-logo .u .two, .main-logo .i .two {
+      border-color: #26bdcf #26bdcf transparent transparent;
+      animation: open-right 300ms forwards;
+      transform-origin: 100% 0; }
+    .main-logo .u .one, .main-logo .i .one {
+      border-color: #26bdcf transparent transparent #26bdcf;
+      animation: open-left 300ms forwards;
+      transform-origin: 0 0; }
+  .main-logo .u {
+    bottom: -25px;
+    left: 100px;
+    width: 50px;
+    height: 50px;
+    background: #26bdcf; }
+  .main-logo .i {
+    bottom: 25px;
+    left: 250px;
+    width: 50px;
+    height: 50px;
+    background: #26bdcf; }
+    .main-logo .i > div {
+      left: 0; }
+  .main-logo .l0 {
+    border-color: #26bdcf #26bdcf transparent transparent;
+    left: -100%;
+    animation: fold-up 1s forwards;
+    transform-origin: 0 0;
+    animation-delay: 300ms;
+    top: 0%; }
+  .main-logo .r0 {
+    border-color: #26bdcf transparent transparent #26bdcf;
+    left: 100%;
+    top: 0%;
+    animation: fold-up 1s forwards;
+    animation-delay: 300ms;
+    transform-origin: 0 0; }
+  .main-logo .l1 {
+    border-color: transparent #26bdcf #26bdcf transparent;
+    left: -100%;
+    top: -100%;
+    animation: fold-diagonally-left 1s forwards;
+    animation-delay: 600ms; }
+  .main-logo .r1 {
+    border-color: transparent transparent #26bdcf #26bdcf;
+    left: 100%;
+    top: -100%;
+    animation: fold-diagonally-right 1s forwards;
+    animation-delay: 600ms;
+    transform-origin: 0 0; }
+  .main-logo .l2 {
+    border-color: #26bdcf transparent transparent #26bdcf;
+    left: -100%;
+    top: -100%;
+    animation: fold-up 1s forwards;
+    transform-origin: 0 0;
+    animation-delay: 900ms; }
+  .main-logo .r2 {
+    border-color: #26bdcf #26bdcf transparent transparent;
+    left: 100%;
+    top: -100%;
+    animation: fold-up 1s forwards;
+    animation-delay: 900ms;
+    transform-origin: 0 0; }
+  .main-logo .l3 {
+    border-color: transparent transparent #26bdcf #26bdcf;
+    left: -100%;
+    top: -200%;
+    animation: fold-diagonally-right 1s forwards;
+    animation-delay: 1200ms; }
+  .main-logo .r3 {
+    border-color: transparent #26bdcf #26bdcf transparent;
+    left: 100%;
+    top: -200%;
+    animation: fold-diagonally-left 1s forwards;
+    animation-delay: 1200ms; }
+  .main-logo .l4 {
+    border-color: #26bdcf #26bdcf transparent transparent;
+    left: -100%;
+    animation: fold-up 1s forwards;
+    transform-origin: 0 0;
+    animation-delay: 1500ms;
+    top: -200%; }
+  .main-logo .r4 {
+    border-color: #26bdcf transparent transparent #26bdcf;
+    left: 100%;
+    top: -200%;
+    animation: fold-up 1s forwards;
+    animation-delay: 1500ms;
+    transform-origin: 0 0; }
+  .main-logo .l5 {
+    border-color: transparent #26bdcf #26bdcf transparent;
+    left: -100%;
+    top: -300%;
+    animation: fold-diagonally-left 1s forwards;
+    animation-delay: 1800ms; }
+  .main-logo .r5 {
+    border-color: transparent transparent #26bdcf #26bdcf;
+    left: 100%;
+    top: -300%;
+    animation: fold-diagonally-right 1s forwards;
+    animation-delay: 1800ms;
+    transform-origin: 0 0; }
+  .main-logo .l6 {
+    border-color: #26bdcf transparent transparent #26bdcf;
+    left: -100%;
+    top: -300%;
+    animation: fold-up 1s forwards;
+    transform-origin: 0 0;
+    animation-delay: 2100ms; }
+  .main-logo .r6 {
+    border-color: #26bdcf #26bdcf transparent transparent;
+    left: 100%;
+    top: -300%;
+    animation: fold-up 1s forwards;
+    animation-delay: 2100ms;
+    transform-origin: 0 0; }
+  .main-logo .ll {
+    border-color: #26bdcf transparent transparent #26bdcf;
+    left: -100%;
+    animation: open-left 1s forwards;
+    transform-origin: 0 0;
+    animation-delay: 2400ms;
+    top: -400%; }
+  .main-logo .dot {
+    border-width: 20.83333px !important;
+    border-color: transparent #26bdcf #26bdcf transparent;
+    left: 100%;
+    animation: fold-diagonally-left 1s forwards;
+    animation-delay: 2400ms;
+    top: -400%; }
+  .main-logo .l7 {
+    border-color: transparent transparent #26bdcf #26bdcf;
+    left: -100%;
+    top: -400%;
+    animation: fold-diagonally-right 1s forwards;
+    animation-delay: 2400ms; }
+  .main-logo .r7 {
+    border-color: transparent #26bdcf #26bdcf transparent;
+    left: 100%;
+    top: -400%;
+    animation: fold-diagonally-left 1s forwards;
+    animation-delay: 2400ms; }
+  .main-logo .t {
+    position: relative;
+    bottom: -80px; }
+    .main-logo .t > div {
+      font-size: 35px;
+      color: #26bdcf;
+      font-weight: 900;
+      width: 30px;
+      height: 40px;
+      opacity: 0; }
+  .main-logo .t0 {
+    animation: fade-in 300ms forwards;
+    animation-delay: 500ms; }
+  .main-logo .t1 {
+    animation: fade-in 300ms forwards;
+    animation-delay: 800ms; }
+  .main-logo .t2 {
+    animation: fade-in 300ms forwards;
+    animation-delay: 1100ms; }
+  .main-logo .t3 {
+    animation: fade-in 300ms forwards;
+    animation-delay: 1400ms; }
+  .main-logo .t4 {
+    animation: fade-in 300ms forwards;
+    animation-delay: 1700ms; }
+  .main-logo .t5 {
+    animation: fade-in 300ms forwards;
+    animation-delay: 2000ms; }
+  .main-logo .t6 {
+    animation: fade-in 300ms forwards;
+    animation-delay: 2300ms; }
+
+@keyframes open-right {
+  to {
+    transform: rotate3d(0, -1, 0, 180deg);
+    opacity: 0.7; } }
+
+@keyframes open-left {
+  to {
+    transform: rotate3d(0, -1, 0, 180deg);
+    opacity: 0.6; } }
+
+@keyframes fold-up {
+  to {
+    transform: rotate3d(1, 0, 0, 180deg);
+    opacity: 0.8; } }
+
+@keyframes fold-diagonally-left {
+  to {
+    transform: rotate3d(1, -1, 0, 180deg);
+    opacity: 1; } }
+
+@keyframes fold-diagonally-right {
+  to {
+    transform: rotate3d(1, 1, 0, 180deg);
+    opacity: 0.9; } }
+
+@keyframes fade-in {
+  to {
+    opacity: 1;
+    transform: rotate(-90deg) rotate3d(1, 0, 1, 360deg); } }

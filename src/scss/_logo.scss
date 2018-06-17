@@ -1,0 +1,206 @@
+$iw: 50px;
+$ih: $iw;
+$clr: #26bdcf;
+$height: 7;
+$t: 300;
+$ts: 300ms;
+
+.main-logo {
+  width: 300px;
+  height: 340px;
+  overflow: hidden;
+  margin: 0 auto;
+  .u, .i {
+    display: block;
+    position: relative;
+    opacity: 0.8;
+    & > div {
+      position: absolute;
+      border-style: solid;
+      border-width: $iw/2;
+      opacity: 0;
+    }
+
+    .two {
+      border-color: $clr $clr transparent transparent;
+      animation: open-right $ts forwards;
+      transform-origin: 100% 0;
+    }
+
+    .one {
+      border-color: $clr transparent transparent $clr;
+      animation: open-left $ts forwards;
+      transform-origin: 0 0;
+    }
+  }
+
+  .u {
+    bottom: -$iw/2;
+    left: $iw*2;
+    width: $iw;
+    height: $ih;
+    background: $clr;
+  }
+
+  .i {
+    bottom: $iw/2;
+    left: $iw*5;
+    width: $iw;
+    height: $ih;
+    background: $clr;
+    & > div {
+      left: 0;
+    }
+  }
+
+  @for $i from 0 through $height {
+    $delay: $i*$t+$ts;
+    @if $i == $height {
+      .ll {
+        border-color: $clr transparent transparent $clr;
+        left: -100%;
+        animation: open-left 1s forwards;
+        transform-origin: 0 0;
+        animation-delay: $delay;
+        top: -100% * ceil($i / 2);
+      }
+      .dot {
+        border-width: $iw/2.4 !important;
+        border-color: transparent $clr $clr transparent;
+        left: 100%;
+        animation: fold-diagonally-left 1s forwards;
+        animation-delay: $delay;
+        top: -100% * ceil($i / 2);
+      }
+    }
+    @if $i % 4 == 0 {
+      .l#{$i} {
+        border-color: $clr $clr transparent transparent;
+        left: -100%;
+        animation: fold-up 1s forwards;
+        transform-origin: 0 0;
+        animation-delay: $delay;
+        top: -100% * ceil($i / 2);
+      }
+      .r#{$i} {
+        border-color: $clr transparent transparent $clr;
+        left: 100%;
+        top: -100% * ceil($i / 2);
+        animation: fold-up 1s forwards;
+        animation-delay: $delay;
+        transform-origin: 0 0;
+      }
+    }
+    @if $i % 4 == 1 {
+      .l#{$i} {
+        border-color: transparent $clr $clr transparent;
+        left: -100%;
+        top: -100% * ceil($i / 2);
+        animation: fold-diagonally-left 1s forwards;
+        animation-delay: $delay;
+      }
+      .r#{$i} {
+        border-color: transparent transparent $clr $clr;
+        left: 100%;
+        top: -100% * ceil($i / 2);
+        animation: fold-diagonally-right 1s forwards;
+        animation-delay: $delay;
+        transform-origin: 0 0;
+      }
+    }
+    @if $i % 4 == 2 {
+      .l#{$i} {
+        border-color: $clr transparent transparent $clr;
+        left: -100%;
+        top: -100% * ceil($i / 2);
+        animation: fold-up 1s forwards;
+        transform-origin: 0 0;
+        animation-delay: $delay;
+      }
+      .r#{$i} {
+        border-color: $clr $clr transparent transparent;
+        left: 100%;
+        top: -100% * ceil($i / 2);
+        animation: fold-up 1s forwards;
+        animation-delay: $delay;
+        transform-origin: 0 0;
+      }
+    }
+    @if $i % 4 == 3 {
+      .l#{$i} {
+        border-color: transparent transparent $clr $clr;
+        left: -100%;
+        top: -100% * ceil($i / 2);
+        animation: fold-diagonally-right 1s forwards;
+        animation-delay: $delay;
+      }
+      .r#{$i} {
+        border-color: transparent $clr $clr transparent;
+        left: 100%;
+        top: -100% * ceil($i / 2);
+        animation: fold-diagonally-left 1s forwards;
+        animation-delay: $delay;
+      }
+    }
+  }
+  
+  .t {
+    position: relative;
+    bottom: -80px;
+
+    & > div {
+      font-size: $iw/2+10px;
+      color: $clr;
+      font-weight: 900;
+      width: $iw/2+5px;
+      height: $iw/2+15px;
+      opacity: 0;
+    }
+  }
+
+  @for $i from 0 through 6 {
+    $delay: $i*$t+200+$ts;
+    .t#{$i} {
+      animation: fade-in $ts forwards;
+      animation-delay: $delay;
+    }
+  }
+}
+
+@keyframes open-right {
+  to {
+    transform: rotate3d(0, -1, 0, 180deg);
+    opacity: 0.7;
+  }
+}
+@keyframes open-left {
+  to {
+    transform: rotate3d(0, -1, 0, 180deg);
+    opacity: 0.6;
+  }
+}
+@keyframes fold-up {
+  to {
+    transform: rotate3d(1, 0, 0, 180deg);
+    opacity: 0.8;
+  }
+}
+@keyframes fold-diagonally-left {
+  to {
+    transform: rotate3d(1, -1, 0, 180deg);
+    opacity: 1;
+  }
+}
+@keyframes fold-diagonally-right {
+  to {
+    transform: rotate3d(1, 1, 0, 180deg);
+    opacity: 0.9;
+  }
+}
+
+@keyframes fade-in {
+  to {
+    opacity: 1;
+    transform: rotate(-90deg) rotate3d(1, 0, 1, 360deg);
+  }
+}
