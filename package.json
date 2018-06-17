@@ -4,12 +4,15 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "scss": "./node_modules/.bin/node-sass --include-path scss /scss/main.scss /css/style.css",
-        "scss-dev": "./node_modules/.bin/node-sass --include-path scss /scss/main.scss /css/style.css -w",
-        "jade": "pug templates/demo.pug -o .",
-        "jade-dev": "pug templates/demo.pug  -w -o .",
+        "scss": "./node_modules/.bin/node-sass --include-path src/scss src/scss/main.scss docs/css/style.css",
+        "scss-dev": "./node_modules/.bin/node-sass --include-path src/scss src/scss/main.scss docs/css/style.css -w",
+
+        "jade": "pug src/templates/index.pug -o docs/",
+        "jade-dev": "pug src/templates/index.pug  -w -o docs/",
+
         "build": "npm run jade && npm run scss",
-        "start": "concurrently \"npm run jade-dev\" \"npm run scss-dev\""
+
+        "start": "./node_modules/.bin/concurrently 'npm run jade-dev' 'npm run scss-dev'"
     },
     "repository": {
         "type": "git",

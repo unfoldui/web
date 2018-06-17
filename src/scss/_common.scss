@@ -94,7 +94,7 @@ $url_30: url(../images/icons/twitter_footer.png);
 //@extend-elements
 //original selectors
 //.paragraph, section.register-section .register-box #register-form .subcribe-bx span, .article-box span, a.more-btn, .conference-features .center-area a, .about-event-box a, section.schedule-section3 .schedule-box .schedule-block .schedule-speakers ul.speaker-list li span, section.speaking-single .single-box .single-image a, section.blog-section .blog-box .blog-post span.date-comments, section.blog-section .blog-box .blog-post ul.post-tags li, .pagination-box a.prev, .pagination-box a.next, section.news-section .news-box .news-post span, section.news-section2 .blog-post span.date-comments, p
-%extend_1 {
+%paragraph {
 	font-size: 18px;
 	color: $color_raven_approx;
 	font-family: $font_0, $font_1;
@@ -105,7 +105,7 @@ $url_30: url(../images/icons/twitter_footer.png);
 
 //original selectors
 //.heading1, h1
-%extend_2 {
+%heading1 {
 	color: $color_mine_shaft_approx;
 	font-size: 48px;
 	font-family: $font_0, $font_1;
@@ -116,7 +116,7 @@ $url_30: url(../images/icons/twitter_footer.png);
 
 //original selectors
 //.heading2, section.promo-banner-section .promo-banner-box span, section.promo-banner-section2 .promo-banner-box span, section.promo-banner-section3 .promo-banner-box span, h2
-%extend_3 {
+%heading2 {
 	color: $color_mine_shaft_approx;
 	font-size: 24px;
 	font-family: $font_0, $font_1;
@@ -127,7 +127,7 @@ $url_30: url(../images/icons/twitter_footer.png);
 
 //original selectors
 //.heading3, h3
-%extend_4 {
+%heading3 {
 	color: $color_mine_shaft_approx;
 	font-size: 18px;
 	font-family: $font_0, $font_1;
@@ -138,7 +138,7 @@ $url_30: url(../images/icons/twitter_footer.png);
 
 //original selectors
 //.anchor, a
-%extend_5 {
+%anchor {
 	display: inline-block;
 	text-decoration: none !important;
 	transition: all 0.2s ease-in-out;
@@ -401,7 +401,7 @@ section {
 					display: flex;
 					align-items: center;
 					span {
-						@extend %extend_1;
+						@extend %paragraph;
 						color: $color_blue_violet_approx;
 						margin-bottom: 0;
 						letter-spacing: -0.5px;
@@ -864,7 +864,7 @@ section {
 			.single-image {
 				margin-bottom: 40px;
 				a {
-					@extend %extend_1;
+					@extend %paragraph;
 					margin-bottom: 60px;
 					i {
 						margin-right: 10px;
@@ -1322,7 +1322,7 @@ section {
 					padding: 0;
 					text-align: right;
 					li {
-						@extend %extend_1;
+						@extend %paragraph;
 						display: inline-block;
 						font-family: $font_0, $font_2;
 						font-style: italic;
@@ -1338,7 +1338,7 @@ section {
 					}
 				}
 				span.date-comments {
-					@extend %extend_1;
+					@extend %paragraph;
 					display: inline-block;
 					margin-bottom: 5px;
 				}
@@ -1762,7 +1762,6 @@ section {
 				line-height: 40px;
 				color: $color_emerald_approx;
 				margin-right: 20px;
-				display: inline-block;
 			}
 		}
 		form.join-newsletter {
@@ -1812,7 +1811,7 @@ section {
 				.subcribe-bx {
 					margin: 30px 0 40px;
 					span {
-						@extend %extend_1;
+						@extend %paragraph;
 						maring-bottom: 0;
 						letter-spacing: -0.4px;
 					}
@@ -1912,7 +1911,7 @@ section {
 				border-radius: 4px;
 				transition: all 0.2s ease-in-out;
 				span {
-					@extend %extend_1;
+					@extend %paragraph;
 					font-family: $font_0, $font_2;
 					color: $color_mine_shaft_approx;
 					font-style: italic;
@@ -1968,7 +1967,7 @@ section {
 				}
 			}
 			span.date-comments {
-				@extend %extend_1;
+				@extend %paragraph;
 				display: inline-block;
 				margin-bottom: 0;
 			}
@@ -1995,7 +1994,7 @@ section {
 		text-align: center;
 		.promo-banner-box {
 			span {
-				@extend %extend_3;
+				@extend %heading2;
 				display: inline-block;
 				color: $color_link_water_approx;
 				font-weight: 300;
@@ -2015,7 +2014,7 @@ section {
 		text-align: center;
 		.promo-banner-box {
 			span {
-				@extend %extend_3;
+				@extend %heading2;
 				display: inline-block;
 				color: $color_link_water_approx;
 				font-weight: 300;
@@ -2035,7 +2034,7 @@ section {
 		text-align: center;
 		.promo-banner-box {
 			span {
-				@extend %extend_3;
+				@extend %heading2;
 				display: block;
 				color: $color_link_water_approx;
 				font-weight: 300;
@@ -2845,7 +2844,7 @@ section {
 	overflow: hidden;
 	a {
 		&.prev {
-			@extend %extend_1;
+			@extend %paragraph;
 			margin-bottom: 0;
 			margin-top: -30px;
 			float: left;
@@ -2858,7 +2857,7 @@ section {
 			}
 		}
 		&.next {
-			@extend %extend_1;
+			@extend %paragraph;
 			margin-bottom: 0;
 			margin-top: -30px;
 			float: right;
@@ -3273,12 +3272,12 @@ footer {
 	}
 }
 .paragraph {
-	@extend %extend_1;
+	@extend %paragraph;
 }
 .article-box {
 	margin-bottom: 100px;
 	span {
-		@extend %extend_1;
+		@extend %paragraph;
 		display: inline-block;
 		font-family: $font_0, $font_2;
 		font-style: italic;
@@ -3355,9 +3354,9 @@ footer {
 	}
 }
 a {
-	@extend %extend_5;
+	@extend %anchor;
 	&.more-btn {
-		@extend %extend_1;
+		@extend %paragraph;
 		color: $color_blue_violet_approx;
 		font-weight: 400;
 		&:hover {
@@ -3418,7 +3417,7 @@ a {
 	.center-area {
 		padding-top: 50px;
 		a {
-			@extend %extend_1;
+			@extend %paragraph;
 			color: $color_blue_violet_approx;
 			font-weight: 400;
 			&:hover {
@@ -3469,7 +3468,7 @@ a {
 .about-event-box {
 	margin-bottom: 100px;
 	a {
-		@extend %extend_1;
+		@extend %paragraph;
 		color: $color_blue_violet_approx;
 		margin-bottom: 0;
 		&:hover {
@@ -3493,31 +3492,31 @@ a {
 	}
 }
 p {
-	@extend %extend_1;
+	@extend %paragraph;
 }
 .heading1 {
-	@extend %extend_2;
+	@extend %heading1;
 }
 h1 {
-	@extend %extend_2;
+	@extend %heading1;
 }
 .heading2 {
-	@extend %extend_3;
+	@extend %heading2;
 }
 h2 {
-	@extend %extend_3;
+	@extend %heading2;
 }
 .heading3 {
-	@extend %extend_4;
+	@extend %heading3;
 }
 h3 {
-	@extend %extend_4;
+	@extend %heading3;
 }
 .back-cover {
 	background-size: cover !important;
 }
 .anchor {
-	@extend %extend_5;
+	@extend %anchor;
 }
 iframe {
 	display: block;
@@ -4471,50 +4470,6 @@ button {
 	}
 	.blog-section .title-section img {
 		max-width: 100%;
-	}
-}
-@media(min-width: 992px) {
-	li.nav-item a {
-		line-height: 2em;
-		//Instead of the line below you could use @include perspective($p)
-		perspective: 800px;
-		span {
-			position: relative;
-			display: inline-block;
-			padding: 3px 15px 0;
-			box-shadow: inset 0 2px $color_log_cabin_approx;
-			transition: background 0.6s;
-			//Instead of the line below you could use @include transform-origin($origin-x, $origin-y, $origin-z, $only3d)
-			transform-origin: 50% 0;
-			//Instead of the line below you could use @include transform-style($style)
-			transform-style: preserve-3d;
-			//Instead of the line below you could use @include transform-origin($origin-x, $origin-y, $origin-z, $only3d)
-			transform-origin: 0 50%;
-		}
-		span::before {
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: 100%;
-			text-align: center;
-			background: $white;
-			color: $color_log_cabin_approx;
-			line-height: 35px;
-			box-shadow: inset 0 2px $color_log_cabin_approx;
-			content: attr(data-hover);
-			transform: rotateX(270deg);
-			transition: transform 0.6s;
-			//Instead of the line below you could use @include transform-origin($origin-x, $origin-y, $origin-z, $only3d)
-			transform-origin: 0 0;
-			pointer-events: none;
-		}
-		&:hover span::before {
-			transform: rotateX(10deg);
-		}
-		&:focus span::before {
-			transform: rotateX(10deg);
-		}
 	}
 }
 @media(max-width: 991px) {

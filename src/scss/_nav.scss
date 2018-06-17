@@ -1,0 +1,78 @@
+/* NAVIGATION */
+
+.nav-stroke {
+    list-style: none;
+    text-align: center;
+}
+
+.nav-stroke li {
+    display: inline-block;
+}
+
+.nav-stroke li a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: #aaa;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin: 0 10px;
+}
+
+.nav-stroke li a,
+.nav-stroke li a:after,
+.nav-stroke li a:before {
+    transition: all .5s;
+}
+
+.nav-stroke li a:hover {
+    color: #555;
+}
+
+/* stroke */
+
+.nav-stroke li a{
+    position: relative;
+}
+
+.nav-stroke li a:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: '.';
+    color: transparent;
+    background: #aaa;
+    height: 1px;
+}
+
+.nav-stroke li a:hover:after {
+    width: 100%;
+}
+
+nav.fill li a {
+    transition: all 2s;
+}
+
+nav.fill li a:after {
+    text-align: left;
+    content: '.';
+    margin: 0;
+    opacity: 0;
+}
+
+nav.fill li a:hover {
+    color: #fff;
+    z-index: 1;
+}
+
+nav.fill li a:hover:after {
+    z-index: -10;
+    animation: fill 1s forwards;
+    -webkit-animation: fill 1s forwards;
+    -moz-animation: fill 1s forwards;
+    opacity: 1;
+}
+
