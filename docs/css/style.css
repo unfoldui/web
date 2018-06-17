@@ -1568,7 +1568,7 @@ section.promo-banner-section3 {
 section.event-promo-section {
   background-attachment: fixed !important;
   min-height: 100vh;
-  background: #111 url(../images/banners/1.jpg) center center no-repeat;
+  background: #111 url(../images/bg/bg.png) center center no-repeat;
   background-size: cover;
   display: flex;
   align-items: center;
@@ -1636,7 +1636,7 @@ section.page-banner-section {
     margin-bottom: 0; }
 
 section.reg-sub-section {
-  margin-top: -200px;
+  margin-top: -100px;
   position: relative;
   z-index: 2; }
   section.reg-sub-section .inner-reg-sub {
@@ -2968,7 +2968,7 @@ button.mfp-arrow {
     background: #111 url(../images/banners/ban2@2x.jpg) center center no-repeat;
     background-size: cover; }
   section.event-promo-section {
-    background: #111 url(../images/banners/1@2x.jpg) center center no-repeat;
+    background: #111 url(../images/bg/bg.png) center center no-repeat;
     background-size: cover; }
   section.promo-banner-section {
     background: #111 url(../images/banners/ban1@2x.jpg) center center no-repeat;
@@ -3012,7 +3012,7 @@ button.mfp-arrow {
     background: #111 url(../images/banners/ban2@2x.jpg) center center no-repeat;
     background-size: cover; }
   section.event-promo-section {
-    background: #111 url(../images/banners/1@2x.jpg) center center no-repeat;
+    background: #111 url(../images/bg/bg.png) center center no-repeat;
     background-size: cover; }
   section.promo-banner-section {
     background: #111 url(../images/banners/ban1@2x.jpg) center center no-repeat;
