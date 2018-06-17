@@ -61,8 +61,10 @@ $font_3: FontAwesome;
 //urls
 $url_0: url(../images/banners/ban2.jpg);
 $url_1: url(../images/banners/ban2@2x.jpg);
-$url_2: url(../images/banners/1.jpg);
-$url_3: url(../images/banners/1@2x.jpg);
+$url_2: url(../images/bg/bg.png);
+$url_3: url(../images/bg/bg.png);
+// $url_2: url(../images/banners/1.jpg);
+// $url_3: url(../images/banners/1@2x.jpg);
 $url_4: url(../images/banners/ban1.jpg);
 $url_5: url(../images/banners/ban1@2x.jpg);
 $url_6: url(../images/banners/ban6.jpg);
@@ -90,3 +92,57 @@ $url_27: url(../images/banners/banner@2x.html);
 $url_28: url(../images/dev1.png);
 $url_29: url(../images/icons/facebook_footer.png);
 $url_30: url(../images/icons/twitter_footer.png);
+
+//@extend-elements
+//original selectors
+//.paragraph, section.register-section .register-box #register-form .subcribe-bx span, .article-box span, a.more-btn, .conference-features .center-area a, .about-event-box a, section.schedule-section3 .schedule-box .schedule-block .schedule-speakers ul.speaker-list li span, section.speaking-single .single-box .single-image a, section.blog-section .blog-box .blog-post span.date-comments, section.blog-section .blog-box .blog-post ul.post-tags li, .pagination-box a.prev, .pagination-box a.next, section.news-section .news-box .news-post span, section.news-section2 .blog-post span.date-comments, p
+%paragraph {
+	font-size: 18px;
+	color: $color_raven_approx;
+	font-family: $font_0, $font_1;
+	font-weight: 300;
+	line-height: 30px;
+	margin: 0 0 10px;
+}
+
+//original selectors
+//.heading1, h1
+%heading1 {
+	color: $color_mine_shaft_approx;
+	font-size: 48px;
+	font-family: $font_0, $font_1;
+	font-weight: 400;
+	line-height: 52px;
+	margin: 0 0 20px;
+}
+
+//original selectors
+//.heading2, section.promo-banner-section .promo-banner-box span, section.promo-banner-section2 .promo-banner-box span, section.promo-banner-section3 .promo-banner-box span, h2
+%heading2 {
+	color: $color_mine_shaft_approx;
+	font-size: 24px;
+	font-family: $font_0, $font_1;
+	font-weight: 400;
+	margin: 0 0 10px;
+	line-height: 28px;
+}
+
+//original selectors
+//.heading3, h3
+%heading3 {
+	color: $color_mine_shaft_approx;
+	font-size: 18px;
+	font-family: $font_0, $font_1;
+	font-weight: 400;
+	margin: 0 0 4px;
+	line-height: 28px;
+}
+
+//original selectors
+//.anchor, a
+%anchor {
+	display: inline-block;
+	text-decoration: none !important;
+	transition: all 0.2s ease-in-out;
+}
+
