@@ -1489,7 +1489,7 @@ section {
 		padding: 40px 0 0;
 		border-top: 1px solid $color_link_water_approx;
 		.contact-info {
-			margin-top: -180px;
+			margin-top: -120px;
 			margin-bottom: -280px;
 			position: relative;
 			z-index: 9;
@@ -2067,9 +2067,11 @@ section {
 	&.about-section {
 		background: $url_16 center bottom repeat-x;
 		padding: 40px 0;
+		p.about-body{
+			color:#2d3034;
+		}
 		p.about-body:not(:last-child) {
 			margin-bottom: 20px;
-			color:#2d3034;
 		}
 		.video-box {
 			padding-top: 70px;

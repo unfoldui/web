@@ -1229,7 +1229,7 @@ section.contact-section {
   padding: 40px 0 0;
   border-top: 1px solid #e4e2f4; }
   section.contact-section .contact-info {
-    margin-top: -180px;
+    margin-top: -120px;
     margin-bottom: -280px;
     position: relative;
     z-index: 9; }
@@ -1710,9 +1710,10 @@ section.reg-sub-section {
 section.about-section {
   background: url(../images/dev4.png) center bottom repeat-x;
   padding: 40px 0; }
-  section.about-section p.about-body:not(:last-child) {
-    margin-bottom: 20px;
+  section.about-section p.about-body {
     color: #2d3034; }
+  section.about-section p.about-body:not(:last-child) {
+    margin-bottom: 20px; }
   section.about-section .video-box {
     padding-top: 70px;
     margin: 0 auto;
