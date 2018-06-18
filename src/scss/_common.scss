@@ -1486,9 +1486,8 @@ section {
 		}
 	}
 	&.contact-section {
-		padding: 80px 0 0;
+		padding: 40px 0 0;
 		border-top: 1px solid $color_link_water_approx;
-		margin-top: 50px;
 		.contact-info {
 			margin-top: -180px;
 			margin-bottom: -280px;
@@ -1666,7 +1665,7 @@ section {
 					margin: 30px 0 40px;
 					span {
 						@extend %paragraph;
-						maring-bottom: 0;
+						margin-bottom: 0;
 						letter-spacing: -0.4px;
 					}
 					h2 {
@@ -2040,7 +2039,7 @@ section {
 				padding: 100px 130px;
 				text-align: center;
 				float: right;
-				margin-top: 10px;
+				margin-top: 20px;
 				margin-left: -30px;
 				margin-right: 30px;
 				width: 50%;
@@ -2062,50 +2061,15 @@ section {
 					line-height: 32px;
 					margin: 0 0 25px;
 				}
-				form.subscribe {
-					margin: 0;
-					input[type="text"] {
-						padding: 12px 20px;
-						border: none;
-						outline: none;
-						background: $white;
-						border-radius: 3px;
-						width: 270px;
-						color: $color_star_dust_approx;
-						font-size: 18px;
-						font-family: $font_0, $font_1;
-						font-weight: 300;
-						margin: 0;
-						margin-right: 3px;
-					}
-					input[type="submit"] {
-						color: $white;
-						font-size: 18px;
-						font-family: $font_0, $font_1;
-						text-transform: uppercase;
-						padding: 13px 30px 12px;
-						background: $color_emerald_approx;
-						font-weight: 400;
-						border-radius: 2px;
-						transition: all 0.2s ease-in-out;
-						box-shadow: 0 0 25px $black_30;
-						outline: none;
-						border: none;
-						&:hover {
-							color: $color_blue_violet_approx;
-							background: $white;
-						}
-					}
-				}
 			}
 		}
 	}
 	&.about-section {
-		padding-top: 90px;
 		background: $url_16 center bottom repeat-x;
-		margin-top: 30px;
-		p {
+		padding: 40px 0;
+		p.about-body:not(:last-child) {
 			margin-bottom: 20px;
+			color:#2d3034;
 		}
 		.video-box {
 			padding-top: 70px;
@@ -2401,7 +2365,7 @@ section {
 		}
 	}
 	&.event-banner-section {
-		padding: 100px 0;
+		padding: 40px 0;
 		background: $url_18;
 		h1 {
 			color: $white;
@@ -2975,7 +2939,7 @@ section {
 	}
 }
 footer {
-	padding-top: 76px;
+	padding-top: 40px;
 	background: $color_mine_shaft_approx;
 	&.second-style {
 		padding-top: 50px;
@@ -4290,10 +4254,10 @@ button {
 	section {
 		&.reg-sub-section .inner-reg-sub {
 			.register-box {
-				padding: 80px 40px;
+				padding: 40px 40px;
 			}
 			.subscribe-box {
-				padding: 80px 40px;
+				padding: 40px 40px;
 			}
 		}
 		&.services-section .services-box .services-post {
@@ -4678,7 +4642,8 @@ button {
 	line-height: 5px;
 	font-size: 35px;
 	margin-right: 10px;
-	font-weight: 900;
+	font-weight: 600;
+	letter-spacing: 2px;
 }
 li:hover > .dropdown {
 	visibility: visible;

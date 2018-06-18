@@ -1226,9 +1226,8 @@ section.blog-section {
     box-shadow: 0 10px 15px #efefef; }
 
 section.contact-section {
-  padding: 80px 0 0;
-  border-top: 1px solid #e4e2f4;
-  margin-top: 50px; }
+  padding: 40px 0 0;
+  border-top: 1px solid #e4e2f4; }
   section.contact-section .contact-info {
     margin-top: -180px;
     margin-bottom: -280px;
@@ -1378,7 +1377,7 @@ section.register-section {
       section.register-section .register-box #register-form .subcribe-bx {
         margin: 30px 0 40px; }
         section.register-section .register-box #register-form .subcribe-bx span {
-          maring-bottom: 0;
+          margin-bottom: 0;
           letter-spacing: -0.4px; }
         section.register-section .register-box #register-form .subcribe-bx h2 {
           margin-left: 30px;
@@ -1687,7 +1686,7 @@ section.reg-sub-section {
       padding: 100px 130px;
       text-align: center;
       float: right;
-      margin-top: 10px;
+      margin-top: 20px;
       margin-left: -30px;
       margin-right: 30px;
       width: 50%;
@@ -1707,44 +1706,13 @@ section.reg-sub-section {
         font-style: italic;
         line-height: 32px;
         margin: 0 0 25px; }
-      section.reg-sub-section .inner-reg-sub .subscribe-box form.subscribe {
-        margin: 0; }
-        section.reg-sub-section .inner-reg-sub .subscribe-box form.subscribe input[type="text"] {
-          padding: 12px 20px;
-          border: none;
-          outline: none;
-          background: #fff;
-          border-radius: 3px;
-          width: 270px;
-          color: #959aa1;
-          font-size: 18px;
-          font-family: Open Sans, sans-serif;
-          font-weight: 300;
-          margin: 0;
-          margin-right: 3px; }
-        section.reg-sub-section .inner-reg-sub .subscribe-box form.subscribe input[type="submit"] {
-          color: #fff;
-          font-size: 18px;
-          font-family: Open Sans, sans-serif;
-          text-transform: uppercase;
-          padding: 13px 30px 12px;
-          background: #2ecc71;
-          font-weight: 400;
-          border-radius: 2px;
-          transition: all 0.2s ease-in-out;
-          box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
-          outline: none;
-          border: none; }
-          section.reg-sub-section .inner-reg-sub .subscribe-box form.subscribe input[type="submit"]:hover {
-            color: #5649c0;
-            background: #fff; }
 
 section.about-section {
-  padding-top: 90px;
   background: url(../images/dev4.png) center bottom repeat-x;
-  margin-top: 30px; }
-  section.about-section p {
-    margin-bottom: 20px; }
+  padding: 40px 0; }
+  section.about-section p.about-body:not(:last-child) {
+    margin-bottom: 20px;
+    color: #2d3034; }
   section.about-section .video-box {
     padding-top: 70px;
     margin: 0 auto;
@@ -1982,7 +1950,7 @@ section.schedule-section2 {
       box-shadow: 0 10px 15px #efefef; }
 
 section.event-banner-section {
-  padding: 100px 0;
+  padding: 40px 0;
   background: url(../images/dev5.png); }
   section.event-banner-section h1 {
     color: #fff;
@@ -2443,7 +2411,7 @@ section.contact-section2 .contact-box .contact-info ul.social-icons {
     padding-left: 100px; }
 
 footer {
-  padding-top: 76px;
+  padding-top: 40px;
   background: #2d3034; }
   footer.second-style {
     padding-top: 50px;
@@ -3378,9 +3346,9 @@ button.mfp-arrow {
 
 @media (max-width: 1199px) {
   section.reg-sub-section .inner-reg-sub .register-box {
-    padding: 80px 40px; }
+    padding: 40px 40px; }
   section.reg-sub-section .inner-reg-sub .subscribe-box {
-    padding: 80px 40px; }
+    padding: 40px 40px; }
   section.services-section .services-box .services-post i {
     font-size: 50px; }
   section.services-section .services-box .services-post .services-post-content {
@@ -3629,7 +3597,8 @@ button.mfp-arrow {
   line-height: 5px;
   font-size: 35px;
   margin-right: 10px;
-  font-weight: 900; }
+  font-weight: 600;
+  letter-spacing: 2px; }
 
 li:hover > .dropdown {
   visibility: visible;
