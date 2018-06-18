@@ -1644,7 +1644,7 @@ section.reg-sub-section {
     overflow: hidden;
     padding-bottom: 45px; }
     section.reg-sub-section .inner-reg-sub .register-box {
-      padding: 100px 130px;
+      padding: 80px 130px;
       text-align: center;
       float: left;
       width: 50%;
@@ -1683,7 +1683,7 @@ section.reg-sub-section {
         line-height: 32px;
         margin: 0 0 25px; }
     section.reg-sub-section .inner-reg-sub .subscribe-box {
-      padding: 100px 130px;
+      padding: 80px 130px;
       text-align: center;
       float: right;
       margin-top: 20px;
