@@ -3722,9 +3722,17 @@ nav.fill li a:hover:after {
     left: 250px;
     width: 50px;
     height: 50px;
-    background: #26bdcf; }
+    background: transparent; }
     .main-logo .i > div {
       left: 0; }
+    .main-logo .i .ii {
+      position: absolute;
+      border-style: solid;
+      border-width: 25px;
+      border-color: #26bdcf transparent transparent #26bdcf;
+      left: 0;
+      bottom: 0;
+      opacity: 1; }
   .main-logo .l0 {
     border-color: #26bdcf #26bdcf transparent transparent;
     left: -100%;

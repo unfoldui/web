@@ -46,9 +46,18 @@ $ts: 300ms;
     left: $iw*5;
     width: $iw;
     height: $ih;
-    background: $clr;
+    background: transparent;
     & > div {
       left: 0;
+    }
+    .ii {
+      position: absolute;
+      border-style: solid;
+      border-width: $iw/2; 
+      border-color: $clr transparent transparent $clr;
+      left: 0;
+      bottom: 0;
+      opacity: 1;
     }
   }
 
