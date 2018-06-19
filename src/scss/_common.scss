@@ -3391,7 +3391,7 @@ header {
 			> li {
 				> a {
 					color: $color_mine_shaft_approx !important;
-					padding: 40px 22px !important;
+					padding: 20px 22px !important;
 				}
 				&.active > a:before {
 					bottom: -1px;
@@ -3431,7 +3431,7 @@ header {
 			margin-bottom: -1px;
 			> li {
 				> a {
-					padding: 40px 22px !important;
+					padding: 20px 22px !important;
 				}
 				&.active > a:before {
 					bottom: -1px;
@@ -3474,7 +3474,7 @@ header {
 			font-weight: 400 !important;
 			font-family: $font_0, $font_1;
 			transition: all 0.2s ease-in-out;
-			padding: 40px 22px !important;
+			padding: 20px 22px !important;
 			border-bottom: 1px solid transparent;
 			position: relative;
 			i {

@@ -22,7 +22,7 @@
 .nav-stroke li a,
 .nav-stroke li a:after,
 .nav-stroke li a:before {
-    transition: all .5s;
+    transition: all .15s;
 }
 
 .nav-stroke li a:hover {
@@ -45,7 +45,7 @@
     content: '.';
     color: transparent;
     background: #26bdcf;
-    height: 1px;
+    height: 2px;
 }
 
 .nav-stroke li a:hover:after {
