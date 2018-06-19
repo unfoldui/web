@@ -3440,7 +3440,7 @@ header {
 		}
 		&.active {
 			padding-bottom: 0;
-			background: $color_log_cabin_approx !important;
+			background: rgba($color_log_cabin_approx, 0.8) !important;
 			transition: all 0.2s ease-in-out;
 			.navbar {
 				background: transparent !important;
@@ -3451,7 +3451,7 @@ header {
 	&.active {
 		padding-bottom: 90px;
 		.navbar {
-			background: $color_log_cabin_approx !important;
+			background: rgba($color_log_cabin_approx, 0.8) !important;
 		}
 	}
 	&.fourth-style .navbar-nav > li > a.active:before {

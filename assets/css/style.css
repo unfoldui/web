@@ -2787,7 +2787,7 @@ header {
         bottom: -1px; }
     header.third-style.active {
       padding-bottom: 0;
-      background: #232323 !important;
+      background: rgba(35, 35, 35, 0.8) !important;
       transition: all 0.2s ease-in-out; }
       header.third-style.active .navbar {
         background: transparent !important;
@@ -2795,7 +2795,7 @@ header {
   header.active {
     padding-bottom: 90px; }
     header.active .navbar {
-      background: #232323 !important; }
+      background: rgba(35, 35, 35, 0.8) !important; }
   header.fourth-style .navbar-nav > li > a.active:before {
     content: '';
     position: absolute;
