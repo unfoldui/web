@@ -1,6 +1,8 @@
 $iw: 50px;
 $ih: $iw;
 $clr: #26bdcf;
+$shadowClr: rgba(0,0,0,0.6);
+$shadowWidth: $iw/7;
 $height: 7;
 $t: 300;
 $ts: 300ms;
@@ -30,6 +32,15 @@ $ts: 300ms;
       border-color: $clr transparent transparent $clr;
       animation: open-left $ts forwards;
       transform-origin: 0 0;
+    }
+
+    .uShadow {
+      position: absolute;
+      border-color: $shadowClr $shadowClr transparent transparent;
+      z-index: 2;
+      right: 0;
+      border-width: $iw 0 0 $shadowWidth;
+      animation: blur-in $t*2ms forwards;
     }
   }
 
@@ -63,6 +74,20 @@ $ts: 300ms;
 
   @for $i from 0 through $height {
     $delay: $i*$t+$ts;
+    @if $i == $height - 2{
+      $topOffset: -100% * ceil($i / 2);
+      .ir#{$i}Shadow{
+        border-width: $shadowWidth 0px 0px $iw !important;
+        border-color: $shadowClr transparent transparent transparent;
+        left: -100%;
+        animation: blur-in 1s forwards;
+        transform-origin: 0 0;
+        animation-delay: $delay;
+        top: #{$topOffset};
+        z-index: 2;
+        opacity: 0.5 !important;
+      }
+    }
     @if $i == $height {
       .ll {
         border-color: $clr transparent transparent $clr;
@@ -72,6 +97,16 @@ $ts: 300ms;
         animation-delay: $delay;
         top: -100% * ceil($i / 2);
       }
+      .llShadow {
+        position: absolute;
+        border-color: $shadowClr $shadowClr transparent transparent;
+        z-index: 2;
+        left: -1 * $iw - $shadowWidth;
+        border-width: $iw 0 0 $shadowWidth !important;
+        animation: blur-in $t*2ms forwards;
+        animation-delay: $delay+$ts;
+        top: -100% * ceil($height / 2);
+      }
       .dot {
         border-width: $iw/2.4 !important;
         border-color: transparent $clr $clr transparent;
@@ -79,6 +114,29 @@ $ts: 300ms;
         animation: fold-diagonally-left 1s forwards;
         animation-delay: $delay;
         top: -100% * ceil($i / 2);
+      }
+    }
+    @if $i == 0 {
+      .l0Shadow {
+        border-color: $shadowClr $shadowClr transparent transparent;
+        border-width: 0 $iw $shadowWidth 0 !important;
+        left: -100%;
+        animation: fold-up 1s forwards;
+        transform-origin: 0 0;
+        animation-delay: $delay;
+        top: -100% * ceil($i / 2);
+        z-index: 2;
+      }
+      .ir0Shadow{
+        border-width: $shadowWidth 0px 0px $iw !important;
+        border-color: transparent transparent transparent $shadowClr;
+        left: -100%;
+        animation: blur-in 1s forwards;
+        transform-origin: 0 0;
+        animation-delay: $delay;
+        top: calc(#{-100% * ceil($i / 2)} - #{$shadowWidth});
+        z-index: 2;
+        opacity: 0.5 !important;
       }
     }
     @if $i % 4 == 0 {
@@ -210,5 +268,11 @@ $ts: 300ms;
   to {
     opacity: 1;
     transform: rotate(-90deg) rotate3d(1, 0, 1, 360deg);
+  }
+}
+
+@keyframes blur-in {
+  to {
+    opacity: 0.7;
   }
 }
