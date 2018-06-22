@@ -1649,7 +1649,7 @@ section.reg-sub-section {
       float: left;
       width: 50%;
       margin-right: -30px;
-      background: #111 url(../images/dev2.png);
+      background: #111 url(../images/want-to-present-bg.png);
       background-size: auto auto;
       border-radius: 6px; }
       section.reg-sub-section .inner-reg-sub .register-box p {
@@ -1690,7 +1690,7 @@ section.reg-sub-section {
       margin-left: -30px;
       margin-right: 30px;
       width: 50%;
-      background: #111 url(../images/dev3.png);
+      background: #111 url(../images/want-to-join-bg.png);
       background-size: auto auto;
       border-radius: 6px;
       box-shadow: 0 10px 45px rgba(0, 0, 0, 0.18); }
@@ -2659,7 +2659,7 @@ a.zoom {
     width: 50%;
     padding: 15px; }
     .conference-features .conference-post .inner-box {
-      background: url(../images/dev3.png);
+      background: url(../images/want-to-join-bg.png);
       padding: 26px;
       border-radius: 6px; }
       .conference-features .conference-post .inner-box h1 {
@@ -2958,10 +2958,10 @@ button.mfp-arrow {
     background: #111 url(../images/banners/banner@2x.html) center center fixed;
     background-size: cover; }
   section.reg-sub-section .inner-reg-sub .register-box {
-    background: #111 url(../images/dev2@2x.png);
+    background: #111 url(../images/want-to-present-bg@2x.png);
     background-size: auto auto; }
   section.reg-sub-section .inner-reg-sub .subscribe-box {
-    background: #111 url(../images/dev3@2x.png);
+    background: #111 url(../images/want-to-join-bg@2x.png);
     background-size: auto auto; }
   section.register-section .background-part {
     background: #111 url(../images/banners/ban5@2x.jpg) center center no-repeat;
@@ -3002,10 +3002,10 @@ button.mfp-arrow {
     background: #111 url(../images/banners/banner@2x.html) center center fixed;
     background-size: cover; }
   section.reg-sub-section .inner-reg-sub .register-box {
-    background: #111 url(../images/dev2@2x.png);
+    background: #111 url(../images/want-to-present-bg@2x.png);
     background-size: auto auto; }
   section.reg-sub-section .inner-reg-sub .subscribe-box {
-    background: #111 url(../images/dev3@2x.png);
+    background: #111 url(../images/want-to-join-bg@2x.png);
     background-size: auto auto; }
   section.register-section .background-part {
     background: #111 url(../images/banners/ban5@2x.jpg) center center no-repeat;
