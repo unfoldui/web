@@ -3595,7 +3595,7 @@ button.mfp-arrow {
 .nav-logo-unfold {
   float: left;
   color: #fff;
-  line-height: 5px;
+  line-height: 1;
   font-size: 35px;
   margin-right: 10px;
   font-weight: 600;
@@ -3963,3 +3963,17 @@ nav.fill li a:hover:after {
 @keyframes blur-in {
   to {
     opacity: 0.7; } }
+
+.event-promo-section .container h4 {
+  text-align: center;
+  color: #ccc;
+  font-weight: normal !important;
+  margin-top: 15px; }
+
+.event-promo-section .container .time-n-date {
+  border-top: solid 1px;
+  padding-top: 10px;
+  display: inline-block;
+  margin: 0 auto; }
+  .event-promo-section .container .time-n-date strong {
+    color: white; }
