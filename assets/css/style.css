@@ -43,7 +43,7 @@ a, .anchor {
   margin: 0;
   padding: 0;
   position: absolute;
-  border-top: 2px solid #5649c0;
+  border-top: 2px solid #1a73ba;
   top: 100%;
   left: 0;
   background: #fff;
@@ -65,7 +65,7 @@ a, .anchor {
       font-family: Open Sans, sans-serif; }
     .dropdown > li > a:hover {
       background: #f2f4f8;
-      color: #5649c0; }
+      color: #1a73ba; }
     .dropdown > li .dropdown.level2 {
       top: -2px;
       left: 100%;
@@ -92,13 +92,13 @@ section.services-section {
     section.services-section .services-box .services-post .services-post-content {
       margin-left: 100px; }
       section.services-section .services-box .services-post .services-post-content h2 {
-        color: #5649c0; }
+        color: #1a73ba; }
       section.services-section .services-box .services-post .services-post-content ul.service-list {
         margin: 0;
         padding: 0;
         padding-left: 25px; }
         section.services-section .services-box .services-post .services-post-content ul.service-list li {
-          color: #5649c0;
+          color: #1a73ba;
           font-size: 18px;
           font-family: Open Sans, serif;
           font-style: italic;
@@ -120,10 +120,10 @@ section.schedule-section {
       background: #fff;
       border-radius: 10px; }
       section.schedule-section .schedule-box .schedule-block h2 {
-        color: #5649c0;
+        color: #1a73ba;
         padding-bottom: 20px;
         margin-bottom: 20px;
-        border-bottom: 1px solid #5649c0; }
+        border-bottom: 1px solid #1a73ba; }
       section.schedule-section .schedule-box .schedule-block ul.schedule-list {
         margin: 0;
         padding: 0; }
@@ -148,7 +148,7 @@ section.schedule-section {
                 font-style: italic;
                 font-family: Open Sans, serif; }
                 section.schedule-section .schedule-box .schedule-block ul.schedule-list li .schedule-cont p.schedule-auth span {
-                  color: #5649c0; }
+                  color: #1a73ba; }
           section.schedule-section .schedule-box .schedule-block ul.schedule-list li:last-child {
             margin-bottom: 0;
             padding-bottom: 0;
@@ -161,10 +161,10 @@ section.schedule-section {
               display: block;
               float: left;
               font-size: 36px;
-              color: #5649c0; }
+              color: #1a73ba; }
             section.schedule-section .schedule-box .schedule-block ul.schedule-list li.time-off-item span.time-off {
               display: block;
-              color: #5649c0;
+              color: #1a73ba;
               font-size: 18px;
               font-family: Open Sans, sans-serif;
               margin-left: 70px;
@@ -172,7 +172,7 @@ section.schedule-section {
               margin-top: 17px; }
           section.schedule-section .schedule-box .schedule-block ul.schedule-list li span.time {
             display: block;
-            color: #2ecc71;
+            color: #11aa58;
             font-size: 18px;
             font-weight: 300;
             font-family: Open Sans, sans-serif;
@@ -184,7 +184,7 @@ section.schedule-section {
         color: #999999;
         margin-bottom: 20px; }
         section.schedule-section .schedule-box .schedule-text-ban p span {
-          color: #2ecc71; }
+          color: #11aa58; }
       section.schedule-section .schedule-box .schedule-text-ban a.default-button {
         padding: 11px 60px; }
     section.schedule-section .schedule-box .title-section h1 {
@@ -198,7 +198,7 @@ section.schedule-section3 {
   section.schedule-section3 .schedule-box .schedule-block {
     margin-bottom: 75px; }
     section.schedule-section3 .schedule-box .schedule-block h1 {
-      color: #5649c0; }
+      color: #1a73ba; }
     section.schedule-section3 .schedule-box .schedule-block h2 {
       letter-spacing: -0.5px;
       padding-bottom: 13px;
@@ -231,7 +231,7 @@ section.schedule-section3 {
       padding: 0;
       padding-left: 25px; }
       section.schedule-section3 .schedule-box .schedule-block .schedule-content ul.schedule-list li {
-        color: #5649c0;
+        color: #1a73ba;
         font-size: 18px;
         font-family: Open Sans, serif;
         font-style: italic;
@@ -247,7 +247,7 @@ section.schedule-section3 {
         display: flex;
         align-items: center; }
         section.schedule-section3 .schedule-box .schedule-block .schedule-speakers ul.speaker-list li span {
-          color: #5649c0;
+          color: #1a73ba;
           margin-bottom: 0;
           letter-spacing: -0.5px;
           line-height: 22px; }
@@ -284,7 +284,7 @@ section.agenda-section {
               font-style: italic;
               font-family: Open Sans, serif; }
               section.agenda-section .schedule-box ul.schedule-list li .schedule-cont p.schedule-auth span {
-                color: #5649c0; }
+                color: #1a73ba; }
         section.agenda-section .schedule-box ul.schedule-list li:last-child {
           margin-bottom: 0;
           padding-bottom: 0;
@@ -299,7 +299,7 @@ section.agenda-section {
             width: 70px;
             height: 70px;
             display: block;
-            background: #2ecc71;
+            background: #11aa58;
             text-align: center;
             line-height: 70px;
             font-size: 36px;
@@ -320,7 +320,7 @@ section.agenda-section {
             margin-top: 7px; }
         section.agenda-section .schedule-box ul.schedule-list li span.time {
           display: block;
-          color: #2ecc71;
+          color: #11aa58;
           font-size: 18px;
           font-weight: 300;
           font-family: Open Sans, sans-serif;
@@ -343,10 +343,10 @@ section.speaking-section {
         section.speaking-section .speakers-box .speaker-post .speaker-content h2 a {
           color: #2d3034; }
           section.speaking-section .speakers-box .speaker-post .speaker-content h2 a:hover {
-            color: #2ecc71; }
+            color: #11aa58; }
       section.speaking-section .speakers-box .speaker-post .speaker-content span {
         display: block;
-        color: #5649c0;
+        color: #1a73ba;
         font-size: 18px;
         font-style: italic;
         font-family: Open Sans, serif;
@@ -361,7 +361,7 @@ section.speaking-section {
             color: #798593;
             font-size: 18px; }
             section.speaking-section .speakers-box .speaker-post .speaker-content ul.social-links li a:hover {
-              color: #5649c0; }
+              color: #1a73ba; }
     section.speaking-section .speakers-box .speaker-post img {
       width: 100%;
       height: auto;
@@ -396,7 +396,7 @@ section.speaking-section {
     section.speaking-section .speakers-box .speaker-apply h2 {
       align-self: flex-end; }
       section.speaking-section .speakers-box .speaker-apply h2 a {
-        color: #5649c0; }
+        color: #1a73ba; }
 
 section.speaking-section3 {
   padding: 80px 0;
@@ -422,10 +422,10 @@ section.speaking-section3 {
         section.speaking-section3 .speakers-box .speaker-post .speaker-content h2 a {
           color: #2d3034; }
           section.speaking-section3 .speakers-box .speaker-post .speaker-content h2 a:hover {
-            color: #2ecc71; }
+            color: #11aa58; }
       section.speaking-section3 .speakers-box .speaker-post .speaker-content span {
         display: block;
-        color: #5649c0;
+        color: #1a73ba;
         font-size: 18px;
         font-style: italic;
         font-family: Open Sans, serif;
@@ -440,7 +440,7 @@ section.speaking-section3 {
             color: #798593;
             font-size: 18px; }
             section.speaking-section3 .speakers-box .speaker-post .speaker-content ul.social-links li a:hover {
-              color: #5649c0; }
+              color: #1a73ba; }
     section.speaking-section3 .speakers-box .speaker-post img {
       width: 100%;
       height: auto;
@@ -481,7 +481,7 @@ section.speaking-section3 {
     section.speaking-section3 .speakers-box .speaker-apply h2 {
       align-self: flex-end; }
       section.speaking-section3 .speakers-box .speaker-apply h2 a {
-        color: #5649c0; }
+        color: #1a73ba; }
 
 section.speaking-section2 {
   padding: 80px 0;
@@ -513,10 +513,10 @@ section.speaking-section2 {
         section.speaking-section2 .speakers-box .speaker-post .speaker-content h2 a {
           color: #fff; }
           section.speaking-section2 .speakers-box .speaker-post .speaker-content h2 a:hover {
-            color: #5649c0; }
+            color: #1a73ba; }
       section.speaking-section2 .speakers-box .speaker-post .speaker-content span {
         display: block;
-        color: #2ecc71;
+        color: #11aa58;
         font-size: 18px;
         font-style: italic;
         font-family: Open Sans, serif;
@@ -538,7 +538,7 @@ section.speaking-section2 {
             text-align: center; }
             section.speaking-section2 .speakers-box .speaker-post .speaker-content ul.social-links li a:hover {
               background: #798593;
-              color: #2ecc71; }
+              color: #11aa58; }
     section.speaking-section2 .speakers-box .speaker-post img {
       width: 100%;
       height: auto;
@@ -569,16 +569,16 @@ section.speaking-single {
           text-align: center; }
           section.speaking-single .single-box .single-content .single-connection ul.social-links li a:hover {
             background: #798593;
-            color: #2ecc71; }
+            color: #11aa58; }
     section.speaking-single .single-box .single-content .single-connection p span {
-      color: #5649c0; }
+      color: #1a73ba; }
   section.speaking-single .single-box .single-content .single-data {
     margin-bottom: 30px; }
     section.speaking-single .single-box .single-content .single-data h1 {
       margin-bottom: -3px; }
     section.speaking-single .single-box .single-content .single-data span {
       display: inline-block;
-      color: #5649c0;
+      color: #1a73ba;
       font-size: 24px;
       font-style: italic;
       font-family: Open Sans, serif;
@@ -603,7 +603,7 @@ section.speaking-single {
     border-radius: 2px; }
     section.speaking-single .single-box .single-content .single-skills .skills-progress div.meter p {
       height: 100%;
-      background: #2ecc71;
+      background: #11aa58;
       border-radius: 2px; }
   section.speaking-single .single-box .single-image {
     margin-bottom: 40px; }
@@ -615,7 +615,7 @@ section.speaking-single {
         float: left;
         padding-top: 9px; }
       section.speaking-single .single-box .single-image a:hover {
-        color: #2ecc71; }
+        color: #11aa58; }
     section.speaking-single .single-box .single-image img {
       width: 100%;
       height: auto; }
@@ -638,13 +638,13 @@ section.pricing-section {
       transition: all 0.2s ease-in-out; }
       section.pricing-section .pricing-box .table-box p {
         text-transform: uppercase;
-        color: #5649c0;
+        color: #1a73ba;
         margin-bottom: 10px;
         line-height: 60px; }
         section.pricing-section .pricing-box .table-box p span {
           font-size: 60px; }
       section.pricing-section .pricing-box .table-box.enterprise {
-        background: url(../images/dev5.png); }
+        background: url(../images/faq-bg.png); }
         section.pricing-section .pricing-box .table-box.enterprise h2 {
           color: #fff; }
         section.pricing-section .pricing-box .table-box.enterprise p {
@@ -658,7 +658,7 @@ section.pricing-section {
           box-shadow: 0 0 15px rgba(0, 0, 0, 0.15); }
           section.pricing-section .pricing-box .table-box.enterprise a.default-button:hover {
             background: #fff;
-            color: #5649c0; }
+            color: #1a73ba; }
       section.pricing-section .pricing-box .table-box:hover {
         box-shadow: 0 15px 45px #efefef; }
       section.pricing-section .pricing-box .table-box ul.pricing-list {
@@ -733,15 +733,15 @@ section.pricing-section2 {
               content: '';
               width: 5px;
               height: 11px;
-              border-bottom: 1px solid #2ecc71;
-              border-right: 1px solid #2ecc71;
+              border-bottom: 1px solid #11aa58;
+              border-right: 1px solid #11aa58;
               margin-right: 16px;
               margin-left: 3px;
               transform: rotate(30deg); }
       section.pricing-section2 .pricing-box .table-box .price-tab {
         width: 45%;
         padding: 20px 10px;
-        background: url(../images/dev5.png);
+        background: url(../images/faq-bg.png);
         text-align: center;
         display: flex;
         align-items: center;
@@ -761,7 +761,7 @@ section.pricing-section2 {
             line-height: 64px; }
         section.pricing-section2 .pricing-box .table-box .price-tab a:hover {
           background: #fff;
-          color: #5649c0; }
+          color: #1a73ba; }
   section.pricing-section2.without-backimage {
     background: #292929; }
     section.pricing-section2.without-backimage .title-section p {
@@ -784,7 +784,7 @@ section.pricing-section3 {
     border-radius: 5px;
     transition: all 0.2s ease-in-out; }
     section.pricing-section3 .table-box h2 {
-      color: #5649c0;
+      color: #1a73ba;
       padding: 0 10px; }
     section.pricing-section3 .table-box p {
       text-transform: uppercase;
@@ -812,8 +812,8 @@ section.pricing-section3 {
           content: '';
           width: 5px;
           height: 11px;
-          border-bottom: 1px solid #2ecc71;
-          border-right: 1px solid #2ecc71;
+          border-bottom: 1px solid #11aa58;
+          border-right: 1px solid #11aa58;
           margin-right: 16px;
           margin-left: 3px;
           transform: rotate(30deg); }
@@ -851,7 +851,7 @@ section.clients-section {
         justify-content: center;
         border-radius: 5px;
         border: 1px solid transparent;
-        color: #5649c0;
+        color: #1a73ba;
         font-size: 24px;
         font-family: Open Sans, sans-serif;
         font-weight: 400;
@@ -885,7 +885,7 @@ section.clients-section2 {
         justify-content: center;
         border-radius: 5px;
         border: 1px solid transparent;
-        color: #5649c0;
+        color: #1a73ba;
         font-size: 24px;
         font-family: Open Sans, sans-serif;
         font-weight: 400;
@@ -901,7 +901,7 @@ section.clients-section2 {
       section.clients-section2 .client-box ul.client-list li .client-cont {
         padding: 0 15px; }
         section.clients-section2 .client-box ul.client-list li .client-cont h2 {
-          color: #5649c0;
+          color: #1a73ba;
           margin-bottom: 0; }
         section.clients-section2 .client-box ul.client-list li .client-cont span {
           display: inline-block;
@@ -934,7 +934,7 @@ section.clients-section3 {
         justify-content: center;
         border-radius: 5px;
         border: 1px solid transparent;
-        color: #5649c0;
+        color: #1a73ba;
         font-size: 24px;
         font-family: Open Sans, sans-serif;
         font-weight: 400;
@@ -974,7 +974,7 @@ section.blog-section {
         section.blog-section .blog-box .blog-post h2 a {
           color: #2d3034; }
           section.blog-section .blog-box .blog-post h2 a:hover {
-            color: #2ecc71; }
+            color: #11aa58; }
       section.blog-section .blog-box .blog-post p {
         margin-bottom: 25px; }
       section.blog-section .blog-box .blog-post ul.post-tags {
@@ -996,7 +996,7 @@ section.blog-section {
         display: inline-block;
         margin-bottom: 5px; }
       section.blog-section .blog-box .blog-post a.continue-read {
-        color: #5649c0;
+        color: #1a73ba;
         font-size: 18px;
         font-family: Open Sans, serif;
         font-style: italic; }
@@ -1020,12 +1020,12 @@ section.blog-section {
       section.blog-section .blog-box .single-post p {
         margin-bottom: 30px; }
         section.blog-section .blog-box .single-post p a {
-          color: #5649c0;
+          color: #1a73ba;
           text-decoration: underline !important;
           font-style: italic; }
       section.blog-section .blog-box .single-post blockquote {
         padding: 45px 30px;
-        background: #5649c0;
+        background: #1a73ba;
         border-radius: 3px;
         position: relative;
         margin-bottom: 35px; }
@@ -1075,7 +1075,7 @@ section.blog-section {
               color: #fff;
               border: 1px solid transparent; }
             section.blog-section .blog-box .single-post ul.share-project li a.facebook:hover {
-              background: #5649c0; }
+              background: #1a73ba; }
             section.blog-section .blog-box .single-post ul.share-project li a.twitter:hover {
               background: #47bbe1; }
             section.blog-section .blog-box .single-post ul.share-project li a.google:hover {
@@ -1114,7 +1114,7 @@ section.blog-section {
             margin-bottom: 0; }
           section.blog-section .blog-box.iso-call.with-sidebar .blog-post.quote-post blockquote {
             padding: 50px 30px;
-            background: #5649c0;
+            background: #1a73ba;
             border-radius: 3px;
             position: relative; }
             section.blog-section .blog-box.iso-call.with-sidebar .blog-post.quote-post blockquote span {
@@ -1140,7 +1140,7 @@ section.blog-section {
               color: rgba(255, 255, 255, 0.15); }
           section.blog-section .blog-box.iso-call.with-sidebar .blog-post.link-post div {
             padding: 50px 30px;
-            background: #2ecc71;
+            background: #11aa58;
             border-radius: 3px;
             position: relative; }
             section.blog-section .blog-box.iso-call.with-sidebar .blog-post.link-post div span {
@@ -1196,7 +1196,7 @@ section.blog-section {
       section.blog-section .blog-box .prev-next-post .other-post .post-content {
         margin-left: 88px; }
         section.blog-section .blog-box .prev-next-post .other-post .post-content > a {
-          color: #5649c0;
+          color: #1a73ba;
           font-size: 14px;
           font-family: Open Sans, sans-serif;
           font-weight: 300;
@@ -1209,7 +1209,7 @@ section.blog-section {
           section.blog-section .blog-box .prev-next-post .other-post .post-content h2 a {
             color: #2d3034; }
             section.blog-section .blog-box .prev-next-post .other-post .post-content h2 a:hover {
-              color: #2ecc71; }
+              color: #11aa58; }
         section.blog-section .blog-box .prev-next-post .other-post .post-content span {
           display: inline-block;
           color: #6c7a89;
@@ -1240,7 +1240,7 @@ section.contact-section {
       background: url(../images/dev1.png); }
       section.contact-section .contact-info .inner-contact-info i {
         display: inline-block;
-        color: #2ecc71;
+        color: #11aa58;
         font-size: 36px;
         margin-bottom: 12px; }
       section.contact-section .contact-info .inner-contact-info p {
@@ -1263,7 +1263,7 @@ section.contact-section {
         margin-bottom: 0; }
       section.contact-section .contact-post .contact-post-content span {
         display: block;
-        color: #5649c0;
+        color: #1a73ba;
         font-size: 18px;
         font-style: italic;
         font-family: Open Sans, serif;
@@ -1331,7 +1331,7 @@ section.contact-section4 .contact-info p {
     text-align: center;
     font-size: 40px;
     line-height: 40px;
-    color: #2ecc71;
+    color: #11aa58;
     margin-right: 20px; }
 
 section.contact-section4 form.join-newsletter input[type="text"] {
@@ -1354,7 +1354,7 @@ section.contact-section4 form.join-newsletter input[type="submit"] {
   font-family: Open Sans, sans-serif;
   text-transform: uppercase;
   padding: 13px 30px 12px;
-  background: #2ecc71;
+  background: #11aa58;
   font-weight: 400;
   border-radius: 2px;
   transition: all 0.2s ease-in-out;
@@ -1362,7 +1362,7 @@ section.contact-section4 form.join-newsletter input[type="submit"] {
   outline: none;
   border: none; }
   section.contact-section4 form.join-newsletter input[type="submit"]:hover {
-    background: #5649c0; }
+    background: #1a73ba; }
 
 section.register-section {
   padding-top: 220px;
@@ -1382,7 +1382,7 @@ section.register-section {
         section.register-section .register-box #register-form .subcribe-bx h2 {
           margin-left: 30px;
           font-size: 18px;
-          color: #5649c0; }
+          color: #1a73ba; }
         section.register-section .register-box #register-form .subcribe-bx input[type="checkbox"] {
           margin-right: 11px; }
       section.register-section .register-box #register-form label {
@@ -1427,13 +1427,13 @@ section.register-section {
         font-family: Open Sans, sans-serif;
         text-transform: uppercase;
         padding: 11px 38px;
-        background: #2ecc71;
+        background: #11aa58;
         font-weight: 400;
         border-radius: 2px;
         transition: all 0.2s ease-in-out;
         border: none; }
         section.register-section .register-box #register-form input[type="submit"]:hover {
-          background: #5649c0; }
+          background: #1a73ba; }
   section.register-section .background-part {
     width: 100%;
     height: 64%;
@@ -1468,7 +1468,7 @@ section.news-section {
       section.news-section .news-box .news-post p {
         padding: 0 15px; }
         section.news-section .news-box .news-post p a {
-          color: #5649c0;
+          color: #1a73ba;
           font-family: Open Sans, serif;
           font-style: italic; }
       section.news-section .news-box .news-post:hover {
@@ -1476,7 +1476,7 @@ section.news-section {
       section.news-section .news-box .news-post h2 a {
         color: #2d3034; }
         section.news-section .news-box .news-post h2 a:hover {
-          color: #5649c0; }
+          color: #1a73ba; }
     section.news-section .news-box .item {
       margin: 0 15px;
       padding-bottom: 30px; }
@@ -1501,12 +1501,12 @@ section.news-section2 {
       section.news-section2 .blog-post h2 a {
         color: #2d3034; }
         section.news-section2 .blog-post h2 a:hover {
-          color: #2ecc71; }
+          color: #11aa58; }
     section.news-section2 .blog-post span.date-comments {
       display: inline-block;
       margin-bottom: 0; }
     section.news-section2 .blog-post a.continue-read {
-      color: #5649c0;
+      color: #1a73ba;
       font-size: 18px;
       font-family: Open Sans, serif;
       font-style: italic; }
@@ -1649,7 +1649,7 @@ section.reg-sub-section {
       float: left;
       width: 50%;
       margin-right: -30px;
-      background: #111 url(../images/dev2.png);
+      background: #111 url(../images/want-to-present-bg.png);
       background-size: auto auto;
       border-radius: 6px; }
       section.reg-sub-section .inner-reg-sub .register-box p {
@@ -1661,7 +1661,7 @@ section.reg-sub-section {
           font-family: Open Sans, serif;
           font-style: italic; }
       section.reg-sub-section .inner-reg-sub .register-box a {
-        color: #5649c0;
+        color: #1a73ba;
         font-size: 18px;
         font-family: Open Sans, sans-serif;
         text-transform: uppercase;
@@ -1673,7 +1673,7 @@ section.reg-sub-section {
         box-shadow: 0 3px 20px rgba(0, 0, 0, 0.18); }
         section.reg-sub-section .inner-reg-sub .register-box a:hover {
           color: #fff;
-          background: #5649c0; }
+          background: #1a73ba; }
       section.reg-sub-section .inner-reg-sub .register-box span {
         display: block;
         font-size: 18px;
@@ -1690,7 +1690,7 @@ section.reg-sub-section {
       margin-left: -30px;
       margin-right: 30px;
       width: 50%;
-      background: #111 url(../images/dev3.png);
+      background: #111 url(../images/want-to-join-bg.png);
       background-size: auto auto;
       border-radius: 6px;
       box-shadow: 0 10px 45px rgba(0, 0, 0, 0.18); }
@@ -1706,9 +1706,10 @@ section.reg-sub-section {
         font-style: italic;
         line-height: 32px;
         margin: 0 0 25px; }
+      section.reg-sub-section .inner-reg-sub .subscribe-box a.default-button:hover {
+        background: #89b77f; }
 
 section.about-section {
-  background: url(../images/dev4.png) center bottom repeat-x;
   padding: 40px 0; }
   section.about-section p.about-body {
     color: #2d3034; }
@@ -1734,7 +1735,7 @@ section.about-us-section {
     section.about-us-section .about-us-box .about-us-post i {
       display: inline-block;
       font-size: 60px;
-      color: #5649c0;
+      color: #1a73ba;
       margin: 0 0 20px; }
 
 section.subscribe-section {
@@ -1761,7 +1762,7 @@ section.subscribe-section {
     font-family: Open Sans, sans-serif;
     text-transform: uppercase;
     padding: 13px 30px 12px;
-    background: #2ecc71;
+    background: #11aa58;
     font-weight: 400;
     border-radius: 2px;
     transition: all 0.2s ease-in-out;
@@ -1769,7 +1770,7 @@ section.subscribe-section {
     outline: none;
     border: none; }
     section.subscribe-section .subscribe-box input[type="submit"]:hover {
-      background: #5649c0; }
+      background: #1a73ba; }
 
 section.about-conference-section {
   padding: 100px 0 0; }
@@ -1799,10 +1800,10 @@ section.services-section2 {
     margin-top: 30px;
     padding: 40px 15px;
     text-align: center;
-    background: #5649c0;
+    background: #1a73ba;
     border-radius: 4px; }
     section.services-section2 .services-box .services-post i {
-      color: #2ecc71;
+      color: #11aa58;
       font-size: 70px;
       margin-bottom: 10px;
       display: inline-block; }
@@ -1811,7 +1812,7 @@ section.services-section2 {
     section.services-section2 .services-box .services-post p {
       color: #c9c4ee; }
   section.services-section2 .services-box .center-area a {
-    color: #5649c0;
+    color: #1a73ba;
     font-family: Open Sans, sans-serif;
     font-size: 20px;
     margin-top: 30px; }
@@ -1842,7 +1843,7 @@ section.schedule-section2 {
     justify-content: center; }
     section.schedule-section2 .schedule-box .schedule-tabs .nav-tabs a[aria-selected="true"] {
       background: #fff;
-      color: #5649c0;
+      color: #1a73ba;
       border: 1px solid #e4e2f4;
       border-bottom: none;
       margin-bottom: -1px; }
@@ -1850,14 +1851,14 @@ section.schedule-section2 {
       display: inline-block;
       border: none;
       text-align: center;
-      background: #2ecc71;
+      background: #11aa58;
       color: #fff;
       font-size: 18px;
       font-family: Open Sans, sans-serif;
       border-radius: 0;
       padding: 12px 30px;
       margin: 0 2px;
-      background: #5649c0;
+      background: #1a73ba;
       border: 1px solid transparent;
       border-bottom: none;
       border-top-left-radius: 3px;
@@ -1882,7 +1883,7 @@ section.schedule-section2 {
         width: 70px;
         height: 70px;
         display: block;
-        background: #5649c0;
+        background: #1a73ba;
         text-align: center;
         line-height: 70px;
         font-size: 36px;
@@ -1904,10 +1905,10 @@ section.schedule-section2 {
             font-style: italic;
             font-family: Open Sans, serif; }
             section.schedule-section2 .schedule-box .schedule-tabs .tab-content .schedule-post .schedule-cont p.schedule-auth span {
-              color: #5649c0; }
+              color: #1a73ba; }
         section.schedule-section2 .schedule-box .schedule-tabs .tab-content .schedule-post .schedule-cont span.time {
           display: block;
-          color: #2ecc71;
+          color: #11aa58;
           font-size: 18px;
           font-weight: 300;
           font-family: Open Sans, sans-serif;
@@ -1939,7 +1940,7 @@ section.schedule-section2 {
           margin-top: 5px; }
         section.schedule-section2 .schedule-box .schedule-tabs .tab-content .schedule-post.time-off-item span.time-off {
           display: block;
-          color: #5649c0;
+          color: #1a73ba;
           font-size: 18px;
           font-family: Open Sans, sans-serif;
           line-height: 22px; }
@@ -1952,7 +1953,10 @@ section.schedule-section2 {
 
 section.event-banner-section {
   padding: 40px 0;
-  background: url(../images/dev5.png); }
+  background: url(../images/faq-bg.png);
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover; }
   section.event-banner-section h1 {
     color: #fff;
     padding-bottom: 25px;
@@ -1974,7 +1978,7 @@ section.event-banner-section {
       padding: 11px 45px; }
       section.event-banner-section .button-banner-box a:hover {
         background: #fff;
-        color: #5649c0; }
+        color: #1a73ba; }
   section.event-banner-section .subscribe-banner-box .title-section {
     margin-bottom: 40px; }
   section.event-banner-section .subscribe-banner-box form.subscribe {
@@ -1998,7 +2002,7 @@ section.event-banner-section {
       font-family: Open Sans, sans-serif;
       text-transform: uppercase;
       padding: 13px 30px 12px;
-      background: #2ecc71;
+      background: #11aa58;
       font-weight: 400;
       border-radius: 2px;
       transition: all 0.2s ease-in-out;
@@ -2007,7 +2011,7 @@ section.event-banner-section {
       border: none; }
       section.event-banner-section .subscribe-banner-box form.subscribe input[type="submit"]:hover {
         background: #fff;
-        color: #5649c0; }
+        color: #1a73ba; }
   section.event-banner-section.with-image {
     background: #111 url(../images/banners/ban7.jpg) center center no-repeat;
     background-size: cover; }
@@ -2018,13 +2022,13 @@ section.event-banner-section {
       margin-bottom: -20px; }
       section.event-banner-section .title-section.center a.default-button:hover {
         background: #fff;
-        color: #5649c0; }
+        color: #1a73ba; }
 
 section.event-banner-section2 {
   background: #fff;
   border-bottom: 1px solid #ecebf3; }
   section.event-banner-section2 h1 {
-    color: #5649c0;
+    color: #1a73ba;
     padding-bottom: 25px;
     position: relative; }
     section.event-banner-section2 h1:after {
@@ -2034,7 +2038,7 @@ section.event-banner-section2 {
       left: 0;
       width: 70px;
       height: 1px;
-      background: #5649c0; }
+      background: #1a73ba; }
   section.event-banner-section2 .button-banner-box {
     text-align: right;
     padding-top: 40px; }
@@ -2081,7 +2085,7 @@ section.event-banner-section3 {
       font-family: Open Sans, sans-serif;
       text-transform: uppercase;
       padding: 13px 30px 12px;
-      background: #2ecc71;
+      background: #11aa58;
       font-weight: 400;
       border-radius: 2px;
       transition: all 0.2s ease-in-out;
@@ -2089,7 +2093,7 @@ section.event-banner-section3 {
       outline: none;
       border: none; }
       section.event-banner-section3 .subscribe-banner-box form.subscribe input[type="submit"]:hover {
-        background: #5649c0;
+        background: #1a73ba;
         color: #fff; }
 
 section.conference-experience-section {
@@ -2103,7 +2107,7 @@ section.conference-experience-section {
       margin-bottom: 15px;
       border-bottom: 1px solid #2d3034; }
     section.conference-experience-section .statistic-box .statistic-post p {
-      color: #5649c0;
+      color: #1a73ba;
       font-size: 72px;
       margin: 0;
       line-height: 72px; }
@@ -2120,13 +2124,13 @@ section.countdown-section {
     margin-bottom: 20px; }
   section.countdown-section .inner-countdown .comming-part span {
     display: inline-block;
-    color: #5649c0;
+    color: #1a73ba;
     font-size: 48px;
     font-family: Open Sans, sans-serif;
     font-weight: 300; }
   section.countdown-section .inner-countdown .comming-part p {
     display: inline-block;
-    color: #5649c0;
+    color: #1a73ba;
     font-size: 48px;
     font-family: Open Sans, sans-serif;
     font-weight: 300; }
@@ -2179,8 +2183,8 @@ section.statistic-section {
         font-family: Open Sans, sans-serif;
         text-transform: uppercase;
         padding: 10px 45px;
-        background: #2ecc71;
-        border: 2px solid #2ecc71;
+        background: #11aa58;
+        border: 2px solid #11aa58;
         border-radius: 20px;
         margin-left: 8px; }
         section.statistic-section .statistic-box p.info-line a:hover {
@@ -2202,7 +2206,7 @@ section.contact-section2 .contact-box .contact-info ul.social-icons {
       font-size: 14px;
       margin-right: 10px; }
     .pagination-box a.prev:hover {
-      color: #2ecc71; }
+      color: #11aa58; }
   .pagination-box a.next {
     margin-bottom: 0;
     margin-top: -30px;
@@ -2211,7 +2215,7 @@ section.contact-section2 .contact-box .contact-info ul.social-icons {
       font-size: 14px;
       margin-left: 10px; }
     .pagination-box a.next:hover {
-      color: #2ecc71; }
+      color: #11aa58; }
   .pagination-box ul.page-list {
     margin: 0;
     padding: 0;
@@ -2231,10 +2235,10 @@ section.contact-section2 .contact-box .contact-info ul.social-icons {
         font-weight: 300;
         line-height: 34px; }
         .pagination-box ul.page-list li a:hover {
-          color: #5649c0;
+          color: #1a73ba;
           border: 1px solid #e4e2f4; }
         .pagination-box ul.page-list li a.active {
-          color: #5649c0;
+          color: #1a73ba;
           border: 1px solid #e4e2f4; }
 
 .sidebar {
@@ -2306,7 +2310,7 @@ section.contact-section2 .contact-box .contact-info ul.social-icons {
           font-size: 15px;
           margin-right: 12px; }
         .sidebar .category-widget ul li a:hover {
-          color: #2ecc71; }
+          color: #11aa58; }
       .sidebar .category-widget ul li:last-child {
         margin-bottom: 0; }
   .sidebar .instagram-widget ul.instagram-list {
@@ -2343,7 +2347,7 @@ section.contact-section2 .contact-box .contact-info ul.social-icons {
           .sidebar .popular-widget ul.popular-list li .side-content h2 a {
             color: #2d3034; }
             .sidebar .popular-widget ul.popular-list li .side-content h2 a:hover {
-              color: #5649c0; }
+              color: #1a73ba; }
         .sidebar .popular-widget ul.popular-list li .side-content span {
           display: inline-block;
           margin: 0;
@@ -2379,16 +2383,16 @@ section.contact-section2 .contact-box .contact-info ul.social-icons {
           font-style: italic;
           margin: 0; }
           .comment-area-box > ul li .comment-box .comment-content h4 span {
-            color: #5649c0; }
+            color: #1a73ba; }
         .comment-area-box > ul li .comment-box .comment-content a {
           float: right;
-          color: #5649c0;
+          color: #1a73ba;
           font-size: 18px;
           font-family: Open Sans, serif;
           font-style: italic;
           margin: 0; }
           .comment-area-box > ul li .comment-box .comment-content a:hover {
-            color: #2ecc71; }
+            color: #11aa58; }
         .comment-area-box > ul li .comment-box .comment-content p {
           margin-bottom: 6px; }
 
@@ -2520,7 +2524,7 @@ footer {
         font-family: Open Sans, sans-serif;
         text-transform: uppercase;
         padding: 13px 30px 12px;
-        background: #2ecc71;
+        background: #11aa58;
         font-weight: 400;
         border-radius: 2px;
         transition: all 0.2s ease-in-out;
@@ -2528,7 +2532,7 @@ footer {
         outline: none;
         border: none; }
         footer .up-footer .footer-widget form.subscribe input[type="submit"]:hover {
-          color: #5649c0;
+          color: #1a73ba;
           background: #fff; }
 
 .article-box {
@@ -2569,7 +2573,7 @@ footer {
     padding-top: 150px;
     padding-left: 30px; }
   .article-box p span {
-    color: #5649c0; }
+    color: #1a73ba; }
   .article-box a.default-button {
     margin-top: 25px;
     box-shadow: 0 8px 15px #efefef;
@@ -2594,7 +2598,7 @@ footer {
       z-index: -1; }
 
 a.more-btn {
-  color: #5649c0;
+  color: #1a73ba;
   font-weight: 400; }
   a.more-btn:hover {
     text-decoration: underline !important; }
@@ -2605,13 +2609,13 @@ a.default-button {
   font-family: Open Sans, sans-serif;
   text-transform: uppercase;
   padding: 11px 38px;
-  background: #2ecc71;
+  background: #11aa58;
   font-weight: 400;
   border-radius: 2px;
   transition: all 0.2s ease-in-out;
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.3); }
   a.default-button:hover {
-    background: #5649c0; }
+    background: #1a73ba; }
 
 a.button-one {
   color: #000;
@@ -2619,7 +2623,7 @@ a.button-one {
   font-family: Open Sans, sans-serif;
   text-transform: uppercase;
   padding: 12px 45px;
-  background: #2ecc71;
+  background: #11aa58;
   font-weight: 500;
   border-radius: 24px;
   transition: all 0.2s ease-in-out;
@@ -2649,7 +2653,7 @@ a.zoom {
   .conference-features .center-area {
     padding-top: 50px; }
     .conference-features .center-area a {
-      color: #5649c0;
+      color: #1a73ba;
       font-weight: 400; }
       .conference-features .center-area a:hover {
         text-decoration: underline !important; }
@@ -2659,7 +2663,7 @@ a.zoom {
     width: 50%;
     padding: 15px; }
     .conference-features .conference-post .inner-box {
-      background: url(../images/dev3.png);
+      background: url(../images/want-to-join-bg.png);
       padding: 26px;
       border-radius: 6px; }
       .conference-features .conference-post .inner-box h1 {
@@ -2668,7 +2672,7 @@ a.zoom {
         margin-bottom: 8px;
         color: #fff; }
       .conference-features .conference-post .inner-box i {
-        color: #2ecc71;
+        color: #11aa58;
         font-size: 70px;
         margin-bottom: 15px;
         display: inline-block; }
@@ -2679,15 +2683,15 @@ a.zoom {
         font-weight: 300;
         font-size: 17px; }
     .conference-features .conference-post:nth-child(2n) .inner-box {
-      background: url(../images/dev5.png); }
+      background: url(../images/faq-bg.png); }
   .conference-features.second-style .conference-post .inner-box {
-    background: #5649c0;
+    background: #1a73ba;
     padding: 52px 30px; }
 
 .about-event-box {
   margin-bottom: 100px; }
   .about-event-box a {
-    color: #5649c0;
+    color: #1a73ba;
     margin-bottom: 0; }
     .about-event-box a:hover {
       text-decoration: underline !important; }
@@ -2803,7 +2807,7 @@ header {
     left: 0;
     width: 100%;
     height: 1px;
-    background: #5649c0;
+    background: #1a73ba;
     transition: all 0.2s ease-in-out; }
 
 .navbar-nav {
@@ -2827,7 +2831,7 @@ header {
     left: 0;
     width: 100%;
     height: 1px;
-    background: #5649c0;
+    background: #1a73ba;
     transition: all 0.2s ease-in-out; }
   .navbar-nav > li.active:hover > a:before {
     bottom: -2px; }
@@ -2958,10 +2962,10 @@ button.mfp-arrow {
     background: #111 url(../images/banners/banner@2x.html) center center fixed;
     background-size: cover; }
   section.reg-sub-section .inner-reg-sub .register-box {
-    background: #111 url(../images/dev2@2x.png);
+    background: #111 url(../images/want-to-present-bg@2x.png);
     background-size: auto auto; }
   section.reg-sub-section .inner-reg-sub .subscribe-box {
-    background: #111 url(../images/dev3@2x.png);
+    background: #111 url(../images/want-to-join-bg@2x.png);
     background-size: auto auto; }
   section.register-section .background-part {
     background: #111 url(../images/banners/ban5@2x.jpg) center center no-repeat;
@@ -3002,10 +3006,10 @@ button.mfp-arrow {
     background: #111 url(../images/banners/banner@2x.html) center center fixed;
     background-size: cover; }
   section.reg-sub-section .inner-reg-sub .register-box {
-    background: #111 url(../images/dev2@2x.png);
+    background: #111 url(../images/want-to-present-bg@2x.png);
     background-size: auto auto; }
   section.reg-sub-section .inner-reg-sub .subscribe-box {
-    background: #111 url(../images/dev3@2x.png);
+    background: #111 url(../images/want-to-join-bg@2x.png);
     background-size: auto auto; }
   section.register-section .background-part {
     background: #111 url(../images/banners/ban5@2x.jpg) center center no-repeat;
@@ -3036,13 +3040,13 @@ button.mfp-arrow {
       display: block;
       padding: 20px 40px;
       position: relative;
-      color: #5649c0;
+      color: #1a73ba;
       background: #fff;
       font-size: 24px;
       font-family: Open Sans, sans-serif;
       font-weight: 400 !important;
       line-height: 24px;
-      border-bottom: 1px solid #5649c0; }
+      border-bottom: 1px solid #1a73ba; }
       .collapse-box .panel-default > .panel-heading a:before {
         content: '-';
         position: absolute;
@@ -3050,17 +3054,17 @@ button.mfp-arrow {
         right: 40px;
         width: 24px;
         height: 24px;
-        color: #5649c0;
+        color: #1a73ba;
         font-size: 17px;
         font-family: Open Sans, sans-serif;
         font-weight: 300;
         line-height: 20px;
         text-align: center;
-        border: 1px solid #5649c0;
+        border: 1px solid #1a73ba;
         border-radius: 50%;
         transition: all 0.2s ease-in-out; }
       .collapse-box .panel-default > .panel-heading a.collapsed {
-        background: #5649c0;
+        background: #1a73ba;
         color: #fff; }
         .collapse-box .panel-default > .panel-heading a.collapsed:before {
           content: ' +';
@@ -3127,13 +3131,13 @@ button.mfp-arrow {
     font-family: Open Sans, sans-serif;
     text-transform: uppercase;
     padding: 11px 38px;
-    background: #2ecc71;
+    background: #11aa58;
     font-weight: 400;
     border-radius: 2px;
     transition: all 0.2s ease-in-out;
     border: none; }
     .contact-form-box #comment-form input[type="submit"]:hover {
-      background: #5649c0; }
+      background: #1a73ba; }
 
 .text-align-left {
   text-align: left; }
@@ -3459,9 +3463,9 @@ button.mfp-arrow {
     padding: 5px 15px !important;
     font-size: 17px; }
     .navbar-nav > li > a:hover {
-      color: #2ecc71 !important; }
+      color: #11aa58 !important; }
     .navbar-nav > li > a.active {
-      color: #2ecc71 !important; }
+      color: #11aa58 !important; }
   .navbar-nav > li.active > a:before {
     display: none !important; }
   .article-box.with-margin-top {
@@ -3595,7 +3599,7 @@ button.mfp-arrow {
 .nav-logo-unfold {
   float: left;
   color: #fff;
-  line-height: 5px;
+  line-height: 1;
   font-size: 35px;
   margin-right: 10px;
   font-weight: 600;
@@ -3621,10 +3625,10 @@ li:hover > .dropdown {
     height: 10px; }
   .owl-theme .owl-controls .owl-page.active span {
     background: transparent;
-    border: 1px solid #5649c0; }
+    border: 1px solid #1a73ba; }
   .owl-theme .owl-controls.clickable .owl-page:hover span {
     background: transparent;
-    border: 1px solid #5649c0; }
+    border: 1px solid #1a73ba; }
 
 /* NAVIGATION */
 .nav-stroke {
@@ -3963,3 +3967,17 @@ nav.fill li a:hover:after {
 @keyframes blur-in {
   to {
     opacity: 0.7; } }
+
+.event-promo-section .container h4 {
+  text-align: center;
+  color: #ccc;
+  font-weight: normal !important;
+  margin-top: 15px; }
+
+.event-promo-section .container .time-n-date {
+  border-top: solid 1px;
+  padding-top: 10px;
+  display: inline-block;
+  margin: 0 auto; }
+  .event-promo-section .container .time-n-date strong {
+    color: white; }

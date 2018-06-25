@@ -11,13 +11,14 @@ html.no-js(lang='en')
   body
     #home
       #container
-        include partials/header-to-be-removed
+        include partials/header
         include partials/event-promotion-section
+        include partials/registration-section
+        include partials/about-section
+        include partials/faq-section
         include partials/contact-section
         include partials/footer
     script(src='assets/js/jquery.3.3.1.js')
     script(src='assets/js/popper.js')
     script(src='assets/js/bootstrap.min.js')
     script(src='assets/js/script.js')
-    style(rel='stylesheet', type='text/css').
-      section.event-promo-section:after {display: none !important}
