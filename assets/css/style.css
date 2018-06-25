@@ -3981,3 +3981,143 @@ nav.fill li a:hover:after {
   margin: 0 auto; }
   .event-promo-section .container .time-n-date strong {
     color: white; }
+
+.timeline {
+  position: relative;
+  max-width: 70%;
+  margin: 0 auto;
+  padding-top: 20px;
+  background-color: inherit;
+  padding-left: 0;
+  list-style: none; }
+  .timeline h2 {
+    font-family: Open Sans, sans-serif;
+    margin-bottom: 0.5em;
+    font-size: 23px;
+    color: #fff;
+    line-height: 36px; }
+  .timeline p {
+    font-family: Open Sans, serif;
+    font-style: italic;
+    font-size: 18px;
+    color: #fff; }
+  .timeline:after {
+    content: "";
+    position: absolute;
+    width: 4px;
+    background: #111 url(../images/want-to-join-bg.png);
+    left: 50%;
+    top: 0;
+    bottom: 10px;
+    margin-left: -2px; }
+  .timeline--first:after {
+    top: 20px; }
+  .timeline .era {
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    padding-bottom: 20px; }
+    .timeline .era__title {
+      background: #111 url(../images/want-to-join-bg.png);
+      display: inline-block;
+      padding: 10px 20px;
+      border-radius: 4px; }
+  .timeline .entry {
+    padding: 10px 0;
+    width: 50%;
+    position: relative;
+    transition: all 0.4s ease 0s; }
+    .timeline .entry:before {
+      content: " ";
+      height: 0;
+      display: block;
+      position: absolute;
+      top: 20px;
+      border: solid 12px transparent; }
+    .timeline .entry:after {
+      content: "";
+      position: absolute;
+      width: 24px;
+      height: 24px;
+      right: -12px;
+      background-color: #eeeeee;
+      border: 4px solid #2175b8;
+      top: 20px;
+      border-radius: 50%;
+      z-index: 1; }
+    .timeline .entry--left {
+      padding-right: 40px; }
+      .timeline .entry--left:before {
+        right: 20px;
+        border-left-color: #20a95b; }
+    .timeline .entry--right {
+      margin-left: 50%;
+      padding-left: 40px; }
+      .timeline .entry--right:before {
+        left: 20px;
+        border-right-color: #20a95b; }
+    .timeline .entry--right:after {
+      right: auto;
+      left: -12px; }
+    .timeline .entry__content {
+      background: #111 url(../images/want-to-present-bg.png);
+      padding: 20px 30px;
+      position: relative;
+      border-radius: 4px; }
+  .timeline .time {
+    position: absolute;
+    padding: 10px 20px;
+    background: #111 url(../images/want-to-join-bg.png);
+    border-radius: 4px;
+    cursor: default;
+    color: #fff;
+    transition: all 0.4s ease 0s;
+    text-align: center;
+    width: 120px; }
+    .timeline .time:before {
+      content: " ";
+      position: absolute;
+      border: 12px solid transparent; }
+    .timeline .time--right {
+      left: calc(100% + 40px); }
+      .timeline .time--right:before {
+        border-right-color: #2175b8;
+        left: -20px; }
+    .timeline .time--left {
+      right: calc(100% + 40px); }
+      .timeline .time--left:before {
+        border-left-color: #2175b8;
+        right: -20px; }
+
+@media all and (max-width: 768px) {
+  .timeline {
+    max-width: 80%; }
+    .timeline:after {
+      height: calc(100% + 20px);
+      left: 0%; }
+    .timeline .era {
+      text-align: left; }
+    .timeline .entry {
+      width: 100%;
+      margin-bottom: 50px;
+      padding-left: 0px;
+      padding-right: 40px; }
+      .timeline .entry:before {
+        right: auto;
+        left: 56px;
+        margin-left: 0; }
+      .timeline .entry:after {
+        left: -12px; }
+      .timeline .entry__content {
+        top: 50px;
+        left: 40px; }
+      .timeline .entry--right {
+        margin-left: 0px; }
+    .timeline .time {
+      left: 40px; }
+      .timeline .time--left:before {
+        border-left: 0px;
+        right: calc(100% - 4px);
+        border-right-color: #2175b8; }
+      .timeline .time:after {
+        left: 15px; } }
