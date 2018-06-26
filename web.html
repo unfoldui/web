@@ -8,13 +8,6 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800,900" rel="stylesheet" type="text/css">
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-774114-34"></script>
-    <script type="text/javascript">
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'UA-774114-34');
-    </script>
   </head>
   <body>
     <div id="home">
@@ -22,7 +15,18 @@
         <header class="clearfix">
           <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container"><a class="navbar-brand" href="/">
-                <h2 class="nav-logo-unfold">Unfold UI</h2></a></div>
+                <h2 class="nav-logo-unfold">Unfold UI</h2></a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav nav-stroke w-100" style="justify-content: flex-end">
+                  <li class="nav-item"><a class="nav-link" href="#home"><span data-hover="Home">Home</span></a></li>
+                  <li class="nav-item"><a class="nav-link" href="#about"><span data-hover="About">About</span></a></li>
+                  <li class="nav-item"><a class="nav-link" href="#faq"><span data-hover="FAQ">FAQ</span></a></li>
+                  <li class="nav-item"><a class="nav-link" href="#contact"><span data-hover="Contact">Contact</span></a></li>
+                </ul>
+                <!--a(href='#register', class='degault-button') Register-->
+              </div>
+            </div>
           </nav>
         </header>
         <section class="event-promo-section">
@@ -78,6 +82,86 @@
               <h4>
                 <div class="time-n-date"> <strong><span>4</span><sup>th </sup></strong><span>August, 2018 </span><strong>| </strong><span>Pune</span></div>
               </h4>
+            </div>
+          </div>
+        </section>
+        <section class="reg-sub-section" id="registration">
+          <div class="inner-reg-sub">
+            <div class="register-box" style="text-align: left">
+              <p>Want to present?</p><span>Got some super cool idea and eager to share with community, here is the right chance for you to share.</span><a class="default-button" href="https://docs.google.com/forms/d/e/1FAIpQLScf_WKLegQYTV1uVZsnv0Yr6zA2aEYSS85x0Oq4KRVIT3V0TA/viewform" target="_blank">I Want to present</a>
+            </div>
+            <div class="subscribe-box" style="text-align: left">
+              <p>Want to attend?<span>Come and expand your knowledge about current UI development, connect with like minded people and have fun.</span><span class="where">4 August 2018</span></p><a class="default-button" id="attendance-form" href="javascript:;">I Want to attend</a>
+            </div>
+          </div>
+        </section>
+        <section class="about-section" id="about">
+          <div class="container">
+            <div class="about-box">
+              <div class="title-section">
+                <h1>About Conference</h1>
+              </div>
+              <p class="about-body">As the UI community in ThoughtWorks, we have always been playing with new tech and incubating ideas. So finally we have decided to share our stories and learning.</p>
+              <p class="about-body">
+                Unfold UI aims to become a platform for frontend developers to come together, share knowledge grow their network. We will have deep dives into latest industry trends and technologies in this space. From nifty CSS tricks to revisiting
+                the core web concepts, there is something for everyone.
+              </p>
+            </div>
+          </div>
+          <ul class="timeline timeline--first">
+            <li class="era">
+              <h2 class="era__title"><span>4</span><sup>th </sup><span>August</span></h2>
+            </li>
+            <li class="entry entry--left">
+              <div class="time time--right">9:30 AM</div>
+              <div class="entry__content wow animated fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
+                <h2>Bacon Ipsum</h2>
+                <p>
+                  Bacon ipsum dolor amet ball tip jerky sirloin pancetta capicola prosciutto meatball pig leberkas
+                  cow pork chop shank meatloaf.
+                </p>
+              </div>
+            </li>
+            <li class="entry entry--right">
+              <div class="time time--left">10:30 AM</div>
+              <div class="entry__content wow animated fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
+                <h2>Bacon Ipsum</h2>
+                <p>
+                  Ground round short ribs fatback, salami shoulder sausage chuck shankle landjaeger drumstick ribeye
+                  meatloaf doner.
+                </p>
+              </div>
+            </li>
+            <li class="entry entry--left">
+              <div class="time time--right">11:30 AM</div>
+              <div class="entry__content wow animated fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
+                <h2>Bacon Ipsum</h2>
+                <p>Swine pork belly prosciutto jowl pork chop chicken filet mignon cupim doner boudin.</p>
+              </div>
+              <!--.video-box
+              // youtube
+              // <iframe class="videoembed" src="https://www.youtube.com/embed/7QG8tJtxt7U?title=0&amp;byline=0&amp;portrait=0"></iframe>
+              // End youtube
+              -->
+            </li>
+          </ul>
+        </section>
+        <section class="event-banner-section" id="faq">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12">
+                <h1>FAQs</h1>
+                <dl class="text-white">
+                  <dt>Do I have to pay for attending the event?</dt>
+                  <dd>Absolutely NO. It's a free UI community event.<br><br></dd>
+                  <dt>I'm not from UI background, can I attend?</dt>
+                  <dd>Yes please.<br><br></dd>
+                  <dt>Can I bring my friend/colleague along?</dt>
+                  <dd>Yes, let us know well before or ask them to register.<br><br></dd>
+                  <dt>Can I get my laptop?</dt>
+                  <dd>Yes, if you want to attend hands on workshops, please bring your own, we will update you with pre-requisites.</dd>
+                </dl>
+              </div>
             </div>
           </div>
         </section>
@@ -138,7 +222,7 @@
     <script src="assets/js/jquery.3.3.1.js"></script>
     <script src="assets/js/popper.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/picoModal-3.0.0.min.js"></script>
     <script src="assets/js/script.js"></script>
-    <style rel="stylesheet" type="text/css">section.event-promo-section:after {display: none !important}</style>
   </body>
 </html>

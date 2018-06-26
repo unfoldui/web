@@ -80,7 +80,45 @@ $(document).ready(function ($) {
 			}
 		});
 
-});
+	});
+
+	$('#attendance-form').click(()=>{
+		const form = `
+			<iframe
+				id="#registration-embed"
+				src="https://docs.google.com/forms/d/e/1FAIpQLSc1wcZD_Pavj_VQbAh3ZMnzNpVTCsWHk-DPv2_koRCISaDezA/viewform?embedded=true"
+				width="100%" height="100%"
+				frameborder="0" marginheight="0" marginwidth="0">
+				Loading..
+			</iframe>
+			`
+		picoModal({
+			content: form,
+			closeButton: false,
+			overlayStyles: function ( styles ) { styles.opacity = 0; },
+			modalStyles: function ( styles ) { 
+				styles.opacity = 0,
+				styles.padding = 0,
+				styles.marginTop = '20px',
+				styles.width = (window.innerWidth >= 600) ? '80vw' : '90vw',
+				styles.height = '70vh' 
+			}
+		})
+		.afterShow(function(modal){
+			$(modal.overlayElem()).animate({opacity: 0.7});
+			$(modal.modalElem()).animate({opacity: 1});
+		})
+		.beforeClose(function(modal, event) {
+			event.preventDefault();
+			$(modal.overlayElem()).add(modal.modalElem())
+			.animate(
+				{ opacity: 0 },
+				{ complete: modal.forceClose }
+			);
+		})
+		.afterClose(function (modal) { modal.destroy(); })
+		.show();
+	})
 
 function Resize() {
 	$(window).trigger('resize');
