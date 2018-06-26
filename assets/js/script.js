@@ -83,7 +83,7 @@ $(document).ready(function ($) {
 	});
 
 	$('#attendance-form').click(()=>{
-		const form = '<iframe id="#registration-embed" src="https://docs.google.com/forms/d/e/1FAIpQLSc1wcZD_Pavj_VQbAh3ZMnzNpVTCsWHk-DPv2_koRCISaDezA/viewform?embedded=true" width="750" height="600" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>'
+		const form = '<iframe id="#registration-embed" src="https://docs.google.com/forms/d/e/1FAIpQLSc1wcZD_Pavj_VQbAh3ZMnzNpVTCsWHk-DPv2_koRCISaDezA/viewform?embedded=true" width="400px" height="500px" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>'
 		picoModal({
 			content: form,
 			closeButton: false,
