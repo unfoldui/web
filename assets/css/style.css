@@ -3690,6 +3690,9 @@ nav.fill li a:hover:after {
   -moz-animation: fill 1s forwards;
   opacity: 1; }
 
+.nudge-left {
+  padding-left: 4px; }
+
 .main-logo {
   width: 300px;
   height: 340px;
@@ -3826,16 +3829,22 @@ nav.fill li a:hover:after {
     animation: fold-up 1s forwards;
     animation-delay: 1500ms;
     transform-origin: 0 0; }
-  .main-logo .ir5Shadow {
+  .main-logo .r5Shadow {
     border-width: 7.14286px 0px 0px 50px !important;
     border-color: rgba(0, 0, 0, 0.6) transparent transparent transparent;
-    left: -100%;
+    left: 100%;
     animation: blur-in 1s forwards;
     transform-origin: 0 0;
     animation-delay: 1800ms;
     top: -300%;
-    z-index: 2;
-    opacity: 0.5 !important; }
+    z-index: 2; }
+  .main-logo .l5Shadow {
+    border-width: 7.14286px 50px 50px 0px !important;
+    border-color: rgba(0, 0, 0, 0.6) transparent transparent;
+    left: -100%;
+    top: -300%;
+    animation: blur-in 1s forwards;
+    animation-delay: 1800ms; }
   .main-logo .l5 {
     border-color: transparent #26bdcf #26bdcf transparent;
     left: -100%;
@@ -3870,15 +3879,6 @@ nav.fill li a:hover:after {
     transform-origin: 0 0;
     animation-delay: 2400ms;
     top: -400%; }
-  .main-logo .llShadow {
-    position: absolute;
-    border-color: rgba(0, 0, 0, 0.6) rgba(0, 0, 0, 0.6) transparent transparent;
-    z-index: 2;
-    left: -57.14286px;
-    border-width: 50px 0 0 7.14286px !important;
-    animation: blur-in 600ms forwards;
-    animation-delay: 2700ms;
-    top: -400%; }
   .main-logo .dot {
     border-width: 20.83333px !important;
     border-color: transparent #26bdcf #26bdcf transparent;
@@ -3900,35 +3900,36 @@ nav.fill li a:hover:after {
     animation-delay: 2400ms; }
   .main-logo .t {
     position: relative;
-    bottom: -80px; }
+    bottom: -80px;
+    left: -5px; }
     .main-logo .t > div {
-      font-size: 35px;
+      font-size: 32px;
       color: #26bdcf;
       font-weight: 900;
       width: 30px;
-      height: 40px;
+      height: 35px;
       opacity: 0; }
   .main-logo .t0 {
     animation: fade-in 300ms forwards;
-    animation-delay: 500ms; }
+    animation-delay: 600ms; }
   .main-logo .t1 {
     animation: fade-in 300ms forwards;
-    animation-delay: 800ms; }
+    animation-delay: 960ms; }
   .main-logo .t2 {
     animation: fade-in 300ms forwards;
-    animation-delay: 1100ms; }
+    animation-delay: 1320ms; }
   .main-logo .t3 {
     animation: fade-in 300ms forwards;
-    animation-delay: 1400ms; }
+    animation-delay: 1680ms; }
   .main-logo .t4 {
     animation: fade-in 300ms forwards;
-    animation-delay: 1700ms; }
+    animation-delay: 2040ms; }
   .main-logo .t5 {
     animation: fade-in 300ms forwards;
-    animation-delay: 2000ms; }
+    animation-delay: 2400ms; }
   .main-logo .t6 {
     animation: fade-in 300ms forwards;
-    animation-delay: 2300ms; }
+    animation-delay: 2760ms; }
 
 @keyframes open-right {
   to {
