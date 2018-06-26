@@ -7,6 +7,10 @@ $height: 7;
 $t: 300;
 $ts: 300ms;
 
+.nudge-left{
+  padding-left: 4px;
+}
+
 .main-logo {
   width: 300px;
   height: 340px;
@@ -76,16 +80,23 @@ $ts: 300ms;
     $delay: $i*$t+$ts;
     @if $i == $height - 2{
       $topOffset: -100% * ceil($i / 2);
-      .ir#{$i}Shadow{
+      .r#{$i}Shadow{
         border-width: $shadowWidth 0px 0px $iw !important;
         border-color: $shadowClr transparent transparent transparent;
-        left: -100%;
+        left: 100%;
         animation: blur-in 1s forwards;
         transform-origin: 0 0;
         animation-delay: $delay;
         top: #{$topOffset};
         z-index: 2;
-        opacity: 0.5 !important;
+      }
+      .l#{$i}Shadow{
+          border-width: $shadowWidth $iw $iw 0px !important;
+          border-color: $shadowClr transparent transparent;
+          left: -100%;
+          top: #{$topOffset};
+          animation: blur-in 1s forwards;
+          animation-delay: $delay;
       }
     }
     @if $i == $height {
@@ -96,16 +107,6 @@ $ts: 300ms;
         transform-origin: 0 0;
         animation-delay: $delay;
         top: -100% * ceil($i / 2);
-      }
-      .llShadow {
-        position: absolute;
-        border-color: $shadowClr $shadowClr transparent transparent;
-        z-index: 2;
-        left: -1 * $iw - $shadowWidth;
-        border-width: $iw 0 0 $shadowWidth !important;
-        animation: blur-in $t*2ms forwards;
-        animation-delay: $delay+$ts;
-        top: -100% * ceil($height / 2);
       }
       .dot {
         border-width: $iw/2.4 !important;
@@ -213,13 +214,13 @@ $ts: 300ms;
   .t {
     position: relative;
     bottom: -80px;
-
+    left: -5px;
     & > div {
-      font-size: $iw/2+10px;
+      font-size: $iw/2+7px;
       color: $clr;
       font-weight: 900;
       width: $iw/2+5px;
-      height: $iw/2+15px;
+      height: $iw/2+10px;
       opacity: 0;
     }
   }
@@ -228,7 +229,7 @@ $ts: 300ms;
     $delay: $i*$t+200+$ts;
     .t#{$i} {
       animation: fade-in $ts forwards;
-      animation-delay: $delay;
+      animation-delay: $delay*1.2;
     }
   }
 }
