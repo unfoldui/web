@@ -1,19 +1,19 @@
 .event-promo-section {
-    .container {
-        h4 {
-            text-align: center;
-            color: #ccc;
-            font-weight: normal !important;
-            margin-top: 15px;
-        }
-        .time-n-date {
-            border-top: solid 1px;
-            padding-top: 10px;
-            display: inline-block;
-            margin: 0 auto;
-            strong {
-                color: white;
-            }
-        }
+  .container {
+    h4 {
+      text-align: center;
+      color: #ccc;
+      font-weight: normal !important;
+      margin-top: 15px;
     }
+    .time-n-date {
+      border-top: solid 1px;
+      padding: 10px 30px 0 30px;
+      display: inline-block;
+      margin: 0 auto;
+      strong {
+        color: white;
+      }
+    }
+  }
 }

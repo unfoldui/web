@@ -3977,7 +3977,7 @@ nav.fill li a:hover:after {
 
 .event-promo-section .container .time-n-date {
   border-top: solid 1px;
-  padding-top: 10px;
+  padding: 10px 30px 0 30px;
   display: inline-block;
   margin: 0 auto; }
   .event-promo-section .container .time-n-date strong {
