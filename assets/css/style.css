@@ -1,3 +1,4 @@
+@charset "UTF-8";
 section.schedule-section3 .schedule-box .schedule-block .schedule-speakers ul.speaker-list li span, section.speaking-single .single-box .single-image a, section.blog-section .blog-box .blog-post ul.post-tags li, section.blog-section .blog-box .blog-post span.date-comments, section.register-section .register-box #register-form .subcribe-bx span, section.news-section .news-box .news-post span, section.news-section2 .blog-post span.date-comments, .pagination-box a.prev, .pagination-box a.next, .paragraph, .article-box span, a.more-btn, .conference-features .center-area a, .about-event-box a, p {
   font-size: 18px;
   color: #6c7a89;
@@ -112,8 +113,7 @@ section.services-section {
 section.schedule-section {
   background: #2b2b2c; }
   section.schedule-section .schedule-box {
-    padding: 100px 0;
-    background: url(../images/dev6.png) center top repeat-x; }
+    padding: 100px 0; }
     section.schedule-section .schedule-box .schedule-block {
       padding: 30px;
       margin-top: 30px;
@@ -4122,3 +4122,101 @@ nav.fill li a:hover:after {
         border-right-color: #2175b8; }
       .timeline .time:after {
         left: 15px; } }
+
+/* EFFECTS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* GENERAL MEDIA QUERIES
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+.agenda ul {
+  padding: 50px 0;
+  position: relative;
+  margin-bottom: 0; }
+  .agenda ul:before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 30px;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #3c84d4;
+    z-index: 1;
+    transition: background .5s ease-in-out; }
+  .agenda ul li {
+    list-style-type: none;
+    position: relative;
+    width: 6px;
+    margin: 0 auto;
+    padding-top: 50px;
+    background: #f6f8fa; }
+    .agenda ul li::after {
+      content: '';
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      transform: translateX(-50%);
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background: inherit;
+      transition: background .5s ease-in-out; }
+    .agenda ul li div {
+      position: relative;
+      bottom: 0;
+      width: 400px;
+      padding: 15px;
+      background: #3c84d4;
+      visibility: hidden;
+      opacity: 0;
+      transition: all .5s ease-in-out;
+      border-radius: 3px; }
+      .agenda ul li div::before {
+        content: '';
+        position: absolute;
+        bottom: 7px;
+        width: 0;
+        height: 0;
+        border-style: solid; }
+      .agenda ul li div p {
+        color: #f6f8fa; }
+    .agenda ul li:nth-child(odd) div {
+      left: 45px;
+      transform: translate3d(200px, 0, 0); }
+      .agenda ul li:nth-child(odd) div::before {
+        left: -15px;
+        border-width: 8px 16px 8px 0;
+        border-color: transparent #3c84d4 transparent transparent; }
+    .agenda ul li:nth-child(even) div {
+      left: -439px;
+      transform: translate3d(-200px, 0, 0); }
+      .agenda ul li:nth-child(even) div::before {
+        right: -15px;
+        border-width: 8px 0 8px 16px;
+        border-color: transparent transparent transparent #3c84d4; }
+  .agenda ul li.in-view::after {
+    background: #3c84d4; }
+  .agenda ul li.in-view div {
+    transform: none;
+    visibility: visible;
+    opacity: 1; }
+
+@media screen and (max-width: 900px) {
+  .agenda ul li div {
+    width: 250px; }
+  .agenda ul li:nth-child(even) div {
+    left: -289px; } }
+
+@media screen and (max-width: 600px) {
+  .agenda ul:before {
+    left: 24px; }
+  .agenda ul li {
+    margin-left: 20px; }
+    .agenda ul li div {
+      width: calc(100vw - 91px); }
+    .agenda ul li:nth-child(even) div {
+      left: 45px; }
+      .agenda ul li:nth-child(even) div::before {
+        left: -15px;
+        border-width: 8px 16px 8px 0;
+        border-color: transparent #3c84d4 transparent transparent; } }
