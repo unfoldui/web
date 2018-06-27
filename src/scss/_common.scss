@@ -4641,15 +4641,7 @@ button {
 		}
 	}
 }
-.nav-logo-unfold {
-	float: left;
-	color: $white;
-	line-height: 1;
-	font-size: 35px;
-	margin-right: 10px;
-	font-weight: 600;
-	letter-spacing: 2px;
-}
+
 li:hover > .dropdown {
 	visibility: visible;
 	opacity: 1;
