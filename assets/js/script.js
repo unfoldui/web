@@ -80,8 +80,6 @@ $(document).ready(function ($) {
 			}
 		});
 
-	setupFormIFrameListener();
-
 	$('#attendance-form').click(() => {
 		modal.show();
 	});
@@ -122,51 +120,25 @@ function Resize() {
 	$(window).trigger('resize');
 }
 
-function setupFormIFrameListener() {
-	document.querySelector('.pico-content iframe').addEventListener('load', function () {
-		switch (window.formStatus) {
-			case 'LOADED':
-				window.formStatus = 'SUBMITTED';
-				break;
-			default:
-				window.formStatus = 'LOADED';
-				break;
-		}
-		console.log(window.formStatus);
-		if (window.formStatus === 'SUBMITTED') {
-			attendanceFormSubmitted()
-		}
-	})
-}
-
-/**
- * this function will get called once user submits the attendance form
- * You can call tracking call from here itself, or redirect user to some other page
- * where page view will be considered as complete of user journey.
-*/
-function attendanceFormSubmitted(){
-	alert('Form Has been submitted and you have still have the control! Execute GA functions from here.');
-}
-
 const modal = picoModal({
-	content: `
-		<iframe
-			id="#registration-embed"
-			src="https://docs.google.com/forms/d/e/1FAIpQLSc1wcZD_Pavj_VQbAh3ZMnzNpVTCsWHk-DPv2_koRCISaDezA/viewform?embedded=true"
-			width="100%" height="100%"
-			frameborder="0" marginheight="0" marginwidth="0">
-			Loading..
-		</iframe>`,
+	content: document.getElementById('registration-form'),
 	overlayStyles: function (styles) { styles.opacity = 0; },
+	closeStyles:{
+		width:'30px', height:'30px',
+		position:'absolute',
+		top:'5px', right: '5px',
+		borderRadius: '50%',
+		cursor: 'pointer',
+		boxShadow: '0px 3px 11px 1px rgba(108, 117, 125, 0.41)'
+	},
 	modalStyles: function (styles) {
 		styles.opacity = 0,
-			styles.padding = 0,
-			styles.marginTop = '20px',
-			styles.width = (window.innerWidth >= 600) ? '80vw' : '90vw',
-			styles.height = '70vh'
+		styles.padding = 0,
+		styles.marginTop = '40px',
+		styles.width = (window.innerWidth <= 600) ? '90vw' : '500px'
 	}
 }).afterShow(function (modal) {
-	$(modal.overlayElem()).animate({ opacity: 0.7 });
+	$(modal.overlayElem()).animate({ opacity: 0.8 });
 	$(modal.modalElem()).animate({ opacity: 1 });
 }).beforeClose(function (modal, event) {
 	event.preventDefault();
@@ -175,4 +147,9 @@ const modal = picoModal({
 			{ opacity: 0 },
 			{ complete: modal.forceClose }
 		);
-}).buildDom();
+});
+
+function submitRegistrationForm() {
+	console.log('Form Submitted, Redirect User to thank you now.');
+	modal.close();
+}

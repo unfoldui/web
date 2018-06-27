@@ -4673,3 +4673,57 @@ li:hover > .dropdown {
 		border: 1px solid $color_tw_blue;
 	}
 }
+
+// --------------------
+// Registration Form //
+// --------------------
+
+#registration-form {
+    display: flex;
+	flex-direction: column;
+	padding: 1rem;
+
+	h2{
+		font-weight: 300;
+		font-size: 2rem;
+		margin: 0 auto 1rem;
+	}
+
+	sup {
+		color: rgba(255, 0, 0, 0.5098039215686274);
+		font-weight: normal;
+	}
+
+	label{
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+
+		input{
+			font-size: 1.2rem;
+		}
+
+		input#what,input#expectations{
+			height:60px;
+		}
+	}
+
+	p:last-child{
+		display: flex;
+		justify-content: space-between;
+
+		span{
+			align-self: center;
+		}
+	}
+
+	button[type="submit"]{
+		padding: 5px 20px;
+		font-weight: 300;
+		color: white;
+		border-radius: 4px;
+		box-shadow: 0px 2px 9px 1px rgba(17, 172, 89, 0.48);
+		cursor: pointer;
+		background-color: #11aa58;
+	}
+}
