@@ -90,14 +90,12 @@ $(document).ready(function ($) {
 	
 		function isElementInViewport(el) {
 			var rect = el.getBoundingClientRect();
-			const temp =  (
+			return (
 			  rect.top >= 0 &&
 			  rect.left >= 0 &&
 			  rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
 			  rect.right <= (window.innerWidth || document.documentElement.clientWidth)
 			);
-			console.log(temp)
-			return temp;
 		}
 	
 		function callbackFunc() {
