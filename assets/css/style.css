@@ -36,6 +36,16 @@ a, .anchor {
   text-decoration: none !important;
   transition: all 0.2s ease-in-out; }
 
+body {
+  font-family: Open Sans;
+  text-rendering: optimizeLegibility; }
+
+.light-weight {
+  font-weight: 300; }
+
+.light-bg {
+  background-color: rgba(0, 0, 0, 0.02); }
+
 .reset-elem {
   margin: 0;
   padding: 0; }
@@ -1246,7 +1256,7 @@ section.contact-section {
       section.contact-section .contact-info .inner-contact-info p {
         color: #fff;
         font-size: 24px;
-        font-weight: 400;
+        font-weight: 300;
         margin-bottom: 40px; }
   section.contact-section .contact-post {
     overflow: hidden;
@@ -1671,7 +1681,8 @@ section.reg-sub-section {
         font-family: Open Sans, serif;
         font-style: italic;
         line-height: 32px;
-        margin: 0 0 25px; }
+        margin: 0 0 25px;
+        font-weight: 300; }
     section.reg-sub-section .inner-reg-sub .subscribe-box {
       padding: 80px 130px;
       text-align: center;
@@ -1948,7 +1959,10 @@ section.event-banner-section {
   background: url(../images/faq-bg.png);
   background-repeat: no-repeat;
   -webkit-background-size: cover;
-  background-size: cover; }
+  background-size: cover;
+  font-weight: 300; }
+  section.event-banner-section h1, section.event-banner-section dl {
+    opacity: 0.9; }
   section.event-banner-section h1 {
     color: #fff;
     padding-bottom: 25px;
@@ -4280,7 +4294,7 @@ footer {
 #registration-form {
   display: flex;
   flex-direction: column;
-  padding: 0 1rem; }
+  padding: 1rem; }
   #registration-form h2 {
     font-weight: 300;
     font-size: 2rem;
@@ -4293,31 +4307,72 @@ footer {
     flex-direction: column;
     width: 100%; }
     #registration-form label input {
-      font-size: 1.2rem; }
+      font-size: 1.2rem;
+      padding-left: 0.25rem; }
     #registration-form label.form-label > span:after {
       content: '*';
       display: inline;
       padding-left: 5px;
       position: relative;
-      margin-top: -10px;
       color: red;
       font-size: 14px; }
-  #registration-form p:last-child {
+  #registration-form .submit-form {
     display: flex;
-    justify-content: space-between; }
-    #registration-form p:last-child span {
-      align-self: center; }
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding-top: 10px; }
   #registration-form button[type="submit"] {
     padding: 10px 25px;
     font-weight: 600;
     font-size: 20px;
     color: white;
     border-radius: 4px;
-    box-shadow: 0px 2px 9px 1px rgba(17, 172, 89, 0.48);
+    box-shadow: 0px 2px 9px 1px rgba(17, 172, 89, 0.18);
     cursor: pointer;
     background-color: #11aa58; }
-  #registration-form .submit-form {
-    border-top: solid 1px #ccc;
-    margin-top: 40px;
-    margin-bottom: 0;
-    padding-top: 10px; }
+
+#thank-you-container {
+  height: 500px; }
+  #thank-you-container .hero-banner {
+    height: inherit;
+    background-image: url(../../assets/images/banners/ban8.jpg);
+    background-size: cover;
+    background-repeat: no-repeat; }
+  #thank-you-container .message-container {
+    display: flex;
+    flex-direction: column;
+    height: inherit;
+    justify-content: center;
+    align-items: center; }
+  #thank-you-container .message-box {
+    padding: 3rem;
+    background: rgba(0, 0, 0, 0.91);
+    margin-bottom: 2rem;
+    color: #fff;
+    opacity: 0.8; }
+    #thank-you-container .message-box p {
+      font-size: inherit;
+      text-align: center;
+      color: inherit; }
+    #thank-you-container .message-box .main-message {
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 3.5rem;
+      margin-bottom: 3rem;
+      padding: 2rem 0;
+      border-top: 1px solid #fff;
+      border-bottom: 1px solid #fff;
+      font-style: italic; }
+    #thank-you-container .message-box .message-subtitle {
+      opacity: 0.8;
+      font-size: 1.2rem;
+      margin: 0;
+      font-weight: 100; }
+  #thank-you-container .next-action .go-back-btn {
+    background: #000;
+    color: #fff;
+    padding: 0.8rem 2rem;
+    border-radius: 2px;
+    font-size: 1.2rem;
+    font-weight: 100; }

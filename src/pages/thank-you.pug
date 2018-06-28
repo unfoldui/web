@@ -1,0 +1,10 @@
+extends ../layout/layout.pug
+
+block content
+  include ../templates/partials/header-without-nav
+  include ../templates/partials/thank-you
+  include ../templates/partials/footer
+
+block footerScripts
+  style(rel='stylesheet', type='text/css').
+    #container header .navbar { background: #140c12 !important; position: static !important; }

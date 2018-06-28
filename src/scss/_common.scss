@@ -1,4 +1,17 @@
 
+body{
+	font-family: $font_0;
+	text-rendering: optimizeLegibility;
+}
+
+.light-weight{
+	font-weight: 300;
+}
+
+.light-bg {
+	background-color: rgba(0, 0, 0, 0.02);
+}
+
 .reset-elem {
 	margin: 0;
 	padding: 0;
@@ -1507,7 +1520,7 @@ section {
 				p {
 					color: $white;
 					font-size: 24px;
-					font-weight: 400;
+					font-weight: 300;
 					margin-bottom: 40px;
 				}
 			}
@@ -2022,6 +2035,7 @@ section {
 					font-style: italic;
 					line-height: 32px;
 					margin: 0 0 25px;
+					font-weight: 300;
 				}
 			}
 			.subscribe-box {
@@ -2371,6 +2385,12 @@ section {
 		background-repeat: no-repeat;
 		-webkit-background-size: cover;
 		background-size: cover;
+		font-weight: 300;
+
+		h1, dl {
+			opacity: 0.9;
+		}
+
 		h1 {
 			color: $white;
 			padding-bottom: 25px;

@@ -1,13 +1,18 @@
+<iframe name="hiddenFrame" width="0" height="0" border="0" style="display: none;"></iframe>
+
 .registration-form-container
   .container.registration-container
     .title-section
       h1 Registration Form
     .row
       .col-md-6.col-xs-12.register-image
-      .col-md-6.col-xs-12
-        form#registration-form(method='POST', target='_blank',
-          action='https://docs.google.com/forms/d/e/1FAIpQLSc1wcZD_Pavj_VQbAh3ZMnzNpVTCsWHk-DPv2_koRCISaDezA/formResponse')
-  
+      .col-md-6.col-xs-12.light-bg
+        form#registration-form(
+          onsubmit='redirectToThankYou();',
+          action='https://docs.google.com/forms/d/e/1FAIpQLSc1wcZD_Pavj_VQbAh3ZMnzNpVTCsWHk-DPv2_koRCISaDezA/formResponse',
+          method='POST',
+          target='hiddenFrame'
+          )
           p
             label.form-label(for='name')
               span Name
