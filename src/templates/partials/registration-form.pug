@@ -8,19 +8,19 @@
         p
             label.form-label(for="name")
                 span Name
-                input#name(type="text", name="entry.371612208", required)
+                input#name(type="text", name="entry.371612208", required, autocomplete='name')
         p
             label.form-label(for="email")
                 span Email address
-                input#email(type="email", name="entry.426603657", required)
+                input#email(type="email", name="entry.426603657", required, autocomplete='email')
         p
             label.form-label(for="organization")
                 span Organization
-                input#organization(type="text", name="entry.1340855941", required)
+                input#organization(type="text", name="entry.1340855941", required, autocomplete='organization')
         p
             label.form-label(for="phone")
                 span Contact number
-                input#phone(type="number", name="entry.1085020077", required)
+                input#phone(type="number", name="entry.1085020077", required, autocomplete='tel')
         p
             label.form-label(for="what")
                 span What do you understand by UI?
@@ -34,3 +34,4 @@
                 sup *
                 small All fields are mandatory    
             button(type="submit") Submit
+    

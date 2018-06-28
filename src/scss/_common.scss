@@ -1934,7 +1934,7 @@ section {
 			h2 {
 				color: $white;
 				font-weight: 300;
-				font-size: 32px;
+				font-size: 26px;
 				line-height: 32px;
 				margin: 0;
 				text-align: center;
@@ -1945,8 +1945,8 @@ section {
 				margin-top: 10px;
 				p {
 					color: $color_link_water_approx;
-					font-size: 30px;
-					line-height: 38px;
+					font-size: 24px;
+					line-height: 30px;
 					font-family: $font_0, $font_2;
 					font-style: italic;
 					span {
@@ -1982,7 +1982,7 @@ section {
 		}
 	}
 	&.reg-sub-section {
-		margin-top: -100px;
+		margin-top: 50px;
 		position: relative;
 		z-index: 2;
 		.inner-reg-sub {

@@ -1594,7 +1594,7 @@ section.event-promo-section {
     section.event-promo-section .event-center h2 {
       color: #fff;
       font-weight: 300;
-      font-size: 32px;
+      font-size: 26px;
       line-height: 32px;
       margin: 0;
       text-align: center; }
@@ -1604,8 +1604,8 @@ section.event-promo-section {
       margin-top: 10px; }
       section.event-promo-section .event-center .event-date p {
         color: #e4e2f4;
-        font-size: 30px;
-        line-height: 38px;
+        font-size: 24px;
+        line-height: 30px;
         font-family: Open Sans, serif;
         font-style: italic; }
         section.event-promo-section .event-center .event-date p span {
@@ -1635,7 +1635,7 @@ section.page-banner-section {
     margin-bottom: 0; }
 
 section.reg-sub-section {
-  margin-top: -100px;
+  margin-top: 50px;
   position: relative;
   z-index: 2; }
   section.reg-sub-section .inner-reg-sub {
@@ -3990,6 +3990,7 @@ nav.fill li a:hover:after {
   text-align: center;
   color: #ccc;
   font-weight: normal !important;
+  font-size: 20px;
   margin-top: 15px; }
 
 .event-promo-section .container .time-n-date {
