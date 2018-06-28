@@ -1,8 +1,8 @@
 extends ../layout/layout.pug
 
 block content
-  include ../templates/partials/header-to-be-removed
-  include ../templates/partials/event-promotion-section
+  include ../templates/partials/header
+  include ../templates/partials/registration-form
   include ../templates/partials/contact-section
   include ../templates/partials/footer
 
@@ -12,3 +12,6 @@ block footerScripts
   script(src='assets/js/bootstrap.min.js')
   script(src='assets/js/picoModal-3.0.0.min.js')
   script(src='assets/js/script.js')
+  style(rel='stylesheet', type='text/css').
+    #container header .navbar { background: rgba(35, 35, 35, 0.8) !important; position: static !important;}
+    

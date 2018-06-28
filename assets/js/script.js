@@ -140,8 +140,3 @@ const modal = picoModal({
 			{ complete: modal.forceClose }
 		);
 });
-
-function submitRegistrationForm() {
-	console.log('Form Submitted, Redirect User to thank you now.');
-	modal.close();
-}

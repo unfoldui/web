@@ -2,10 +2,31 @@
 // Registration Form //
 // --------------------
 
+.registration-form-container {
+	.registration-container {
+		margin: 30px auto;
+	}
+	.register-image {
+		background: url('../images/reg.jpg') no-repeat center center transparent;
+		background-size: cover;
+		position: relative;
+		&:before {
+			content: '';
+			display: block;
+			position: absolute;
+			background-color: rgba(0,0,0,0.5);
+			left: 0;
+			right: 0;
+			top: 0;
+			bottom: 0;
+		}
+	}
+}
+
 #registration-form {
     display: flex;
 	flex-direction: column;
-	padding: 1rem;
+	padding: 0 1rem;
 
 	h2{
 		font-weight: 300;
@@ -27,9 +48,6 @@
 			font-size: 1.2rem;
 		}
 
-		input#what,input#expectations{
-			height:60px;
-		}
 		&.form-label {
 			> span {
 				&:after {
@@ -55,12 +73,20 @@
 	}
 
 	button[type="submit"]{
-		padding: 5px 20px;
-		font-weight: 300;
+		padding: 10px 25px;
+		font-weight: 600;
+		font-size: 20px;
 		color: white;
 		border-radius: 4px;
 		box-shadow: 0px 2px 9px 1px rgba(17, 172, 89, 0.48);
 		cursor: pointer;
 		background-color: #11aa58;
+	}
+
+	.submit-form {
+		border-top: solid 1px #ccc;
+		margin-top: 40px;
+		margin-bottom: 0;
+		padding-top: 10px;
 	}
 }

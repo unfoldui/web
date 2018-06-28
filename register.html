@@ -41,65 +41,69 @@
             <div class="container"><a class="navbar-brand" href="/">
                 <h2 class="nav-logo-unfold"><img src="./assets/images/icons/tw.svg">
                   <div class="logo-location">Pune</div>
-                </h2></a></div>
+                </h2></a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav nav-stroke w-100" style="justify-content: flex-end">
+                  <li class="nav-item"><a class="nav-link" href="#home"><span data-hover="Home">Home</span></a></li>
+                  <li class="nav-item"><a class="nav-link" href="#about"><span data-hover="About">About</span></a></li>
+                  <li class="nav-item"><a class="nav-link" href="#faq"><span data-hover="FAQ">FAQ</span></a></li>
+                  <li class="nav-item"><a class="nav-link" href="#contact"><span data-hover="Contact">Contact</span></a></li>
+                </ul>
+                <!--a(href='#register', class='degault-button') Register-->
+              </div>
+            </div>
           </nav>
         </header>
-        <section class="event-promo-section">
-          <div class="event-center">
-            <div class="container">
-              <div class="main-logo">
-                <div class="t">
-                  <div class="t5">D</div>
-                  <div class="t4 nudge-left">L</div>
-                  <div class="t3">O</div>
-                  <div class="t2 nudge-left">F</div>
-                  <div class="t1">N</div>
-                  <div class="t0">U</div>
-                </div>
-                <div class="u">
-                  <div class="uShadow"></div>
-                  <div class="one"></div>
-                  <div class="two"></div>
-                  <div class="l0"></div>
-                  <div class="l0Shadow"></div>
-                  <div class="l1"></div>
-                  <div class="l2"></div>
-                  <div class="l3"></div>
-                  <div class="l4"></div>
-                  <div class="l5"></div>
-                  <div class="l5Shadow"></div>
-                  <div class="l6"></div>
-                  <div class="ll"></div>
-                  <div class="r0"></div>
-                  <div class="r1"></div>
-                  <div class="r2"></div>
-                  <div class="r3"></div>
-                  <div class="r4"></div>
-                  <div class="r5"></div>
-                  <div class="r5Shadow"></div>
-                  <div class="r6"></div>
-                </div>
-                <div class="i">
-                  <div class="ii"></div>
-                  <div class="r0"></div>
-                  <div class="ir0Shadow"></div>
-                  <div class="r1"></div>
-                  <div class="r2"></div>
-                  <div class="r3"></div>
-                  <div class="r4"></div>
-                  <div class="r5"></div>
-                  <div class="r5Shadow"></div>
-                  <div class="r6"></div>
-                  <div class="dot"></div>
-                </div>
+        <div class="registration-form-container">
+          <div class="container registration-container">
+            <div class="title-section">
+              <h1>Registration Form</h1>
+            </div>
+            <div class="row">
+              <div class="col-md-6 col-xs-12 register-image"></div>
+              <div class="col-md-6 col-xs-12">
+                <form id="registration-form" method="POST" target="_blank" action="https://docs.google.com/forms/d/e/1FAIpQLSc1wcZD_Pavj_VQbAh3ZMnzNpVTCsWHk-DPv2_koRCISaDezA/formResponse">
+                  <p>
+                    <label class="form-label" for="name"><span>Name</span>
+                      <input id="name" type="text" name="entry.371612208" required autocomplete="name">
+                    </label>
+                  </p>
+                  <p>
+                    <label class="form-label" for="email"><span>Email address</span>
+                      <input id="email" type="email" name="entry.426603657" required autocomplete="email">
+                    </label>
+                  </p>
+                  <p>
+                    <label class="form-label" for="organization"><span>Organization</span>
+                      <input id="organization" type="text" name="entry.1340855941" required autocomplete="organization">
+                    </label>
+                  </p>
+                  <p>
+                    <label class="form-label" for="phone"><span>Contact number</span>
+                      <input id="phone" type="number" name="entry.1085020077" required autocomplete="tel">
+                    </label>
+                  </p>
+                  <p>
+                    <label class="form-label" for="what"><span>What do you understand by UI?</span>
+                      <input id="what" type="text" name="entry.2108046770" required>
+                    </label>
+                  </p>
+                  <p>
+                    <label class="form-label" for="expectations"><span>What are your expectations from this event?</span>
+                      <input id="expectations" type="text" name="entry.429241349" required>
+                    </label>
+                  </p>
+                  <p><sup>*</sup><small>All fields are mandatory</small></p>
+                  <p><span>I agree to share my information with you and understand it will be used as described in ThoughtWorks' </span><a href="https://www.thoughtworks.com/privacy-policy" target="_blank">privacy policy</a><span>.</span></p>
+                  <p class="submit-form">
+                    <button type="submit">Submit</button>
+                  </p>
+                </form>
               </div>
-              <h2>Redesign Possibilities, Redefine Thoughts</h2>
-              <h4>
-                <div class="time-n-date"> <strong><span>4</span><sup>th </sup></strong><span>August, 2018 </span><strong>| </strong><span>Pune</span></div>
-              </h4>
             </div>
           </div>
-        </section>
+        </div>
         <section class="contact-section" id="contact">
           <div class="container">
             <div class="title-section">
@@ -162,5 +166,6 @@
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/picoModal-3.0.0.min.js"></script>
     <script src="assets/js/script.js"></script>
+    <style rel="stylesheet" type="text/css">#container header .navbar { background: rgba(35, 35, 35, 0.8) !important; position: static !important;}</style>
   </body>
 </html>
