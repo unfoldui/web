@@ -30,6 +30,19 @@
 		input#what,input#expectations{
 			height:60px;
 		}
+		&.form-label {
+			> span {
+				&:after {
+					content: '*';
+					display: inline;
+					padding-left: 5px;
+					position: relative;
+					margin-top: -10px;
+					color: red;
+					font-size: 14px;
+				}
+			}
+		}
 	}
 
 	p:last-child{

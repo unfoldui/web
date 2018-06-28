@@ -4291,6 +4291,14 @@ footer {
       font-size: 1.2rem; }
     #registration-form label input#what, #registration-form label input#expectations {
       height: 60px; }
+    #registration-form label.form-label > span:after {
+      content: '*';
+      display: inline;
+      padding-left: 5px;
+      position: relative;
+      margin-top: -10px;
+      color: red;
+      font-size: 14px; }
   #registration-form p:last-child {
     display: flex;
     justify-content: space-between; }
