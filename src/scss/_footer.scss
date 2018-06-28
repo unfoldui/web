@@ -1,0 +1,109 @@
+footer {
+	padding-top: 40px;
+	background: $color_mine_shaft_approx;
+	
+	.copyright-line {
+		text-align: center;
+		padding: 30px 0;
+		color: $color_waterloo__approx;
+		border-top: 1px solid $color_tundora_approx;
+		margin-bottom: 0;
+		img {
+			width: 180px;
+		}
+		span {
+			width: 180px;
+		}
+	}
+	&.third-style {
+		padding: 0;
+		background: $color_alabaster_approx;
+		border-top: 1px solid $color_athens_gray_approx;
+		.copyright-line {
+			border-top: none;
+		}
+	}
+	.up-footer .footer-widget {
+		margin-bottom: 60px;
+		h2 {
+			color: $white;
+            margin-bottom: 30px;
+            font-size: 36px;
+            font-weight: 100;
+		}
+		p {
+			color: $color_waterloo__approx;
+			margin-bottom: 24px;
+		}
+		ul.social-icons {
+			margin: 0;
+			padding: 0;
+			li {
+				display: inline-block;
+				margin-right: 8px;
+				a {
+					color: $white;
+					width: 50px;
+					height: 50px;
+					line-height: 50px;
+					text-align: center;
+					background: transparent;
+                    font-size: 20px;
+					&.facebook {
+						background: $url_29 center center no-repeat;
+					}
+					&.twitter {
+						background: $url_30 center center no-repeat;
+                    }
+                    &.youtube {
+						background: $url_31 center center no-repeat;
+					}
+					&.linkedin {
+						background: $url_32 center center no-repeat;
+					}
+					&.instagram {
+						background: $url_33 center center no-repeat;
+					}					
+					&:hover {
+						opacity: 0.7;
+                    }
+                    background-size: contain !important;
+				}
+			}
+		}
+		form.subscribe {
+			margin: 0;
+			input[type="text"] {
+				padding: 12px 20px;
+				border: none;
+				outline: none;
+				background: $white;
+				border-radius: 3px;
+				width: 100%;
+				color: $color_star_dust_approx;
+				font-size: 18px;
+				font-family: $font_0, $font_1;
+				font-weight: 300;
+				margin: 0 0 20px;
+			}
+			input[type="submit"] {
+				color: $white;
+				font-size: 18px;
+				font-family: $font_0, $font_1;
+				text-transform: uppercase;
+				padding: 13px 30px 12px;
+				background: $color_tw_green;
+				font-weight: 400;
+				border-radius: 2px;
+				transition: all 0.2s ease-in-out;
+				box-shadow: 0 0 25px $black_30;
+				outline: none;
+				border: none;
+				&:hover {
+					color: $color_tw_blue;
+					background: $white;
+				}
+			}
+		}
+	}
+}
