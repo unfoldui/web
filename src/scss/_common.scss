@@ -2071,10 +2071,13 @@ section {
 		// Too much pattern
 		// background: $url_16 center bottom repeat-x;
 		padding: 40px 0;
-		p.about-body{
+		.about-body{
 			color:#2d3034;
+			b, strong {
+				font-weight: 600;
+			}
 		}
-		p.about-body:not(:last-child) {
+		.about-body:not(:last-child) {
 			margin-bottom: 20px;
 		}
 		.video-box {
@@ -2088,6 +2091,9 @@ section {
 				box-shadow: 0 10px 45px $black_18;
 				border: none;
 			}
+		}
+		h2.sub-heading {
+
 		}
 	}
 	&.about-us-section {

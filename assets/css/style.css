@@ -1711,9 +1711,11 @@ section.reg-sub-section {
 
 section.about-section {
   padding: 40px 0; }
-  section.about-section p.about-body {
+  section.about-section .about-body {
     color: #2d3034; }
-  section.about-section p.about-body:not(:last-child) {
+    section.about-section .about-body b, section.about-section .about-body strong {
+      font-weight: 600; }
+  section.about-section .about-body:not(:last-child) {
     margin-bottom: 20px; }
   section.about-section .video-box {
     padding-top: 70px;
