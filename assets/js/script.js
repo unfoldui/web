@@ -113,10 +113,12 @@ function Resize() {
 const modal = picoModal({
 	content: document.getElementById('registration-form'),
 	overlayStyles: function (styles) { styles.opacity = 0; },
-	closeStyles:{
-		width:'30px', height:'30px',
+	closeStyles: {
+		width:'30px',
+		height:'30px',
 		position:'absolute',
-		top:'5px', right: '5px',
+		top:'5px',
+		right: '5px',
 		borderRadius: '50%',
 		cursor: 'pointer',
 		boxShadow: '0px 3px 11px 1px rgba(108, 117, 125, 0.41)'
@@ -125,10 +127,10 @@ const modal = picoModal({
 		styles.opacity = 0,
 		styles.padding = 0,
 		styles.marginTop = '40px',
-		styles.width = (window.innerWidth <= 600) ? '90vw' : '500px'
+		styles.width = (window.innerWidth <= 600) ? '90vw' : '700px'
 	}
 }).afterShow(function (modal) {
-	$(modal.overlayElem()).animate({ opacity: 0.8 });
+	$(modal.overlayElem()).animate({ opacity: 0.7 });
 	$(modal.modalElem()).animate({ opacity: 1 });
 }).beforeClose(function (modal, event) {
 	event.preventDefault();

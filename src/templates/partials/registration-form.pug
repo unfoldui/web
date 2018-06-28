@@ -1,37 +1,33 @@
 .registration-form-container(style="display:none;")
-    form#registration-form(
-        onsubmit="submitRegistrationForm()"
-        action="https://docs.google.com/forms/d/e/1FAIpQLSc1wcZD_Pavj_VQbAh3ZMnzNpVTCsWHk-DPv2_koRCISaDezA/formResponse"
-        method="POST",
-        target="_blank")
-        h2  Registration Form
-        p
-            label.form-label(for="name")
-                span Name
-                input#name(type="text", name="entry.371612208", required, autocomplete='name')
-        p
-            label.form-label(for="email")
-                span Email address
-                input#email(type="email", name="entry.426603657", required, autocomplete='email')
-        p
-            label.form-label(for="organization")
-                span Organization
-                input#organization(type="text", name="entry.1340855941", required, autocomplete='organization')
-        p
-            label.form-label(for="phone")
-                span Contact number
-                input#phone(type="number", name="entry.1085020077", required, autocomplete='tel')
-        p
-            label.form-label(for="what")
-                span What do you understand by UI?
-                input#what(type="text", name="entry.2108046770", required)
-        p
-            label.form-label(for="expectations")
-                span What are your expectations from this event?
-                input#expectations(type="text", name="entry.429241349", required)
-        p
-            span
-                sup *
-                small All fields are mandatory    
-            button(type="submit") Submit
-    
+  form#registration-form(onsubmit="submitRegistrationForm()", method="POST", target="_blank",
+    action="https://docs.google.com/forms/d/e/1FAIpQLSc1wcZD_Pavj_VQbAh3ZMnzNpVTCsWHk-DPv2_koRCISaDezA/formResponse")
+    h2  Registration Form
+    p
+      label.form-label(for="name")
+        span Name
+        input#name(type="text", name="entry.371612208", required, autocomplete='name')
+    p
+      label.form-label(for="email")
+        span Email address
+        input#email(type="email", name="entry.426603657", required, autocomplete='email')
+    p
+      label.form-label(for="organization")
+        span Organization
+        input#organization(type="text", name="entry.1340855941", required, autocomplete='organization')
+    p
+      label.form-label(for="phone")
+        span Contact number
+        input#phone(type="number", name="entry.1085020077", required, autocomplete='tel')
+    p
+      label.form-label(for="what")
+        span What do you understand by UI?
+        input#what(type="text", name="entry.2108046770", required)
+    p
+      label.form-label(for="expectations")
+        span What are your expectations from this event?
+        input#expectations(type="text", name="entry.429241349", required)
+    p
+      span
+        sup *
+        small All fields are mandatory    
+      button(type="submit") Submit
