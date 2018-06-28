@@ -1711,9 +1711,9 @@ section.reg-sub-section {
 
 section.about-section {
   padding: 40px 0; }
-  section.about-section .about-body {
+  section.about-section .about-body, section.about-section ul.about-body {
     color: #2d3034; }
-    section.about-section .about-body b, section.about-section .about-body strong {
+    section.about-section .about-body b, section.about-section .about-body strong, section.about-section ul.about-body b, section.about-section ul.about-body strong {
       font-weight: 600; }
   section.about-section .about-body:not(:last-child) {
     margin-bottom: 20px; }
