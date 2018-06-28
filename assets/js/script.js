@@ -88,29 +88,34 @@ $(document).ready(function ($) {
 
 	(function () {
 		// define variables
-		var items = document.querySelectorAll(".agenda li");
+		var items = document.querySelectorAll(".timeline .entry--left, .timeline .entry--right ");
 	
 		function isElementInViewport(el) {
 			var rect = el.getBoundingClientRect();
-			return (
-				rect.top >= 0 &&
-				rect.left >= 0 &&
-				rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-				rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+			const temp =  (
+			  rect.top >= 0 &&
+			  rect.left >= 0 &&
+			  rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+			  rect.right <= (window.innerWidth || document.documentElement.clientWidth)
 			);
+			console.log(temp)
+			return temp;
 		}
 	
 		function callbackFunc() {
 			for (var i = 0; i < items.length; i++) {
 				if (isElementInViewport(items[i])) {
-					items[i].classList.add("in-view");
+					if(items[i].classList.value.includes('entry--left'))
+						items[i].classList.add("left-entry-in-view");
+					else if(items[i].classList.value.includes('entry--right'))
+						items[i].classList.add("right-entry-in-view");
 				}
 			}
 		}
 	
 		// listen for events
 		window.addEventListener("load", callbackFunc);
-		window.addEventListener("resize", callbackFunc);
+  		window.addEventListener("resize", callbackFunc);
 		window.addEventListener("scroll", callbackFunc);
 	
 	})();

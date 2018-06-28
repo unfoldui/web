@@ -1,7 +1,9 @@
-$bgColor: #3c84d4;
+$bgColor_1: $color_woodsmoke_approx $url_12;
+$bgColor_2: $color_woodsmoke_approx $url_10;
+$borderColor: #2175b8;
 
-$border_color_1: transparent $bgColor transparent transparent;
-$border_color_2: transparent transparent transparent $bgColor;
+$border_color_1: transparent #2175b8 transparent transparent;
+$border_color_2: transparent transparent transparent #20a95b;
 
 
 /* EFFECTS
@@ -14,16 +16,18 @@ $border_color_2: transparent transparent transparent $bgColor;
     position: relative;
     margin-bottom: 0;
     &:before {
-      content: '';
+	  content: '4th August';
+	  color: $white;
+	  font-weight: bold;
       position: absolute;
       left: 50%;
       top: 30px;
       transform: translateX(-50%);
-      width: 30px;
-      height: 30px;
-      border-radius: 50%;
-      background: $bgColor;
-      z-index: 1;
+	  text-align: center;
+	  padding: 15px;
+	  border-radius: 5px;
+	  z-index: 1;
+	  background-color: $borderColor;
       transition: background .5s ease-in-out;
     }
 		li {
@@ -32,7 +36,7 @@ $border_color_2: transparent transparent transparent $bgColor;
 			width: 6px;
 			margin: 0 auto;
 			padding-top: 50px;
-			background: $color_white_lilac_approx;
+			background: $borderColor;
 			&::after {
 				content: '';
 				position: absolute;
@@ -50,11 +54,16 @@ $border_color_2: transparent transparent transparent $bgColor;
 				bottom: 0;
 				width: 400px;
 				padding: 15px;
-				background: $bgColor;
+				background: $bgColor_1;
 				visibility: hidden;
 				opacity: 0;
-        transition: all .5s ease-in-out;
-        border-radius: 3px;
+        		transition: all .5s ease-in-out;
+				border-radius: 3px;
+				time {
+					color: $white;
+					font-weight: bold;
+				}
+
 				&::before {
 					content: '';
 					position: absolute;
@@ -62,13 +71,15 @@ $border_color_2: transparent transparent transparent $bgColor;
 					width: 0;
 					height: 0;
 					border-style: solid;
-        }
-        p {
-          color: $color_white_lilac_approx;
-        }
+				}
+				p {
+				color: $color_white_lilac_approx;
+				}
 			}
 			&:nth-child(odd) {
+				
 				div {
+					background: $bgColor_1;
 					left: 45px;
 					transform: translate3d(200px, 0, 0);
 					&::before {
@@ -79,7 +90,9 @@ $border_color_2: transparent transparent transparent $bgColor;
 				}
 			}
 			&:nth-child(even) {
+				
 				div {
+					background: $bgColor_2;
 					left: -439px;
 					transform: translate3d(-200px, 0, 0);
 					&::before {
@@ -92,7 +105,7 @@ $border_color_2: transparent transparent transparent $bgColor;
 		}
 		li.in-view {
 			&::after {
-				background: $bgColor;
+				background: $bgColor_1;
 			}
 			div {
 				transform: none;
@@ -121,7 +134,9 @@ $border_color_2: transparent transparent transparent $bgColor;
 }
 @media screen and (max-width: 600px) {
 	.agenda {
+		width:80%;
 		ul {
+			
       &:before {
         left: 24px;
       }
@@ -136,7 +151,7 @@ $border_color_2: transparent transparent transparent $bgColor;
 						&::before {
 							left: -15px;
 							border-width: 8px 16px 8px 0;
-							border-color: $border_color_1;
+							border-color: transparent #20a95b transparent transparent;;
 						}
 					}
 				}

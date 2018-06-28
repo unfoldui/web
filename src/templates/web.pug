@@ -16,7 +16,6 @@ html.no-js(lang='en')
         include partials/registration-section
         include partials/about-section
         include partials/timeline
-        include partials/agenda
         include partials/faq-section
         include partials/contact-section
         include partials/footer
@@ -25,3 +24,5 @@ html.no-js(lang='en')
     script(src='assets/js/bootstrap.min.js')
     script(src='assets/js/picoModal-3.0.0.min.js')
     script(src='assets/js/script.js')
+    style(rel='stylesheet', type='text/css').
+    section.event-promo-section:after {display: none !important}
