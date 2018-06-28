@@ -11,35 +11,22 @@ $(document).ready(function ($) {
 
 		var docElem = document.documentElement,
 			didScroll = false,
-			changeHeaderOn = 40;
-		document.querySelector('header, a.go-top');
+			changeHeaderOn = 120;
 
-		function init() {
-			window.addEventListener('scroll', function () {
-				if (!didScroll) {
-					didScroll = true;
-					setTimeout(scrollPage, 100);
-				}
-			}, false);
-		}
-
-		function scrollPage() {
-			var sy = scrollY();
-			if (sy >= changeHeaderOn) {
-				$('header').addClass('active');
-				$('a.go-top').addClass('active');
-			} else {
-				$('header').removeClass('active');
-				$('a.go-top').removeClass('active');
+		window.addEventListener('scroll', function () {
+			if (!didScroll) {
+				didScroll = true;
+				setTimeout(function () {
+					var sy = window.pageYOffset || docElem.scrollTop;
+					if (sy >= changeHeaderOn) {
+						$('header').addClass('active');
+					} else {
+						$('header').removeClass('active');
+					}
+					didScroll = false;
+				}, 100);
 			}
-			didScroll = false;
-		}
-
-		function scrollY() {
-			return window.pageYOffset || docElem.scrollTop;
-		}
-
-		init();
+		}, false);
 
 	})();
 
