@@ -1,41 +1,20 @@
+mixin entryItem(entrySide, timeSide, data)
+  li.entry(class='entry--'+entrySide)
+      .time(class='time--'+timeSide)= data.time 
+      .entry__content.wow.animated.fadeIn(data-wow-duration='1s', data-wow-delay='0.5s')
+        h2= data.title
+        p= data.description
+mixin entryList
+  - var agendaJson = [{entry: 'left', time: 'right', data: {time: '9:30 AM - 9:45 AM', title: 'Title', description: 'Description'}},{entry: 'right', time: 'left', data: {time: '9:30 AM - 9:45 AM', title: 'Title', description: 'Description'}},{entry: 'left', time: 'right', data: {time: '9:30 AM - 9:45 AM', title: 'Title', description: 'Description'}},{entry: 'right', time: 'left', data: {time: '9:30 AM - 9:45 AM', title: 'Title', description: 'Description'}},{entry: 'left', time: 'right', data: {time: '9:30 AM - 9:45 AM', title: 'Title', description: 'Description'}},{entry: 'right', time: 'left', data: {time: '9:30 AM - 9:45 AM', title: 'Title', description: 'Description'}},{entry: 'left', time: 'right', data: {time: '9:30 AM - 9:45 AM', title: 'Title', description: 'Description'}},{entry: 'right', time: 'left', data: {time: '9:30 AM - 9:45 AM', title: 'Title', description: 'Description'}},{entry: 'left', time: 'right', data: {time: '9:30 AM - 9:45 AM', title: 'Title', description: 'Description'}},{entry: 'right', time: 'left', data: {time: '9:30 AM - 9:45 AM', title: 'Title', description: 'Description'}},{entry: 'left', time: 'right', data: {time: '9:30 AM - 9:45 AM', title: 'Title', description: 'Description'}},{entry: 'right', time: 'left', data: {time: '9:30 AM - 9:45 AM', title: 'Title', description: 'Description'}},{entry: 'left', time: 'right', data: {time: '9:30 AM - 9:45 AM', title: 'Title', description: 'Description'}},{entry: 'right', time: 'left', data: {time: '9:30 AM - 9:45 AM', title: 'Title', description: 'Description'}},{entry: 'left', time: 'right', data: {time: '9:30 AM - 9:45 AM', title: 'Title', description: 'Description'}},{entry: 'right', time: 'left', data: {time: '9:30 AM - 9:45 AM', title: 'Title', description: 'Description'}},{entry: 'left', time: 'right', data: {time: '9:30 AM - 9:45 AM', title: 'Title', description: 'Description'}}]
+  - for (var x = 0; x < agendaJson.length; x++)
+    - var item = agendaJson[x]
+    +entryItem(item.entry, item.time, item.data)
+
 section.about-section
   ul.timeline.timeline--first
     li.era
       h2.era__title
-        span 4
+        span Saturday, 4
         sup th 
         span August
-    li.entry.entry--left
-      .time.time--right 9:30 AM
-      .entry__content.wow.animated.fadeIn(data-wow-duration='1s', data-wow-delay='0.5s')
-        h2 Bacon Ipsum
-        p
-          | Bacon ipsum dolor amet ball tip jerky sirloin pancetta capicola prosciutto meatball pig leberkas
-          | cow pork chop shank meatloaf.
-    li.entry.entry--right
-      .time.time--left 10:30 AM
-      .entry__content.wow.animated.fadeIn(data-wow-duration='1s', data-wow-delay='0.5s')
-        h2 Bacon Ipsum
-        p
-          | Ground round short ribs fatback, salami shoulder sausage chuck shankle landjaeger drumstick ribeye
-          | meatloaf doner.
-    li.entry.entry--left
-      .time.time--right 9:30 AM
-      .entry__content.wow.animated.fadeIn(data-wow-duration='1s', data-wow-delay='0.5s')
-        h2 Bacon Ipsum
-        p
-          | Bacon ipsum dolor amet ball tip jerky sirloin pancetta capicola prosciutto meatball pig leberkas
-          | cow pork chop shank meatloaf.
-    li.entry.entry--right
-      .time.time--left 10:30 AM
-      .entry__content.wow.animated.fadeIn(data-wow-duration='1s', data-wow-delay='0.5s')
-        h2 Bacon Ipsum
-        p
-          | Ground round short ribs fatback, salami shoulder sausage chuck shankle landjaeger drumstick ribeye
-          | meatloaf doner.
-    li.entry.entry--left
-      .time.time--right 11:30 AM
-      .entry__content.wow.animated.fadeIn(data-wow-duration='1s', data-wow-delay='0.5s')
-        h2 Bacon Ipsum
-        p
-          | Swine pork belly prosciutto jowl pork chop chicken filet mignon cupim doner boudin.
+    +entryList()
