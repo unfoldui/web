@@ -1,25 +1,21 @@
-doctype html
-html.no-js(lang='en')
-  head
-    include ../templates/partials/meta
-    include ../templates/partials/google-analytics
+extends ../layout/layout.pug
 
-  body
-    #home
-      #container
-        include ../templates/partials/registration-form
-        include ../templates/partials/header
-        include ../templates/partials/event-promotion-section
-        include ../templates/partials/registration-section
-        include ../templates/partials/about-section
-        include ../templates/partials/timeline
-        include ../templates/partials/faq-section
-        include ../templates/partials/contact-section
-        include ../templates/partials/footer
-    script(src='assets/js/jquery.3.3.1.js')
-    script(src='assets/js/popper.js')
-    script(src='assets/js/bootstrap.min.js')
-    script(src='assets/js/picoModal-3.0.0.min.js')
-    script(src='assets/js/script.js')
-    style(rel='stylesheet', type='text/css').
-      section.event-promo-section:after {display: none !important}
+block content
+  include ../templates/partials/registration-form
+  include ../templates/partials/header
+  include ../templates/partials/event-promotion-section
+  include ../templates/partials/registration-section
+  include ../templates/partials/about-section
+  include ../templates/partials/timeline
+  include ../templates/partials/faq-section
+  include ../templates/partials/contact-section
+  include ../templates/partials/footer
+
+block footerScripts
+  script(src='assets/js/jquery.3.3.1.js')
+  script(src='assets/js/popper.js')
+  script(src='assets/js/bootstrap.min.js')
+  script(src='assets/js/picoModal-3.0.0.min.js')
+  script(src='assets/js/script.js')
+  style(rel='stylesheet', type='text/css').
+    section.event-promo-section:after {display: none !important}
