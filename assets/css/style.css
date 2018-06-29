@@ -1956,7 +1956,7 @@ section.schedule-section2 {
 
 section.event-banner-section {
   padding: 40px 0;
-  background: url(../images/faq-bg.png);
+  background: #0578be;
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   background-size: cover;
@@ -2029,78 +2029,6 @@ section.event-banner-section {
       section.event-banner-section .title-section.center a.default-button:hover {
         background: #fff;
         color: #1a73ba; }
-
-section.event-banner-section2 {
-  background: #fff;
-  border-bottom: 1px solid #ecebf3; }
-  section.event-banner-section2 h1 {
-    color: #1a73ba;
-    padding-bottom: 25px;
-    position: relative; }
-    section.event-banner-section2 h1:after {
-      content: '';
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 70px;
-      height: 1px;
-      background: #1a73ba; }
-  section.event-banner-section2 .button-banner-box {
-    text-align: right;
-    padding-top: 40px; }
-    section.event-banner-section2 .button-banner-box a {
-      padding: 11px 45px; }
-  section.event-banner-section2 div.inner-event-banner {
-    padding: 80px 0;
-    border-top: 1px solid #ecebf3; }
-
-section.event-banner-section3 {
-  padding: 100px 0;
-  background: url(../images/dev9.png); }
-  section.event-banner-section3 h1 {
-    padding-bottom: 25px;
-    position: relative; }
-    section.event-banner-section3 h1:after {
-      content: '';
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 70px;
-      height: 1px;
-      background: #2d3034; }
-  section.event-banner-section3 .subscribe-banner-box .title-section {
-    margin-bottom: 40px; }
-  section.event-banner-section3 .subscribe-banner-box form.subscribe {
-    text-align: center; }
-    section.event-banner-section3 .subscribe-banner-box form.subscribe input[type="text"] {
-      padding: 12px 20px;
-      border: 1px solid #e4e2f4;
-      outline: none;
-      background: #fff;
-      border-radius: 3px;
-      min-width: 370px;
-      color: #959aa1;
-      font-size: 18px;
-      font-family: Open Sans, sans-serif;
-      font-weight: 300;
-      margin: 0 0 20px;
-      margin-right: 25px; }
-    section.event-banner-section3 .subscribe-banner-box form.subscribe input[type="submit"] {
-      color: #fff;
-      font-size: 18px;
-      font-family: Open Sans, sans-serif;
-      text-transform: uppercase;
-      padding: 13px 30px 12px;
-      background: #11aa58;
-      font-weight: 400;
-      border-radius: 2px;
-      transition: all 0.2s ease-in-out;
-      box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
-      outline: none;
-      border: none; }
-      section.event-banner-section3 .subscribe-banner-box form.subscribe input[type="submit"]:hover {
-        background: #1a73ba;
-        color: #fff; }
 
 section.conference-experience-section {
   padding: 70px 0; }
