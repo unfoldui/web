@@ -4274,6 +4274,21 @@ footer {
           border-width: 8px 16px 8px 0;
           border-color: transparent #20a95b transparent transparent; } }
 
+.registeration-section {
+  padding: 50px 0;
+  background-color: #f68a32; }
+  .registeration-section h1, .registeration-section p {
+    color: #fff; }
+  .registeration-section h1:after {
+    background: #fff; }
+  .registeration-section a.register-button {
+    margin-top: 25px;
+    box-shadow: 0 8px 15px #292929;
+    position: relative;
+    padding: 10px 50px;
+    background: #0578be;
+    color: #fff; }
+
 .registration-form-container .registration-container {
   margin: 30px auto; }
 
