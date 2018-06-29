@@ -1510,7 +1510,7 @@ section {
 				background-size: cover !important;
 				border-radius: 6px;
 				padding: 50px 60px 20px;
-				background: $url_28; // TODO: either photoshop this image to get the TW blue or us blue bg, in any case, will have to change icons
+				background: rgba($secondary_blue, 0.8); // TODO: either photoshop this image to get the TW blue or us blue bg, in any case, will have to change icons
 				i {
 					display: inline-block;
 					color: $color_tw_green;
@@ -1576,94 +1576,7 @@ section {
 			}
 		}
 	}
-	&.contact-section4 {
-		ul.social-icons {
-			margin: 0;
-			padding: 0;
-			margin-top: 20px;
-			li {
-				display: inline-block;
-				margin-right: 8px;
-				a {
-					color: $white;
-					width: 50px;
-					height: 50px;
-					border-radius: 50%;
-					line-height: 50px;
-					text-align: center;
-					background: transparent;
-					font-size: 20px;
-					&.facebook {
-						background: $color_cerulean_blue_approx;
-					}
-					&.twitter {
-						background: $color_havelock_blue_approx;
-					}
-					&.linkedin {
-						background: $color_royal_blue_approx;
-					}
-					&.instagram {
-						background: $color_mulberry_approx;
-					}
-					&.youtube {
-						background: $color_cinnabar_approx;
-					}
-					&:hover {
-						opacity: 0.7;
-					}
-				}
-			}
-		}
-		.contact-info p {
-			color: $color_celeste_approx;
-			font-weight: 400;
-			margin-bottom: 5px;
-			line-height: 40px;
-			i {
-				float: left;
-				width: 30px;
-				height: 40px;
-				text-align: center;
-				font-size: 40px;
-				line-height: 40px;
-				color: $color_tw_green;
-				margin-right: 20px;
-			}
-		}
-		form.join-newsletter {
-			input[type="text"] {
-				padding: 12px 20px;
-				border: 1px solid transparent;
-				outline: none;
-				background: $white;
-				border-radius: 3px;
-				width: 100%;
-				color: $color_star_dust_approx;
-				font-size: 18px;
-				font-family: $font_0, $font_1;
-				font-weight: 300;
-				margin: 0 0 20px;
-				margin-right: 25px;
-			}
-			input[type="submit"] {
-				color: $white;
-				font-size: 18px;
-				font-family: $font_0, $font_1;
-				text-transform: uppercase;
-				padding: 13px 30px 12px;
-				background: $color_tw_green;
-				font-weight: 400;
-				border-radius: 2px;
-				transition: all 0.2s ease-in-out;
-				box-shadow: 0 0 25px $black_10;
-				outline: none;
-				border: none;
-				&:hover {
-					background: $color_tw_blue;
-				}
-			}
-		}
-	}
+	
 	&.register-section {
 		padding-top: 220px;
 		position: relative;
@@ -2592,10 +2505,7 @@ section {
 			}
 		}
 	}
-	&.contact-section2 .contact-box .contact-info ul.social-icons {
-		margin: 0;
-		padding: 0;
-	}
+	
 }
 .pagination-box {
 	margin-bottom: 20px;
@@ -3463,10 +3373,7 @@ button {
 			background: $color_woodsmoke_approx $url_9 center center no-repeat;
 			background-size: cover;
 		}
-		&.contact-section4 .contact-box {
-			background: $color_woodsmoke_approx $url_25 fixed center center no-repeat;
-			background-size: cover;
-		}
+		
 	}
 }
 @media(-webkit-min-device-pixel-ratio: 2),(min-resolution: 192dpi) {
@@ -3525,10 +3432,7 @@ button {
 			background: $color_woodsmoke_approx $url_9 center center no-repeat;
 			background-size: cover;
 		}
-		&.contact-section4 .contact-box {
-			background: $color_woodsmoke_approx $url_25 fixed center center no-repeat;
-			background-size: cover;
-		}
+		
 	}
 }
 .collapse-box {
@@ -3689,46 +3593,6 @@ button {
 				font-size: 20px;
 			}
 		}
-		&.contact-section2 {
-			.contact-box {
-				.places-box .places-post a {
-					font-size: 15px;
-				}
-				.contact-info ul.social-icons li a {
-					font-size: 15px;
-				}
-			}
-			#contact-form {
-				label {
-					font-size: 15px;
-				}
-				input[type="text"] {
-					font-size: 15px;
-				}
-				textarea {
-					font-size: 15px;
-				}
-				input[type="submit"] {
-					font-size: 15px;
-				}
-			}
-		}
-		&.contact-section3 {
-			#contact-form {
-				input[type="text"] {
-					font-size: 15px;
-				}
-				textarea {
-					font-size: 15px;
-				}
-				input[type="submit"] {
-					font-size: 15px;
-				}
-			}
-			.contact-box .contact-info p {
-				font-size: 18px;
-			}
-		}
 		&.register-section .register-box #register-form {
 			label {
 				font-size: 15px;
@@ -3843,14 +3707,7 @@ button {
 				font-size: 50px;
 			}
 		}
-		&.contact-section4 form.join-newsletter {
-			input[type="text"] {
-				font-size: 15px;
-			}
-			input[type="submit"] {
-				font-size: 15px;
-			}
-		}
+		
 		&.subscribe-section .subscribe-box {
 			input[type="text"] {
 				font-size: 15px;
@@ -4118,9 +3975,7 @@ button {
 			padding: 0;
 			margin-bottom: 50px;
 		}
-		&.contact-section4 ul.social-icons {
-			margin-bottom: 40px;
-		}
+		
 		&.speaking-section2 .title-section a.default-button {
 			float: none;
 			margin-bottom: 40px;
