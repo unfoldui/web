@@ -3664,7 +3664,7 @@ nav.fill li a:hover:after {
     animation-delay: 300ms;
     top: calc(0% - 7.14286px);
     z-index: 2;
-    opacity: 0.5 !important; }
+    opacity: 0.7 !important; }
   .main-logo .l0 {
     border-color: #26bdcf #26bdcf transparent transparent;
     left: -100%;
@@ -3837,17 +3837,17 @@ nav.fill li a:hover:after {
 @keyframes open-right {
   to {
     transform: rotate3d(0, -1, 0, 180deg);
-    opacity: 0.7; } }
+    opacity: 0.8; } }
 
 @keyframes open-left {
   to {
     transform: rotate3d(0, -1, 0, 180deg);
-    opacity: 0.6; } }
+    opacity: 0.85; } }
 
 @keyframes fold-up {
   to {
     transform: rotate3d(1, 0, 0, 180deg);
-    opacity: 0.8; } }
+    opacity: 0.75; } }
 
 @keyframes fold-diagonally-left {
   to {
@@ -3866,7 +3866,7 @@ nav.fill li a:hover:after {
 
 @keyframes blur-in {
   to {
-    opacity: 0.7; } }
+    opacity: 0.8; } }
 
 footer {
   padding-top: 40px;

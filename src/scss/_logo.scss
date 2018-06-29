@@ -137,7 +137,7 @@ $ts: 300ms;
         animation-delay: $delay;
         top: calc(#{-100% * ceil($i / 2)} - #{$shadowWidth});
         z-index: 2;
-        opacity: 0.5 !important;
+        opacity: 0.7 !important;
       }
     }
     @if $i % 4 == 0 {
@@ -237,19 +237,19 @@ $ts: 300ms;
 @keyframes open-right {
   to {
     transform: rotate3d(0, -1, 0, 180deg);
-    opacity: 0.7;
+    opacity: 0.8;
   }
 }
 @keyframes open-left {
   to {
     transform: rotate3d(0, -1, 0, 180deg);
-    opacity: 0.6;
+    opacity: 0.85;
   }
 }
 @keyframes fold-up {
   to {
     transform: rotate3d(1, 0, 0, 180deg);
-    opacity: 0.8;
+    opacity: 0.75;
   }
 }
 @keyframes fold-diagonally-left {
@@ -274,6 +274,6 @@ $ts: 300ms;
 
 @keyframes blur-in {
   to {
-    opacity: 0.7;
+    opacity: 0.8;
   }
 }
