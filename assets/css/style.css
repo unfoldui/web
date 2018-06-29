@@ -3982,13 +3982,17 @@ footer {
     font-family: Open Sans, sans-serif;
     margin-bottom: 0.5em;
     font-size: 23px;
-    color: #fff;
-    line-height: 36px; }
+    color: #000;
+    line-height: 36px;
+    margin: -20px -30px 0 -30px;
+    padding: 10px 30px;
+    background: #26bdcf;
+    color: #fff; }
   .timeline p {
     font-family: Open Sans, serif;
     font-style: italic;
     font-size: 18px;
-    color: #fff; }
+    margin-top: 10px; }
   .timeline:after {
     content: "";
     position: absolute;
@@ -4006,7 +4010,7 @@ footer {
     z-index: 1;
     padding-bottom: 20px; }
     .timeline .era__title {
-      background: #000;
+      background: #26bdcf;
       display: inline-block;
       padding: 10px 20px;
       border-radius: 4px; }
@@ -4046,19 +4050,21 @@ footer {
       right: auto;
       left: -12px; }
     .timeline .entry__content {
-      background: #26bdcf;
+      background: #ebebeb;
       padding: 20px 30px;
       position: relative;
-      border-radius: 4px; }
+      border-radius: 4px;
+      border: solid 1px #26bdcf;
+      color: #000 !important; }
   .timeline .time {
     position: absolute;
     padding: 10px 20px;
-    background: #000;
+    background: #26bdcf;
     border-radius: 4px;
     cursor: default;
     color: #fff;
     text-align: center;
-    width: 120px; }
+    width: 200px; }
     .timeline .time:before {
       content: " ";
       position: absolute;
@@ -4066,12 +4072,12 @@ footer {
     .timeline .time--right {
       visibility: hidden; }
       .timeline .time--right:before {
-        border-right-color: #000;
+        border-right-color: #26bdcf;
         left: -20px; }
     .timeline .time--left {
       visibility: hidden; }
       .timeline .time--left:before {
-        border-left-color: #000;
+        border-left-color: #26bdcf;
         right: -20px; }
 
 @media all and (max-width: 768px) {
@@ -4101,7 +4107,7 @@ footer {
       .timeline .time--left:before {
         border-left: 0px;
         right: calc(100% - 4px);
-        border-right-color: #000; }
+        border-right-color: #26bdcf; }
       .timeline .time:after {
         left: 15px; }
   @keyframes entry-move-left-to-right {

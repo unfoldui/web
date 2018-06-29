@@ -1,5 +1,5 @@
 $entry_color: $primary_color;
-$time_color: $black;
+$time_color: $primary_color;
 $timeline_bar_color: #808285;
 $timeline_circle_color: #f78f31;
 
@@ -16,15 +16,19 @@ $timeline_circle_color: #f78f31;
     font-family: $font_0, $font_1;
     margin-bottom: 0.5em;
     font-size: 23px;
-    color: $white;
+    color: $black;
     line-height: 36px;
+    margin: -20px -30px 0 -30px;
+    padding: 10px 30px;
+    background: $primary_color;
+    color: $white;
   }
 
   p {
     font-family: $font_0, $font_2;
     font-style: italic;
     font-size: 18px;
-    color: $white;
+    margin-top: 10px;
   }
 
   &:after {
@@ -107,10 +111,13 @@ $timeline_circle_color: #f78f31;
     }
 
     &__content {
-      background: $entry_color;
+      background: #ebebeb;
       padding: 20px 30px;
       position: relative;
       border-radius: 4px;
+      border: solid 1px $primary_color;
+      color: $black !important;
+
     }
   }
 
@@ -122,7 +129,7 @@ $timeline_circle_color: #f78f31;
     cursor: default;
     color: $white;
     text-align: center;
-    width: 120px;
+    width: 200px;
 
     &:before {
       content: " ";
