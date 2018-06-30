@@ -156,24 +156,31 @@ $timeline_circle_color: #f78f31;
       }
     }
   }
-
+  @mixin bgTrack($breakColor, $notEmptyTrack: true) {
+    .entry__content h2, .time {
+      background: $breakColor;
+      border-color: $breakColor;
+    }
+    &.entry--left:before, .time--left:before  {
+      border-left-color: $breakColor;
+    }
+    .time--right:before, &.entry--right:before  {
+      border-right-color: $breakColor;
+    }
+    @if($notEmptyTrack) {
+      .entry__content {
+        background: $breakColor;
+        border-color: $breakColor;
+      }
+    }
+  }
   .entry{
     &.bg {
       &--keynote {
         
       }
       &--break {
-        $breakColor: #2d3034;
-        .entry__content, .entry__content h2, .time {
-          background: $breakColor;
-          border-color: $breakColor;
-        }
-        &.entry--left:before, .time--left:before  {
-          border-left-color: $breakColor;
-        }
-        .time--right:before, &.entry--right:before  {
-          border-right-color: $breakColor;
-        }
+        @include bgTrack($color_mine_shaft_approx);
       }
       &--talk {
 
@@ -192,8 +199,11 @@ $timeline_circle_color: #f78f31;
       }
     }
     &.track {
-      &--1 {
-
+      &--2 {
+        @include bgTrack($primary_color_orange, false);
+      }
+      &--3 {
+        @include bgTrack($secondary_blue, false);
       }
     }
   }
