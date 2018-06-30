@@ -1,5 +1,7 @@
 $entry_color: $primary_color;
 $time_color: $primary_color;
+
+$track-color: $primary_color;
 $timeline_bar_color: #808285;
 $timeline_circle_color: #f78f31;
 
@@ -121,9 +123,9 @@ $timeline_circle_color: #f78f31;
   }
 
   .time {
+    background: $time_color;
     position: absolute;
     padding: 10px 20px;
-    background: $time_color;
     border-radius: 4px;
     cursor: default;
     color: $white;
@@ -151,6 +153,47 @@ $timeline_circle_color: #f78f31;
       &:before {
         border-left-color: $time_color;
         right: -20px;
+      }
+    }
+  }
+
+  .entry{
+    &.bg {
+      &--keynote {
+        
+      }
+      &--break {
+        $breakColor: #2d3034;
+        .entry__content, .entry__content h2, .time {
+          background: $breakColor;
+          border-color: $breakColor;
+        }
+        &.entry--left:before, .time--left:before  {
+          border-left-color: $breakColor;
+        }
+        .time--right:before, &.entry--right:before  {
+          border-right-color: $breakColor;
+        }
+      }
+      &--talk {
+
+      }
+      &--small-talk {
+
+      }
+      &--pop-quiz {
+
+      }
+      &--workshop {
+
+      }
+      &--feedbacks {
+
+      }
+    }
+    &.track {
+      &--1 {
+
       }
     }
   }

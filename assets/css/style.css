@@ -3874,9 +3874,9 @@ footer {
       border: solid 1px #26bdcf;
       color: #000 !important; }
   .timeline .time {
+    background: #26bdcf;
     position: absolute;
     padding: 10px 20px;
-    background: #26bdcf;
     border-radius: 4px;
     cursor: default;
     color: #fff;
@@ -3896,6 +3896,13 @@ footer {
       .timeline .time--left:before {
         border-left-color: #26bdcf;
         right: -20px; }
+  .timeline .entry.bg--break .entry__content, .timeline .entry.bg--break .entry__content h2, .timeline .entry.bg--break .time {
+    background: #2d3034;
+    border-color: #2d3034; }
+  .timeline .entry.bg--break.entry--left:before, .timeline .entry.bg--break .time--left:before {
+    border-left-color: #2d3034; }
+  .timeline .entry.bg--break .time--right:before, .timeline .entry.bg--break.entry--right:before {
+    border-right-color: #2d3034; }
 
 @media all and (max-width: 768px) {
   .navbar .container {
