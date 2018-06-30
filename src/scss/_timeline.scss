@@ -39,6 +39,7 @@ $timeline_circle_color: #f78f31;
     top: 0;
     bottom: 10px;
     margin-left: -2px;
+    z-index: -1;
   }
 
   &--first:after {
@@ -156,6 +157,9 @@ $timeline_circle_color: #f78f31;
 }
 
 @media all and (max-width: 768px) {
+  .navbar .container{
+    margin-left: 100px;
+  }
   .timeline {
     max-width: 80%;
 

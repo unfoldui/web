@@ -3818,7 +3818,8 @@ footer {
     left: 50%;
     top: 0;
     bottom: 10px;
-    margin-left: -2px; }
+    margin-left: -2px;
+    z-index: -1; }
   .timeline--first:after {
     top: 20px; }
   .timeline .era {
@@ -3897,6 +3898,8 @@ footer {
         right: -20px; }
 
 @media all and (max-width: 768px) {
+  .navbar .container {
+    margin-left: 100px; }
   .timeline {
     max-width: 80%; }
     .timeline:after {
