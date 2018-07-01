@@ -39,7 +39,7 @@ $timeline_circle_color: #f78f31;
     background: $timeline_bar_color;
     left: 50%;
     top: 0;
-    bottom: 10px;
+    bottom: -50px;
     margin-left: -2px;
     z-index: -1;
   }
@@ -160,7 +160,7 @@ $timeline_circle_color: #f78f31;
     .entry__content {
       border-color: $breakColor;
     }
-    .entry__content h2, .time {
+    .entry__content h2, .time, .track-title {
       background: $breakColor;
       border-color: $breakColor;
     }
@@ -178,29 +178,36 @@ $timeline_circle_color: #f78f31;
   }
   .entry{
     &.bg {
-      &--keynote {
+      // &--keynote {
         
-      }
-      &--break {
-        @include bgTrack($color_mine_shaft_approx);
-      }
-      &--talk {
+      // }
+      
+      // &--talk {
 
-      }
-      &--small-talk {
+      // }
+      // &--small-talk {
 
-      }
-      &--pop-quiz {
+      // }
+      // &--pop-quiz {
 
-      }
-      &--workshop {
+      // }
+      // &--workshop {
 
-      }
-      &--feedbacks {
+      // }
+      // &--feedbacks {
 
-      }
+      // }
     }
     &.track {
+      &--1 {
+        @include bgTrack($primary_color, false);
+        &.bg--break {
+          @include bgTrack($color_mine_shaft_approx);
+        }
+        &.bg--switch {
+          @include bgTrack($color_tw_army_green);
+        }
+      }
       &--2 {
         @include bgTrack($primary_color_orange, false);
       }
@@ -208,6 +215,22 @@ $timeline_circle_color: #f78f31;
         @include bgTrack($secondary_blue, false);
       }
     }
+  }
+  .track-title {
+    position: absolute;
+    left: 0;
+    height: 50px;
+    display: block;
+    opacity: 1;
+    transform: rotate(-90deg);
+    height: 20px;
+    width: 165px;
+    transform-origin: left top;
+    text-align: center;
+    padding-right: 55px;
+    line-height: 20px;
+    font-size: 14px;
+    color: $white;
   }
 }
 
@@ -225,6 +248,7 @@ $timeline_circle_color: #f78f31;
 
     .era {
       text-align: left;
+      margin-left: -30px;
     }
 
     .entry {
@@ -232,6 +256,9 @@ $timeline_circle_color: #f78f31;
       margin-bottom: 50px;
       padding-left: 0px;
       padding-right: 40px;
+      .track-title {
+        width: 200px;
+      }
 
       &:before {
         right: auto;
