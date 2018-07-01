@@ -157,6 +157,9 @@ $timeline_circle_color: #f78f31;
     }
   }
   @mixin bgTrack($breakColor, $notEmptyTrack: true) {
+    .entry__content {
+      border-color: $breakColor;
+    }
     .entry__content h2, .time {
       background: $breakColor;
       border-color: $breakColor;
@@ -170,7 +173,6 @@ $timeline_circle_color: #f78f31;
     @if($notEmptyTrack) {
       .entry__content {
         background: $breakColor;
-        border-color: $breakColor;
       }
     }
   }
