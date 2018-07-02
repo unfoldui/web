@@ -96,8 +96,37 @@ $(document).ready(function ($) {
 		window.addEventListener("load", callbackFunc);
   		window.addEventListener("resize", callbackFunc);
 		window.addEventListener("scroll", callbackFunc);
+
+
+		// modal
+		$('.abstract-modal').on('click', function(event) {
+			const key = $(event.target).data('key');
+
+			picoModal({
+				content: $('#modal'+key).html(),
+				closeButton: false,
+				overlayStyles: function ( styles ) { styles.opacity = 0; },
+				modalStyles: function ( styles ) { styles.opacity = 0, styles.padding = 0, styles.marginTop = '20px' }
+			})
+			.afterShow(function(modal){
+				$(modal.overlayElem()).animate({opacity: 0.7});
+				$(modal.modalElem()).animate({opacity: 1});
+			})
+			.beforeClose(function(modal, event) {
+				event.preventDefault();
+				$(modal.overlayElem()).add(modal.modalElem())
+				.animate(
+						{ opacity: 0 },
+						{ complete: modal.forceClose }
+				);
+			})
+			.afterClose(function (modal) { modal.destroy(); })
+			.show();
+			
+		});
 	
 	})();
+	
 
 });
 

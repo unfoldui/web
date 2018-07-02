@@ -10,7 +10,7 @@ $animationTime: 1s;
   .entry__content {
     border-color: $breakColor;
   }
-  .entry__content h2, .time, .track-title {
+  .entry__content .title, .time, .track-title {
     background: $breakColor;
     border-color: $breakColor;
   }
@@ -27,6 +27,9 @@ $animationTime: 1s;
   }
 }
 
+.hidden  {
+  display: none;
+}
 .timeline {
   position: relative;
   max-width: 70%;
@@ -36,17 +39,7 @@ $animationTime: 1s;
   padding-left: 0;
   list-style: none;
 
-  .ellipsis {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    line-height: 1.2;     /* fallback */
-    max-height: 65px;      /* fallback */
-    -webkit-line-clamp: 2; /* number of lines to show */
-    -webkit-box-orient: vertical;
- }
-
-  h2 {
+  .title {
     font-family: $font_0, $font_1;
     margin-bottom: 0;
     color: $black;
@@ -55,7 +48,7 @@ $animationTime: 1s;
     color: $white;
   }
 
-  p {
+  .abstract, p {
     font-family: $font_0, $font_2;
     font-style: italic;
     padding: 20px 30px;
@@ -88,6 +81,7 @@ $animationTime: 1s;
       display: inline-block;
       padding: 10px 20px;
       border-radius: 4px;
+      box-shadow: -3px 5px 10px 0 rgba(0,0,0,0.4);
     }
   }
 
@@ -205,19 +199,10 @@ $animationTime: 1s;
   }
   
   .track-title {
-    position: absolute;
-    left: 0;
-    height: 50px;
     display: block;
     opacity: 1;
-    transform: rotate(-90deg);
-    height: 20px;
-    width: 125px;
-    transform-origin: left top;
-    text-align: center;
-    padding-right: 55px;
-    line-height: 20px;
     font-size: 14px;
+    padding: 2px 30px;
     color: $white;
   }
 }

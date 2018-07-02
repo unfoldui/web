@@ -1,0 +1,60 @@
+.pico-content {
+    .modal-header {
+        .modal-title {
+            font-size: 32px;
+        }
+    }
+    h3 {
+        font-size: 20px;
+        font-style: italic;
+    }
+    h4, h5 {
+        font-size: 16px;
+    }
+    h5 {
+        font-weight: 600;
+    }
+    .modalContent {
+        .avatar {
+            &, img {
+                width: 200px;
+                height: 200px;
+            }
+            border-radius: 50%;
+            margin: 0 auto;
+            box-shadow: 0 0 10px 0px rgba(0,0,0,0.3);
+            border: solid 5px #fff;
+            overflow: hidden;
+            img {
+                transition: opacity 300ms ease-in-out;
+                &:hover {
+                    opacity: 0.8;
+                    
+                }
+            }
+        }
+        .glimpse {
+            text-align: right;
+            border-bottom: solid 1px #ccc;
+            margin-right: 10px;
+            padding: 10px;
+        }
+        &.modal-track {
+            &--1 {
+                .modal-title {
+                    color: $primary-color;
+                }
+            }
+            &--2 {
+                .modal-title {
+                    color: $primary_color_orange;
+                }
+            }
+            &--3 {
+                .modal-title {
+                    color: $secondary_blue;
+                }
+            }
+        }
+    }
+}
