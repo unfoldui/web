@@ -45,13 +45,13 @@
           </nav>
         </header>
         <iframe name="hiddenFrame" width="0" height="0" border="0" style="display: none;"></iframe>
-        <div class="registration-form-container">
+        <div class="registration-form-container background-image-container">
           <div class="container registration-container">
             <div class="title-section">
               <h1>Registration Form</h1>
             </div>
             <div class="row">
-              <div class="col-md-6 col-xs-12 register-image"></div>
+              <div class="col-md-6 col-xs-12 register-image hidden-xs"></div>
               <div class="col-md-6 col-xs-12 light-bg">
                 <form id="registration-form" onsubmit="redirectToThankYou();" action="https://docs.google.com/forms/d/e/1FAIpQLSc1wcZD_Pavj_VQbAh3ZMnzNpVTCsWHk-DPv2_koRCISaDezA/formResponse" method="POST" target="hiddenFrame">
                   <p>
@@ -146,6 +146,6 @@
       </div>
     </div>
     <style rel="stylesheet" type="text/css">#container header .navbar { background: rgba(35, 35, 35, 0.8) !important; position: static !important;}</style>
-    <script>function redirectToThankYou() { window.location = './thank-you.html'; return false; }</script>
+    <script>function redirectToThankYou() { window.location = './success.html'; return false; }</script>
   </body>
 </html>

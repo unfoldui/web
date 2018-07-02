@@ -4301,30 +4301,31 @@ footer {
     cursor: pointer;
     background-color: #11aa58; }
 
-#thank-you-container {
-  height: 500px; }
-  #thank-you-container .hero-banner {
-    height: inherit;
+.background-image-container {
+  min-height: 500px; }
+  .background-image-container .hero-banner {
+    min-height: 500px;
     background-image: url(../../assets/images/banners/ban8.jpg);
     background-size: cover;
-    background-repeat: no-repeat; }
-  #thank-you-container .message-container {
+    background-repeat: no-repeat;
+    padding-top: 70px; }
+  .background-image-container .message-container {
     display: flex;
     flex-direction: column;
     height: inherit;
     justify-content: center;
     align-items: center; }
-  #thank-you-container .message-box {
+  .background-image-container .message-box {
     padding: 3rem;
     background: rgba(0, 0, 0, 0.91);
     margin-bottom: 2rem;
     color: #fff;
     opacity: 0.8; }
-    #thank-you-container .message-box p {
+    .background-image-container .message-box p {
       font-size: inherit;
       text-align: center;
       color: inherit; }
-    #thank-you-container .message-box .main-message {
+    .background-image-container .message-box .main-message {
       text-transform: uppercase;
       font-weight: 700;
       font-size: 3.5rem;
@@ -4333,12 +4334,12 @@ footer {
       border-top: 1px solid #fff;
       border-bottom: 1px solid #fff;
       font-style: italic; }
-    #thank-you-container .message-box .message-subtitle {
+    .background-image-container .message-box .message-subtitle {
       opacity: 0.8;
       font-size: 1.2rem;
       margin: 0;
       font-weight: 100; }
-  #thank-you-container .next-action .go-back-btn {
+  .background-image-container .next-action .go-back-btn {
     background: #000;
     color: #fff;
     padding: 0.8rem 2rem;

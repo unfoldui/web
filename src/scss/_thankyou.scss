@@ -1,11 +1,12 @@
-#thank-you-container{
-    height: 500px;
+.background-image-container{
+    min-height: 500px;
     
     .hero-banner{
-        height: inherit;
+        min-height: 500px;
         background-image: url(../../assets/images/banners/ban8.jpg);
         background-size: cover;
         background-repeat: no-repeat;
+        padding-top: 70px;
     }
 
     .message-container{
