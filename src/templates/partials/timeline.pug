@@ -5,7 +5,7 @@ mixin entryItem(entrySide, timeSide, data)
       .entry__content.wow.animated.fadeIn(data-wow-duration='1s', data-wow-delay='0.5s')
         h2 #{data.title}
         if data.abstract
-          p(title=data.abstract) #{data.abstract.substr(0,100)}...
+          p.ellipsis(title=data.abstract) #{data.abstract}...
         if data.type.toLowerCase() != 'break' && data.abstract
           .track-title Track #{data.track}
 

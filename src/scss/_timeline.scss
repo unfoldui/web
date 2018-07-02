@@ -14,6 +14,16 @@ $timeline_circle_color: #f78f31;
   padding-left: 0;
   list-style: none;
 
+  .ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    line-height: 1.2;     /* fallback */
+    max-height: 65px;      /* fallback */
+    -webkit-line-clamp: 2; /* number of lines to show */
+    -webkit-box-orient: vertical;
+ }
+
   h2 {
     font-family: $font_0, $font_1;
     margin-bottom: 0;
@@ -224,7 +234,7 @@ $timeline_circle_color: #f78f31;
     opacity: 1;
     transform: rotate(-90deg);
     height: 20px;
-    width: 165px;
+    width: 125px;
     transform-origin: left top;
     text-align: center;
     padding-right: 55px;

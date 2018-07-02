@@ -3796,6 +3796,17 @@ footer {
   background-color: inherit;
   padding-left: 0;
   list-style: none; }
+  .timeline .ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    line-height: 1.2;
+    /* fallback */
+    max-height: 65px;
+    /* fallback */
+    -webkit-line-clamp: 2;
+    /* number of lines to show */
+    -webkit-box-orient: vertical; }
   .timeline h2 {
     font-family: Open Sans, sans-serif;
     margin-bottom: 0;
@@ -3953,7 +3964,7 @@ footer {
     opacity: 1;
     transform: rotate(-90deg);
     height: 20px;
-    width: 165px;
+    width: 125px;
     transform-origin: left top;
     text-align: center;
     padding-right: 55px;
