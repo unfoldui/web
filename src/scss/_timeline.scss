@@ -4,6 +4,28 @@ $time_color: $primary_color;
 $track-color: $primary_color;
 $timeline_bar_color: #808285;
 $timeline_circle_color: #f78f31;
+$animationTime: 1s;
+
+@mixin bgTrack($breakColor, $notEmptyTrack: true) {
+  .entry__content {
+    border-color: $breakColor;
+  }
+  .entry__content h2, .time, .track-title {
+    background: $breakColor;
+    border-color: $breakColor;
+  }
+  &.entry--left:before, .time--left:before  {
+    border-left-color: $breakColor;
+  }
+  .time--right:before, &.entry--right:before  {
+    border-right-color: $breakColor;
+  }
+  @if($notEmptyTrack) {
+    .entry__content {
+      background: $breakColor;
+    }
+  }
+}
 
 .timeline {
   position: relative;
@@ -27,9 +49,7 @@ $timeline_circle_color: #f78f31;
   h2 {
     font-family: $font_0, $font_1;
     margin-bottom: 0;
-    font-size: 23px;
     color: $black;
-    line-height: 36px;
     padding: 10px 30px;
     background: $primary_color;
     color: $white;
@@ -38,7 +58,6 @@ $timeline_circle_color: #f78f31;
   p {
     font-family: $font_0, $font_2;
     font-style: italic;
-    font-size: 18px;
     padding: 20px 30px;
   }
 
@@ -130,6 +149,23 @@ $timeline_circle_color: #f78f31;
       color: $black !important;
 
     }
+    &.track {
+      &--1 {
+        @include bgTrack($primary_color, false);
+        &.bg--break {
+          @include bgTrack($color_mine_shaft_approx);
+        }
+        &.bg--switch {
+          @include bgTrack($color_tw_army_green);
+        }
+      }
+      &--2 {
+        @include bgTrack($primary_color_orange, false);
+      }
+      &--3 {
+        @include bgTrack($secondary_blue, false);
+      }
+    }
   }
 
   .time {
@@ -150,6 +186,7 @@ $timeline_circle_color: #f78f31;
 
     &--right {
       visibility: hidden;
+      right: 0;
 
       &:before {
         border-right-color: $time_color;
@@ -166,66 +203,7 @@ $timeline_circle_color: #f78f31;
       }
     }
   }
-  @mixin bgTrack($breakColor, $notEmptyTrack: true) {
-    .entry__content {
-      border-color: $breakColor;
-    }
-    .entry__content h2, .time, .track-title {
-      background: $breakColor;
-      border-color: $breakColor;
-    }
-    &.entry--left:before, .time--left:before  {
-      border-left-color: $breakColor;
-    }
-    .time--right:before, &.entry--right:before  {
-      border-right-color: $breakColor;
-    }
-    @if($notEmptyTrack) {
-      .entry__content {
-        background: $breakColor;
-      }
-    }
-  }
-  .entry{
-    &.bg {
-      // &--keynote {
-        
-      // }
-      
-      // &--talk {
-
-      // }
-      // &--small-talk {
-
-      // }
-      // &--pop-quiz {
-
-      // }
-      // &--workshop {
-
-      // }
-      // &--feedbacks {
-
-      // }
-    }
-    &.track {
-      &--1 {
-        @include bgTrack($primary_color, false);
-        &.bg--break {
-          @include bgTrack($color_mine_shaft_approx);
-        }
-        &.bg--switch {
-          @include bgTrack($color_tw_army_green);
-        }
-      }
-      &--2 {
-        @include bgTrack($primary_color_orange, false);
-      }
-      &--3 {
-        @include bgTrack($secondary_blue, false);
-      }
-    }
-  }
+  
   .track-title {
     position: absolute;
     left: 0;
@@ -245,9 +223,6 @@ $timeline_circle_color: #f78f31;
 }
 
 @media all and (max-width: 768px) {
-  .navbar .container{
-    margin-left: 100px;
-  }
   .timeline {
     max-width: 80%;
 
@@ -283,6 +258,34 @@ $timeline_circle_color: #f78f31;
       &__content {
         top: 50px;
         left: 40px;
+      }
+      
+      &.track {
+        &--1 {
+          &.entry--left:before, .time--left:before  {
+            border-right-color: $primary_color;
+          }
+          &.bg--break {
+            &.entry--left:before, .time--left:before  {
+              border-right-color: $color_mine_shaft_approx;
+            }
+          }
+          &.bg--switch {
+            &.entry--left:before, .time--left:before  {
+              border-right-color: $color_tw_army_green;
+            }
+          }
+        }
+        &--2 {
+          &.entry--left:before, .time--left:before  {
+            border-right-color: $primary_color_orange;
+          }
+        }
+        &--3 {
+          &.entry--left:before, .time--left:before  {
+            border-right-color: $secondary_blue;
+          }
+        }
       }
     }
 
@@ -327,51 +330,70 @@ $timeline_circle_color: #f78f31;
 }
 
 @media all and (min-width: 768px) {
+  .timeline {
+    .entry {
+      &--left {
+        padding-right: 40px;
+      }
+  
+      &--right {
+        padding-left: 40px;
+      }
+    }
+
+    .time {
+      &--left{
+        margin-left: -40px;
+      }
+
+      &--right{
+        margin-left: 40px;
+      }
+    }
+  }
   @keyframes entry-move-left-to-right {
     from {
       opacity: 0;
-      transform: translateX(-100%);
+      transform: translateX(-150%);
     }
     to {
       opacity: 1;
       transform: translateX(0%);
-      padding-right: 40px;
     }
   }
 
   @keyframes entry-move-right-to-left {
     from {
       opacity: 0;
-      transform: translateX(200%);
+      transform: translateX(250%);
     }
     to {
       opacity: 1;
       transform: translateX(100%);
-      padding-left: 40px;
     }
   }
 
   @keyframes time-move-left-to-right {
     from {
       opacity: 0;
-      transform: translateX(calc(-700% + 40px));
+      transform: translateX(-870%);
     }
     to {
       opacity: 1;
-      transform: translateX(calc(-120% - 40px));
+      transform: translateX(-120%);
     }
   }
 
   @keyframes time-move-right-to-left {
     from {
       opacity: 0;
-      transform: translateX(calc(700% + 40px));
+      transform: translateX(1000%);
     }
     to {
       opacity: 1;
-      transform: translateX(calc(250% + 40px));
+      transform: translateX(120%);
     }
-  } 
+  }
 }
 
 @keyframes show-after-animation-complete {
@@ -387,31 +409,31 @@ $timeline_circle_color: #f78f31;
 }
 
 .left-entry-in-view {
-  animation: entry-move-left-to-right 1s forwards;
+  animation: entry-move-left-to-right $animationTime forwards;
   visibility: visible !important;
 
   .time--right {
     visibility: visible !important;
-    animation: time-move-right-to-left 1s forwards;
+    animation: time-move-right-to-left $animationTime forwards;
   }
 
   &:after {
     visibility: visible !important;
-    animation: show-after-animation-complete 1s forwards;
+    animation: show-after-animation-complete $animationTime forwards;
   }
 }
 
 .right-entry-in-view {
-  animation: entry-move-right-to-left 1s forwards;
+  animation: entry-move-right-to-left $animationTime forwards;
   visibility: visible !important;
 
   .time--left {
     visibility: visible !important;
-    animation: time-move-left-to-right 1s forwards;
+    animation: time-move-left-to-right $animationTime forwards;
   }
 
   &:after {
     visibility: visible !important;
-    animation: show-after-animation-complete 1s forwards;
+    animation: show-after-animation-complete $animationTime forwards;
   }
 }
