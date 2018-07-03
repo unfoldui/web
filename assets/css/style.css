@@ -4289,7 +4289,7 @@ footer {
   margin: 30px auto; }
 
 .registration-form-container .register-image {
-  background: url("../images/reg.jpg") no-repeat center center transparent;
+  background: url("../images/bg/register.jpg") no-repeat center center transparent;
   background-size: cover;
   position: relative; }
   .registration-form-container .register-image:before {
@@ -4351,7 +4351,7 @@ footer {
   min-height: 500px; }
   .background-image-container .hero-banner {
     min-height: 500px;
-    background-image: url(../../assets/images/banners/ban8.jpg);
+    background-image: url(../../assets/images/bg/success-bg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     padding-top: 70px; }
