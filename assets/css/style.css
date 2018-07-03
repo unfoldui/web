@@ -4120,6 +4120,37 @@ footer {
   @media (max-width: 768px) {
     .pico-content {
       width: 90% !important; } }
+  .pico-content .social .icon {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    text-indent: -9999px;
+    background-size: 120% 120%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    outline: 0;
+    transition: all 200ms ease-in-out;
+    margin: 5px 20px 20px 0; }
+    .pico-content .social .icon span {
+      visibility: hidden; }
+    .pico-content .social .icon:hover {
+      transform: scale(1.2);
+      opacity: 0.9;
+      box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3); }
+    .pico-content .social .icon.icon-twitter {
+      background-image: url(../images/icons/twitter_footer.png);
+      background-color: #26bdcf; }
+    .pico-content .social .icon.icon-fb {
+      background-image: url(../images/icons/facebook_footer.png);
+      background-color: #1a73ba; }
+    .pico-content .social .icon.icon-linkedin {
+      background-image: url(../images/icons/linkedin_footer.png);
+      background-color: #1a73ba; }
+    .pico-content .social .icon.icon-web {
+      background-image: url(../images/icons/web_footer.png);
+      background-color: #11aa58; }
 
 /* EFFECTS
   –––––––––––––––––––––––––––––––––––––––––––––––––– */

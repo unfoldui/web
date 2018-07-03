@@ -67,4 +67,45 @@
     @media (max-width: 768px) {
         width: 90% !important;
     }
+
+    .social {
+        .icon {
+            display: inline-block;
+            span {visibility: hidden;}
+            width: 30px;
+            height: 30px;
+            padding: 5px;
+            text-indent: -9999px;
+            background-size: 120% 120%;
+            background-position: center center;
+            background-repeat: no-repeat;
+            border-radius: 50%;
+            outline: 0;
+            transition: all 200ms ease-in-out;
+            margin: 5px 20px 20px 0;
+            &:hover {
+                transform: scale(1.2);
+                opacity: 0.9;
+                box-shadow: 0 0 10px 0 rgba(0,0,0,0.3);
+            }
+            &.icon {
+                &-twitter {
+                    background-image: url(../images/icons/twitter_footer.png);
+                    background-color: $primary-color;
+                }
+                &-fb {
+                    background-image: url(../images/icons/facebook_footer.png);
+                    background-color: $color_tw_blue;
+                }
+                &-linkedin {
+                    background-image: url(../images/icons/linkedin_footer.png);
+                    background-color: $color_tw_blue;
+                }
+                &-web {
+                    background-image: url(../images/icons/web_footer.png);
+                    background-color: $color_tw_green;
+                }
+            }
+        }
+    }
 }
