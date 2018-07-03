@@ -31,12 +31,10 @@
             box-shadow: 0 0 10px 0px rgba(0,0,0,0.3);
             border: solid 5px #fff;
             overflow: hidden;
-            img {
-                transition: opacity 300ms ease-in-out;
-                &:hover {
-                    opacity: 0.8;
-                    
-                }
+            transition: opacity 300ms ease-in-out;
+            &:hover {
+                opacity: 0.8;
+                
             }
         }
         .glimpse {

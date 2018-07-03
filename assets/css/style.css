@@ -1503,7 +1503,7 @@ section.promo-banner-section3 {
 section.event-promo-section {
   background-attachment: fixed !important;
   min-height: 100vh;
-  background: #111 url(../images/bg/bg.png) center center no-repeat;
+  background: #111 url(../images/bg/bg.jpg) center center no-repeat;
   background-size: cover;
   display: flex;
   align-items: center;
@@ -2682,7 +2682,7 @@ button.mfp-arrow {
     background: #111 url(../images/banners/ban2@2x.jpg) center center no-repeat;
     background-size: cover; }
   section.event-promo-section {
-    background: #111 url(../images/bg/bg.png) center center no-repeat;
+    background: #111 url(../images/bg/bg.jpg) center center no-repeat;
     background-size: cover; }
   section.promo-banner-section {
     background: #111 url(../images/banners/ban1@2x.jpg) center center no-repeat;
@@ -2723,7 +2723,7 @@ button.mfp-arrow {
     background: #111 url(../images/banners/ban2@2x.jpg) center center no-repeat;
     background-size: cover; }
   section.event-promo-section {
-    background: #111 url(../images/bg/bg.png) center center no-repeat;
+    background: #111 url(../images/bg/bg.jpg) center center no-repeat;
     background-size: cover; }
   section.promo-banner-section {
     background: #111 url(../images/banners/ban1@2x.jpg) center center no-repeat;
@@ -4102,14 +4102,13 @@ footer {
     margin: 0 auto;
     box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.3);
     border: solid 5px #fff;
-    overflow: hidden; }
+    overflow: hidden;
+    transition: opacity 300ms ease-in-out; }
     .pico-content .modalContent .avatar, .pico-content .modalContent .avatar img {
       width: 200px;
       height: 200px; }
-    .pico-content .modalContent .avatar img {
-      transition: opacity 300ms ease-in-out; }
-      .pico-content .modalContent .avatar img:hover {
-        opacity: 0.8; }
+    .pico-content .modalContent .avatar:hover {
+      opacity: 0.8; }
   .pico-content .modalContent .glimpse {
     text-align: right;
     border-bottom: solid 1px #ccc;

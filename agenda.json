@@ -43,7 +43,9 @@
             "avatarUrl": "./assets/images/speakers/nikhil.jpg",
             "name": "Nikhil Mehta",
             "role": "UI Developer",
-            "company": "ThoughtWorks, Pune"
+            "company": "ThoughtWorks, Pune",
+            "twitter": "nikhil_001mehta",
+            "web": "https://nikhil-001mehta.github.io/"
         },
         "abstract": "1) Basics of animation\n2) How we approached to create the animation for Unfold UI logo. \n3) Brief about what calculations we did and how we figure out individual animation of each and every small component which will altogether put the logo in shape. ",
         "duration": "30 Minutes",
