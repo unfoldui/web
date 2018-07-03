@@ -4,7 +4,14 @@
 
 .registeration-section {
 	padding: 50px 0;
-	background-color: #f68a32;
+	background: rgba(246,138,50,1);
+background: -moz-linear-gradient(45deg, rgba(246,138,50,1) 0%, rgba(214,108,28,1) 100%);
+background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(246,138,50,1)), color-stop(100%, rgba(214,108,28,1)));
+background: -webkit-linear-gradient(45deg, rgba(246,138,50,1) 0%, rgba(214,108,28,1) 100%);
+background: -o-linear-gradient(45deg, rgba(246,138,50,1) 0%, rgba(214,108,28,1) 100%);
+background: -ms-linear-gradient(45deg, rgba(246,138,50,1) 0%, rgba(214,108,28,1) 100%);
+background: linear-gradient(45deg, rgba(246,138,50,1) 0%, rgba(214,108,28,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f68a32', endColorstr='#d66c1c', GradientType=1 );
 	h1, p {
 		color: #fff;
 	}
@@ -14,10 +21,10 @@
 	a.register-button {
 		display: inline-block;
 		margin-top: 25px;
-		box-shadow: 0 8px 15px $color_shark_approx;
+		box-shadow: 0 8px 15px rgba($color_shark_approx, 0.5);
 		position: relative;
 		padding: 10px 50px;
-		background: #0578be;
+		background: $primary_color;
 		color: #fff;
 	}
 }

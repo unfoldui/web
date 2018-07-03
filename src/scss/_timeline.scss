@@ -77,7 +77,8 @@ $animationTime: 1s;
     padding-bottom: 20px;
 
     &__title {
-      background: $time_color;
+      background: $black;
+      color: $white;
       display: inline-block;
       padding: 10px 20px;
       border-radius: 4px;
@@ -148,16 +149,18 @@ $animationTime: 1s;
         @include bgTrack($primary_color, false);
         &.bg--break {
           @include bgTrack($color_mine_shaft_approx);
+          margin: 30px 0;
         }
         &.bg--switch {
-          @include bgTrack($color_tw_army_green);
+          @include bgTrack($color_mine_shaft_approx);
+          margin: 30px 0;
         }
       }
       &--2 {
         @include bgTrack($primary_color_orange, false);
       }
       &--3 {
-        @include bgTrack($secondary_blue, false);
+        @include bgTrack($color_tw_green, false);
       }
     }
   }
@@ -257,7 +260,7 @@ $animationTime: 1s;
           }
           &.bg--switch {
             &.entry--left:before, .time--left:before  {
-              border-right-color: $color_tw_army_green;
+              border-right-color: $color_mine_shaft_approx;
             }
           }
         }
@@ -268,7 +271,7 @@ $animationTime: 1s;
         }
         &--3 {
           &.entry--left:before, .time--left:before  {
-            border-right-color: $secondary_blue;
+            border-right-color: $color_tw_green;
           }
         }
       }
