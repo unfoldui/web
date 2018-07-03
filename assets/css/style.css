@@ -4078,47 +4078,48 @@ footer {
     visibility: visible !important;
     animation: show-after-animation-complete 1s forwards; }
 
-.pico-content .modal-header .modal-title {
-  font-size: 32px; }
-
-.pico-content h3 {
-  font-size: 20px;
-  font-style: italic; }
-
-.pico-content h4, .pico-content h5 {
-  font-size: 16px; }
-
-.pico-content h5 {
-  font-weight: 600; }
-
-.pico-content .modalContent .avatar {
-  border-radius: 50%;
-  margin: 0 auto;
-  box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.3);
-  border: solid 5px #fff;
-  overflow: hidden; }
-  .pico-content .modalContent .avatar, .pico-content .modalContent .avatar img {
-    width: 200px;
-    height: 200px; }
-  .pico-content .modalContent .avatar img {
-    transition: opacity 300ms ease-in-out; }
-    .pico-content .modalContent .avatar img:hover {
-      opacity: 0.8; }
-
-.pico-content .modalContent .glimpse {
-  text-align: right;
-  border-bottom: solid 1px #ccc;
-  margin-right: 10px;
-  padding: 10px; }
-
-.pico-content .modalContent.modal-track--1 .modal-title {
-  color: #26bdcf; }
-
-.pico-content .modalContent.modal-track--2 .modal-title {
-  color: #f68a32; }
-
-.pico-content .modalContent.modal-track--3 .modal-title {
-  color: #0578be; }
+.pico-content {
+  width: 700px !important; }
+  .pico-content .modal-header .modal-title {
+    font-size: 32px;
+    line-height: 36px; }
+  .pico-content h3 {
+    font-size: 20px;
+    font-style: italic; }
+    .pico-content h3 span, .pico-content h3 em {
+      font-size: 16px;
+      color: #999; }
+  .pico-content h4, .pico-content h5 {
+    font-size: 16px; }
+  .pico-content h5 {
+    font-weight: 600; }
+  .pico-content .modalContent .avatar {
+    border-radius: 50%;
+    margin: 0 auto;
+    box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.3);
+    border: solid 5px #fff;
+    overflow: hidden; }
+    .pico-content .modalContent .avatar, .pico-content .modalContent .avatar img {
+      width: 200px;
+      height: 200px; }
+    .pico-content .modalContent .avatar img {
+      transition: opacity 300ms ease-in-out; }
+      .pico-content .modalContent .avatar img:hover {
+        opacity: 0.8; }
+  .pico-content .modalContent .glimpse {
+    text-align: right;
+    border-bottom: solid 1px #ccc;
+    margin-right: 10px;
+    padding: 10px; }
+  .pico-content .modalContent.modal-track--1 .modal-title {
+    color: #26bdcf; }
+  .pico-content .modalContent.modal-track--2 .modal-title {
+    color: #f68a32; }
+  .pico-content .modalContent.modal-track--3 .modal-title {
+    color: #0578be; }
+  @media (max-width: 768px) {
+    .pico-content {
+      width: 90% !important; } }
 
 /* EFFECTS
   –––––––––––––––––––––––––––––––––––––––––––––––––– */

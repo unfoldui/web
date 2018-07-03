@@ -1,12 +1,18 @@
 .pico-content {
+    width: 700px !important;
     .modal-header {
         .modal-title {
             font-size: 32px;
+            line-height: 36px;
         }
     }
     h3 {
         font-size: 20px;
         font-style: italic;
+        span, em {
+            font-size: 16px;
+            color: #999;
+        }
     }
     h4, h5 {
         font-size: 16px;
@@ -56,5 +62,9 @@
                 }
             }
         }
+    }
+
+    @media (max-width: 768px) {
+        width: 90% !important;
     }
 }
