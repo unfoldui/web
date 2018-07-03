@@ -4272,11 +4272,11 @@ footer {
   #registration-form sup {
     color: rgba(255, 0, 0, 0.509804);
     font-weight: normal; }
-  #registration-form label {
+  #registration-form label.form-label {
     display: flex;
     flex-direction: column;
     width: 100%; }
-    #registration-form label input {
+    #registration-form label.form-label input {
       font-size: 1.2rem;
       padding-left: 0.25rem; }
     #registration-form label.form-label > span:after {
@@ -4301,6 +4301,10 @@ footer {
     box-shadow: 0px 2px 9px 1px rgba(17, 172, 89, 0.18);
     cursor: pointer;
     background-color: #11aa58; }
+  #registration-form .checkbox {
+    font-size: 16px; }
+    #registration-form .checkbox label {
+      margin-bottom: -4px; }
 
 .background-image-container {
   min-height: 500px; }
@@ -4347,3 +4351,47 @@ footer {
     border-radius: 2px;
     font-size: 1.2rem;
     font-weight: 100; }
+
+.checkbox {
+  display: inline-block;
+  margin-bottom: 0;
+  position: relative;
+  margin-right: 0.3em;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+  .checkbox input[type='checkbox'] {
+    position: absolute;
+    top: 0.5em;
+    left: 0.1em; }
+    .checkbox input[type='checkbox'] + label {
+      border: 1px solid #6c7a89;
+      border-radius: 4px;
+      height: 1.1em;
+      width: 1.1em;
+      background: white;
+      position: relative;
+      cursor: pointer;
+      margin-bottom: 0; }
+      .checkbox input[type='checkbox'] + label:after {
+        content: '';
+        position: absolute;
+        top: .2em;
+        left: .1em;
+        height: .4em;
+        width: .7em;
+        border: .1em solid white;
+        border-top: transparent;
+        border-right: transparent;
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+        opacity: 0; }
+    .checkbox input[type='checkbox']:checked + label {
+      background: #11aa58;
+      border-color: #11aa58; }
+      .checkbox input[type='checkbox']:checked + label:after {
+        opacity: 1; }

@@ -1,0 +1,57 @@
+.checkbox {
+	display: inline-block;
+	margin-bottom: 0;
+	position: relative;
+	margin-right: 0.3em;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+
+	input[type='checkbox'] {
+		// Not making this invisible so that the error condition of html is shown
+		position: absolute;
+
+		// Parde me rehne do, parda na uthao :D
+		top: 0.5em;
+		left: 0.1em;
+
+		& + label {
+			border: 1px solid $color_raven_approx;
+			border-radius: 4px;
+			height: 1.1em;
+			width: 1.1em;
+			background: white;
+			position: relative;
+			cursor: pointer;
+			margin-bottom: 0;
+
+			&:after {
+				content: '';
+				position: absolute;
+				top: .2em;
+				left: .1em;
+				height: .4em;
+				width: .7em;
+				border: .1em solid white;
+				border-top: transparent;
+				border-right: transparent;
+				-webkit-transform: rotate(-45deg);
+				-moz-transform: rotate(-45deg);
+				-ms-transform: rotate(-45deg);
+				-o-transform: rotate(-45deg);
+				transform: rotate(-45deg);
+				opacity: 0;
+			}
+		}
+
+		&:checked + label {
+			background: $color_tw_green;
+			border-color: $color_tw_green;
+			&:after {
+				opacity: 1;
+			}
+		}
+	}
+
+}

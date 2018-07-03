@@ -34,7 +34,7 @@
 			content: '';
 			display: block;
 			position: absolute;
-			background-color: rgba(0,0,0,0.5);
+			background-color: rgba(0, 0, 0, 0.5);
 			left: 0;
 			right: 0;
 			top: 0;
@@ -44,11 +44,11 @@
 }
 
 #registration-form {
-    display: flex;
+	display: flex;
 	flex-direction: column;
 	padding: 1rem;
 
-	h2{
+	h2 {
 		font-weight: 300;
 		font-size: 2rem;
 		margin: 0 auto 1rem;
@@ -59,28 +59,27 @@
 		font-weight: normal;
 	}
 
-	label{
+	label.form-label {
 		display: flex;
 		flex-direction: column;
 		width: 100%;
 
-		input{
+		input {
 			font-size: 1.2rem;
 			padding-left: 0.25rem;
 		}
 
-		&.form-label {
-			> span {
-				&:after {
-					content: '*';
-					display: inline;
-					padding-left: 5px;
-					position: relative;
-					color: red;
-					font-size: 14px;
-				}
+		& > span {
+			&:after {
+				content: '*';
+				display: inline;
+				padding-left: 5px;
+				position: relative;
+				color: red;
+				font-size: 14px;
 			}
 		}
+
 	}
 
 	.submit-form {
@@ -91,7 +90,7 @@
 		padding-top: 10px;
 	}
 
-	button[type="submit"]{
+	button[type="submit"] {
 		padding: 10px 25px;
 		font-weight: 600;
 		font-size: 20px;
@@ -99,6 +98,13 @@
 		border-radius: 4px;
 		box-shadow: 0px 2px 9px 1px rgba(17, 172, 89, 0.18);
 		cursor: pointer;
-		background-color: #11aa58;
+		background-color: $color_tw_green;
+	}
+
+	.checkbox {
+		font-size: 16px;
+		label {
+			margin-bottom: -4px;
+		}
 	}
 }
