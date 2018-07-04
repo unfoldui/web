@@ -10,7 +10,7 @@ $animationTime: 1s;
   .entry__content {
     border-color: $breakColor;
   }
-  .entry__content .title, .time, .track-title {
+  .entry__content .title, .time, {
     background: $breakColor;
     border-color: $breakColor;
   }
@@ -200,14 +200,6 @@ $animationTime: 1s;
       }
     }
   }
-  
-  .track-title {
-    display: block;
-    opacity: 1;
-    font-size: 14px;
-    padding: 2px 30px;
-    color: $white;
-  }
 }
 
 @media all and (max-width: 768px) {
@@ -229,9 +221,6 @@ $animationTime: 1s;
       margin-bottom: 50px;
       padding-left: 0px;
       padding-right: 40px;
-      .track-title {
-        width: 200px;
-      }
 
       &:before {
         right: auto;

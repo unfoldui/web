@@ -1637,7 +1637,7 @@ footer {
       color: #202020 !important; }
     .timeline .entry.track--1 .entry__content {
       border-color: #26bdcf; }
-    .timeline .entry.track--1 .entry__content .title, .timeline .entry.track--1 .time, .timeline .entry.track--1 .track-title {
+    .timeline .entry.track--1 .entry__content .title, .timeline .entry.track--1 .time {
       background: #26bdcf;
       border-color: #26bdcf; }
     .timeline .entry.track--1.entry--left:before, .timeline .entry.track--1 .time--left:before {
@@ -1648,7 +1648,7 @@ footer {
       margin: 30px 0; }
       .timeline .entry.track--1.bg--break .entry__content {
         border-color: #2d3034; }
-      .timeline .entry.track--1.bg--break .entry__content .title, .timeline .entry.track--1.bg--break .time, .timeline .entry.track--1.bg--break .track-title {
+      .timeline .entry.track--1.bg--break .entry__content .title, .timeline .entry.track--1.bg--break .time {
         background: #2d3034;
         border-color: #2d3034; }
       .timeline .entry.track--1.bg--break.entry--left:before, .timeline .entry.track--1.bg--break .time--left:before {
@@ -1661,7 +1661,7 @@ footer {
       margin: 30px 0; }
       .timeline .entry.track--1.bg--switch .entry__content {
         border-color: #2d3034; }
-      .timeline .entry.track--1.bg--switch .entry__content .title, .timeline .entry.track--1.bg--switch .time, .timeline .entry.track--1.bg--switch .track-title {
+      .timeline .entry.track--1.bg--switch .entry__content .title, .timeline .entry.track--1.bg--switch .time {
         background: #2d3034;
         border-color: #2d3034; }
       .timeline .entry.track--1.bg--switch.entry--left:before, .timeline .entry.track--1.bg--switch .time--left:before {
@@ -1672,7 +1672,7 @@ footer {
         background: #2d3034; }
     .timeline .entry.track--2 .entry__content {
       border-color: #f68a32; }
-    .timeline .entry.track--2 .entry__content .title, .timeline .entry.track--2 .time, .timeline .entry.track--2 .track-title {
+    .timeline .entry.track--2 .entry__content .title, .timeline .entry.track--2 .time {
       background: #f68a32;
       border-color: #f68a32; }
     .timeline .entry.track--2.entry--left:before, .timeline .entry.track--2 .time--left:before {
@@ -1681,7 +1681,7 @@ footer {
       border-right-color: #f68a32; }
     .timeline .entry.track--3 .entry__content {
       border-color: #11aa58; }
-    .timeline .entry.track--3 .entry__content .title, .timeline .entry.track--3 .time, .timeline .entry.track--3 .track-title {
+    .timeline .entry.track--3 .entry__content .title, .timeline .entry.track--3 .time {
       background: #11aa58;
       border-color: #11aa58; }
     .timeline .entry.track--3.entry--left:before, .timeline .entry.track--3 .time--left:before {
@@ -1712,12 +1712,6 @@ footer {
       .timeline .time--left:before {
         border-left-color: #26bdcf;
         right: -20px; }
-  .timeline .track-title {
-    display: block;
-    opacity: 1;
-    font-size: 14px;
-    padding: 2px 30px;
-    color: #fff; }
 
 @media all and (max-width: 768px) {
   .timeline {
@@ -1733,8 +1727,6 @@ footer {
       margin-bottom: 50px;
       padding-left: 0px;
       padding-right: 40px; }
-      .timeline .entry .track-title {
-        width: 200px; }
       .timeline .entry:before {
         right: auto;
         left: 56px;
