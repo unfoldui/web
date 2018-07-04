@@ -3,34 +3,6 @@
 $(document).ready(function ($) {
 	"use strict";
 
-	/* ---------------------------------------------------------------------- */
-	/*	Header animate after scroll
-	/* ---------------------------------------------------------------------- */
-
-	(function () {
-
-		var docElem = document.documentElement,
-			didScroll = false,
-			changeHeaderOn = 120;
-
-		window.addEventListener('scroll', function () {
-			if (!didScroll) {
-				didScroll = true;
-				setTimeout(function () {
-					var sy = window.pageYOffset || docElem.scrollTop;
-					if (sy >= changeHeaderOn) {
-						$('header').addClass('active');
-					} else {
-						$('header').removeClass('active');
-					}
-					didScroll = false;
-				}, 100);
-			}
-		}, false);
-
-	})();
-
-	
 	$('a[href*="#"]')
 		// Remove links that don't actually link to anything
 		.not('[href="#"]')
@@ -67,67 +39,62 @@ $(document).ready(function ($) {
 			}
 		});
 
-	(function () {
-		// define variables
-		var items = document.querySelectorAll(".timeline .entry--left, .timeline .entry--right ");
-	
-		function isElementInViewport(el) {
-			var rect = el.getBoundingClientRect();
-			return (
-			  rect.top >= 0 &&
-			  rect.left >= 0 &&
-			  rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-			  rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-			);
-		}
-	
-		function callbackFunc() {
-			for (var i = 0; i < items.length; i++) {
-				if (isElementInViewport(items[i])) {
-					if(items[i].classList.value.includes('entry--left'))
-						items[i].classList.add("left-entry-in-view");
-					else if(items[i].classList.value.includes('entry--right'))
-						items[i].classList.add("right-entry-in-view");
-				}
+	// define variables
+	var items = document.querySelectorAll(".timeline .entry--left, .timeline .entry--right");
+
+	function isElementInViewport(el) {
+		var rect = el.getBoundingClientRect();
+		return (
+			rect.top >= 0 &&
+			rect.left >= 0 &&
+			rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+			rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+		);
+	}
+
+	function callbackFunc() {
+		for (var i = 0; i < items.length; i++) {
+			if (isElementInViewport(items[i])) {
+				if(items[i].classList.value.includes('entry--left'))
+					items[i].classList.add("left-entry-in-view");
+				else if(items[i].classList.value.includes('entry--right'))
+					items[i].classList.add("right-entry-in-view");
 			}
 		}
-	
-		// listen for events
-		window.addEventListener("load", callbackFunc);
-  		window.addEventListener("resize", callbackFunc);
-		window.addEventListener("scroll", callbackFunc);
+	}
+
+	// listen for events
+	window.addEventListener("load", callbackFunc);
+	window.addEventListener("resize", callbackFunc);
+	window.addEventListener("scroll", callbackFunc);
 
 
-		// modal
-		$('.abstract-modal').on('click', function(event) {
-			const key = $(event.target).data('key');
+	// modal
+	$('.abstract-modal').on('click', function(event) {
+		const key = $(event.target).data('key');
 
-			picoModal({
-				content: $('#modal'+key).html(),
-				closeButton: false,
-				overlayStyles: function ( styles ) { styles.opacity = 0; },
-				modalStyles: function ( styles ) { styles.opacity = 0, styles.padding = 0, styles.marginTop = '20px' }
-			})
-			.afterShow(function(modal){
-				$(modal.overlayElem()).animate({opacity: 0.7});
-				$(modal.modalElem()).animate({opacity: 1});
-			})
-			.beforeClose(function(modal, event) {
-				event.preventDefault();
-				$(modal.overlayElem()).add(modal.modalElem())
-				.animate(
-						{ opacity: 0 },
-						{ complete: modal.forceClose }
-				);
-			})
-			.afterClose(function (modal) { modal.destroy(); })
-			.show();
-			
-		});
-	
-	})();
-	
-
+		picoModal({
+			content: $('#modal'+key).html(),
+			closeButton: false,
+			overlayStyles: function ( styles ) { styles.opacity = 0; },
+			modalStyles: function ( styles ) { styles.opacity = 0, styles.padding = 0, styles.marginTop = '20px' }
+		})
+		.afterShow(function(modal){
+			$(modal.overlayElem()).animate({opacity: 0.7});
+			$(modal.modalElem()).animate({opacity: 1});
+		})
+		.beforeClose(function(modal, event) {
+			event.preventDefault();
+			$(modal.overlayElem()).add(modal.modalElem())
+			.animate(
+					{ opacity: 0 },
+					{ complete: modal.forceClose }
+			);
+		})
+		.afterClose(function (modal) { modal.destroy(); })
+		.show();
+		
+	});
 });
 
 

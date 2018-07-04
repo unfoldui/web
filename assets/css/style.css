@@ -1126,7 +1126,7 @@ li:hover > .dropdown {
 .nav-stroke li a:hover:after {
   width: 100%; }
 
-@media all and (max-width: 768px) {
+@media all and (max-width: 991px) {
   .nav-stroke li a {
     padding: 15px !important; }
   .nav-stroke li a.active:after,
@@ -1156,29 +1156,20 @@ nav.fill li a:hover:after {
   -moz-animation: fill 1s forwards;
   opacity: 1; }
 
-.nav-logo-unfold {
-  float: left;
-  color: #fff;
-  line-height: 1;
-  font-size: 35px;
-  margin-right: 10px;
-  font-weight: 600;
-  letter-spacing: 2px; }
+@media all and (max-width: 991px) {
+  .navbar.navbar-expand-lg .container {
+    position: relative; }
+  #navbarSupportedContent {
+    position: absolute;
+    width: 100%;
+    top: 100%; } }
 
-.nav-logo-unfold {
-  letter-spacing: 1px;
-  font-size: 16px;
-  font-weight: 400;
-  margin-top: 5px; }
-  .nav-logo-unfold .logo-location {
-    display: block;
-    margin-top: 5px;
-    padding-top: 5px;
-    border-top: solid 1px #fff; }
-  .nav-logo-unfold img {
-    display: block;
-    height: 30px;
-    margin: 0 !important; }
+.nav-logo-unfold img {
+  display: block;
+  height: 30px;
+  margin: 0 !important; }
+  .nav-logo-unfold img.unfold {
+    margin-left: 50px !important; }
 
 .nudge-left {
   padding-left: 4px; }

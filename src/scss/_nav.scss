@@ -52,7 +52,7 @@
 .nav-stroke li a:hover:after {
     width: 100%;
 }
-@media all and(max-width: 768px) {
+@media all and(max-width: 991px) {
     .nav-stroke li {
         a {
             padding: 15px !important;
@@ -90,6 +90,17 @@ nav.fill li a:hover:after {
     -moz-animation: fill 1s forwards;
     opacity: 1;
 }
-
+@media all and (max-width: 991px) {
+    .navbar.navbar-expand-lg {
+        .container {
+            position: relative;
+        }
+    }
+    #navbarSupportedContent {
+        position: absolute;
+        width: 100%;
+        top: 100%;
+    }
+}
 
 
