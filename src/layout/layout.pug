@@ -7,6 +7,15 @@ html.no-js(lang='en')
   body(data-spy="scroll" data-target="#navbarSupportedContent")
     #home
       #container
+        include ../templates/partials/header
         block content
+        include ../templates/partials/contact-section
+        include ../templates/partials/footer
+
+    script(src='assets/js/jquery.3.3.1.js')
+    script(src='assets/js/popper.js')
+    script(src='assets/js/picoModal-3.0.0.min.js')
+    script(src='assets/js/bootstrap.min.js')
+    script(src='assets/js/script.js')
 
     block footerScripts
