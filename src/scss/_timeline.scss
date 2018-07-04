@@ -215,8 +215,8 @@ $animationTime: 1s;
     max-width: 80%;
 
     &:after {
-      height: calc(100% + 20px);
       left: 0%;
+      bottom: -100px;
     }
 
     .era {
@@ -247,18 +247,20 @@ $animationTime: 1s;
         top: 50px;
         left: 40px;
       }
-      
+            
       &.track {
         &--1 {
           &.entry--left:before, .time--left:before  {
             border-right-color: $primary_color;
           }
           &.bg--break {
+            margin: 70px 0;
             &.entry--left:before, .time--left:before  {
               border-right-color: $color_mine_shaft_approx;
             }
           }
           &.bg--switch {
+            margin: 70px 0;
             &.entry--left:before, .time--left:before  {
               border-right-color: $color_mine_shaft_approx;
             }
@@ -317,7 +319,7 @@ $animationTime: 1s;
   }
 }
 
-@media all and (min-width: 768px) {
+@media all and (min-width: 769px) {
   .timeline {
     .entry {
       &--left {
