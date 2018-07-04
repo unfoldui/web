@@ -48,6 +48,7 @@
     height: 2px;
 }
 
+.nav-stroke li a.active:after,
 .nav-stroke li a:hover:after {
     width: 100%;
 }
@@ -75,4 +76,6 @@ nav.fill li a:hover:after {
     -moz-animation: fill 1s forwards;
     opacity: 1;
 }
+
+
 
