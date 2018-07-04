@@ -1387,30 +1387,45 @@ nav.fill li a:hover:after {
       font-size: 32px;
       color: #26bdcf;
       font-weight: 900;
-      width: 30px;
+      width: 45px;
       height: 35px;
-      opacity: 0; }
+      opacity: 0;
+      text-indent: -9999px; }
   .main-logo .t0 {
     animation: fade-in 300ms forwards;
-    animation-delay: 600ms; }
+    animation-delay: 600ms;
+    background: url(/assets/images/icons/letters/0.svg) no-repeat center center transparent;
+    background-size: contain; }
   .main-logo .t1 {
     animation: fade-in 300ms forwards;
-    animation-delay: 960ms; }
+    animation-delay: 960ms;
+    background: url(/assets/images/icons/letters/1.svg) no-repeat center center transparent;
+    background-size: contain; }
   .main-logo .t2 {
     animation: fade-in 300ms forwards;
-    animation-delay: 1320ms; }
+    animation-delay: 1320ms;
+    background: url(/assets/images/icons/letters/2.svg) no-repeat center center transparent;
+    background-size: contain; }
   .main-logo .t3 {
     animation: fade-in 300ms forwards;
-    animation-delay: 1680ms; }
+    animation-delay: 1680ms;
+    background: url(/assets/images/icons/letters/3.svg) no-repeat center center transparent;
+    background-size: contain; }
   .main-logo .t4 {
     animation: fade-in 300ms forwards;
-    animation-delay: 2040ms; }
+    animation-delay: 2040ms;
+    background: url(/assets/images/icons/letters/4.svg) no-repeat center center transparent;
+    background-size: contain; }
   .main-logo .t5 {
     animation: fade-in 300ms forwards;
-    animation-delay: 2400ms; }
+    animation-delay: 2400ms;
+    background: url(/assets/images/icons/letters/5.svg) no-repeat center center transparent;
+    background-size: contain; }
   .main-logo .t6 {
     animation: fade-in 300ms forwards;
-    animation-delay: 2760ms; }
+    animation-delay: 2760ms;
+    background: url(/assets/images/icons/letters/6.svg) no-repeat center center transparent;
+    background-size: contain; }
 
 @keyframes open-right {
   to {

@@ -219,9 +219,10 @@ $ts: 300ms;
       font-size: $iw/2+7px;
       color: $clr;
       font-weight: 900;
-      width: $iw/2+5px;
+      width: $iw/2+20px;
       height: $iw/2+10px;
       opacity: 0;
+      text-indent: -9999px;
     }
   }
 
@@ -230,6 +231,8 @@ $ts: 300ms;
     .t#{$i} {
       animation: fade-in $ts forwards;
       animation-delay: $delay*1.2;
+      background: url(/assets/images/icons/letters/#{$i}.svg) no-repeat center center transparent;
+      background-size: contain;
     }
   }
 }
