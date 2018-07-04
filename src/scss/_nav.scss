@@ -52,6 +52,20 @@
 .nav-stroke li a:hover:after {
     width: 100%;
 }
+@media all and(max-width: 768px) {
+    .nav-stroke li {
+        a {
+            padding: 15px !important;
+        }
+        a.active:after,
+        a:hover:after {
+            width: 100%;
+            bottom: 0;
+        }
+    }
+    bottom: 0;
+    padding: 10px;
+}
 
 nav.fill li a {
     transition: all 2s;
