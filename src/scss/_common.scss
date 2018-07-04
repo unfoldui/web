@@ -3067,95 +3067,9 @@ header {
 	padding: 0;
 	z-index: 99999;
 	position: relative;
-	&.second-style {
-		min-height: 90px;
-		.navbar {
-			padding: 0;
-			transition: all 0.2s ease-in-out;
-			border-bottom: 1px solid $color_link_water_approx;
-			z-index: 999999;
-			background: $white !important;
-			position: fixed;
-			top: 0;
-			left: 0;
-			width: 100%;
-			a.navbar-brand {
-				padding-top: 10px;
-				float: none;
-				img {
-					margin-bottom: 5px;
-				}
-			}
-		}
-		.navbar-nav {
-			transition: all 0.2s ease-in-out;
-			padding: 0;
-			margin-bottom: -1px;
-			> li {
-				> a {
-					color: $color_mine_shaft_approx !important;
-					padding: 20px 22px !important;
-				}
-				&.active > a:before {
-					bottom: -1px;
-				}
-			}
-		}
-		&.active .navbar {
-			background: $white !important;
-		}
-	}
-	&.third-style {
-		position: fixed;
-		top: 0;
-		left: 0;
-		width: 100%;
-		.container {
-			position: relative;
-		}
-		.navbar {
-			padding: 0;
-			transition: all 0.2s ease-in-out;
-			border-bottom: 1px solid $color_mountain_mist_approx;
-			background: transparent !important;
-			z-index: 999999;
-			position: relative;
-			a.navbar-brand {
-				padding-top: 10px;
-				float: none;
-				img {
-					margin-bottom: 5px;
-				}
-			}
-		}
-		.navbar-nav {
-			transition: all 0.2s ease-in-out;
-			padding: 0;
-			margin-bottom: -1px;
-			> li {
-				> a {
-					padding: 20px 22px !important;
-				}
-				&.active > a:before {
-					bottom: -1px;
-				}
-			}
-		}
-		&.active {
-			padding-bottom: 0;
-			background: rgba($color_log_cabin_approx, 0.8) !important;
-			transition: all 0.2s ease-in-out;
-			.navbar {
-				background: transparent !important;
-				border-bottom: 1px solid transparent !important;
-			}
-		}
-	}
-	&.active {
-		padding-bottom: 90px;
-		.navbar {
-			background: rgba($color_log_cabin_approx, 0.8) !important;
-		}
+	
+	.navbar {
+		background: rgba($color_log_cabin_approx, 0.8) !important;	
 	}
 	&.fourth-style .navbar-nav > li > a.active:before {
 		content: '';
