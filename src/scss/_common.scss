@@ -53,118 +53,6 @@ body{
 	}
 }
 section {
-	&.gallery-section {
-		overflow: hidden;
-		ul.gallery-list {
-			margin: 0;
-			padding: 0;
-			li {
-				display: block;
-				float: left;
-				width: 20%;
-				img {
-					width: 100%;
-					height: auto;
-				}
-			}
-		}
-	}	
-	&.speaking-single {
-		padding: 80px 0;
-		.single-box {
-			.single-content {
-				.single-connection {
-					margin-bottom: 30px;
-					ul.social-links {
-						margin: 0;
-						padding: 0;
-						margin-bottom: 20px;
-						li {
-							display: inline-block;
-							margin-right: 6px;
-							a {
-								width: 30px;
-								height: 30px;
-								color: $color_waterloo__approx;
-								border-radius: 50%;
-								border: 1px solid $color_waterloo__approx;
-								font-size: 14px;
-								line-height: 28px;
-								text-align: center;
-								&:hover {
-									background: $color_waterloo__approx;
-									color: $color_tw_green;
-								}
-							}
-						}
-					}
-					p span {
-						color: $color_tw_blue;
-					}
-				}
-				.single-data {
-					margin-bottom: 30px;
-					h1 {
-						margin-bottom: -3px;
-					}
-					span {
-						display: inline-block;
-						color: $color_tw_blue;
-						font-size: 24px;
-						font-style: italic;
-						font-family: $font_0, $font_2;
-						padding-bottom: 20px;
-						margin-bottom: 20px;
-						position: relative;
-						&:after {
-							content: '';
-							position: absolute;
-							bottom: -1px;
-							left: 0;
-							width: 70px;
-							height: 1px;
-							background: $color_mine_shaft_approx;
-						}
-					}
-				}
-				h2 {
-					font-weight: 300;
-					margin-bottom: 20px;
-				}
-				.single-skills .skills-progress div.meter {
-					height: 6px;
-					background: $color_link_water_approx;
-					margin-bottom: 20px;
-					border-radius: 2px;
-					p {
-						height: 100%;
-						background: $color_tw_green;
-						border-radius: 2px;
-					}
-				}
-			}
-			.single-image {
-				margin-bottom: 40px;
-				a {
-					@extend %paragraph;
-					margin-bottom: 60px;
-					i {
-						margin-right: 10px;
-						font-size: 12px;
-						float: left;
-						padding-top: 9px;
-					}
-					&:hover {
-						color: $color_tw_green;
-					}
-				}
-				img {
-					width: 100%;
-					height: auto;
-				}
-			}
-		}
-	}
 	&.contact-section {
 		padding: 40px 0 0;
 		border-top: 1px solid $color_link_water_approx;
@@ -292,112 +180,6 @@ section {
 			}
 		}
 	}
-	&.page-banner-section {
-		padding: 120px 0 70px;
-		margin-top: 74px;
-		text-align: center;
-		background: $color_woodsmoke_approx $url_0 center center no-repeat;
-		background-size: cover;
-		h1 {
-			font-size: 48px;
-			line-height: 60px;
-			color: $white;
-			margin-bottom: 4px;
-		}
-		p {
-			color: $color_silver_approx;
-			font-size: 20px;
-			font-family: $font_0, $font_1;
-			margin-bottom: 0;
-		}
-	}
-	&.reg-sub-section {
-		margin-top: 50px;
-		position: relative;
-		z-index: 2;
-		.inner-reg-sub {
-			max-width: 1400px;
-			margin: 0 auto;
-			overflow: hidden;
-			padding-bottom: 45px;
-			.register-box {
-				padding: 80px 130px;
-				text-align: center;
-				float: left;
-				width: 50%;
-				margin-right: -30px;
-				background: $color_woodsmoke_approx $url_10;
-				background-size: auto auto;
-				border-radius: 6px;
-				p {
-					font-size: 23px;
-					color: $white;
-					line-height: 36px;
-					margin-bottom: 25px;
-					span {
-						font-family: $font_0, $font_2;
-						font-style: italic;
-					}
-				}
-				a {
-					color: $color_tw_blue;
-					font-size: 18px;
-					font-family: $font_0, $font_1;
-					text-transform: uppercase;
-					padding: 13px 60px 11px;
-					background: $white;
-					font-weight: 400;
-					border-radius: 2px;
-					transition: all 0.2s ease-in-out;
-					box-shadow: 0 3px 20px $black_18;
-					&:hover {
-						color: $white;
-						background: $color_tw_blue;
-					}
-				}
-				span {
-					display: block;
-					font-size: 18px;
-					color: $white;
-					font-family: $font_0, $font_2;
-					font-style: italic;
-					line-height: 32px;
-					margin: 0 0 25px;
-					font-weight: 300;
-				}
-			}
-			.subscribe-box {
-				padding: 80px 130px;
-				text-align: center;
-				float: right;
-				margin-top: 20px;
-				margin-left: -30px;
-				margin-right: 30px;
-				width: 50%;
-				background: $color_woodsmoke_approx $url_12;
-				background-size: auto auto;
-				border-radius: 6px;
-				box-shadow: 0 10px 45px $black_18;
-				p {
-					font-size: 24px;
-					color: $white;
-					line-height: 36px;
-				}
-				span {
-					display: block;
-					font-size: 18px;
-					color: $color_link_water_approx;
-					font-family: $font_0, $font_2;
-					font-style: italic;
-					line-height: 32px;
-					margin: 0 0 25px;
-				}
-				a.default-button:hover {
-					background: $color_tw_army_green;
-				}
-			}
-		}
-	}
 	&.about-section {
 		// Too much pattern
 		// background: $url_16 center bottom repeat-x;
@@ -513,10 +295,6 @@ section {
 					}
 				}
 			}
-		}
-		&.with-image {
-			background: $color_woodsmoke_approx $url_21 center center no-repeat;
-			background-size: cover;
 		}
 		.title-section.center {
 			text-align: center;
@@ -953,59 +731,6 @@ a {
 		outline: none;
 	}
 }
-.conference-features {
-	margin-bottom: 90px;
-	.center-area {
-		padding-top: 50px;
-		a {
-			@extend %paragraph;
-			color: $color_tw_blue;
-			font-weight: 400;
-			&:hover {
-				text-decoration: underline !important;
-			}
-		}
-	}
-	.iso-call {
-		margin: -30px -15px -15px;
-	}
-	.conference-post {
-		width: 50%;
-		padding: 15px;
-		.inner-box {
-			background: $url_12;
-			padding: 26px;
-			border-radius: 6px;
-			h1 {
-				margin-left: -42px;
-				font-weight: 300;
-				margin-bottom: 8px;
-				color: $white;
-			}
-			i {
-				color: $color_tw_green;
-				font-size: 70px;
-				margin-bottom: 15px;
-				display: inline-block;
-			}
-			h2 {
-				color: $white;
-			}
-			p {
-				color: $color_prelude_approx;
-				font-weight: 300;
-				font-size: 17px;
-			}
-		}
-		&:nth-child(2n) .inner-box {
-			background: $url_18;
-		}
-	}
-	&.second-style .conference-post .inner-box {
-		background: $color_tw_blue;
-		padding: 52px 30px;
-	}
-}
 .about-event-box {
 	margin-bottom: 100px;
 	a {
@@ -1153,25 +878,6 @@ header {
 		transition-property: transform, opacity;
 	}
 }
-.boxedcontainer {
-	max-width: 1170px;
-	margin: auto;
-	padding: 0 30px;
-}
-.tp-banner-container {
-	width: 100%;
-	position: relative;
-	padding: 0;
-}
-.tp-banner {
-	width: 100%;
-	position: relative;
-}
-.tp-banner-fullscreen-container {
-	width: 100%;
-	position: relative;
-	padding: 0;
-}
 .preloader {
 	position: fixed;
 	width: 100%;
@@ -1257,60 +963,16 @@ button {
 }
 @media all and(-webkit-min-device-pixel-ratio: 1.5),all and(-o-min-device-pixel-ratio: 3 / 2),all and(min--moz-device-pixel-ratio: 1.5),all and(min-device-pixel-ratio: 1.5) {
 	section {
-		&.page-banner-section {
-			background: $color_woodsmoke_approx $url_1 center center no-repeat;
-			background-size: cover;
-		}
 		&.event-promo-section {
 			background: $color_woodsmoke_approx $url_3 center center no-repeat;
-			background-size: cover;
-		}
-		&.statistic-section {
-			background: $color_woodsmoke_approx $url_27 center center fixed;
-			background-size: cover;
-		}
-		&.reg-sub-section .inner-reg-sub {
-			.register-box {
-				background: $color_woodsmoke_approx $url_11;
-				background-size: auto auto;
-			}
-			.subscribe-box {
-				background: $color_woodsmoke_approx $url_13;
-				background-size: auto auto;
-			}
-		}
-		&.event-banner-section.with-image {
-			background: $color_woodsmoke_approx $url_22 center center no-repeat;
 			background-size: cover;
 		}
 	}
 }
 @media(-webkit-min-device-pixel-ratio: 2),(min-resolution: 192dpi) {
 	section {
-		&.page-banner-section {
-			background: $color_woodsmoke_approx $url_1 center center no-repeat;
-			background-size: cover;
-		}
 		&.event-promo-section {
 			background: $color_woodsmoke_approx $url_3 center center no-repeat;
-			background-size: cover;
-		}
-		&.statistic-section {
-			background: $color_woodsmoke_approx $url_27 center center fixed;
-			background-size: cover;
-		}
-		&.reg-sub-section .inner-reg-sub {
-			.register-box {
-				background: $color_woodsmoke_approx $url_11;
-				background-size: auto auto;
-			}
-			.subscribe-box {
-				background: $color_woodsmoke_approx $url_13;
-				background-size: auto auto;
-			}
-		}
-		&.event-banner-section.with-image {
-			background: $color_woodsmoke_approx $url_22 center center no-repeat;
 			background-size: cover;
 		}
 	}
@@ -1412,29 +1074,6 @@ button {
 				font-size: 20px;
 			}
 		}
-		&.speaking-single .single-box {
-			.single-image a {
-				font-size: 15px;
-			}
-			.single-content .single-data span {
-				font-size: 20px;
-			}
-		}
-		&.reg-sub-section .inner-reg-sub {
-			padding-left: 30px;
-			.register-box a {
-				font-size: 15px;
-			}
-			.subscribe-box form.subscribe {
-				input[type="submit"] {
-					font-size: 15px;
-				}
-				input[type="text"] {
-					font-size: 15px;
-					margin-bottom: 5px;
-				}
-			}
-		}
 		&.event-banner-section .subscribe-banner-box form.subscribe {
 			input[type="text"] {
 				font-size: 15px;
@@ -1463,14 +1102,6 @@ button {
 		}
 		&.default-button {
 			font-size: 15px;
-		}
-	}
-	.conference-features {
-		.center-area a {
-			font-size: 15px;
-		}
-		.conference-post .inner-box i {
-			font-size: 56px;
 		}
 	}
 	.about-event-box {
@@ -1572,16 +1203,6 @@ button {
 	}
 }
 @media(max-width: 1199px) {
-	section {
-		&.reg-sub-section .inner-reg-sub {
-			.register-box {
-				padding: 40px 40px;
-			}
-			.subscribe-box {
-				padding: 40px 40px;
-			}
-		}
-	}
 	header {
 		&.second-style .navbar-nav > li > a {
 			padding: 40px 15px !important;
@@ -1603,33 +1224,11 @@ button {
 }
 @media(max-width: 991px) {
 	section {
-		&.reg-sub-section {
-			margin-top: 0;
-			padding-top: 100px;
-			.inner-reg-sub {
-				padding: 0 15px;
-				.register-box {
-					float: none;
-					width: 100%;
-					margin: 0 0 30px;
-					padding: 80px 30px;
-				}
-				.subscribe-box {
-					float: none;
-					width: 100%;
-					margin: 0;
-					padding: 80px 30px;
-				}
-			}
-		}
 		&.event-banner-section .button-banner-box {
 			text-align: left;
 		}
 		&.contact-section .contact-info {
 			margin-top: 20px;
-		}
-		&.gallery-section ul.gallery-list li {
-			width: 33.3333%;
 		}
 	}
 	.navbar-collapse {
@@ -1750,9 +1349,6 @@ button {
 			font-size: 48px;
 			line-height: 56px;
 		}
-		&.gallery-section ul.gallery-list li {
-			width: 50%;
-		}
 	}
 	footer {
 		.up-footer .footer-widget {
@@ -1763,17 +1359,11 @@ button {
 			margin-bottom: 20px;
 		}
 	}
-	.conference-features .conference-post {
-		width: 100%;
-	}
 }
 @media(max-width: 480px) {
 	section {
 		&.about-section .video-box iframe {
 			height: 200px;
-		}
-		&.gallery-section ul.gallery-list li {
-			width: 100%;
 		}
 	}
 }

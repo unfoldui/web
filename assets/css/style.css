@@ -1,4 +1,4 @@
-section.speaking-single .single-box .single-image a, .pagination-box a.prev, .pagination-box a.next, .paragraph, .article-box span, a.more-btn, .conference-features .center-area a, .about-event-box a, p {
+.pagination-box a.prev, .pagination-box a.next, .paragraph, .article-box span, a.more-btn, .about-event-box a, p {
   font-size: 18px;
   color: #6c7a89;
   font-family: Open Sans, sans-serif;
@@ -80,92 +80,6 @@ body {
       top: -2px;
       left: 100%;
       border-left: 1px solid #292929; }
-
-section.gallery-section {
-  overflow: hidden; }
-  section.gallery-section ul.gallery-list {
-    margin: 0;
-    padding: 0; }
-    section.gallery-section ul.gallery-list li {
-      display: block;
-      float: left;
-      width: 20%; }
-      section.gallery-section ul.gallery-list li img {
-        width: 100%;
-        height: auto; }
-
-section.speaking-single {
-  padding: 80px 0; }
-  section.speaking-single .single-box .single-content .single-connection {
-    margin-bottom: 30px; }
-    section.speaking-single .single-box .single-content .single-connection ul.social-links {
-      margin: 0;
-      padding: 0;
-      margin-bottom: 20px; }
-      section.speaking-single .single-box .single-content .single-connection ul.social-links li {
-        display: inline-block;
-        margin-right: 6px; }
-        section.speaking-single .single-box .single-content .single-connection ul.social-links li a {
-          width: 30px;
-          height: 30px;
-          color: #798593;
-          border-radius: 50%;
-          border: 1px solid #798593;
-          font-size: 14px;
-          line-height: 28px;
-          text-align: center; }
-          section.speaking-single .single-box .single-content .single-connection ul.social-links li a:hover {
-            background: #798593;
-            color: #11aa58; }
-    section.speaking-single .single-box .single-content .single-connection p span {
-      color: #1a73ba; }
-  section.speaking-single .single-box .single-content .single-data {
-    margin-bottom: 30px; }
-    section.speaking-single .single-box .single-content .single-data h1 {
-      margin-bottom: -3px; }
-    section.speaking-single .single-box .single-content .single-data span {
-      display: inline-block;
-      color: #1a73ba;
-      font-size: 24px;
-      font-style: italic;
-      font-family: Open Sans, serif;
-      padding-bottom: 20px;
-      margin-bottom: 20px;
-      position: relative; }
-      section.speaking-single .single-box .single-content .single-data span:after {
-        content: '';
-        position: absolute;
-        bottom: -1px;
-        left: 0;
-        width: 70px;
-        height: 1px;
-        background: #2d3034; }
-  section.speaking-single .single-box .single-content h2 {
-    font-weight: 300;
-    margin-bottom: 20px; }
-  section.speaking-single .single-box .single-content .single-skills .skills-progress div.meter {
-    height: 6px;
-    background: #e4e2f4;
-    margin-bottom: 20px;
-    border-radius: 2px; }
-    section.speaking-single .single-box .single-content .single-skills .skills-progress div.meter p {
-      height: 100%;
-      background: #11aa58;
-      border-radius: 2px; }
-  section.speaking-single .single-box .single-image {
-    margin-bottom: 40px; }
-    section.speaking-single .single-box .single-image a {
-      margin-bottom: 60px; }
-      section.speaking-single .single-box .single-image a i {
-        margin-right: 10px;
-        font-size: 12px;
-        float: left;
-        padding-top: 9px; }
-      section.speaking-single .single-box .single-image a:hover {
-        color: #11aa58; }
-    section.speaking-single .single-box .single-image img {
-      width: 100%;
-      height: auto; }
 
 section.contact-section {
   padding: 40px 0 0;
@@ -275,99 +189,6 @@ section.event-promo-section {
           font-weight: 300;
           line-height: 72px; }
 
-section.page-banner-section {
-  padding: 120px 0 70px;
-  margin-top: 74px;
-  text-align: center;
-  background: #111 url(../images/banners/ban2.jpg) center center no-repeat;
-  background-size: cover; }
-  section.page-banner-section h1 {
-    font-size: 48px;
-    line-height: 60px;
-    color: #fff;
-    margin-bottom: 4px; }
-  section.page-banner-section p {
-    color: #bdbdbd;
-    font-size: 20px;
-    font-family: Open Sans, sans-serif;
-    margin-bottom: 0; }
-
-section.reg-sub-section {
-  margin-top: 50px;
-  position: relative;
-  z-index: 2; }
-  section.reg-sub-section .inner-reg-sub {
-    max-width: 1400px;
-    margin: 0 auto;
-    overflow: hidden;
-    padding-bottom: 45px; }
-    section.reg-sub-section .inner-reg-sub .register-box {
-      padding: 80px 130px;
-      text-align: center;
-      float: left;
-      width: 50%;
-      margin-right: -30px;
-      background: #111 url(../images/want-to-present-bg.png);
-      background-size: auto auto;
-      border-radius: 6px; }
-      section.reg-sub-section .inner-reg-sub .register-box p {
-        font-size: 23px;
-        color: #fff;
-        line-height: 36px;
-        margin-bottom: 25px; }
-        section.reg-sub-section .inner-reg-sub .register-box p span {
-          font-family: Open Sans, serif;
-          font-style: italic; }
-      section.reg-sub-section .inner-reg-sub .register-box a {
-        color: #1a73ba;
-        font-size: 18px;
-        font-family: Open Sans, sans-serif;
-        text-transform: uppercase;
-        padding: 13px 60px 11px;
-        background: #fff;
-        font-weight: 400;
-        border-radius: 2px;
-        transition: all 0.2s ease-in-out;
-        box-shadow: 0 3px 20px rgba(0, 0, 0, 0.18); }
-        section.reg-sub-section .inner-reg-sub .register-box a:hover {
-          color: #fff;
-          background: #1a73ba; }
-      section.reg-sub-section .inner-reg-sub .register-box span {
-        display: block;
-        font-size: 18px;
-        color: #fff;
-        font-family: Open Sans, serif;
-        font-style: italic;
-        line-height: 32px;
-        margin: 0 0 25px;
-        font-weight: 300; }
-    section.reg-sub-section .inner-reg-sub .subscribe-box {
-      padding: 80px 130px;
-      text-align: center;
-      float: right;
-      margin-top: 20px;
-      margin-left: -30px;
-      margin-right: 30px;
-      width: 50%;
-      background: #111 url(../images/want-to-join-bg.png);
-      background-size: auto auto;
-      border-radius: 6px;
-      box-shadow: 0 10px 45px rgba(0, 0, 0, 0.18); }
-      section.reg-sub-section .inner-reg-sub .subscribe-box p {
-        font-size: 24px;
-        color: #fff;
-        line-height: 36px; }
-      section.reg-sub-section .inner-reg-sub .subscribe-box span {
-        display: block;
-        font-size: 18px;
-        color: #e4e2f4;
-        font-family: Open Sans, serif;
-        font-style: italic;
-        line-height: 32px;
-        margin: 0 0 25px; }
-      section.reg-sub-section .inner-reg-sub .subscribe-box a.default-button:hover {
-        background: #89b77f; }
-
 section.about-section {
   padding: 40px 0; }
   section.about-section .about-body, section.about-section ul.about-body {
@@ -456,9 +277,6 @@ section.event-banner-section {
       section.event-banner-section .subscribe-banner-box form.subscribe input[type="submit"]:hover {
         background: #fff;
         color: #1a73ba; }
-  section.event-banner-section.with-image {
-    background: #111 url(../images/banners/ban7.jpg) center center no-repeat;
-    background-size: cover; }
   section.event-banner-section .title-section.center {
     text-align: center; }
     section.event-banner-section .title-section.center a.default-button {
@@ -771,7 +589,7 @@ a.default-button {
     background: #1a73ba; }
 
 a.button-one {
-  color: #000;
+  color: #202020;
   font-size: 12px;
   font-family: Open Sans, sans-serif;
   text-transform: uppercase;
@@ -800,46 +618,6 @@ a.button-two {
 
 a.zoom {
   outline: none; }
-
-.conference-features {
-  margin-bottom: 90px; }
-  .conference-features .center-area {
-    padding-top: 50px; }
-    .conference-features .center-area a {
-      color: #1a73ba;
-      font-weight: 400; }
-      .conference-features .center-area a:hover {
-        text-decoration: underline !important; }
-  .conference-features .iso-call {
-    margin: -30px -15px -15px; }
-  .conference-features .conference-post {
-    width: 50%;
-    padding: 15px; }
-    .conference-features .conference-post .inner-box {
-      background: url(../images/want-to-join-bg.png);
-      padding: 26px;
-      border-radius: 6px; }
-      .conference-features .conference-post .inner-box h1 {
-        margin-left: -42px;
-        font-weight: 300;
-        margin-bottom: 8px;
-        color: #fff; }
-      .conference-features .conference-post .inner-box i {
-        color: #11aa58;
-        font-size: 70px;
-        margin-bottom: 15px;
-        display: inline-block; }
-      .conference-features .conference-post .inner-box h2 {
-        color: #fff; }
-      .conference-features .conference-post .inner-box p {
-        color: #c9c4ee;
-        font-weight: 300;
-        font-size: 17px; }
-    .conference-features .conference-post:nth-child(2n) .inner-box {
-      background: url(../images/faq-bg.png); }
-  .conference-features.second-style .conference-post .inner-box {
-    background: #1a73ba;
-    padding: 52px 30px; }
 
 .about-event-box {
   margin-bottom: 100px; }
@@ -942,25 +720,6 @@ header {
     transition-duration: 0.8s;
     transition-property: transform, opacity; }
 
-.boxedcontainer {
-  max-width: 1170px;
-  margin: auto;
-  padding: 0 30px; }
-
-.tp-banner-container {
-  width: 100%;
-  position: relative;
-  padding: 0; }
-
-.tp-banner {
-  width: 100%;
-  position: relative; }
-
-.tp-banner-fullscreen-container {
-  width: 100%;
-  position: relative;
-  padding: 0; }
-
 .preloader {
   position: fixed;
   width: 100%;
@@ -1026,43 +785,13 @@ button.mfp-arrow {
   outline: none; }
 
 @media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
-  section.page-banner-section {
-    background: #111 url(../images/banners/ban2@2x.jpg) center center no-repeat;
-    background-size: cover; }
   section.event-promo-section {
     background: #111 url(../images/bg/bg.jpg) center center no-repeat;
-    background-size: cover; }
-  section.statistic-section {
-    background: #111 url(../images/banners/banner@2x.html) center center fixed;
-    background-size: cover; }
-  section.reg-sub-section .inner-reg-sub .register-box {
-    background: #111 url(../images/want-to-present-bg@2x.png);
-    background-size: auto auto; }
-  section.reg-sub-section .inner-reg-sub .subscribe-box {
-    background: #111 url(../images/want-to-join-bg@2x.png);
-    background-size: auto auto; }
-  section.event-banner-section.with-image {
-    background: #111 url(../images/banners/ban7@2x.jpg) center center no-repeat;
     background-size: cover; } }
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-  section.page-banner-section {
-    background: #111 url(../images/banners/ban2@2x.jpg) center center no-repeat;
-    background-size: cover; }
   section.event-promo-section {
     background: #111 url(../images/bg/bg.jpg) center center no-repeat;
-    background-size: cover; }
-  section.statistic-section {
-    background: #111 url(../images/banners/banner@2x.html) center center fixed;
-    background-size: cover; }
-  section.reg-sub-section .inner-reg-sub .register-box {
-    background: #111 url(../images/want-to-present-bg@2x.png);
-    background-size: auto auto; }
-  section.reg-sub-section .inner-reg-sub .subscribe-box {
-    background: #111 url(../images/want-to-join-bg@2x.png);
-    background-size: auto auto; }
-  section.event-banner-section.with-image {
-    background: #111 url(../images/banners/ban7@2x.jpg) center center no-repeat;
     background-size: cover; } }
 
 .center-area {
@@ -1145,19 +874,6 @@ button.mfp-arrow {
     font-size: 15px; }
   section.contact-section .contact-info .inner-contact-info p {
     font-size: 20px; }
-  section.speaking-single .single-box .single-image a {
-    font-size: 15px; }
-  section.speaking-single .single-box .single-content .single-data span {
-    font-size: 20px; }
-  section.reg-sub-section .inner-reg-sub {
-    padding-left: 30px; }
-    section.reg-sub-section .inner-reg-sub .register-box a {
-      font-size: 15px; }
-    section.reg-sub-section .inner-reg-sub .subscribe-box form.subscribe input[type="submit"] {
-      font-size: 15px; }
-    section.reg-sub-section .inner-reg-sub .subscribe-box form.subscribe input[type="text"] {
-      font-size: 15px;
-      margin-bottom: 5px; }
   section.event-banner-section .subscribe-banner-box form.subscribe input[type="text"] {
     font-size: 15px; }
   section.event-banner-section .subscribe-banner-box form.subscribe input[type="submit"] {
@@ -1174,10 +890,6 @@ button.mfp-arrow {
     font-size: 15px; }
   a.default-button {
     font-size: 15px; }
-  .conference-features .center-area a {
-    font-size: 15px; }
-  .conference-features .conference-post .inner-box i {
-    font-size: 56px; }
   .about-event-box a {
     font-size: 15px; }
   .about-event-box p {
@@ -1237,10 +949,6 @@ button.mfp-arrow {
     padding-right: 16px !important; } }
 
 @media (max-width: 1199px) {
-  section.reg-sub-section .inner-reg-sub .register-box {
-    padding: 40px 40px; }
-  section.reg-sub-section .inner-reg-sub .subscribe-box {
-    padding: 40px 40px; }
   header.second-style .navbar-nav > li > a {
     padding: 40px 15px !important; }
   header.third-style .navbar-nav > li > a {
@@ -1254,27 +962,10 @@ button.mfp-arrow {
     margin-bottom: 3px; } }
 
 @media (max-width: 991px) {
-  section.reg-sub-section {
-    margin-top: 0;
-    padding-top: 100px; }
-    section.reg-sub-section .inner-reg-sub {
-      padding: 0 15px; }
-      section.reg-sub-section .inner-reg-sub .register-box {
-        float: none;
-        width: 100%;
-        margin: 0 0 30px;
-        padding: 80px 30px; }
-      section.reg-sub-section .inner-reg-sub .subscribe-box {
-        float: none;
-        width: 100%;
-        margin: 0;
-        padding: 80px 30px; }
   section.event-banner-section .button-banner-box {
     text-align: left; }
   section.contact-section .contact-info {
     margin-top: 20px; }
-  section.gallery-section ul.gallery-list li {
-    width: 33.3333%; }
   .navbar-collapse {
     background: #2d3034 !important;
     padding: 10px 0;
@@ -1355,21 +1046,15 @@ button.mfp-arrow {
   section.promo-banner-section .promo-banner-box h1 {
     font-size: 48px;
     line-height: 56px; }
-  section.gallery-section ul.gallery-list li {
-    width: 50%; }
   footer .up-footer .footer-widget {
     text-align: center !important; }
   footer .copyright-line .col-xs-12 {
     text-align: center;
-    margin-bottom: 20px; }
-  .conference-features .conference-post {
-    width: 100%; } }
+    margin-bottom: 20px; } }
 
 @media (max-width: 480px) {
   section.about-section .video-box iframe {
-    height: 200px; }
-  section.gallery-section ul.gallery-list li {
-    width: 100%; } }
+    height: 200px; } }
 
 li:hover > .dropdown {
   visibility: visible;
@@ -1886,7 +1571,7 @@ footer {
   .timeline .title {
     font-family: Open Sans, sans-serif;
     margin-bottom: 0;
-    color: #000;
+    color: #202020;
     padding: 10px 30px;
     background: #26bdcf;
     color: #fff; }
@@ -1912,7 +1597,7 @@ footer {
     z-index: 1;
     padding-bottom: 20px; }
     .timeline .era__title {
-      background: #000;
+      background: #202020;
       color: #fff;
       display: inline-block;
       padding: 10px 20px;
@@ -1958,7 +1643,7 @@ footer {
       position: relative;
       border-radius: 4px;
       border: solid 1px #26bdcf;
-      color: #000 !important; }
+      color: #202020 !important; }
     .timeline .entry.track--1 .entry__content {
       border-color: #26bdcf; }
     .timeline .entry.track--1 .entry__content .title, .timeline .entry.track--1 .time, .timeline .entry.track--1 .track-title {
