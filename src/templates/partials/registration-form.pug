@@ -7,45 +7,63 @@ iframe(name="hiddenFrame", width="0", height="0", border="0", style="display: no
     .row
       .col-md-6.col-xs-12.register-image.hidden-xs
       .col-md-6.col-xs-12.light-bg
-        form#registration-form(
-          onsubmit='redirectToThankYou();',
-          action='https://docs.google.com/forms/d/e/1FAIpQLSc1wcZD_Pavj_VQbAh3ZMnzNpVTCsWHk-DPv2_koRCISaDezA/formResponse',
-          method='POST',
-          target='hiddenFrame'
-          )
+        form#registration-form(onsubmit='redirectToThankYou();' action='https://docs.google.com/forms/d/e/1FAIpQLSc1wcZD_Pavj_VQbAh3ZMnzNpVTCsWHk-DPv2_koRCISaDezA/formResponse' method='POST' target='hiddenFrame')
           p
-            label.form-label(for='name')
+            label.form-label.required(for='name')
               span Name
-              input#name(type='text', name='entry.371612208', required, autocomplete='name')
+              input#name(type='text' name='entry.371612208' required='' autocomplete='name')
           p
-            label.form-label(for='email')
+            label.form-label.required(for='email')
               span Email address
-              input#email(type='email', name='entry.426603657', required, autocomplete='email')
+              input#email(type='email' name='entry.426603657' required='' autocomplete='email')
           p
-            label.form-label(for='organization')
+            label.form-label.required(for='organization')
               span Organization
-              input#organization(type='text', name='entry.1340855941', required, autocomplete='organization')
+              input#organization(type='text' name='entry.1340855941' required='' autocomplete='organization')
+          p
+            label.form-label.required(for='current-role')
+              span Current role
+              input#current-role(type='text' name='entry.1190560047' required='' autocomplete='current-role')
+          p
+            label.form-label.required(for='years-of-experience')
+              span Years of experience
+              input#years-of-experience(type='number' name='entry.1235164433' required='' autocomplete='years-of-experience')
           p
             label.form-label(for='phone')
-              span Contact number
-              input#phone(type='number', name='entry.1085020077', required, autocomplete='tel')
+              span.not-required Contact number
+              input#phone(type='number' name='entry.1085020077' autocomplete='tel')
           p
-            label.form-label(for='what')
-              span What do you understand by UI?
-              input#what(type='text', name='entry.2108046770', required)
+            label.form-label.required(for='location')
+              span Current location
+              input#location(type='text' name='entry.255064023' required='')
           p
-            label.form-label(for='expectations')
+            label.form-label.required(for='framework')
+              span What is your preferred JS framework?
+              input#framework(type='text' name='entry.2108046770' required='' autocomplete='framework')
+          p
+            label.form-label.required(for='why-framework')
+              span Why would you choose above mentioned framework?
+              input#why-framework(type='text' name='entry.1552475132' required='' autocomplete='why-framework')
+          p
+            label.form-label.required(for='expectations')
               span What are your expectations from this event?
-              input#expectations(type='text', name='entry.429241349', required)
+              input#expectations(type='text' name='entry.429241349' required='')
+          p
+            label.form-label(for='profile')
+              span
+                | Public Profile
+                small (github, stack overflow, hacker rank, etc)
+              input#profile(type='text' name='entry.118332433')
           p
             sup *
-            small All fields are mandatory
+            small mandatory fields
           p
             span.checkbox
-              input#privacy-check(type='checkbox', name='privacy-check', required)
+              input#privacy-check(type='checkbox' name='' required='')
               label(for='privacy-check')
-            strong I agree to share my information with you and understand it will be used as described in ThoughtWorks' 
-            a(href='https://www.thoughtworks.com/privacy-policy', target='_blank') privacy policy
+            strong
+              | I agree to share my information with you and understand it will be used as described in ThoughtWorks&apos;
+            a(href='https://www.thoughtworks.com/privacy-policy' target='_blank') privacy policy
             strong .
           p.submit-form
             button(type='submit') Submit
