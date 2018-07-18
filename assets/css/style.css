@@ -1985,7 +1985,7 @@ footer {
     #registration-form label.form-label input {
       font-size: 1.2rem;
       padding-left: 0.25rem; }
-    #registration-form label.form-label > span:after {
+    #registration-form label.form-label.required > span:after {
       content: '*';
       display: inline;
       padding-left: 5px;

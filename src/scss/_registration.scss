@@ -76,14 +76,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f68a32', end
 			padding-left: 0.25rem;
 		}
 
-		& > span {
-			&:after {
-				content: '*';
-				display: inline;
-				padding-left: 5px;
-				position: relative;
-				color: red;
-				font-size: 14px;
+		&.required{
+			& > span {
+				&:after {
+					content: '*';
+					display: inline;
+					padding-left: 5px;
+					position: relative;
+					color: red;
+					font-size: 14px;
+				}
 			}
 		}
 

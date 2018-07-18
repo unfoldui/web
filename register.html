@@ -75,38 +75,63 @@
               <div class="col-md-6 col-xs-12 light-bg">
                 <form id="registration-form" onsubmit="redirectToThankYou();" action="https://docs.google.com/forms/d/e/1FAIpQLSc1wcZD_Pavj_VQbAh3ZMnzNpVTCsWHk-DPv2_koRCISaDezA/formResponse" method="POST" target="hiddenFrame">
                   <p>
-                    <label class="form-label" for="name"><span>Name</span>
+                    <label class="form-label required" for="name"><span>Name</span>
                       <input id="name" type="text" name="entry.371612208" required autocomplete="name">
                     </label>
                   </p>
                   <p>
-                    <label class="form-label" for="email"><span>Email address</span>
+                    <label class="form-label required" for="email"><span>Email address</span>
                       <input id="email" type="email" name="entry.426603657" required autocomplete="email">
                     </label>
                   </p>
                   <p>
-                    <label class="form-label" for="organization"><span>Organization</span>
+                    <label class="form-label required" for="organization"><span>Organization</span>
                       <input id="organization" type="text" name="entry.1340855941" required autocomplete="organization">
                     </label>
                   </p>
                   <p>
-                    <label class="form-label" for="phone"><span>Contact number</span>
-                      <input id="phone" type="number" name="entry.1085020077" required autocomplete="tel">
+                    <label class="form-label required" for="current-role"><span>Current role</span>
+                      <input id="current-role" type="text" name="entry.1190560047" required autocomplete="current-role">
                     </label>
                   </p>
                   <p>
-                    <label class="form-label" for="what"><span>What do you understand by UI?</span>
-                      <input id="what" type="text" name="entry.2108046770" required>
+                    <label class="form-label required" for="years-of-experience"><span>Years of experience</span>
+                      <input id="years-of-experience" type="number" name="entry.1235164433" required autocomplete="years-of-experience">
                     </label>
                   </p>
                   <p>
-                    <label class="form-label" for="expectations"><span>What are your expectations from this event?</span>
+                    <label class="form-label" for="phone"><span class="not-required">Contact number</span>
+                      <input id="phone" type="number" name="entry.1085020077" autocomplete="tel">
+                    </label>
+                  </p>
+                  <p>
+                    <label class="form-label required" for="location"><span>Current location</span>
+                      <input id="location" type="text" name="entry.255064023" required>
+                    </label>
+                  </p>
+                  <p>
+                    <label class="form-label required" for="framework"><span>What is your preferred JS framework?</span>
+                      <input id="framework" type="text" name="entry.2108046770" required autocomplete="framework">
+                    </label>
+                  </p>
+                  <p>
+                    <label class="form-label required" for="why-framework"><span>Why would you choose above mentioned framework?</span>
+                      <input id="why-framework" type="text" name="entry.1552475132" required autocomplete="why-framework">
+                    </label>
+                  </p>
+                  <p>
+                    <label class="form-label required" for="expectations"><span>What are your expectations from this event?</span>
                       <input id="expectations" type="text" name="entry.429241349" required>
                     </label>
                   </p>
-                  <p><sup>*</sup><small>All fields are mandatory</small></p>
+                  <p>
+                    <label class="form-label" for="profile"><span>Public Profile <small>(github, stack overflow, hacker rank, etc)</small></span>
+                      <input id="profile" type="text" name="entry.118332433">
+                    </label>
+                  </p>
+                  <p><sup>*</sup><small>mandatory fields</small></p>
                   <p><span class="checkbox">
-                      <input id="privacy-check" type="checkbox" name="privacy-check" required>
+                      <input id="privacy-check" type="checkbox" name="" required>
                       <label for="privacy-check"></label></span><strong>I agree to share my information with you and understand it will be used as described in ThoughtWorks' </strong><a href="https://www.thoughtworks.com/privacy-policy" target="_blank">privacy policy</a><strong>.</strong></p>
                   <p class="submit-form">
                     <button type="submit">Submit</button>
