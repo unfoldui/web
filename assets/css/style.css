@@ -657,7 +657,8 @@ iframe {
   width: 100%; }
   .navbar a.navbar-brand {
     padding-top: 10px;
-    float: none; }
+    float: none;
+    width: 120px; }
     .navbar a.navbar-brand img {
       margin-bottom: 5px; }
 
