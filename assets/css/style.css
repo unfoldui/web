@@ -1082,6 +1082,14 @@ li:hover > .dropdown {
     background: transparent;
     border: 1px solid #1a73ba; }
 
+.cta-button {
+  margin-top: 25px;
+  box-shadow: 0 8px 15px rgba(41, 41, 41, 0.5);
+  padding: 10px 50px; }
+
+.generic-middle-section {
+  padding: 50px 0; }
+
 /* NAVIGATION */
 .nav-stroke {
   list-style: none;
@@ -1929,7 +1937,6 @@ footer {
       background-color: #11aa58; }
 
 .registeration-section {
-  padding: 50px 0;
   background: #f68a32;
   background: -moz-linear-gradient(45deg, #f68a32 0%, #d66c1c 100%);
   background: -webkit-gradient(left bottom, right top, color-stop(0%, #f68a32), color-stop(100%, #d66c1c));
@@ -1944,12 +1951,24 @@ footer {
     background: #fff; }
   .registeration-section a.register-button {
     display: inline-block;
-    margin-top: 25px;
-    box-shadow: 0 8px 15px rgba(41, 41, 41, 0.5);
     position: relative;
-    padding: 10px 50px;
     background: #26bdcf;
     color: #fff; }
+
+.webinar-section {
+  background: #ebebeb; }
+  .webinar-section a.hacker-earth-button {
+    background: #f68a32;
+    color: #fff;
+    text-align: center;
+    padding: 10px 30px;
+    box-shadow: 0 6px 15px rgba(41, 41, 41, 0.4); }
+
+@media all and (min-width: 767px) {
+  .webinar-section a.hacker-earth-button {
+    margin-top: 0; }
+  .webinar-section .side-section {
+    text-align: right; } }
 
 .registration-form-container .registration-container {
   margin: 30px auto; }
