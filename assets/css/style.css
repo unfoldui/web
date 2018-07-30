@@ -1090,6 +1090,12 @@ li:hover > .dropdown {
 .generic-middle-section {
   padding: 50px 0; }
 
+.presenter-row:nth-child(even) {
+  margin-top: 20px; }
+
+.mt-20 {
+  margin-top: 20px; }
+
 /* NAVIGATION */
 .nav-stroke {
   list-style: none;
