@@ -16,6 +16,8 @@ mixin entryItem(key, entrySide, timeSide, data)
           .modalContent(class= 'modal-track--' +data.track)
             .modal-header
               h2.modal-title #{data.title}
+              button.close
+                span(aria-hidden="true") &times;
             .modal-body
               - var presenters = Array.isArray(data.presenter || []) ? data.presenter : [data.presenter];
               each presenter in presenters

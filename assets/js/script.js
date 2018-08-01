@@ -81,6 +81,10 @@ $(document).ready(function ($) {
 			overlayStyles: function ( styles ) { styles.opacity = 0; },
 			modalStyles: function ( styles ) { styles.opacity = 0, styles.padding = 0, styles.marginTop = '20px' }
 		})
+		.afterCreate(function(modal){
+			modal.modalElem().getElementsByClassName("close")[0]
+			.addEventListener('click', modal.close);
+		})
 		.afterShow(function(modal){
 			$(modal.overlayElem()).animate({opacity: 0.7});
 			$(modal.modalElem()).animate({opacity: 1});

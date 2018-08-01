@@ -1941,6 +1941,9 @@ footer {
     .pico-content .social .icon.icon-web {
       background-image: url(../images/icons/web_footer.png);
       background-color: #11aa58; }
+  @media screen and (min-width: 768px) {
+    .pico-content .close {
+      display: none; } }
 
 .registeration-section {
   background: #f68a32;
