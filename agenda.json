@@ -1,11 +1,17 @@
 [
     {
+        "time": "8:30 AM - 9:30 AM",
+        "track": 1,
+        "title": "Registration",
+        "duration": "1 hour",
+        "type": "Keynote"
+    },{
         "time": "9:30 AM - 9:45 AM",
         "track": 1,
         "title": "Keynote",
         "duration": "15 Minutes",
         "type": "Keynote"
-    }, {
+    },{
         "time": "9:45 AM - 10:25 AM",
         "track": 1,
         "title": "The talking web",
