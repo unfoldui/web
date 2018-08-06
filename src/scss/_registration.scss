@@ -17,11 +17,19 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f68a32', end
 	h1:after {
 		background: #fff;
 	}
-	a.register-button {
+	.register-button {
 		display: inline-block;
 		position: relative;
 		background: $primary_color;
 		color: #fff;
+	}
+	.register-button.disabled {
+		opacity: 1;
+		color: #deffeb;
+	}
+
+	.sorry {
+		font-style: italic;
 	}
 }
 

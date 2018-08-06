@@ -1958,11 +1958,16 @@ footer {
     color: #fff; }
   .registeration-section h1:after {
     background: #fff; }
-  .registeration-section a.register-button {
+  .registeration-section .register-button {
     display: inline-block;
     position: relative;
     background: #26bdcf;
     color: #fff; }
+  .registeration-section .register-button.disabled {
+    opacity: 1;
+    color: #deffeb; }
+  .registeration-section .sorry {
+    font-style: italic; }
 
 .webinar-section {
   background: #ebebeb; }
