@@ -1,0 +1,19 @@
+mixin renderSlides
+    - var slideUrls = [{"talk": "Functional Programming in JS & ESNext","url": "//www.slideshare.net/slideshow/embed_code/key/3aUCt1kRYYiBas"},{"talk": "Two-dimensional page layout","url": "//www.slideshare.net/slideshow/embed_code/key/bO0lzpKiI6Pzg2"},{"talk": "Forms, components and considerations","url": "//www.slideshare.net/slideshow/embed_code/key/cN2599teJ3OR1j"},{"talk": "Static type checking in JS with Flow","url": "//www.slideshare.net/slideshow/embed_code/key/3t3j4KKzaAAT5l"},{"talk": "Build React component in Scala.js","url": "//www.slideshare.net/slideshow/embed_code/key/awxC18IfqcMXfj"},{"talk": "Progress with PWA - Workshop","url": "//www.slideshare.net/slideshow/embed_code/key/zKlEansjICcAh"},{"talk": "VueJs - Workshop","url": "//www.slideshare.net/slideshow/embed_code/key/FVMAQHSB4i1VHH"}]
+    - var currentSlide = 0
+    - var noOfSlides = slideUrls.length;
+    - for (var cols = 0; cols < noOfSlides/2; cols ++)
+        .row
+            - while (currentSlide !== noOfSlides)
+                - var slideShareUrl = slideUrls[currentSlide].url
+                    .slide-wrap
+                        h5 #{slideUrls[currentSlide].talk}
+                        iframe(class="slide-item" src=slideShareUrl, width="514", height="422", frameborder="0", marginwidth="0", marginheight="0", scrolling="no", style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;", allowfullscreen)
+                - currentSlide++
+                - if(currentSlide % 2 === 0) break
+
+section.event-content-slides
+    .container
+        .title-section
+            h1.section-title Here are the slides of the Talks and Workshops!
+        +renderSlides()

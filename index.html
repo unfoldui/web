@@ -59,7 +59,6 @@
                 <ul class="navbar-nav nav-stroke w-100" style="justify-content: center">
                   <li class="nav-item"><a class="nav-link" href="#home" onclick="redirectToSection(&quot;home&quot;);"><span data-hover="Home">Home</span></a></li>
                   <li class="nav-item"><a class="nav-link" href="#about" onclick="redirectToSection(&quot;about&quot;);"><span data-hover="About">About</span></a></li>
-                  <li class="nav-item"><a class="nav-link" href="#schedule" onclick="redirectToSection(&quot;schedule&quot;);"><span data-hover="Schedule">Schedule</span></a></li>
                   <li class="nav-item"><a class="nav-link" href="#faq" onclick="redirectToSection(&quot;faq&quot;);"><span data-hover="FAQ">FAQ</span></a></li>
                   <li class="nav-item"><a class="nav-link" href="#contact" onclick="redirectToSection(&quot;contact&quot;);"><span data-hover="Contact">Contact</span></a></li>
                 </ul>
@@ -159,17 +158,7 @@
             </div>
           </div>
         </section>
-        <section class="registeration-section generic-middle-section" id="registration">
-          <div class="container">
-            <div class="title-section">
-              <h1>Want to attend?</h1>
-            </div>
-            <!-- p Come and expand your knowledge about current UI development, connect with like minded people and have fun.-->
-            <p class="sorry">Thank you for showing interest. We have closed the registrations but will be coming back soon with the next edition of Unfold UI.</p>
-            <p class="sorry">Stay tuned!</p>
-            <!-- a#attendance-form.cta-button.register-button(href='./register.html' disabled) I Want to Attend-->
-          </div>
-        </section>
+        <!--include ../templates/partials/registration-section-->
         <section class="webinar-section generic-middle-section" id="webinar">
           <div class="container">
             <div class="title-section">
@@ -186,8 +175,13 @@
         </section>
         <section class="about-section" id="schedule">
           <div class="container">
-            <div class="title-section">
-              <h1>Schedule</h1>
+            <div class="row">
+              <div class="col-sm-6 col-md-8">
+                <div class="title-section">
+                  <h1>Schedule</h1>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-4 side-section"><a class="cta-button" id="content-btn" href="./content.html">Content available here</a></div>
             </div>
           </div>
           <ul class="timeline timeline--first">
@@ -374,7 +368,7 @@ The talk will address all the concerned that should be considered before the tea
                               </div>
                             </li>
                             <li class="entry entry--left bg--break track--1">
-                              <div class="time time--right">12:30 PM - 1:15 PM</div>
+                              <div class="time time--right">12:45 PM - 1:45 PM</div>
                               <div class="entry__content wow animated fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
                                 <h2 class="title">Lunch Break &amp; Switch Track</h2>
                               </div>
