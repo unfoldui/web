@@ -1,5 +1,5 @@
 mixin renderSlides
-    - var slideUrls = [{"talk": "Functional Programming in JS & ESNext","url": "//www.slideshare.net/slideshow/embed_code/key/3aUCt1kRYYiBas"},{"talk": "Two-dimensional page layout","url": "//www.slideshare.net/slideshow/embed_code/key/bO0lzpKiI6Pzg2"},{"talk": "Forms, components and considerations","url": "//www.slideshare.net/slideshow/embed_code/key/cN2599teJ3OR1j"},{"talk": "Static type checking in JS with Flow","url": "//www.slideshare.net/slideshow/embed_code/key/3t3j4KKzaAAT5l"},{"talk": "Build React component in Scala.js","url": "//www.slideshare.net/slideshow/embed_code/key/awxC18IfqcMXfj"},{"talk": "Progress with PWA - Workshop","url": "//www.slideshare.net/slideshow/embed_code/key/zKlEansjICcAh"},{"talk": "VueJs - Workshop","url": "//www.slideshare.net/slideshow/embed_code/key/FVMAQHSB4i1VHH"}]
+    - var slideUrls = [{"talk": "Functional Programming in JS & ESNext","url": "//www.slideshare.net/slideshow/embed_code/key/3aUCt1kRYYiBas"},{"talk": "Two-dimensional page layout","url": "//www.slideshare.net/slideshow/embed_code/key/bO0lzpKiI6Pzg2"},{"talk": "Forms, components and considerations","url": "//www.slideshare.net/slideshow/embed_code/key/cN2599teJ3OR1j"},{"talk": "Static type checking in JS with Flow","url": "//www.slideshare.net/slideshow/embed_code/key/3t3j4KKzaAAT5l"},{"talk": "Build React component in Scala.js","url": "//www.slideshare.net/slideshow/embed_code/key/awxC18IfqcMXfj"},{"talk": "Normalizing data in web applications","url": "//www.slideshare.net/slideshow/embed_code/key/NPCrGftcegRDrE"},{"talk": "Progress with PWA - Workshop","url": "//www.slideshare.net/slideshow/embed_code/key/zKlEansjICcAh"},{"talk": "VueJs - Workshop","url": "//www.slideshare.net/slideshow/embed_code/key/FVMAQHSB4i1VHH"}]
     - var currentSlide = 0
     - var noOfSlides = slideUrls.length;
     - for (var cols = 0; cols < noOfSlides/2; cols ++)
@@ -17,3 +17,16 @@ section.event-content-slides
         .title-section
             h1.section-title Here are the slides of the Talks and Workshops!
         +renderSlides()
+
+        .row
+            .talk-links
+                h5 Unfolding the Unfold UI logo
+                a(href='./unfold-ui-logo-presentation/')
+                    img.talk-link-img(src='./assets/images/unfolduilogo.png')
+
+            .talk-links
+                h5 Supercharge your debugging experience
+                a(href='./devtools-talk/')
+                    img.talk-link-img(src='./assets/images/devtools.png')
+
+        h2(style="text-align:center; font-weight:bold; padding-top:45px;") Thank you :)

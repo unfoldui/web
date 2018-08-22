@@ -3,7 +3,7 @@
 .event-content-slides {
 	padding: 100px 0 40px;
 
-	.section-title{
+	.section-title {
 		padding-bottom: 15px;
 	}
 
@@ -29,6 +29,17 @@
 
 	.slide-item {
 		border: none;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	}
+
+	.talk-links {
+		text-align: center;
+		padding: 25px
+	}
+
+	.talk-link-img {
+		width: 300px;
+		height: 200px;
 		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	}
 }
