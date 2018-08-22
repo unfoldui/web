@@ -2160,10 +2160,16 @@ footer {
   .event-content-slides .slide-item {
     border: none;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
-  .event-content-slides .talk-links {
+  .event-content-slides .reveal-talk-links {
     text-align: center;
     padding: 25px; }
-  .event-content-slides .talk-link-img {
+  .event-content-slides .reveal-talk-title {
+    padding-bottom: 8px;
+    display: block;
+    font-weight: 500;
+    line-height: 1.2;
+    font-size: 20px; }
+  .event-content-slides .reveal-talk-link-img {
     width: 300px;
     height: 200px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
