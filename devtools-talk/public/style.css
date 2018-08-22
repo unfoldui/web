@@ -1,0 +1,171 @@
+.main-title code{
+  text-shadow: 6px 2px 0px #000000;
+  font-weight: bold;
+}
+
+.main-title {
+  font-size: 100px !important;
+}
+
+.px-10 {
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+}
+
+.text-white{
+  color: #fff !important;
+}
+
+.bg-blue {
+  background-color: #2962ff;
+}
+
+.bg-black {
+  background-color: #263238;
+}
+
+.bg-yellow {
+  background-color: #fdd835;
+  color: #000;
+}
+
+.bg-red {
+  background-color: #f44336;
+}
+
+.bg-green {
+  background-color: #00695c;
+}
+.bg-dark-green {
+  background-color: #004d40;
+}
+
+.text-xl {
+  font-size: 70px !important;
+  font-weight: bold !important;
+}
+
+svg {
+  display: block;
+  height: 70px;
+  margin: 0 auto 20px;
+}
+
+.no-style-list {
+  margin: 0 !important;
+}
+
+.no-style-list li {
+  list-style: none;
+}
+
+.sources li {
+  padding: 10px;
+}
+
+.pointer {
+  cursor: pointer !important;
+}
+
+
+/* SNIPPETS FORM */
+
+.form-container{
+  margin: 50px auto 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  perspective: 2000px;
+}
+
+.step-form{
+  padding: 1em !important;
+  position: absolute;
+	width: 550px;
+  height: 400px;
+  box-shadow: 0 8px 10px -2px rgba(0,0,0,.2);
+
+  display: none;
+  flex-direction: column;
+  align-items: center;
+}
+
+.step-form label{
+	display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.step-form p{
+  width: 100%;
+}
+
+.step-form label input{
+  border-radius: 3px;
+  border: 1px solid #c5c5c5;
+  outline: none;
+  padding: 10px;
+  font-size: 1.6rem;
+}
+
+.step-form label span{
+  margin-right: 0.4em;
+}
+
+.step-form .submit-btn{
+  margin-top: auto;
+}
+
+.step-form button{
+  background: #fff;
+  border: 1px solid #000;
+  border-radius: 3px;
+  padding: 15px 20px;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+.active{
+  display: flex;
+}
+
+@keyframes out{
+  0%{
+  	transform: rotate(0);
+    opacity: 1;
+  }
+  
+  100%{
+    transform: rotate(45deg);
+    opacity: 0;
+  }
+}
+
+
+
+@keyframes in{
+  0%{
+    transform: rotate(-45deg);
+    opacity: 0;    
+  }
+  
+  100%{
+    transform: rotate(0);
+    opacity: 1;
+  }
+}
+
+.animate-out{
+	transform-origin: bottom right;
+  animation: out 450ms cubic-bezier(.39,-0.49,.53,.98) forwards;  
+  animation-delay: 150ms;
+}
+
+.animate-in{
+  opacity: 0;
+  transform-origin: bottom left;
+  animation: in 400ms ease-in-out forwards;
+  animation-delay: 400ms;
+  display:flex
+}

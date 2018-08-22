@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122947116-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-122947116-1');
+  </script>
+
+  <title>Supercharge your debugging experience.</title>
+  <meta name="description" content="Supercharge your debugging experience, a talk on webpage debugging using chrome devtools">
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i" rel="stylesheet">
+  <link rel="stylesheet" href="public/reveal/reveal.css">
+  <link rel="stylesheet" href="public/reveal/white.css">
+  <link rel="stylesheet" href="public/lib/css/zenburn.css">
+  <link rel="stylesheet" href="public/style.css">
+</head>
+
+<body>
+  <div class="reveal">
+    <div class="slides">
+      <section data-background-image="public/titleslide-169.png">
+        <section>
+          <!-- HACK =>  Somehow reveal needs empty section for background image to display :/ -->
+        </section>
+      </section>
+      <section class="main-title">
+        🔋
+        <p>
+          <code>Supercharge your debugging experience</code>
+        </p>
+      </section>
+      <section>
+        <section>
+          <h1><em>Why talk about devtools?</em></h1>
+        </section>
+        <section>
+          <section>
+            <p>
+              <span class="bg-yellow px-10" style="cursor: pointer;" onclick="alert(`I'm working, or maybe not!?`);">alerts,</span>
+              <span class="bg-green  px-10 text-white" style="cursor: pointer;" onclick="console.log(`🛠 Plain old console log..`);">console logs</span>
+              , etc..
+            </p>
+          </section>
+          <br>
+          <section class="bg-black text-white">
+            <p class="fragment fade-in">In real world, we spend a higher percentage of time in reading and debugging code.</p>
+            <hr>
+            <p class="fragment fade-in">Efficient use of devtools can help with debugging and boost productivity</p>
+          </section>
+          <br>
+          <p class="">🔎 | 🕵🏻‍♂️ | 🎬 | 🔪</p>
+        </section>
+      </section>
+      <section>
+        <ul class="no-style-list">
+          <li>👣
+            <span class="px-10">Walkthrough</span>
+          </li>
+          <li>🧟‍♂️
+            <span class="px-10">Demos</span>
+          </li>
+        </ul>
+      </section>
+      <section>
+        <section>
+          <h1 class="bg-black text-white">Sources Panel</h1>
+        </section>
+        <section data-autoslide="600">
+          <ul class="no-style-list sources">
+            <li class="fragment">‼️ Breakpoints</li>
+            <li class="fragment">🏷️ Modifying variables in scope</li>
+            <li class="fragment">🎰 The call stack</li>
+            <li class="fragment">⏰ Watch expressions</li>
+            <li class="fragment">🌀 Restart frame</li>
+            <li class="fragment">⚰️ Blackbox script</li>
+            <li class="fragment" data-autoslide="50000">☢️ Force script execution</li>
+          </ul>
+        </section>
+      </section>
+      <section>
+        <section>
+          <h1 class="bg-red text-white">Overrides</h1>
+        </section>
+        <section>
+          <h2>Persist changes</h2>
+          <section class="fragment">
+            <p>
+              <span class="px-10 text-white bg-red">CSS</span>
+            </p>
+            <p>
+              <span class="px-10 bg-yellow">Javascript</span>
+            </p>
+            <p>
+              <span class="px-10 text-white bg-blue">Images</span>
+            </p>
+            <p>
+              <table>
+                <tr>
+                  <td>
+
+                  </td>
+                </tr>
+              </table>
+            </p>
+          </section>
+        </section>
+      </section>
+      <section>
+        <section>
+          <h1 class="text-white bg-green">Snippets</h1>
+          <small>automate the boring stuff.</small>
+        </section>
+        <section>
+          <div class="form-container">
+            <form id="form1" class="step-form active">
+              <h3>Personal Details</h3>
+              <p>
+                <label>
+                  <span>First Name</span>
+                  <input type="text" name="firstname" autocomplete="false" required>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <span>Last Name</span>
+                  <input type="text" name="lastname" autocomplete="false" required>
+                </label>
+              </p>
+              <button class="submit-btn">Submit</button>
+            </form>
+
+            <form id="form2" class="step-form">
+              <h3>Work Details</h3>
+              <p>
+                <label>
+                  <span>Organization</span>
+                  <input type="text" name="organization" autocomplete="false" required>
+                </label>
+              </p>
+              <button class="submit-btn">Submit</button>
+            </form>
+
+            <form id="form3" class="step-form">
+              <h3>Contact Details</h3>
+              <p>
+                <label>
+                  <span>Phone</span>
+                  <input type="tel" name="phone" autocomplete="false" required>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <span>Email</span>
+                  <input type="email" name="email" autocomplete="false" required>
+                </label>
+              </p>
+              <button class="submit-btn">Submit</button>
+            </form>
+            <form id="form4" class="step-form">
+              <p>You're all set!</p>
+              <button class="submit-btn">Reset</button>
+            </form>
+          </div>
+        </section>
+        <section>
+          <pre><code data-trim data-noescape>
+                (()=> {
+
+                  let delay = 500;
+                  const increaseDelay = () => delay += 500;
+
+                  <mark>let form1 = $('#form1');</mark>
+
+                  setTimeout(()=>{
+                      <mark>form1.firstname.value = 'Ravi';</mark>
+                  }, delay)
+
+                  increaseDelay()
+
+                  setTimeout(()=>{
+                      <mark>form1.lastname.value = 'Sharma';</mark>
+                  }, delay)
+
+                  increaseDelay()
+
+                  setTimeout(()=>{
+                      <mark>form1.querySelector('button').click()</mark>
+                  }, delay)
+
+                  increaseDelay()
+
+              /////////////////////////////////////////
+
+                  <mark>let form2 = $('#form2');</mark>
+
+                  setTimeout(()=>{
+                      <mark>form2.organization.value = 'TW';</mark>
+                  }, delay)
+
+                  increaseDelay()
+
+                  setTimeout(()=>{
+                      <mark>form2.querySelector('button').click()</mark>
+                  }, delay)
+
+                  increaseDelay()
+
+
+              /////////////////////////////////////
+
+                  <mark>let form3 = $('#form3');</mark>
+
+                  setTimeout(()=>{
+                      <mark>form3.phone.value = 98765;</mark>
+                  }, delay)
+
+                  increaseDelay()
+
+                  setTimeout(()=>{
+                      <mark>form3.email.value = 'ping@rvi.fyi';</mark>
+                  }, delay)
+
+                  increaseDelay()
+
+                  setTimeout(()=>{
+                      <mark>form3.querySelector('button').click()</mark>
+                  }, delay)
+
+                  increaseDelay()
+              })()
+            </code></pre>
+        </section>
+        <section>
+          <pre><code  data-trim data-noescape>
+              (()=> {
+                let form1 = $('#form1');
+                form1.firstname.value = 'Ravi';
+                form1.lastname.value = 'Sharma';
+                form1.querySelector('button').click()
+
+                let form2 = $('#form2');
+                form2.organization.value = 'TW';
+                form2.querySelector('button').click()
+
+                let form3 = $('#form3');
+                form3.phone.value = 98765;
+                form3.email.value = 'ping@rvi.fyi';
+                form3.querySelector('button').click();
+            })()
+          </code></pre>
+        </section>
+      </section>
+      <section>
+        <h1 class="text-white bg-blue">Request blocking</h1>
+        <small>blocking unwanted requests.</small>
+      </section>
+      <section>
+        <h1 class="text-white bg-dark-green">Code coverage</h1>
+        <small>find unused css and js.</small>
+      </section>
+      <section>
+        <section>
+          <h1 class="text-white bg-black">Console</h1>
+        </section>
+        <section>
+          <h2>Logging</h2>
+          <table>
+            <tr>
+              <td class="fragment text-white bg-black pointer" onclick="consoleLog()">log</td>
+              <td class="fragment text-white bg-blue pointer" onclick="consoleInfo()">info</td>
+              <td class="fragment bg-yellow pointer" onclick="consoleWarn()">warn</td>
+              <td class="fragment text-white bg-red pointer" onclick="consoleError()">error</td>
+            </tr>
+          </table>
+        </section>
+        <section>
+          trivia! what does
+          <span class="text-white bg-black px-10">console.debug()</span> do ?
+        </section>
+        <section>
+          <p class="text-xl">
+            <span class="text-white bg-green px-10 pointer" onclick="logListOfHeroesGrouped()">console.group</span>
+          </p>
+          <p class="text-xl">
+            <span class="text-white bg-dark-green px-10 pointer" onclick="logListOfHeroesGroupedCollapsed()">console.groupCollapsed</span>
+          </p>
+          <br>
+          <small class="pointer" onclick="logListOfHeroes()">grouping stuff.</small>
+        </section>
+        <section>
+          <p>
+            <span class="text-xl text-white bg-black px-10 pointer" onclick="consoleClear()">console.clear</span>
+          </p>
+          <small>clearing stuff.</small>
+        </section>
+        <section>
+          <p>
+            <span class="text-xl text-white bg-black px-10">console.table</span>
+          </p>
+          <small>print object as table, works for both
+            <span class="bg-yellow px-10 pointer" onclick="consoleTableObject()">object</span>
+            and
+            <span class="bg-yellow px-10 pointer" onclick="consoleTableArray()">arrays</span>
+          </small>
+        </section>
+        <section>
+          <span class="text-xl text-white bg-black px-10">console.assert</span>
+          <p>
+            <span class="pointer text-white bg-green px-10" onclick="consoleAssertTrue()">1 == 1</span>
+            <span class="pointer text-white bg-red px-10" onclick="consoleAssertFalse()">2 == 3</span>
+          </p>
+        </section>
+        <section>
+          <p>
+            <span class="text-xl text-white bg-black px-10 pointer" onclick="consoleStyle()">style</span>
+          </p>
+          <small>
+            <span class="pointer text-white bg-blue px-10" onclick="consoleStyleCrazy()">styling</span>
+            console messages.
+          </small>
+        </section>
+        <section>
+          <p>
+            <span class="text-xl text-white bg-black px-10">copy</span>
+          </p>
+          <small>copy value to clipboard.</small>
+        </section>
+        <section>
+          <p>
+            <span class="text-xl text-white bg-black px-10">$</span>
+          </p>
+          <table>
+            <tr></tr>
+            <tr>
+              <td>$0</td>
+            </tr>
+            <tr>
+              <td>$_</td>
+            </tr>
+            <tr></tr>
+          </table>
+          <br>
+          <small>query, current element and last result</small>
+        </section>
+      </section>
+      <section>
+        <p>
+          explore more on devtools
+        </p>
+        <ul class="no-style-list">
+          <li>
+            <a href="https://developers.google.com/web/tools/chrome-devtools/">Google Chrome - Devtools</a>
+          </li>
+          <li>
+            <a href="https://umaar.com/dev-tips/">Umar Hansa - Dev tips</a>
+          </li>
+        </ul>
+      </section>
+      <section>
+        <section data-background="#202020">
+          <img src="public/16_9Master Template.svg" alt="">
+        </section>
+      </section>
+    </div>
+  </div>
+  <script src="public/reveal/reveal.js"></script>
+  <script src="public/reveal/plugin/highlight/highlight.js"></script>
+  <script>
+    Reveal.initialize();
+    hljs.initHighlighting();
+  </script>
+  <script src="public/randomLib.js"></script>
+  <script src="public/debug.js"></script>
+  <script src="public/console.js"></script>
+</body>
+
+</html>
