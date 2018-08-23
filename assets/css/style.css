@@ -2173,6 +2173,22 @@ footer {
     width: 300px;
     height: 200px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+  .event-content-slides .social-wrap {
+    background-color: #26bdcf;
+    border-radius: 50%;
+    border: solid 1px #26bdcf;
+    overflow: hidden;
+    margin: 0 10px; }
+    .event-content-slides .social-wrap a {
+      display: block;
+      width: 100px;
+      height: 100px;
+      margin: 0 auto;
+      text-indent: -9999px; }
+    .event-content-slides .social-wrap .facebook {
+      background: url(../images/icons/facebook_footer.png) center center no-repeat; }
+    .event-content-slides .social-wrap .twitter {
+      background: url(../images/icons/twitter_footer.png) center center no-repeat; }
 
 #content-btn {
   background-color: #1a73ba;

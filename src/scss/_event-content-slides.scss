@@ -50,6 +50,27 @@
 		height: 200px;
 		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	}
+
+	.social-wrap {
+		background-color: $primary_color;
+		border-radius: 50%;
+		border: solid 1px $primary_color;
+		overflow: hidden;
+		margin: 0 10px;
+		a {
+			display: block;
+			width: 100px;
+			height: 100px;
+			margin: 0 auto;
+			text-indent: -9999px;
+		}
+		.facebook {
+			background: $url_29 center center no-repeat;
+		}
+		.twitter {
+			background: $url_30 center center no-repeat;
+		}
+	}
 }
 
 #content-btn {
