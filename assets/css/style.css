@@ -83,7 +83,8 @@ body {
 
 section.contact-section {
   padding: 40px 0 0;
-  border-top: 1px solid #e4e2f4; }
+  border-top: 1px solid #e4e2f4;
+  background: #ebebeb; }
   section.contact-section .contact-info {
     margin-top: -120px;
     margin-bottom: -280px;
@@ -210,14 +211,7 @@ section.about-section {
 
 section.event-banner-section {
   padding: 40px 0;
-  background: #ebebeb;
-  background: -moz-linear-gradient(-45deg, #ebebeb 0%, #aaaaaa 100%);
-  background: -webkit-gradient(left top, right bottom, color-stop(0%, #ebebeb), color-stop(100%, #aaaaaa));
-  background: -webkit-linear-gradient(-45deg, #ebebeb 0%, #aaaaaa 100%);
-  background: -o-linear-gradient(-45deg, #ebebeb 0%, #aaaaaa 100%);
-  background: -ms-linear-gradient(-45deg, #ebebeb 0%, #aaaaaa 100%);
-  background: linear-gradient(135deg, #ebebeb 0%, #aaaaaa 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ebebeb', endColorstr='#aaaaaa', GradientType=1 );
+  background: #fff;
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   background-size: cover;
@@ -1083,7 +1077,6 @@ li:hover > .dropdown {
     border: 1px solid #1a73ba; }
 
 .cta-button {
-  margin-top: 25px;
   box-shadow: 0 8px 15px rgba(41, 41, 41, 0.5);
   padding: 10px 50px; }
 
@@ -2192,5 +2185,4 @@ footer {
 
 #content-btn {
   background-color: #1a73ba;
-  color: #fff;
-  float: right; }
+  color: #fff; }

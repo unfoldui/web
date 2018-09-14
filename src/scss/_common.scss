@@ -56,6 +56,7 @@ section {
 	&.contact-section {
 		padding: 40px 0 0;
 		border-top: 1px solid $color_link_water_approx;
+		background: #ebebeb;
 		.contact-info {
 			margin-top: -120px;
 			margin-bottom: -280px;
@@ -212,14 +213,14 @@ section {
 	&.event-banner-section {
 		padding: 40px 0;
 		
-		background: rgba(235,235,235,1);
-		background: -moz-linear-gradient(-45deg, rgba(235,235,235,1) 0%, rgba(170,170,170,1) 100%);
-		background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(235,235,235,1)), color-stop(100%, rgba(170,170,170,1)));
-		background: -webkit-linear-gradient(-45deg, rgba(235,235,235,1) 0%, rgba(170,170,170,1) 100%);
-		background: -o-linear-gradient(-45deg, rgba(235,235,235,1) 0%, rgba(170,170,170,1) 100%);
-		background: -ms-linear-gradient(-45deg, rgba(235,235,235,1) 0%, rgba(170,170,170,1) 100%);
-		background: linear-gradient(135deg, rgba(235,235,235,1) 0%, rgba(170,170,170,1) 100%);
-		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ebebeb', endColorstr='#aaaaaa', GradientType=1 );
+		background: #fff;
+		// background: -moz-linear-gradient(-45deg, rgba(235,235,235,1) 0%, rgba(170,170,170,1) 100%);
+		// background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(235,235,235,1)), color-stop(100%, rgba(170,170,170,1)));
+		// background: -webkit-linear-gradient(-45deg, rgba(235,235,235,1) 0%, rgba(170,170,170,1) 100%);
+		// background: -o-linear-gradient(-45deg, rgba(235,235,235,1) 0%, rgba(170,170,170,1) 100%);
+		// background: -ms-linear-gradient(-45deg, rgba(235,235,235,1) 0%, rgba(170,170,170,1) 100%);
+		// background: linear-gradient(135deg, rgba(235,235,235,1) 0%, rgba(170,170,170,1) 100%);
+		// filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ebebeb', endColorstr='#aaaaaa', GradientType=1 );
 
 		background-repeat: no-repeat;
 		-webkit-background-size: cover;
@@ -1402,7 +1403,7 @@ li:hover > .dropdown {
 }
 
 .cta-button {
-	margin-top: 25px;
+	// margin-top: 25px;
 	box-shadow: 0 8px 15px rgba($color_shark_approx, 0.5);
 	padding: 10px 50px;
 }
