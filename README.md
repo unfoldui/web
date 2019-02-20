@@ -1,4 +1,4 @@
-## Note
+## Note:
 We are currently using **templates/demo.pug** so that we can avoid accidently publishing in dev work
 
 ## Dev setup
