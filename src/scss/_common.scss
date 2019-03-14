@@ -158,10 +158,14 @@ section {
 				margin: 0;
 				text-align: center;
 			}
-			.event-date {
-				text-align: right;
-				border-left: 1px solid $white;
-				margin-top: 10px;
+			.event-date-place {
+				border-bottom: 1px solid $white;
+				width: 404px;
+				margin: 10px auto;
+				color: #f1954a;
+				font-size: 20px;
+				padding: 5px 10px;
+				text-shadow: 1px 2px 2px #2e2d2d;
 				p {
 					color: $color_link_water_approx;
 					font-size: 24px;
