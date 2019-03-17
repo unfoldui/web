@@ -58,27 +58,208 @@ mixin entryItem(key, entrySide, timeSide, data)
     //-   .track-info #{trackNames[parseInt(data.track, 10)]}
 
 mixin entryList
-  - var agendaJson = [{"time":"8:30 AM - 9:30 AM","track":1,"title":"Registration","duration":"1 hour","type":"break"}, {"time":"9:30 AM - 9:45 AM","track":1,"title":"Keynote","duration":"15 Minutes","type":"Keynote"},{"time":"9:45 AM - 10:20 AM","track":1,"title":"Unfolding the Unfold UI logo","presenter":{"avatarUrl":"./assets/images/speakers/nikhil.jpg","name":"Nikhil Mehta","role":"UI Developer","company":"ThoughtWorks, Pune","twitter":"nikhil_001mehta","web":"https://nikhil-001mehta.github.io/"},"abstract":"1) Basics of animation\n2) How we approached to create the animation for Unfold UI logo. \n3) Brief about what calculations we did and how we figure out individual animation of each and every small component which will altogether put the logo in shape. ","duration":"35 Minutes","type":"Small Talk"},{"time":"10:20 AM - 10:50 AM","track":1,"title":"Forms, components and considerations","presenter":{"avatarUrl":"./assets/images/speakers/harshal.jpg","name":"Harshal Patil","twitter":"mistyharsh","web":"https://blog.webf.zone","role":"Front-end architect","company":"Monjin Interviews Pvt. Ltd."},"abstract":"Irrespective of what front-end framework you chose, form handling is a complicated subject with lots of UX styles and variations. It is always impossible to design consistent form language for the application.\nThe talk will address all the concerned that should be considered before the team starts development of any sort of application forms. Talk starts with simple focus and blur events and then all the till validations and accessibility.","duration":"30 Minutes","type":"Small Talk","entry":"left","timearea":"right"},{"time":"11:00 AM - 11:15 AM","track":1,"title":"Tea Break","duration":"15 Minutes","type":"break"},{"time":"11:15 AM - 12:00 PM","track":1,"title":"Functional Programming in JS & ESNext ","presenter":{"avatarUrl":"./assets/images/speakers/ram.jpg","name":"Ram Shinde","role":"UI Developer","company":"ThoughtWorks, Pune","twitter":"ramshinde92"},"abstract":"This Talk would cover:\n1) Unlearning Imperative & applying principles of functional programming in Javascript.\n2) Overcoming Mutations using Functional pattern which are root cause for many bugs. [Also Examples of libraries which are following this principles]\n3) Covering ESNext Features which can be handy in day to day code. [Will include few features which are in finished state of TC39]","duration":"45 Minutes","type":"Small Talk","entry":"right","timearea":"left"},{"time":"12:00 PM - 12:45 PM","track":1,"title":"Two-dimensional page layout","presenter":[{"avatarUrl":"./assets/images/speakers/prakash.jpg","name":"Prakash Upadhyay","role":"UI Developer","company":"ThoughtWorks, Bengaluru","twitter":"prakashup"},{"avatarUrl":"./assets/images/speakers/jagat.jpg","name":"Jagat","twitter":"","linkedin":"","web":"https://github.com/jagatjeevan","fb":"https://www.facebook.com/kanhajeevan","role":"Sr UI Developer","company":"ThoughtWorks, Bangalore"}],"abstract":"A powerful and modern way to layout the page components leveraging browser support with minimal code. We have been using frameworks like bootstrap, foundation etc to design page layout. With this new way of implementing code, It would be possible to make a good isolation of the semantics and style. While flexbox being a 1-dimensional, CSS Grid provide us 2-dimensional layout. Other advantages of using the modern techniques for page layout is to keep the code clean, segregated and sanity of the markup.","duration":"45 Minutes","type":"Talk","entry":"right","timearea":"left"},{"time":"12:45 PM - 1:45 PM","track":1,"title":"Lunch Break & Switch Track","duration":"60 Minutes","type":"break", "entry": "left", "timearea": "right"},{"time":"1:45 PM - 2:15 PM","track":1, "entry": "right", "timearea": "left", "title":"Static type checking in JS with Flow","presenter":{"avatarUrl":"./assets/images/speakers/shivam.jpg","name":"Shivam Latawa","role":"UI Developer","company":"ThoughtWorks, Pune","twitter":"shivam_latawa"},"abstract":"In a dynamically typed language like JS it becomes hard to catch some errors at an early stage of development which is not the case with the statically typed language. Flow JS lets you add the ability of static type checking in your JS code which makes your code faster and smarter. So this talk will basically highlight how to introduce Flow in your project and the important features of it.","duration":"30 Minutes","type":"Small Talk"},{"time":"1:45 PM - 2:15 PM","track":2,"title":"Build React component in Scala.js","presenter":{"avatarUrl":"./assets/images/speakers/poorva.jpg","name":"Poorva","role":"UI Developer","company":"ThoughtWorks, Pune"},"abstract":"This talk will share our findings in following areas - 1. scala.js, 2.React wrapper in scala.js, 3. Interoperability that scala.js offers. 4. Can you reuse react component written in scala in javascript. Pros and cons of approaches that we explored. ","duration":"30 Minutes","type":"Talk","entry":"left","timearea":"right"},{"time":"2:15 PM - 2:45 PM","track":1,"title":"Supercharge your debugging experience","presenter":{"avatarUrl":"./assets/images/speakers/ravi.jpg","name":"Ravi Sharma","role":"UI Developer","company":"ThoughtWorks, Pune","twitter":"irvisharma","fb":"https://www.facebook.com/rvisharma","web":"https://rvisharma.github.io"},"abstract":"Debugging code is a skill. Chrome devtools are great and has a lot of features but most of the people are not aware of those features. My plan is to present a talk that will contain mini demos of devtools feature showing the problem and how to identify them using dev tools. Will go into pain points of debugging and their remedies.\n\nSome examples - Debugging and modifying live website, writing snippets to automate manual tasks and show them how to solve the issues.\n\nAfter this talk, audience will be able to use devtools more efficiently which will make their debugging journey easier.","duration":"30 Minutes","type":"Talk","entry":"right","timearea":"left"},{"time":"2:15 PM - 2:45 PM","track":2,"title":"Normalizing data in web applications","presenter":{"avatarUrl":"./assets/images/speakers/swapneel.jpg","name":"Swapneel Desai","role":"UI Developer","company":"ThoughtWorks, Pune"},"abstract":"The talk will cover the following topics: 1). What is 'Normalization of data' in brief and why is it required in frontend. 2). What are the different scenarios where keeping your data state normalized, can be beneficial in terms of data management and performance. I will be demonstrating a small web application created using React/Redux. This app demonstrates how data can be normalized and stored in the Redux store and how this normalized data can be used to render the view layer.","duration":"30 Minutes","type":"Small Talk","entry":"left","timearea":"right"},{"time":"2:45 PM - 3:00 PM","track":1,"title":"Tea Break","duration":"15 Minutes","type":"break"},{"time":"3:00 PM - 5:30 PM","track":1,"title":"Progress with PWA - Workshop","presenter":[{"avatarUrl":"./assets/images/speakers/ramanathan.jpg","name":"Ramanathan","twitter":"","linkedin":"https://www.linkedin.com/in/ramanathan-muthuraman-141336a/","web":"https://github.com/ramanathanMuthuraman/","role":"UI Developer","company":"ThoughtWorks, Bangalore"},{"avatarUrl":"./assets/images/speakers/jagat.jpg","name":"Jagat","twitter":"","linkedin":"","web":"https://github.com/jagatjeevan","fb":"https://www.facebook.com/kanhajeevan","role":"Sr UI Developer","company":"ThoughtWorks, Bangalore"}],"abstract":"Understand the concepts of Progressive Web App and try some of it while we explain the concepts. Its more of a hands on session while learning the concepts.","duration":"150 Minutes","type":"Workshop","entry":"right","timearea":"left"},{"time":"3:00 PM - 5:30 PM","track":2,"title":"VueJs - Workshop","presenter":[{"avatarUrl":"./assets/images/speakers/digvijay.jpg","name":"Digvijay","role":"UI Developer","company":"ThoughtWorks, Pune"},{"avatarUrl":"./assets/images/speakers/anish.jpg","name":"Anish","role":"UI Developer","company":"ThoughtWorks, Pune"}],"abstract":"Why Vue? Vue is a lightweight framework, with clear separation of concerns (JS/HMTL/CSS). It is a progressive framework for building user interfaces and is incrementally adoptable. Let’s learn its ecosystem in simplest way possible with this workshop. Wow! No prior knowledge of vue.js required.","duration":"150 Minutes","type":"workshop","entry":"left","timearea":"right"},{"time":"5:30 PM - 5:45 PM","track":1,"title":"Closing note","duration":"5 Minutes","type":"switch"}];
+  -
+    var agendaJson =   [ 
+      {	"time": "8:30 AM - 9:15 AM", 	track: 1,	title: "Registration",	duration: "45 Mins",	type: "break" }, 
+      {	"time": "9:15 AM - 9:30 AM",	track: 1,	title: "Keynote",	duration: "15 Minutes",	type: "break" },
+      {	"time": "9:30 AM - 10:00 AM",	"track": 1,	"title": "Augmented Reality on mobile browser",	"presenter": { 
+        "avatarUrl": "./assets/images/speakers/avatarF.jpg",	
+        "name": "Bhagyashree Waval", "role": "", "company": "ThoughtWorks, Pune",	
+        "twitter": "",
+        "web": ""
+         },
+         "abstract": "What is Augment Reality? Why AR on mobile browser? How can we achieve AR on Mobile Browser? Libraries and frameworks available in the market. Small and interesting demos of these to explain audience - How easy it is to develop AR web applications for everyone? What are capabilities and limitations of these technologies?",
+         "duration": "30 Minutes",
+         "type": "Small Talk"
+      },
+      {	"time": "10:05 AM - 10:20 AM",	"track": 1,	"title": "ECMA2018 & What’s Next? ESNext",	"presenter": { 
+        "avatarUrl": "./assets/images/speakers/avatarM.jpg",	
+        "name": "Divya Nambiar", "role": "", "company": "ThoughtWorks, Pune",	
+        "twitter": "",
+        "web": ""
+         },
+         "abstract": "New features in ECMA2018 And what’s next in ESNext:",
+         "duration": "15 Minutes",
+         "type": "Small Talk"
+      },
+      {	"time": "10:25 AM - 11:10 AM",	"track": 1,	"title": "Animation in UI Design",	"presenter": { 
+        "avatarUrl": "./assets/images/speakers/avatarM.jpg",	
+        "name": "Anish Thomas", "role": "", "company": "ThoughtWorks, Bangalore",	
+        "twitter": "",
+        "web": ""
+         },
+         "abstract": "Even the simplest of animation convey an emotion or mood. As the tech advanced it has become easier to integrate animated interface elements in the UI design now a days. In this session we'll be understanding the motion design and it's importance  in User Interfaces.",
+         "duration": "45 Minutes",
+         "type": "Small Talk"
+      },
+      {	"time": "11:10 AM - 11:30 AM",	"track": 1,	"title": "Tea Break",	"duration": "15 Minutes",	"type": "break" },
+      {	"time": "11:30 AM - 12:00 PM",	"track": 1,	"title": "Improving Performance using Web Assembly",	"presenter": { 
+        "avatarUrl": "./assets/images/speakers/avatarM.jpg",	
+        "name": "Abdulsattar & Durga", "role": "", "company": "ThoughtWorks, hyderabad",	
+        "twitter": "",
+        "web": ""
+         },
+         "abstract": "As web applications become more complex, the need for performance has become paramount. Web Assembly promises ~30% performance over Javascript. In this talk, we cover the basics of Web Assembly, how it interops with Javascript and some usecases where it can be helpful.",
+         "duration": "45 Minutes",
+         "type": "Small Talk"
+      },
+      {	"time": "12:05 PM - 12:20 PM",	"track": 1,	"title": "Difference between callbacks, promise and async/await",	"presenter": { 
+        "avatarUrl": "./assets/images/speakers/avatarM.jpg",	
+        "name": "Razin Memon", "role": "", "company": "ThoughtWorks, hyderabad",	
+        "twitter": "",
+        "web": ""
+         },
+         "abstract": "Discussion on differences of all 3 ways of doing asynchronous operations that are async/await, callback hell and promises. We'll use the 1 API call example and try to explain how same thing can be done by this 3, if time permits, we can add more examples",
+         "duration": "15 Minutes",
+         "type": "Small Talk"
+      },
+      {	"time": "12:25 PM - 12:55 PM",	"track": 1,	"title": "Typescript: Fix your type errors before going to production",	"presenter": { 
+        "avatarUrl": "./assets/images/speakers/avatarM.jpg",	
+        "name": "Jagat Jeevan Sahoo", "role": "", "company": "ThoughtWorks, Bengaluru",	
+        "twitter": "",
+        "web": ""
+         },
+         "abstract": "",
+         "duration": "30 Minutes",
+         "type": "Small Talk"
+      },
+      {	"time": "1:00 PM - 1:15 PM",	"track": 1,	"title": "WebRTC: The web's answer to p2p",	"presenter": { 
+        "avatarUrl": "./assets/images/speakers/avatarM.jpg",	
+        "name": "Saurabh Machave", "role": "", "company": "ThoughtWorks, Bengaluru",	
+        "twitter": "",
+        "web": ""
+         },
+         "abstract": "WebRTC enables us to communicate directly with other clients using the app without the need of the data to flow through a server first. This enables more real-time transfer of data which is suitable for a wide variety of applications like video conferencing, gaming, collaborative editing of documents among others. This talk will talk about how to use it, what it is capable of doing and comparing it with other protocols like Websockets.",
+         "duration": "15 Minutes",
+         "type": "Small Talk"
+      },
+      {	"time": "1:15 PM - 2:00 PM",	"track": 1,	"title": "Lunch Break",	"duration": "45 Minutes",	"type": "break" },
+      {	"time": "3:20 PM - 4:35 PM",	"track": 1,	"title": "ML with JS: Intro to Tensor flow",	"presenter": { 
+        "avatarUrl": "./assets/images/speakers/avatarM.jpg",	
+        "name": "Ankit Shukla", "role": "", "company": "ThoughtWorks, Pune",	
+        "twitter": "",
+        "web": ""
+         },
+         "abstract": "As world is getting accelerated with ML engines from facial unlocking of phones to classification of outer space radiations, how we can use the power of ML with JS to make device agnostic browser applications? How can we make smart applications without reliance on backend services? This session intends to be a ready reckoner for developing application using TensorFlow.js. The Proposed agenda is:1. Intro To Topic and ML Taxonomy - ML, Types of ML[Supervised vs Unsupervised] , Deep Learning, Neural Nets - 20 mins2. What's TensorFlow.js ? - 5 mins3. Tensors - 10 mins4. Getting your data ready for processing - 15 mins5. Creating Your First Neural Net in JS - 20 mins6. MNIST - Number Identification - 40 mins 7. Using Pre-trained models - 20 mins  8. Extending Pre-trained models[Transfer Learning] - 20 minsThis talks intends to be introductory in nature , where working from basics we would move towards building a small application.Note: No prior knowledge of ML concepts is needed. JS scripting would be a prerequisite.",
+         "duration": "150 Minutes",
+         "type": "Small Talk"
+      },
+      {	"time": "9:30 AM - 10:00 AM",	"track": 2,	"title": " CSS Grid in real world",	"presenter": { 
+        "avatarUrl": "./assets/images/speakers/avatarM.jpg",	
+        "name": "Jagat Jeevan Sahoo", "role": "", "company": "ThoughtWorks, Bengaluru",	
+        "twitter": "",
+        "web": ""
+         },
+         "abstract": "Understanding the power of simplicity of code. Make use of Css grid in day-to-day life to create complex layouts in less code and time. The CSS Grid Layout Module offers a grid-based layout system, with rows and columns, making it easier to design web pages without having to use floats and positioning, yet responsive.",
+         "duration": "30 Minutes",
+         "type": "Small Talk"
+      },
+      {	"time": "10:05 AM - 10:20 AM",	"track": 2,	"title": "Tracking your Exploratory UI tests",	"presenter": { 
+        "avatarUrl": "./assets/images/speakers/avatarM.jpg",	
+        "name": "Bharath Kumar Hemachandran", "role": "", "company": "ThoughtWorks, Bengaluru",	
+        "twitter": "",
+        "web": ""
+         },
+         "abstract": "Exploratory tests are very important to determine the quality of an application. However, it is difficult to standardize the quality of testing since each tester has his/her own way to perform testing. Moreover, it is hard to track the status of testing. The ACC (Attribute/Component/Capability) method of testing could provide a lean yet formal framework that would lend more transparency into the process of exploratory testing. The talk would be around using the ACC method for exploratory testing",
+         "duration": "15 Minutes",
+         "type": "Small Talk"
+      },
+      {	"time": "10:25 AM - 10:55 AM",	"track": 2,	"title": "Mobile UI in Flutter",	"presenter": { 
+        "avatarUrl": "./assets/images/speakers/avatarM.jpg",	
+        "name": "Ankit Luthra", "role": "", "company": "ThoughtWorks, Pune",	
+        "twitter": "",
+        "web": ""
+         },
+         "abstract": "Flutter is Google’s mobile app SDK for crafting high-quality native interfaces on iOS and Android in record time. It is a modern reactive framework with Expressive and flexible UI. Flutter lets you reuse your existing Java/Kotlin and ObjC/Swift code, and access native features and SDKs on Android and iOS. Presentation can feature a simple mobile app use case using flutter.",
+         "duration": "30 Minutes",
+         "type": "Small Talk"
+      },
+      {	"time": "11:00 AM - 11:15 AM",	"track": 2,	"title": "How to test web apps accessibility",	"presenter": { 
+        "avatarUrl": "./assets/images/speakers/avatarM.jpg",	
+        "name": "Ankit Luthra", "role": "", "company": "ThoughtWorks, Pune",	
+        "twitter": "",
+        "web": ""
+         },
+         "abstract": "The general notion around implementation of web accessibility is to use semantic tags, aria attribute, tabIndex, etc. These are some good practices but what is more important is how do we test the accessibility. In this talk I am going to share my experience on the testing aspect of it",
+         "duration": "15 Minutes",
+         "type": "Small Talk"
+      },
+      {	"time": "11:15 AM - 11:30 AM",	"track": 2,	"title": "Tea Break",	"duration": "15 Minutes",	"type": "break" },
+      {	"time": "11:30 AM - 12:00 PM",	"track": 2,	"title": "State management in Angular 6/7 with NgRx",	"presenter": { 
+        "avatarUrl": "./assets/images/speakers/avatarM.jpg",	
+        "name": "Shivam Latawa, Lilima", "role": "", "company": "ThoughtWorks, Pune",	
+        "twitter": "",
+        "web": ""
+         },
+         "abstract": "It's hard to manage the state of the application as there are various types of states involved in the UI application. So this talk will cover the various types of state and how you can effectively use NgRx (a reactive implementation of Redux) with Angular apps to manage the state of your application.",
+         "duration": "30 Minutes",
+         "type": "Small Talk"
+      },
+      {	"time": "12:05 AM - 12:35 AM",	"track": 2,	"title": "Let's talk about web performance",	"presenter": { 
+        "avatarUrl": "./assets/images/speakers/avatarM.jpg",	
+        "name": "Gokulakrishnan Kalaikovan", "role": "", "company": "ThoughtWorks, Bengaluru",	
+        "twitter": "",
+        "web": ""
+         },
+         "abstract": "Will be starting with State of Web in 2019, understanding the metrics like FCP, FID etc and how it helps us to server better. And more on JS, CSS, Fonts, Media optimizations, using effective caching strategies, server optimizations such as brotli compression etc. And tools available in 2019 for web dev's to measure and optimize web performances. ",
+         "duration": "30 Minutes",
+         "type": "Small Talk"
+      },
+      {	"time": "12:40 AM - 1:10 PM",	"track": 2,	"title": "React Native vs Ionic vs NativeScript- Battle Of Mobile Development",	"presenter": { 
+        "avatarUrl": "./assets/images/speakers/avatarM.jpg",	
+        "name": "Divya Nambiar + Mishu", "role": "", "company": "ThoughtWorks, Bengaluru",	
+        "twitter": "",
+        "web": ""
+         },
+         "abstract": "Comparing the frameworks based on the following criteria: 1)Code and development tools — what language it uses, how the UI is created, what are the tools used for developing apps.2)Development workflow 3)Native APIs and extensibility — which native APIs are available and how easy it is to add native functionality.4)Performance",
+         "duration": "30 Minutes",
+         "type": "Small Talk"
+      },
+      {	"time": "1:15 PM - 2:00 PM",	"track": 2,	"title": "Lunch Break",	"duration": "45 Minutes",	"type": "break" },
+      {	"time": "2:00 PM - 3:15 PM",	"track": 2,	"title": "CI and CD with github and Travis",	"presenter": { 
+        "avatarUrl": "./assets/images/speakers/avatarM.jpg",	
+        "name": "Jagat Jeevan Sahoo + Pritesh", "role": "", "company": "ThoughtWorks, Bengaluru",	
+        "twitter": "",
+        "web": ""
+         },
+         "abstract": "Github has been an awesome tool for distributed version control for our code. This can be used to deploy static pages without much hassles. Build your own site from scratch. Travis has been a light weight tool to continuous integration of the code. Understanding how to integrate these 2 things to publish your websites.",
+         "duration": "75 Minutes",
+         "type": "Small Talk"
+      },
+      {	"time": "3:20 PM - 4:35 PM",	"track": 2,	"title": "End to end with Cypress",	"presenter": { 
+        "avatarUrl": "./assets/images/speakers/avatarM.jpg",	
+        "name": "Surender Lohia", "role": "", "company": "ThoughtWorks, Bengaluru",	
+        "twitter": "",
+        "web": ""
+         },
+         "abstract": "rCypress is a JavaScript End to End Testing Framework. Workshop will include a brief intro about cypress and then handson with already developed project.",
+         "duration": "75 Minutes",
+         "type": "Small Talk"
+      }
+    ];
   - for (var x = 0; x < agendaJson.length; x++)
     - var item = agendaJson[x]
     - var entry = item.entry ? item.entry : (x%2 === 0 ? 'left' : 'right');
     - var time = item.timearea ? item.timearea : (x%2 === 0 ? 'right' : 'left');
     +entryItem(x, entry, time, item)
 
-//- section.about-section#schedule
+section.about-section.schedule#schedule
   .container
     .row
       .col-sm-6.col-md-8
         .title-section
           h1 Schedule
-      .col-sm-6.col-md-4.side-section
-        a#content-btn.cta-button(href='./content.html') Content available here
+          span.track1 Track1
+          span.track2 Track2
+      //- .col-sm-6.col-md-4.side-section
+        a#content-btn.cta-button(href='./content.html') Content available hereis
 
 
-  //- ul.timeline.timeline--first
+
+  ul.timeline.timeline--first
     li.era
       h2.era__title
-        span Saturday, 11
+        span Saturday, 6
         sup th
-        span August
+        span April
     +entryList()

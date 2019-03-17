@@ -416,3 +416,33 @@ $animationTime: 1s;
     animation: show-after-animation-complete $animationTime forwards;
   }
 }
+
+.schedule {
+     .track1, .track2 {
+       display: inline-block;
+       font-size: 14px;
+       font-weight: bold;
+       margin-right: 30px;
+       position: relative;
+       padding-right: 10px;
+
+       &:after {
+        content: '.';
+        width: 15px;
+        height: 15px;
+        border-radius: 15px;
+        background: $primary_color;
+        display: inline-block;
+        color: $primary_color;
+        position: absolute;
+        top: 2px;
+        right: -8px;
+        line-height: 1;
+      }
+     }
+     .track2:after {
+       background: $primary_color_orange;
+       color: $primary_color_orange;
+     }
+
+  }

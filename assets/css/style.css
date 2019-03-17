@@ -1866,6 +1866,30 @@ footer {
     visibility: visible !important;
     animation: show-after-animation-complete 1s forwards; }
 
+.schedule .track1, .schedule .track2 {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: bold;
+  margin-right: 30px;
+  position: relative;
+  padding-right: 10px; }
+  .schedule .track1:after, .schedule .track2:after {
+    content: '.';
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    background: #26bdcf;
+    display: inline-block;
+    color: #26bdcf;
+    position: absolute;
+    top: 2px;
+    right: -8px;
+    line-height: 1; }
+
+.schedule .track2:after {
+  background: #f68a32;
+  color: #f68a32; }
+
 .pico-content {
   width: 700px !important; }
   .pico-content .modal-header .modal-title {
