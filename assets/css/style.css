@@ -179,6 +179,11 @@ section.event-promo-section {
       font-size: 20px;
       padding: 5px 10px;
       text-shadow: 1px 2px 2px #2e2d2d; }
+      @media (max-width: 767px) {
+        section.event-promo-section .event-center .event-date-place {
+          font-size: 15px;
+          text-align: center;
+          width: 100%; } }
       section.event-promo-section .event-center .event-date-place p {
         color: #e4e2f4;
         font-size: 24px;
@@ -196,6 +201,9 @@ section.event-promo-section {
 
 section.about-section {
   padding: 40px 0; }
+  @media (max-width: 767px) {
+    section.about-section {
+      padding: 25px 0; } }
   section.about-section .about-body, section.about-section ul.about-body {
     color: #2d3034; }
     section.about-section .about-body b, section.about-section .about-body strong, section.about-section ul.about-body b, section.about-section ul.about-body strong {
@@ -885,6 +893,17 @@ button.mfp-arrow {
     section.event-promo-section .event-center .event-date p span {
       font-size: 60px;
       line-height: 62px; }
+  section.event-promo-section .event-center .register-section {
+    text-align: center;
+    margin-top: 25px; }
+    section.event-promo-section .event-center .register-section a {
+      background: #26bdcf;
+      padding: 5px 50px;
+      border-radius: 4px;
+      color: #fff;
+      display: inline-block; }
+      section.event-promo-section .event-center .register-section a:hover {
+        background: #1e96a4; }
   a.more-btn {
     font-size: 15px; }
   a.default-button {

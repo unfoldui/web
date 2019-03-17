@@ -166,6 +166,12 @@ section {
 				font-size: 20px;
 				padding: 5px 10px;
 				text-shadow: 1px 2px 2px #2e2d2d;
+				@media(max-width: 767px) {
+					font-size: 15px;
+					text-align: center;
+    				width: 100%;
+				}
+
 				p {
 					color: $color_link_water_approx;
 					font-size: 24px;
@@ -189,6 +195,9 @@ section {
 		// Too much pattern
 		// background: $url_16 center bottom repeat-x;
 		padding: 40px 0;
+		@media(max-width: 767px) {
+			padding: 25px 0;
+		}
 		.about-body, ul.about-body{
 			color:#2d3034;
 			b, strong {
@@ -1100,6 +1109,25 @@ button {
 					line-height: 62px;
 				}
 			}
+
+			.register-section {
+				text-align: center;
+				margin-top: 25px;
+
+				a {
+					background: $primary_color;
+					padding: 5px 50px;
+					border-radius: 4px;
+					color: $white;
+					display: inline-block;
+					
+					&:hover {
+						background: darken($primary_color, 10%);
+					}
+				}
+			}
+
+			
 		}
 	}
 	a {
