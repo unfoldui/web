@@ -204,9 +204,13 @@ section.about-section {
   @media (max-width: 767px) {
     section.about-section {
       padding: 25px 0; } }
-  section.about-section .about-body, section.about-section ul.about-body {
+  section.about-section .about-body,
+  section.about-section ul.about-body {
     color: #2d3034; }
-    section.about-section .about-body b, section.about-section .about-body strong, section.about-section ul.about-body b, section.about-section ul.about-body strong {
+    section.about-section .about-body b,
+    section.about-section .about-body strong,
+    section.about-section ul.about-body b,
+    section.about-section ul.about-body strong {
       font-weight: 600; }
   section.about-section .about-body:not(:last-child) {
     margin-bottom: 20px; }
@@ -228,13 +232,14 @@ section.event-banner-section {
   -webkit-background-size: cover;
   background-size: cover;
   font-weight: 300; }
-  section.event-banner-section h1, section.event-banner-section dl {
+  section.event-banner-section h1,
+  section.event-banner-section dl {
     opacity: 0.9; }
   section.event-banner-section h1 {
     padding-bottom: 25px;
     position: relative; }
     section.event-banner-section h1:after {
-      content: '';
+      content: "";
       position: absolute;
       bottom: 0;
       left: 0;
@@ -348,7 +353,7 @@ section.event-banner-section {
       margin-bottom: 30px;
       position: relative; }
       .sidebar .widget > h2:after {
-        content: '';
+        content: "";
         position: absolute;
         bottom: -1px;
         left: 0;
@@ -401,7 +406,7 @@ section.event-banner-section {
         .sidebar .category-widget ul li a span {
           color: #949ea9; }
         .sidebar .category-widget ul li a:before {
-          content: '\f105';
+          content: "\f105";
           font-family: FontAwesome;
           color: #949ea9;
           font-size: 15px;
@@ -498,7 +503,7 @@ section.event-banner-section {
   margin-bottom: 40px;
   position: relative; }
   .comment-area-box > h2:after {
-    content: '';
+    content: "";
     position: absolute;
     bottom: -1px;
     left: 0;
@@ -523,7 +528,7 @@ section.event-banner-section {
     padding-bottom: 20px;
     position: relative; }
     .article-box h1:after {
-      content: '';
+      content: "";
       position: absolute;
       bottom: -1px;
       left: 0;
@@ -556,7 +561,7 @@ section.event-banner-section {
     box-shadow: 0 8px 15px #efefef;
     position: relative; }
     .article-box a.default-button:before {
-      content: '';
+      content: "";
       width: 5000px;
       height: 1px;
       left: 100%;
@@ -565,7 +570,7 @@ section.event-banner-section {
       background: #e4e2f4;
       z-index: -1; }
     .article-box a.default-button:after {
-      content: '';
+      content: "";
       width: 5000px;
       height: 1px;
       right: 100%;
@@ -675,7 +680,7 @@ header {
   header .navbar {
     background: rgba(35, 35, 35, 0.8) !important; }
   header.fourth-style .navbar-nav > li > a.active:before {
-    content: '';
+    content: "";
     position: absolute;
     bottom: 30px;
     left: 0;
@@ -699,7 +704,7 @@ header {
       font-size: 13px;
       margin-left: 10px; }
   .navbar-nav > li.active > a:before {
-    content: '';
+    content: "";
     position: absolute;
     bottom: 30px;
     left: 0;
@@ -759,7 +764,7 @@ header {
     padding-bottom: 25px;
     position: relative; }
     .title-section h1:after {
-      content: '';
+      content: "";
       position: absolute;
       bottom: -1px;
       left: 0;
@@ -809,7 +814,7 @@ button.mfp-arrow {
   margin-bottom: 40px;
   position: relative; }
   .contact-form-box > h2:after {
-    content: '';
+    content: "";
     position: absolute;
     bottom: -1px;
     left: 0;
@@ -1111,6 +1116,11 @@ li:hover > .dropdown {
 
 .mt-20 {
   margin-top: 20px; }
+
+.register-button-container {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center; }
 
 /* NAVIGATION */
 .nav-stroke {
