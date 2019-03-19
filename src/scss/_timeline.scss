@@ -3,7 +3,7 @@ $time_color: $primary_color;
 
 $track-color: $primary_color;
 $timeline_bar_color: #808285;
-$timeline_circle_color: #f78f31;
+$timeline_circle_color: #808285;
 $animationTime: 1s;
 
 @mixin bgTrack($breakColor, $notEmptyTrack: true) {
