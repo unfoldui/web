@@ -2221,6 +2221,8 @@ footer {
   .event-content-slides .reveal-talk-links {
     text-align: center;
     padding: 25px; }
+  .event-content-slides .last-editon-venue {
+    color: #0578be; }
   .event-content-slides .reveal-talk-title {
     padding-bottom: 8px;
     display: block;
