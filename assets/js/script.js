@@ -17,25 +17,28 @@ $(document).ready(function ($) {
 				// Figure out element to scroll to
 				var target = $(this.hash);
 				target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+				if(this.hash.slice(1) === 'home') {	//Avoid animation for home
+					return;
+				}
 				// Does a scroll target exist?
 				if (target.length) {
 					// Only prevent default if animation is actually gonna happen
 					event.preventDefault();
 					$('html, body').animate({
-						scrollTop: target.offset().top - 80
-					}, 400, function () {
+						scrollTop: target.offset().top + 20
+					}, 800, function () {
 						// Callback after animation
 						// Must change focus!
 						var $target = $(target);
 						$target.focus();
-						if ($target.is(":focus")) { // Checking if the target was focused
-							return false;
-						} else {
-							$target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
-							$target.focus(); // Set focus again
-							$('#navbarSupportedContent').removeClass('show')
-							$('.navbar-toggler').addClass('collapsed')
-						};
+						// if ($target.is(":focus")) { // Checking if the target was focused
+						// 	return false;
+						// } else {
+						// 	$target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
+						// 	$target.focus(); // Set focus again
+						// 	$('#navbarSupportedContent').removeClass('show')
+						// 	$('.navbar-toggler').addClass('collapsed')
+						// };
 					});
 				}
 			}

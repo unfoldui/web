@@ -82,7 +82,7 @@ body {
       border-left: 1px solid #292929; }
 
 section.contact-section {
-  padding: 40px 0 0;
+  padding: 80px 0;
   border-top: 1px solid #e4e2f4;
   background: #ebebeb; }
   section.contact-section .contact-list {
@@ -207,10 +207,10 @@ section.event-promo-section {
           line-height: 72px; }
 
 section.about-section {
-  padding: 40px 0; }
+  padding: 80px 0; }
   @media (max-width: 767px) {
     section.about-section {
-      padding: 25px 0; } }
+      padding: 80px 0; } }
   section.about-section .about-body,
   section.about-section ul.about-body {
     color: #2d3034; }
@@ -233,7 +233,7 @@ section.about-section {
       border: none; }
 
 section.event-banner-section {
-  padding: 40px 0;
+  padding: 80px 0;
   background: #fff;
   background-repeat: no-repeat;
   -webkit-background-size: cover;
@@ -1944,14 +1944,14 @@ footer {
     font-weight: 600; }
   .pico-content .modalContent .avatar {
     border-radius: 50%;
-    margin: 0 auto;
+    margin: 10px auto;
     box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.3);
     border: solid 5px #fff;
     overflow: hidden;
     transition: opacity 300ms ease-in-out; }
     .pico-content .modalContent .avatar, .pico-content .modalContent .avatar img {
-      width: 200px;
-      height: 200px; }
+      width: 120px;
+      height: 120px; }
     .pico-content .modalContent .avatar:hover {
       opacity: 0.8; }
   .pico-content .modalContent .glimpse {
