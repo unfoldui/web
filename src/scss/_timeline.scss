@@ -416,7 +416,14 @@ $animationTime: 1s;
     animation: show-after-animation-complete $animationTime forwards;
   }
 }
-
+.glimpse-text {
+  color: #6c7a89;
+  font-weight: 300;
+  font-size: 14px;
+  ol {
+    padding: 10px 10px 10px 30px;
+  }
+}
 .schedule {
      .track1, .track2 {
        display: inline-block;

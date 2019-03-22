@@ -1903,6 +1903,13 @@ footer {
     visibility: visible !important;
     animation: show-after-animation-complete 1s forwards; }
 
+.glimpse-text {
+  color: #6c7a89;
+  font-weight: 300;
+  font-size: 14px; }
+  .glimpse-text ol {
+    padding: 10px 10px 10px 30px; }
+
 .schedule .track1, .schedule .track2 {
   display: inline-block;
   font-size: 14px;
@@ -1950,8 +1957,8 @@ footer {
     overflow: hidden;
     transition: opacity 300ms ease-in-out; }
     .pico-content .modalContent .avatar, .pico-content .modalContent .avatar img {
-      width: 200px;
-      height: 200px; }
+      width: 175px;
+      height: 175px; }
     .pico-content .modalContent .avatar:hover {
       opacity: 0.8; }
   .pico-content .modalContent .glimpse {
