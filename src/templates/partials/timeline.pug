@@ -9,7 +9,7 @@ mixin entryItem(key, entrySide, timeSide, data)
       if data.abstract
         .abstract
           .ellipsis
-            | #{data.abstract.substr(0,120)}...
+            | !{data.abstract.substr(0,120)}...
             a.abstract-modal(href='javascript://', data-key= key, data-toggle="modal") read more
 
         .modal-content.hidden(id='modal'+key)
@@ -28,7 +28,8 @@ mixin entryItem(key, entrySide, timeSide, data)
                   .col-md-8.col-sm-7.col-xs-12
                     h3 #{presenter.name}
                     h3
-                      em #{presenter.role},
+                      if presenter.role != ''
+                        em #{presenter.role},
                       span #{presenter.company}
                     .social
                       if presenter.twitter
@@ -52,7 +53,8 @@ mixin entryItem(key, entrySide, timeSide, data)
                     h4 Time: #{data.time}
                     h5 Track #{data.track}
               h5.glimpse A brief glimpse of talk
-              p #{data.abstract}
+              .glimpse-text
+                p !{data.abstract}
 
     //- if data.type.toLowerCase() != 'break' && data.abstract
     //-   .track-info #{trackNames[parseInt(data.track, 10)]}
@@ -141,7 +143,7 @@ mixin entryList
         "twitter": "",
         "web": ""
          },
-         "abstract": "As world is getting accelerated with ML engines from facial unlocking of phones to classification of outer space radiations, how we can use the power of ML with JS to make device agnostic browser applications? How can we make smart applications without reliance on backend services? This session intends to be a ready reckoner for developing application using TensorFlow.js. The Proposed agenda is:1. Intro To Topic and ML Taxonomy - ML, Types of ML[Supervised vs Unsupervised] , Deep Learning, Neural Nets - 20 mins2. What's TensorFlow.js ? - 5 mins3. Tensors - 10 mins4. Getting your data ready for processing - 15 mins5. Creating Your First Neural Net in JS - 20 mins6. MNIST - Number Identification - 40 mins 7. Using Pre-trained models - 20 mins  8. Extending Pre-trained models[Transfer Learning] - 20 minsThis talks intends to be introductory in nature , where working from basics we would move towards building a small application.Note: No prior knowledge of ML concepts is needed. JS scripting would be a prerequisite.",
+         "abstract": "As world is getting accelerated with ML engines from facial unlocking of phones to classification of outer space radiations, how we can use the power of ML with JS to make device agnostic browser applications? How can we make smart applications without reliance on backend services?<br />  This session intends to be a ready reckoner for developing application using TensorFlow.js. The Proposed agenda is:<ol><li> Intro To Topic and ML Taxonomy - ML, Types of ML[Supervised vs Unsupervised] , Deep Learning, Neural Nets - 20 mins</li><li> What's TensorFlow.js ? - 5 mins</li><li> Tensors - 10 mins</li><li> Getting your data ready for processing - 15 mins.</li><li>Creating Your First Neural Net in JS - 20 mins</li><li> MNIST - Number Identification - 40 mins </li><li> Using Pre-trained models - 20 mins  </li><li> Extending Pre-trained models[Transfer Learning] - 20 mins</li></ol>This talks intends to be introductory in nature , where working from basics we would move towards building a small application. <br />Note: No prior knowledge of ML concepts is needed. JS scripting would be a prerequisite.",
          "duration": "150 Minutes",
          "type": "Small Talk"
       },
@@ -178,7 +180,7 @@ mixin entryList
       },
       {	"time": "11:00 AM - 11:15 AM",	"track": 2,	"title": "How to test web apps accessibility",	"presenter": {
         "avatarUrl": "./assets/images/speakers/avatarM.jpg",
-        "name": "Ankit Luthra", "role": "", "company": "ThoughtWorks, Pune",
+        "name": "Kunal Chatterjee", "role": "", "company": "ThoughtWorks, Bangalore",
         "twitter": "",
         "web": ""
          },
@@ -187,12 +189,18 @@ mixin entryList
          "type": "Small Talk"
       },
       {	"time": "11:15 AM - 11:30 AM",	"track": 1,	"title": "Tea Break",	"duration": "15 Minutes",	"type": "break" },
-      {	"time": "11:30 AM - 12:00 PM",	"track": 2,	"title": "State management in Angular 6/7 with NgRx",	"presenter": {
-        "avatarUrl": "./assets/images/speakers/avatarM.jpg",
-        "name": "Shivam Latawa, Lilima", "role": "", "company": "ThoughtWorks, Pune",
+      {	"time": "11:30 AM - 12:00 PM",	"track": 2,	"title": "State management in Angular 6/7 with NgRx",	"presenter": [{
+        "avatarUrl": "./assets/images/speakers/lilima.jpg",
+        "name": "Lilima", "role": "", "company": "ThoughtWorks, Pune",
         "twitter": "",
         "web": ""
          },
+         {
+        "avatarUrl": "./assets/images/speakers/shivam.jpg",
+        "name": "Shivam Latawa", "role": "", "company": "ThoughtWorks, Pune",
+        "twitter": "",
+        "web": ""
+         }],
          "abstract": "It's hard to manage the state of the application as there are various types of states involved in the UI application. So this talk will cover the various types of state and how you can effectively use NgRx (a reactive implementation of Redux) with Angular apps to manage the state of your application.",
          "duration": "30 Minutes",
          "type": "Small Talk"
@@ -209,11 +217,11 @@ mixin entryList
       },
       {	"time": "12:40 AM - 1:10 PM",	"track": 2,	"title": "React Native vs Ionic vs NativeScript- Battle Of Mobile Development",	"presenter": {
         "avatarUrl": "./assets/images/speakers/avatarM.jpg",
-        "name": "Divya Nambiar + Mishu", "role": "", "company": "ThoughtWorks, Bangalore",
+        "name": "Divya Nambiar and Mishu", "role": "", "company": "ThoughtWorks, Bangalore",
         "twitter": "",
         "web": ""
          },
-         "abstract": "Comparing the frameworks based on the following criteria: 1)Code and development tools — what language it uses, how the UI is created, what are the tools used for developing apps.2)Development workflow 3)Native APIs and extensibility — which native APIs are available and how easy it is to add native functionality.4)Performance",
+         "abstract": "Comparing the frameworks based on the following criteria: <ol><li>Code and development tools — what language it uses, how the UI is created, what are the tools used for developing apps.</li><li>Development workflow </li><li>Native APIs and extensibility — which native APIs are available and how easy it is to add native functionality.</li><li>Performance</li></ol>",
          "duration": "30 Minutes",
          "type": "Small Talk"
       },
